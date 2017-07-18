@@ -2,8 +2,7 @@ extends KinematicBody2D
 
 var speed = 70.0
 var velocity = Vector2()
-
-const dashspeed = Vector2()
+var dashspeed = 60.0
 
 func _fixed_process(delta):
 	# move( Vector2(0,-1))
@@ -15,9 +14,9 @@ func _fixed_process(delta):
 	elif Input.is_action_just_pressed("ui_up"):
 		_speedup()
 	if Input.is_action_just_pressed("ui_right"):
-		velocity.x = dashspeed
+		velocity.x = dashspeed * 5.0
 	elif Input.is_action_just_pressed("ui_left"):
-		velocity.x = - dashspeed
+		velocity.x = - dashspeed * 5.0
 #	else:
 #		_stopx()
 #	elif Input.is_key_pressed(KEY_LEFT):
