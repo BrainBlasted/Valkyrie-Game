@@ -1,8 +1,10 @@
 config_version=3
+config_version=null
+
 [application]
 
 run/main_scene="res://Scenes/main_scene.tscn"
-name="Valkyrie Game"
+name="Valkyrie-Game"
 main_scene="res://Scenes/main_scene.tscn"
 icon="res://icon.png"
 

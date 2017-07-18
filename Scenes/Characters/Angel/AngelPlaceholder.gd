@@ -29,7 +29,7 @@ func _slow_y():
 
 func _speedup():
 	# Speeds up the character
-	speed = 300.0	
+	speed = 300.0
 
 func _stopx():
 	velocity.x = 0
