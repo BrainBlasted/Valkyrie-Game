@@ -13,4 +13,3 @@ A repository for an unfinished Kid Icarus inspired game.
 - Install Godot Engine 3.0 by either building it yourself or from a pre-compiled package
 - Import the project
 - Export or run the project.
-
