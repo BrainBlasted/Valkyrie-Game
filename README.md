@@ -1,12 +1,6 @@
-# GMTK Jam 2017
+# Valkyrie Game
 
-A repository for my submission the 2017 GMTK Game Jam. ~~As of now, it is in the very early prototyping stage.~~ Unfinished.
-
-## The Theme:
-- [Downwell's Dual Purpose Design](https://www.youtube.com/watch?v=i5C1Uj7jJCg)
-
-## The Plan:
-- Create a Kid Icarus inspired game using only open source or source-available tools.
+A repository for an unfinished Kid Icarus inspired game.
 
 ## Design:
 - Scrolling shooter
