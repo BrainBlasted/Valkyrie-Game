@@ -1,14 +1,18 @@
 config_version=3
-config_version=null
-
 [application]
 
+run/main_scene="res://Scenes/main_scene.tscn"
 name="Valkyrie Game"
 main_scene="res://Scenes/main_scene.tscn"
 icon="res://icon.png"
 
 [display]
 
+window/size/width=1080
+window/size/height=1920
+window/size/test_width=288
+window/size/test_height=512
+window/stretch/mode="2d"
 window/width=1080
 window/height=1920
 window/test_width=288
