@@ -1,6 +1,6 @@
 # Valkyrie Game
 
-A repository for an unfinished Kid Icarus inspired game.
+A repository for an unfinished Kid Icarus inspired game. Forked from  my unfinished [GMTK Jam](https://github.com/BrainBlasted/GMTK-Jam) project.
 
 ## Design:
 - Scrolling shooter
