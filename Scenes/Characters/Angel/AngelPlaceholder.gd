@@ -9,17 +9,17 @@ func _fixed_process(delta):
 	velocityup.y -= delta * speed
 	var motion = delta * velocityup
 	move(motion)
+	
+	velocity.x =  dashspeed * 5.0
+	var motionx = velocity
+
 	if Input.is_action_just_pressed("ui_down"):
 		_slow_y()
 	elif Input.is_action_just_pressed("ui_up"):
 		_speedup()
 	if Input.is_action_just_pressed("ui_right"):
-		velocity.x = dashspeed * 5.0
-		var motionx = velocity
 		move(motionx)
 	elif Input.is_action_just_pressed("ui_left"):
-		velocity.x =  dashspeed * 5.0
-		var motionx = velocity
 		move(-motionx)
 
 func _slow_y():
