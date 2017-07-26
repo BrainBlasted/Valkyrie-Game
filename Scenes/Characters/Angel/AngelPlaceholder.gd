@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
-var speed = 70.0
+# Motion variables
+var speed = 75.0
 var velocityup = Vector2()
 var xspeed = 25.0
 var velocity = Vector2()
@@ -8,6 +9,7 @@ var velocity = Vector2()
 func _fixed_process(delta):
 	velocityup.y -= delta * speed 
 	var motion = delta * velocityup
+	# var motiony = 
 	move(motion)
 	
 	velocity.x =  xspeed
