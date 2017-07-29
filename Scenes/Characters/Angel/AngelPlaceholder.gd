@@ -6,6 +6,17 @@ var velocityup = Vector2()
 var xspeed = 25.0
 var velocity = Vector2()
 
+func _slow_y():
+	# Slows the character
+	speed = speed - (speed * 0.75)
+
+func _speedup():
+	# Speeds up the character
+	speed = speed + (speed * 0.05)
+
+func _stopx():
+	velocity.x = 0
+	
 func _fixed_process(delta):
 	velocityup.y -= delta * speed 
 	var motion = delta * velocityup
@@ -28,17 +39,6 @@ func _fixed_process(delta):
 	elif Input.is_action_pressed("ui_left") || Input.is_key_pressed(KEY_A):
 		move(-motionx)
 
-func _slow_y():
-	# Slows the character
-	speed = speed - (speed * 0.75)
-
-func _speedup():
-	# Speeds up the character
-	speed = speed + (speed * 0.05)
-
-func _stopx():
-	velocity.x = 0
-	
 func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
