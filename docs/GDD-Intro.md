@@ -1,6 +1,6 @@
 # Valkyrie Game
 
-This is a Shooter/Platformer inspired by Kid Icarus: Uprising. This will be a 2D game, and all code and assets will be written using open source projects.
+This is a Shooter/Platformer inspired by Kid Icarus: Uprising. This will be a 2D game, and all code and assets will be created using open source projects.
 
 The design will be split into three segments:
 
