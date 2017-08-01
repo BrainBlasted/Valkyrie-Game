@@ -10,3 +10,5 @@ The primary system for the beginnings of levels is the rail system. The rail sys
 * A constant, upward motion, or the illusion of such a motion.
 * Aiming and shooting of enemies within sight, with a reticle.
 * Melee attacks when within range of enemies.
+
+![Visualization of the rail system](/docs/Images/RailVisual.png)
