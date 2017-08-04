@@ -21,7 +21,7 @@ A repository for an unfinished Kid Icarus inspired game. Forked from  my unfinis
 
 ## Documentation
 
-* All relevant documentation can be found in the `docs` folder.
+* All relevant documentation can be found in the [`docs`](/docs/GDD-Intro.md) folder.
 
 ## Building
 
