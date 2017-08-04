@@ -45,3 +45,5 @@ The rail system's primary controls are for movement and attacks.
   * Enemies further away from the player will be shot at when the mouse is clicked.
   * Attacks close to the player are in melee range. This means that clicking the mouse will result in a slash attack against enemies
   * The player will have an arc where he can attack. The arc should move based on the position of the player on screen.
+
+  ![Visualization of Attacking](/docs/Images/AttackVisual.png)
