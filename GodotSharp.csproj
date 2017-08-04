@@ -3,7 +3,7 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{69B2C3FF-E241-43A5-B342-312767DDC7AE}</ProjectGuid>
+        <ProjectGuid>{A40FB5AA-6470-49A3-83CF-A3150B9E2104}</ProjectGuid>
         <OutputType>Library</OutputType>
         <RootNamespace>GodotSharp</RootNamespace>
         <AssemblyName>GodotSharp</AssemblyName>
