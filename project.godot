@@ -1,11 +1,18 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+; 
+; Format: 
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
 config_version=3
-config_version=null
 
 [application]
 
-config/name="Valkyrie-Game"
+config/name="Valkyrie Game"
 run/main_scene="res://Scenes/main_scene.tscn"
-name="Valkyrie-Game"
+name="Valkyrie Game"
 main_scene="res://Scenes/main_scene.tscn"
 icon="res://icon.png"
 
