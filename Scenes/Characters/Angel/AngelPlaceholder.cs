@@ -25,17 +25,17 @@ public class AngelPlaceholder : KinematicBody2D
         velocity.x = xspeed;
         Vector2 motionx = velocity;
 
-        if (Input.is_action_pressed("ui_down") | Input.is_key_pressed(31))
+        if (Input.is_action_pressed("ui_down") || Input.is_key_pressed(31))
         {
             SlowY();
-        } else if (Input.is_action_just_pressed("ui_up") | Input.is_key_pressed(17))
+        } else if (Input.is_action_just_pressed("ui_up") || Input.is_key_pressed(17))
         {
             SpeedUp();
         }
-        if (Input.is_action_pressed("ui_right") | Input.is_key_pressed(32))
+        if (Input.is_action_pressed("ui_right") || Input.is_key_pressed(32))
         {
             move(motionx);
-        }else if (Input.is_action_pressed("ui_left") | Input.is_key_pressed(30))
+        }else if (Input.is_action_pressed("ui_left") || Input.is_key_pressed(30))
         {
             move(-motionx);
         }
