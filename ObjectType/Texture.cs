@@ -100,7 +100,7 @@ namespace GodotEngine
         public void draw(RID canvas_item, Vector2 pos, Nullable<Color> modulate = null, bool transpose = false, Texture normal_map = null)
         {
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            NativeCalls.godot_icall_5_463(method_bind_6, Object.GetPtr(this), RID.GetPtr(canvas_item), ref pos, ref modulate_in, transpose, Object.GetPtr(normal_map));
+            NativeCalls.godot_icall_5_462(method_bind_6, Object.GetPtr(this), RID.GetPtr(canvas_item), ref pos, ref modulate_in, transpose, Object.GetPtr(normal_map));
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_rect");
@@ -108,7 +108,7 @@ namespace GodotEngine
         public void draw_rect(RID canvas_item, Rect2 rect, bool tile, Nullable<Color> modulate = null, bool transpose = false, Texture normal_map = null)
         {
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            NativeCalls.godot_icall_6_464(method_bind_7, Object.GetPtr(this), RID.GetPtr(canvas_item), ref rect, tile, ref modulate_in, transpose, Object.GetPtr(normal_map));
+            NativeCalls.godot_icall_6_463(method_bind_7, Object.GetPtr(this), RID.GetPtr(canvas_item), ref rect, tile, ref modulate_in, transpose, Object.GetPtr(normal_map));
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_rect_region");
@@ -116,7 +116,14 @@ namespace GodotEngine
         public void draw_rect_region(RID canvas_item, Rect2 rect, Rect2 src_rect, Nullable<Color> modulate = null, bool transpose = false, Texture normal_map = null, bool clip_uv = true)
         {
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            NativeCalls.godot_icall_7_465(method_bind_8, Object.GetPtr(this), RID.GetPtr(canvas_item), ref rect, ref src_rect, ref modulate_in, transpose, Object.GetPtr(normal_map), clip_uv);
+            NativeCalls.godot_icall_7_464(method_bind_8, Object.GetPtr(this), RID.GetPtr(canvas_item), ref rect, ref src_rect, ref modulate_in, transpose, Object.GetPtr(normal_map), clip_uv);
+        }
+
+        private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_data");
+
+        public Image get_data()
+        {
+            return NativeCalls.godot_icall_0_465(method_bind_9, Object.GetPtr(this));
         }
     }
 }

@@ -130,7 +130,7 @@ namespace GodotEngine
         /// </summary>
         public void set(string property, object value)
         {
-            NativeCalls.godot_icall_2_318(method_bind_3, Object.GetPtr(this), property, value);
+            NativeCalls.godot_icall_2_317(method_bind_3, Object.GetPtr(this), property, value);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get");
@@ -140,7 +140,7 @@ namespace GodotEngine
         /// </summary>
         public object get(string property)
         {
-            return NativeCalls.godot_icall_1_322(method_bind_4, Object.GetPtr(this), property);
+            return NativeCalls.godot_icall_1_321(method_bind_4, Object.GetPtr(this), property);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_property_list");
@@ -170,12 +170,12 @@ namespace GodotEngine
             NativeCalls.godot_icall_2_42(method_bind_7, Object.GetPtr(this), what, reversed);
         }
 
-        private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_instance_ID");
+        private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_instance_id");
 
         /// <summary>
         /// Return the instance ID. All objects have a unique instance ID.
         /// </summary>
-        public int get_instance_ID()
+        public int get_instance_id()
         {
             return NativeCalls.godot_icall_0_1(method_bind_8, Object.GetPtr(this));
         }
@@ -197,7 +197,7 @@ namespace GodotEngine
         /// </summary>
         public Script get_script()
         {
-            return NativeCalls.godot_icall_0_323(method_bind_10, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_322(method_bind_10, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_meta");
@@ -207,7 +207,7 @@ namespace GodotEngine
         /// </summary>
         public void set_meta(string name, object value)
         {
-            NativeCalls.godot_icall_2_318(method_bind_11, Object.GetPtr(this), name, value);
+            NativeCalls.godot_icall_2_317(method_bind_11, Object.GetPtr(this), name, value);
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_meta");
@@ -217,7 +217,7 @@ namespace GodotEngine
         /// </summary>
         public object get_meta(string name)
         {
-            return NativeCalls.godot_icall_1_322(method_bind_12, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_321(method_bind_12, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_meta");
@@ -249,7 +249,7 @@ namespace GodotEngine
         public void add_user_signal(string signal, object[] arguments = null)
         {
             object[] arguments_in = arguments != null ? arguments : new object[] {};
-            NativeCalls.godot_icall_2_324(method_bind_15, Object.GetPtr(this), signal, arguments_in);
+            NativeCalls.godot_icall_2_323(method_bind_15, Object.GetPtr(this), signal, arguments_in);
         }
 
         private IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_user_signal");
@@ -263,28 +263,28 @@ namespace GodotEngine
 
         public void emit_signal(string signal, params object[] @args)
         {
-            NativeCalls.godot_icall_2_316(method_bind_17, Object.GetPtr(this), signal, @args);
+            NativeCalls.godot_icall_2_315(method_bind_17, Object.GetPtr(this), signal, @args);
         }
 
         private IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "call");
 
         public object call(string method, params object[] @args)
         {
-            return NativeCalls.godot_icall_2_325(method_bind_18, Object.GetPtr(this), method, @args);
+            return NativeCalls.godot_icall_2_324(method_bind_18, Object.GetPtr(this), method, @args);
         }
 
         private IntPtr method_bind_19 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "call_deferred");
 
         public void call_deferred(string method, params object[] @args)
         {
-            NativeCalls.godot_icall_2_316(method_bind_19, Object.GetPtr(this), method, @args);
+            NativeCalls.godot_icall_2_315(method_bind_19, Object.GetPtr(this), method, @args);
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "callv");
 
         public object callv(string method, object[] arg_array)
         {
-            return NativeCalls.godot_icall_2_326(method_bind_20, Object.GetPtr(this), method, arg_array);
+            return NativeCalls.godot_icall_2_325(method_bind_20, Object.GetPtr(this), method, arg_array);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_method");
@@ -308,7 +308,7 @@ namespace GodotEngine
 
         public object[] get_signal_connection_list(string signal)
         {
-            return NativeCalls.godot_icall_1_257(method_bind_23, Object.GetPtr(this), signal);
+            return NativeCalls.godot_icall_1_256(method_bind_23, Object.GetPtr(this), signal);
         }
 
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_incoming_connections");
@@ -334,7 +334,7 @@ namespace GodotEngine
         public int connect(string signal, Object target, string method, object[] binds = null, int flags = 0)
         {
             object[] binds_in = binds != null ? binds : new object[] {};
-            return NativeCalls.godot_icall_5_327(method_bind_25, Object.GetPtr(this), signal, Object.GetPtr(target), method, binds_in, flags);
+            return NativeCalls.godot_icall_5_326(method_bind_25, Object.GetPtr(this), signal, Object.GetPtr(target), method, binds_in, flags);
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "disconnect");
@@ -344,7 +344,7 @@ namespace GodotEngine
         /// </summary>
         public void disconnect(string signal, Object target, string method)
         {
-            NativeCalls.godot_icall_3_328(method_bind_26, Object.GetPtr(this), signal, Object.GetPtr(target), method);
+            NativeCalls.godot_icall_3_327(method_bind_26, Object.GetPtr(this), signal, Object.GetPtr(target), method);
         }
 
         private IntPtr method_bind_27 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_connected");
@@ -354,7 +354,7 @@ namespace GodotEngine
         /// </summary>
         public bool is_connected(string signal, Object target, string method)
         {
-            return NativeCalls.godot_icall_3_329(method_bind_27, Object.GetPtr(this), signal, Object.GetPtr(target), method);
+            return NativeCalls.godot_icall_3_328(method_bind_27, Object.GetPtr(this), signal, Object.GetPtr(target), method);
         }
 
         private IntPtr method_bind_28 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_block_signals");

@@ -100,7 +100,7 @@ namespace GodotEngine
 
         public Node get_edited_scene_root()
         {
-            return NativeCalls.godot_icall_0_310(method_bind_10, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_309(method_bind_10, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_pause");
@@ -135,7 +135,7 @@ namespace GodotEngine
 
         public SceneTreeTimer create_timer(float time_sec, bool pause_mode_process = true)
         {
-            return NativeCalls.godot_icall_2_426(method_bind_15, Object.GetPtr(this), time_sec, pause_mode_process);
+            return NativeCalls.godot_icall_2_425(method_bind_15, Object.GetPtr(this), time_sec, pause_mode_process);
         }
 
         private IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_node_count");
@@ -163,7 +163,7 @@ namespace GodotEngine
 
         public void set_screen_stretch(int mode, int aspect, Vector2 minsize, int shrink = 1)
         {
-            NativeCalls.godot_icall_4_427(method_bind_19, Object.GetPtr(this), mode, aspect, ref minsize, shrink);
+            NativeCalls.godot_icall_4_426(method_bind_19, Object.GetPtr(this), mode, aspect, ref minsize, shrink);
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "queue_delete");
@@ -177,28 +177,28 @@ namespace GodotEngine
 
         public void call_group_flags(int flags, string group, string method, params object[] @args)
         {
-            NativeCalls.godot_icall_4_428(method_bind_21, Object.GetPtr(this), flags, group, method, @args);
+            NativeCalls.godot_icall_4_427(method_bind_21, Object.GetPtr(this), flags, group, method, @args);
         }
 
         private IntPtr method_bind_22 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "notify_group_flags");
 
         public void notify_group_flags(int call_flags, string group, int notification)
         {
-            NativeCalls.godot_icall_3_429(method_bind_22, Object.GetPtr(this), call_flags, group, notification);
+            NativeCalls.godot_icall_3_428(method_bind_22, Object.GetPtr(this), call_flags, group, notification);
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_group_flags");
 
         public void set_group_flags(int call_flags, string group, string property, object value)
         {
-            NativeCalls.godot_icall_4_430(method_bind_23, Object.GetPtr(this), call_flags, group, property, value);
+            NativeCalls.godot_icall_4_429(method_bind_23, Object.GetPtr(this), call_flags, group, property, value);
         }
 
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "call_group");
 
         public void call_group(string group, string method, params object[] @args)
         {
-            NativeCalls.godot_icall_3_431(method_bind_24, Object.GetPtr(this), group, method, @args);
+            NativeCalls.godot_icall_3_430(method_bind_24, Object.GetPtr(this), group, method, @args);
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "notify_group");
@@ -219,7 +219,7 @@ namespace GodotEngine
 
         public object[] get_nodes_in_group(string group)
         {
-            return NativeCalls.godot_icall_1_257(method_bind_27, Object.GetPtr(this), group);
+            return NativeCalls.godot_icall_1_256(method_bind_27, Object.GetPtr(this), group);
         }
 
         private IntPtr method_bind_28 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_current_scene");
@@ -233,7 +233,7 @@ namespace GodotEngine
 
         public Node get_current_scene()
         {
-            return NativeCalls.godot_icall_0_310(method_bind_29, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_309(method_bind_29, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "change_scene");
@@ -247,7 +247,7 @@ namespace GodotEngine
 
         public int change_scene_to(PackedScene packed_scene)
         {
-            return NativeCalls.godot_icall_1_281(method_bind_31, Object.GetPtr(this), Object.GetPtr(packed_scene));
+            return NativeCalls.godot_icall_1_280(method_bind_31, Object.GetPtr(this), Object.GetPtr(packed_scene));
         }
 
         private IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "reload_current_scene");

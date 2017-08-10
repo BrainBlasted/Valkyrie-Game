@@ -21,14 +21,14 @@ namespace GodotEngine
 
         public void set_default_input_value(int port_idx, object value)
         {
-            NativeCalls.godot_icall_2_264(method_bind_1, Object.GetPtr(this), port_idx, value);
+            NativeCalls.godot_icall_2_263(method_bind_1, Object.GetPtr(this), port_idx, value);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_default_input_value");
 
         public object get_default_input_value(int port_idx)
         {
-            return NativeCalls.godot_icall_1_265(method_bind_2, Object.GetPtr(this), port_idx);
+            return NativeCalls.godot_icall_1_264(method_bind_2, Object.GetPtr(this), port_idx);
         }
     }
 }

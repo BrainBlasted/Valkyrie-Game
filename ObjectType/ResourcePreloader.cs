@@ -61,7 +61,7 @@ namespace GodotEngine
         /// </summary>
         public Resource get_resource(string name)
         {
-            return NativeCalls.godot_icall_1_416(method_bind_4, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_415(method_bind_4, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_resource_list");

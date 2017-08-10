@@ -73,7 +73,7 @@ namespace GodotEngine
         /// </summary>
         public void add_tangent(Plane tangent)
         {
-            NativeCalls.godot_icall_1_250(method_bind_4, Object.GetPtr(this), ref tangent);
+            NativeCalls.godot_icall_1_249(method_bind_4, Object.GetPtr(this), ref tangent);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_uv");
@@ -143,7 +143,7 @@ namespace GodotEngine
             Vector2[] uv2s_in = uv2s != null ? uv2s : new Vector2[] {};
             Vector3[] normals_in = normals != null ? normals : new Vector3[] {};
             object[] tangents_in = tangents != null ? tangents : new object[] {};
-            NativeCalls.godot_icall_6_454(method_bind_10, Object.GetPtr(this), vertexes, uvs_in, colors_in, uv2s_in, normals_in, tangents_in);
+            NativeCalls.godot_icall_6_453(method_bind_10, Object.GetPtr(this), vertexes, uvs_in, colors_in, uv2s_in, normals_in, tangents_in);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_index");
@@ -231,7 +231,7 @@ namespace GodotEngine
 
         public void append_from(Mesh existing, int surface, Transform transform)
         {
-            NativeCalls.godot_icall_3_455(method_bind_20, Object.GetPtr(this), Object.GetPtr(existing), surface, ref transform);
+            NativeCalls.godot_icall_3_454(method_bind_20, Object.GetPtr(this), Object.GetPtr(existing), surface, ref transform);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "commit");
@@ -241,7 +241,7 @@ namespace GodotEngine
         /// </summary>
         public Mesh commit(Mesh existing = null)
         {
-            return NativeCalls.godot_icall_1_456(method_bind_21, Object.GetPtr(this), Object.GetPtr(existing));
+            return NativeCalls.godot_icall_1_455(method_bind_21, Object.GetPtr(this), Object.GetPtr(existing));
         }
     }
 }

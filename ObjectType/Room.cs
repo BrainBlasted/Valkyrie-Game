@@ -28,7 +28,7 @@ namespace GodotEngine
 
         public Room get_room()
         {
-            return NativeCalls.godot_icall_0_420(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_419(method_bind_1, Object.GetPtr(this));
         }
     }
 }

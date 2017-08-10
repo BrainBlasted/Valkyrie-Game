@@ -27,7 +27,7 @@ namespace GodotEngine
         /// </summary>
         public Error listen(int port, string bind_address = "*", int recv_buf_size = 65536)
         {
-            int ret = NativeCalls.godot_icall_3_336(method_bind_0, Object.GetPtr(this), port, bind_address, recv_buf_size);
+            int ret = NativeCalls.godot_icall_3_335(method_bind_0, Object.GetPtr(this), port, bind_address, recv_buf_size);
             return (Error)ret;
         }
 

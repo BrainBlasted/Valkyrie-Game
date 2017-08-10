@@ -77,7 +77,7 @@ namespace GodotEngine
 
         public void add_frame(string anim, Texture frame, int atpos = -1)
         {
-            NativeCalls.godot_icall_3_445(method_bind_8, Object.GetPtr(this), anim, Object.GetPtr(frame), atpos);
+            NativeCalls.godot_icall_3_444(method_bind_8, Object.GetPtr(this), anim, Object.GetPtr(frame), atpos);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_frame_count");
@@ -91,14 +91,14 @@ namespace GodotEngine
 
         public Texture get_frame(string anim, int idx)
         {
-            return NativeCalls.godot_icall_2_446(method_bind_10, Object.GetPtr(this), anim, idx);
+            return NativeCalls.godot_icall_2_445(method_bind_10, Object.GetPtr(this), anim, idx);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_frame");
 
         public void set_frame(string anim, int idx, Texture txt)
         {
-            NativeCalls.godot_icall_3_447(method_bind_11, Object.GetPtr(this), anim, idx, Object.GetPtr(txt));
+            NativeCalls.godot_icall_3_446(method_bind_11, Object.GetPtr(this), anim, idx, Object.GetPtr(txt));
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_frame");

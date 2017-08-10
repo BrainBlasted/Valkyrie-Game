@@ -503,7 +503,7 @@ namespace GodotEngine
 
         public object[] get_used_cells_by_id(int id)
         {
-            return NativeCalls.godot_icall_1_425(method_bind_45, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_424(method_bind_45, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_46 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_used_rect");

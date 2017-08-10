@@ -112,14 +112,14 @@ namespace GodotEngine
 
         public void add_force(Vector3 force, Vector3 pos)
         {
-            NativeCalls.godot_icall_2_379(method_bind_13, Object.GetPtr(this), ref force, ref pos);
+            NativeCalls.godot_icall_2_378(method_bind_13, Object.GetPtr(this), ref force, ref pos);
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "apply_impulse");
 
         public void apply_impulse(Vector3 pos, Vector3 j)
         {
-            NativeCalls.godot_icall_2_379(method_bind_14, Object.GetPtr(this), ref pos, ref j);
+            NativeCalls.godot_icall_2_378(method_bind_14, Object.GetPtr(this), ref pos, ref j);
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "apply_torqe_impulse");
@@ -177,7 +177,7 @@ namespace GodotEngine
 
         public RID get_contact_collider(int contact_idx)
         {
-            IntPtr ret = NativeCalls.godot_icall_1_342(method_bind_22, Object.GetPtr(this), contact_idx);
+            IntPtr ret = NativeCalls.godot_icall_1_341(method_bind_22, Object.GetPtr(this), contact_idx);
             return new RID(ret);
         }
 
@@ -236,7 +236,7 @@ namespace GodotEngine
 
         public PhysicsDirectSpaceState get_space_state()
         {
-            return NativeCalls.godot_icall_0_380(method_bind_30, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_379(method_bind_30, Object.GetPtr(this));
         }
     }
 }

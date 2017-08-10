@@ -82,61 +82,51 @@ namespace GodotEngine
             NativeCalls.godot_icall_1_35(method_bind_4, Object.GetPtr(this), Object.GetPtr(image));
         }
 
-        private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_data");
-
-        /// <summary>
-        /// Return the [Image] of this [ImageTexture].
-        /// </summary>
-        public Image get_data()
-        {
-            return NativeCalls.godot_icall_0_249(method_bind_5, Object.GetPtr(this));
-        }
-
-        private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_storage");
+        private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_storage");
 
         /// <summary>
         /// Set the storage type. One of [ImageTexture].STORAGE_*.
         /// </summary>
         public void set_storage(int mode)
         {
-            NativeCalls.godot_icall_1_0(method_bind_6, Object.GetPtr(this), mode);
+            NativeCalls.godot_icall_1_0(method_bind_5, Object.GetPtr(this), mode);
         }
 
-        private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_storage");
+        private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_storage");
 
         /// <summary>
         /// Return the storage type. One of [ImageTexture].STORAGE_*.
         /// </summary>
         public int get_storage()
         {
-            return NativeCalls.godot_icall_0_1(method_bind_7, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_1(method_bind_6, Object.GetPtr(this));
         }
 
-        private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_lossy_storage_quality");
+        private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_lossy_storage_quality");
 
         /// <summary>
         /// Set the storage quality in case of [ImageTexture].STORAGE_COMPRESS_LOSSY.
         /// </summary>
         public void set_lossy_storage_quality(float quality)
         {
-            NativeCalls.godot_icall_1_10(method_bind_8, Object.GetPtr(this), quality);
+            NativeCalls.godot_icall_1_10(method_bind_7, Object.GetPtr(this), quality);
         }
 
-        private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_lossy_storage_quality");
+        private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_lossy_storage_quality");
 
         /// <summary>
         /// Return the storage quality for [ImageTexture].STORAGE_COMPRESS_LOSSY.
         /// </summary>
         public float get_lossy_storage_quality()
         {
-            return NativeCalls.godot_icall_0_11(method_bind_9, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_11(method_bind_8, Object.GetPtr(this));
         }
 
-        private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_size_override");
+        private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_size_override");
 
         public void set_size_override(Vector2 size)
         {
-            NativeCalls.godot_icall_1_37(method_bind_10, Object.GetPtr(this), ref size);
+            NativeCalls.godot_icall_1_37(method_bind_9, Object.GetPtr(this), ref size);
         }
     }
 }

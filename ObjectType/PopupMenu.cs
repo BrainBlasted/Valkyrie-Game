@@ -21,7 +21,7 @@ namespace GodotEngine
 
         public void add_icon_item(Texture texture, string label, int id = -1, int accel = 0)
         {
-            NativeCalls.godot_icall_4_402(method_bind_0, Object.GetPtr(this), Object.GetPtr(texture), label, id, accel);
+            NativeCalls.godot_icall_4_401(method_bind_0, Object.GetPtr(this), Object.GetPtr(texture), label, id, accel);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_item");
@@ -31,14 +31,14 @@ namespace GodotEngine
         /// </summary>
         public void add_item(string label, int id = -1, int accel = 0)
         {
-            NativeCalls.godot_icall_3_403(method_bind_1, Object.GetPtr(this), label, id, accel);
+            NativeCalls.godot_icall_3_402(method_bind_1, Object.GetPtr(this), label, id, accel);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_icon_check_item");
 
         public void add_icon_check_item(Texture texture, string label, int id = -1, int accel = 0)
         {
-            NativeCalls.godot_icall_4_402(method_bind_2, Object.GetPtr(this), Object.GetPtr(texture), label, id, accel);
+            NativeCalls.godot_icall_4_401(method_bind_2, Object.GetPtr(this), Object.GetPtr(texture), label, id, accel);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_check_item");
@@ -48,7 +48,7 @@ namespace GodotEngine
         /// </summary>
         public void add_check_item(string label, int id = -1, int accel = 0)
         {
-            NativeCalls.godot_icall_3_403(method_bind_3, Object.GetPtr(this), label, id, accel);
+            NativeCalls.godot_icall_3_402(method_bind_3, Object.GetPtr(this), label, id, accel);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_submenu_item");
@@ -58,35 +58,35 @@ namespace GodotEngine
         /// </summary>
         public void add_submenu_item(string label, string submenu, int id = -1)
         {
-            NativeCalls.godot_icall_3_404(method_bind_4, Object.GetPtr(this), label, submenu, id);
+            NativeCalls.godot_icall_3_403(method_bind_4, Object.GetPtr(this), label, submenu, id);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_icon_shortcut");
 
         public void add_icon_shortcut(Texture texture, ShortCut shortcut, int id = -1, bool global = false)
         {
-            NativeCalls.godot_icall_4_405(method_bind_5, Object.GetPtr(this), Object.GetPtr(texture), Object.GetPtr(shortcut), id, global);
+            NativeCalls.godot_icall_4_404(method_bind_5, Object.GetPtr(this), Object.GetPtr(texture), Object.GetPtr(shortcut), id, global);
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_shortcut");
 
         public void add_shortcut(ShortCut shortcut, int id = -1, bool global = false)
         {
-            NativeCalls.godot_icall_3_406(method_bind_6, Object.GetPtr(this), Object.GetPtr(shortcut), id, global);
+            NativeCalls.godot_icall_3_405(method_bind_6, Object.GetPtr(this), Object.GetPtr(shortcut), id, global);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_icon_check_shortcut");
 
         public void add_icon_check_shortcut(Texture texture, ShortCut shortcut, int id = -1, bool global = false)
         {
-            NativeCalls.godot_icall_4_405(method_bind_7, Object.GetPtr(this), Object.GetPtr(texture), Object.GetPtr(shortcut), id, global);
+            NativeCalls.godot_icall_4_404(method_bind_7, Object.GetPtr(this), Object.GetPtr(texture), Object.GetPtr(shortcut), id, global);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_check_shortcut");
 
         public void add_check_shortcut(ShortCut shortcut, int id = -1, bool global = false)
         {
-            NativeCalls.godot_icall_3_406(method_bind_8, Object.GetPtr(this), Object.GetPtr(shortcut), id, global);
+            NativeCalls.godot_icall_3_405(method_bind_8, Object.GetPtr(this), Object.GetPtr(shortcut), id, global);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_item_text");
@@ -116,12 +116,12 @@ namespace GodotEngine
             NativeCalls.godot_icall_2_42(method_bind_11, Object.GetPtr(this), idx, @checked);
         }
 
-        private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_item_ID");
+        private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_item_id");
 
         /// <summary>
         /// Set the id of the item at index "idx".
         /// </summary>
-        public void set_item_ID(int idx, int id)
+        public void set_item_id(int idx, int id)
         {
             NativeCalls.godot_icall_2_24(method_bind_12, Object.GetPtr(this), idx, id);
         }
@@ -143,7 +143,7 @@ namespace GodotEngine
         /// </summary>
         public void set_item_metadata(int idx, object metadata)
         {
-            NativeCalls.godot_icall_2_264(method_bind_14, Object.GetPtr(this), idx, metadata);
+            NativeCalls.godot_icall_2_263(method_bind_14, Object.GetPtr(this), idx, metadata);
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_item_disabled");
@@ -197,7 +197,7 @@ namespace GodotEngine
 
         public void set_item_shortcut(int idx, ShortCut shortcut, bool global = false)
         {
-            NativeCalls.godot_icall_3_407(method_bind_20, Object.GetPtr(this), idx, Object.GetPtr(shortcut), global);
+            NativeCalls.godot_icall_3_406(method_bind_20, Object.GetPtr(this), idx, Object.GetPtr(shortcut), global);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "toggle_item_checked");
@@ -237,12 +237,12 @@ namespace GodotEngine
             return NativeCalls.godot_icall_1_22(method_bind_24, Object.GetPtr(this), idx);
         }
 
-        private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_ID");
+        private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_id");
 
         /// <summary>
         /// Return the id of the item at index "idx".
         /// </summary>
-        public int get_item_ID(int idx)
+        public int get_item_id(int idx)
         {
             return NativeCalls.godot_icall_1_5(method_bind_25, Object.GetPtr(this), idx);
         }
@@ -274,7 +274,7 @@ namespace GodotEngine
         /// </summary>
         public object get_item_metadata(int idx)
         {
-            return NativeCalls.godot_icall_1_265(method_bind_28, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_264(method_bind_28, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_29 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_item_disabled");
@@ -328,7 +328,7 @@ namespace GodotEngine
 
         public ShortCut get_item_shortcut(int idx)
         {
-            return NativeCalls.godot_icall_1_408(method_bind_34, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_407(method_bind_34, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_35 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_count");

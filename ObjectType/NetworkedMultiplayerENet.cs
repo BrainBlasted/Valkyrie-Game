@@ -27,14 +27,14 @@ namespace GodotEngine
 
         public int create_server(int port, int max_clients = 32, int in_bandwidth = 0, int out_bandwidth = 0)
         {
-            return NativeCalls.godot_icall_4_305(method_bind_0, Object.GetPtr(this), port, max_clients, in_bandwidth, out_bandwidth);
+            return NativeCalls.godot_icall_4_304(method_bind_0, Object.GetPtr(this), port, max_clients, in_bandwidth, out_bandwidth);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "create_client");
 
         public int create_client(string ip, int port, int in_bandwidth = 0, int out_bandwidth = 0)
         {
-            return NativeCalls.godot_icall_4_306(method_bind_1, Object.GetPtr(this), ip, port, in_bandwidth, out_bandwidth);
+            return NativeCalls.godot_icall_4_305(method_bind_1, Object.GetPtr(this), ip, port, in_bandwidth, out_bandwidth);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "close_connection");

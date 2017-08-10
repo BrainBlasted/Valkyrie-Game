@@ -46,7 +46,7 @@ namespace GodotEngine
 
         public int[] get_polygon(int idx)
         {
-            return NativeCalls.godot_icall_1_285(method_bind_4, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_284(method_bind_4, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_polygons");

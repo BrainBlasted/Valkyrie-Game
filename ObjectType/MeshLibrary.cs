@@ -78,21 +78,21 @@ namespace GodotEngine
         /// </summary>
         public Mesh get_item_mesh(int id)
         {
-            return NativeCalls.godot_icall_1_289(method_bind_6, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_288(method_bind_6, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_navmesh");
 
         public NavigationMesh get_item_navmesh(int id)
         {
-            return NativeCalls.godot_icall_1_290(method_bind_7, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_289(method_bind_7, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_shape");
 
         public Shape get_item_shape(int id)
         {
-            return NativeCalls.godot_icall_1_291(method_bind_8, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_290(method_bind_8, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_item");

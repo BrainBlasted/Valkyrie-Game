@@ -67,7 +67,7 @@ namespace GodotEngine
 
         public int reload(bool keep_state = false)
         {
-            return NativeCalls.godot_icall_1_331(method_bind_5, Object.GetPtr(this), keep_state);
+            return NativeCalls.godot_icall_1_330(method_bind_5, Object.GetPtr(this), keep_state);
         }
     }
 }

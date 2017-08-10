@@ -146,7 +146,7 @@ namespace GodotEngine
         /// </summary>
         public Spatial get_parent_spatial()
         {
-            return NativeCalls.godot_icall_0_439(method_bind_12, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_438(method_bind_12, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_ignore_transform_notification");
@@ -174,7 +174,7 @@ namespace GodotEngine
 
         public World get_world()
         {
-            return NativeCalls.godot_icall_0_440(method_bind_16, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_439(method_bind_16, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "update_gizmo");
@@ -195,7 +195,7 @@ namespace GodotEngine
 
         public SpatialGizmo get_gizmo()
         {
-            return NativeCalls.godot_icall_0_441(method_bind_19, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_440(method_bind_19, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_visible");
@@ -265,14 +265,14 @@ namespace GodotEngine
 
         public void rotate(Vector3 normal, float radians)
         {
-            NativeCalls.godot_icall_2_442(method_bind_29, Object.GetPtr(this), ref normal, radians);
+            NativeCalls.godot_icall_2_441(method_bind_29, Object.GetPtr(this), ref normal, radians);
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "global_rotate");
 
         public void global_rotate(Vector3 normal, float radians)
         {
-            NativeCalls.godot_icall_2_442(method_bind_30, Object.GetPtr(this), ref normal, radians);
+            NativeCalls.godot_icall_2_441(method_bind_30, Object.GetPtr(this), ref normal, radians);
         }
 
         private IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "rotate_x");
@@ -328,14 +328,14 @@ namespace GodotEngine
 
         public void look_at(Vector3 target, Vector3 up)
         {
-            NativeCalls.godot_icall_2_379(method_bind_38, Object.GetPtr(this), ref target, ref up);
+            NativeCalls.godot_icall_2_378(method_bind_38, Object.GetPtr(this), ref target, ref up);
         }
 
         private IntPtr method_bind_39 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "look_at_from_pos");
 
         public void look_at_from_pos(Vector3 pos, Vector3 target, Vector3 up)
         {
-            NativeCalls.godot_icall_3_443(method_bind_39, Object.GetPtr(this), ref pos, ref target, ref up);
+            NativeCalls.godot_icall_3_442(method_bind_39, Object.GetPtr(this), ref pos, ref target, ref up);
         }
 
         private IntPtr method_bind_40 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "to_local");

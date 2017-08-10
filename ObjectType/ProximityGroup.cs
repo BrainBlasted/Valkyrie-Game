@@ -28,7 +28,7 @@ namespace GodotEngine
 
         public void broadcast(string name, object parameters)
         {
-            NativeCalls.godot_icall_2_318(method_bind_1, Object.GetPtr(this), name, parameters);
+            NativeCalls.godot_icall_2_317(method_bind_1, Object.GetPtr(this), name, parameters);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_dispatch_mode");

@@ -25,7 +25,7 @@ namespace GodotEngine
 
         public NavigationPolygon get_navigation_polygon()
         {
-            return NativeCalls.godot_icall_0_304(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_303(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_enabled");

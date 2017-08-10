@@ -334,7 +334,7 @@ namespace GodotEngine
         /// </summary>
         public void apply_impulse(Vector3 pos, Vector3 impulse)
         {
-            NativeCalls.godot_icall_2_379(method_bind_29, Object.GetPtr(this), ref pos, ref impulse);
+            NativeCalls.godot_icall_2_378(method_bind_29, Object.GetPtr(this), ref pos, ref impulse);
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_sleeping");

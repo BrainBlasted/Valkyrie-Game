@@ -170,7 +170,7 @@ namespace GodotEngine
 
         public void set_constant(string name, string type, int constant)
         {
-            NativeCalls.godot_icall_3_404(method_bind_21, Object.GetPtr(this), name, type, constant);
+            NativeCalls.godot_icall_3_403(method_bind_21, Object.GetPtr(this), name, type, constant);
         }
 
         private IntPtr method_bind_22 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_constant");

@@ -42,7 +42,7 @@ namespace GodotEngine
         /// </summary>
         public void set_tangent(Plane tangent)
         {
-            NativeCalls.godot_icall_1_250(method_bind_2, Object.GetPtr(this), ref tangent);
+            NativeCalls.godot_icall_1_249(method_bind_2, Object.GetPtr(this), ref tangent);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_color");
@@ -92,7 +92,7 @@ namespace GodotEngine
         /// </summary>
         public void add_sphere(int lats, int lons, float radius, bool add_uv = true)
         {
-            NativeCalls.godot_icall_4_251(method_bind_7, Object.GetPtr(this), lats, lons, radius, add_uv);
+            NativeCalls.godot_icall_4_250(method_bind_7, Object.GetPtr(this), lats, lons, radius, add_uv);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "end");

@@ -3,7 +3,7 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{A40FB5AA-6470-49A3-83CF-A3150B9E2104}</ProjectGuid>
+        <ProjectGuid>{1C23B201-64C7-4088-9983-772CD366F61C}</ProjectGuid>
         <OutputType>Library</OutputType>
         <RootNamespace>GodotSharp</RootNamespace>
         <AssemblyName>GodotSharp</AssemblyName>
@@ -18,6 +18,7 @@
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
         <ConsolePause>false</ConsolePause>
+        <DocumentationFile>$(OutputPath)\GodotSharp.xml</DocumentationFile>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
         <DebugType>full</DebugType>
@@ -26,6 +27,7 @@
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
         <ConsolePause>false</ConsolePause>
+        <DocumentationFile>$(OutputPath)\GodotSharp.xml</DocumentationFile>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="System"/>

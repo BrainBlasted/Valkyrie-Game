@@ -32,7 +32,7 @@ namespace GodotEngine
 
         public int flush(bool verbose)
         {
-            return NativeCalls.godot_icall_1_331(method_bind_2, Object.GetPtr(this), verbose);
+            return NativeCalls.godot_icall_1_330(method_bind_2, Object.GetPtr(this), verbose);
         }
     }
 }

@@ -130,7 +130,7 @@ namespace GodotEngine
         /// </summary>
         public void tile_set_region(int id, Rect2 region)
         {
-            NativeCalls.godot_icall_2_262(method_bind_11, Object.GetPtr(this), id, ref region);
+            NativeCalls.godot_icall_2_261(method_bind_11, Object.GetPtr(this), id, ref region);
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_get_region");
@@ -140,7 +140,7 @@ namespace GodotEngine
         /// </summary>
         public Rect2 tile_get_region(int id)
         {
-            object ret = NativeCalls.godot_icall_1_263(method_bind_12, Object.GetPtr(this), id);
+            object ret = NativeCalls.godot_icall_1_262(method_bind_12, Object.GetPtr(this), id);
             return (Rect2)ret;
         }
 
@@ -218,7 +218,7 @@ namespace GodotEngine
         /// </summary>
         public object[] tile_get_shapes(int id)
         {
-            return NativeCalls.godot_icall_1_425(method_bind_22, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_424(method_bind_22, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_set_navigation_polygon");

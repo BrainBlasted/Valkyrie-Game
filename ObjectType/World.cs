@@ -65,7 +65,7 @@ namespace GodotEngine
 
         public PhysicsDirectSpaceState get_direct_space_state()
         {
-            return NativeCalls.godot_icall_0_380(method_bind_6, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_379(method_bind_6, Object.GetPtr(this));
         }
     }
 }

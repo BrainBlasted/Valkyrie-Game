@@ -25,7 +25,7 @@ namespace GodotEngine
         /// </summary>
         public int add_piece(Vector2 ofs, Texture texture)
         {
-            return NativeCalls.godot_icall_2_274(method_bind_0, Object.GetPtr(this), ref ofs, Object.GetPtr(texture));
+            return NativeCalls.godot_icall_2_273(method_bind_0, Object.GetPtr(this), ref ofs, Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_piece_offset");

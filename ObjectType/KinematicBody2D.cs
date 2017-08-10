@@ -36,7 +36,7 @@ namespace GodotEngine
         /// </summary>
         public Dictionary<object, object> move(Vector2 rel_vec)
         {
-            return NativeCalls.godot_icall_1_271(method_bind_0, Object.GetPtr(this), ref rel_vec);
+            return NativeCalls.godot_icall_1_270(method_bind_0, Object.GetPtr(this), ref rel_vec);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "move_and_slide");
@@ -44,7 +44,7 @@ namespace GodotEngine
         public Vector2 move_and_slide(Vector2 linear_velocity, Nullable<Vector2> floor_normal = null, float slope_stop_min_velocity = 5, int max_bounces = 4, float floor_max_angle = 0.785398f)
         {
             Vector2 floor_normal_in = floor_normal.HasValue ? floor_normal.Value : new Vector2(0, 0);
-            object ret = NativeCalls.godot_icall_5_272(method_bind_1, Object.GetPtr(this), ref linear_velocity, ref floor_normal_in, slope_stop_min_velocity, max_bounces, floor_max_angle);
+            object ret = NativeCalls.godot_icall_5_271(method_bind_1, Object.GetPtr(this), ref linear_velocity, ref floor_normal_in, slope_stop_min_velocity, max_bounces, floor_max_angle);
             return (Vector2)ret;
         }
 
@@ -55,7 +55,7 @@ namespace GodotEngine
         /// </summary>
         public bool test_move(Transform2D from, Vector2 rel_vec)
         {
-            return NativeCalls.godot_icall_2_273(method_bind_2, Object.GetPtr(this), ref from, ref rel_vec);
+            return NativeCalls.godot_icall_2_272(method_bind_2, Object.GetPtr(this), ref from, ref rel_vec);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_on_floor");

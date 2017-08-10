@@ -18,7 +18,7 @@ namespace GodotEngine
 
         public int navmesh_create(NavigationMesh mesh, Transform xform, Object owner = null)
         {
-            return NativeCalls.godot_icall_3_293(method_bind_0, Object.GetPtr(this), Object.GetPtr(mesh), ref xform, Object.GetPtr(owner));
+            return NativeCalls.godot_icall_3_292(method_bind_0, Object.GetPtr(this), Object.GetPtr(mesh), ref xform, Object.GetPtr(owner));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "navmesh_set_transform");
@@ -39,14 +39,14 @@ namespace GodotEngine
 
         public Vector3[] get_simple_path(Vector3 start, Vector3 end, bool optimize = true)
         {
-            return NativeCalls.godot_icall_3_294(method_bind_3, Object.GetPtr(this), ref start, ref end, optimize);
+            return NativeCalls.godot_icall_3_293(method_bind_3, Object.GetPtr(this), ref start, ref end, optimize);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_closest_point_to_segment");
 
         public Vector3 get_closest_point_to_segment(Vector3 start, Vector3 end, bool use_collision = false)
         {
-            object ret = NativeCalls.godot_icall_3_295(method_bind_4, Object.GetPtr(this), ref start, ref end, use_collision);
+            object ret = NativeCalls.godot_icall_3_294(method_bind_4, Object.GetPtr(this), ref start, ref end, use_collision);
             return (Vector3)ret;
         }
 
@@ -70,7 +70,7 @@ namespace GodotEngine
 
         public Object get_closest_point_owner(Vector3 to_point)
         {
-            return NativeCalls.godot_icall_1_296(method_bind_7, Object.GetPtr(this), ref to_point);
+            return NativeCalls.godot_icall_1_295(method_bind_7, Object.GetPtr(this), ref to_point);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_up_vector");

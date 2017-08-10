@@ -25,7 +25,7 @@ namespace GodotEngine
 
         public void set_shape_rid(RID shape)
         {
-            NativeCalls.godot_icall_1_351(method_bind_1, Object.GetPtr(this), RID.GetPtr(shape));
+            NativeCalls.godot_icall_1_350(method_bind_1, Object.GetPtr(this), RID.GetPtr(shape));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_shape_rid");
@@ -97,7 +97,7 @@ namespace GodotEngine
 
         public void set_exclude(object[] exclude)
         {
-            NativeCalls.godot_icall_1_378(method_bind_11, Object.GetPtr(this), exclude);
+            NativeCalls.godot_icall_1_377(method_bind_11, Object.GetPtr(this), exclude);
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_exclude");

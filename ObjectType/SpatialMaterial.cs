@@ -52,7 +52,11 @@ namespace GodotEngine
         public const int FLAG_SRGB_VERTEX_COLOR = 4;
         public const int FLAG_USE_POINT_SIZE = 5;
         public const int FLAG_FIXED_SIZE = 6;
-        public const int FLAG_MAX = 10;
+        public const int FLAG_UV1_USE_TRIPLANAR = 7;
+        public const int FLAG_UV2_USE_TRIPLANAR = 8;
+        public const int FLAG_AO_ON_UV2 = 9;
+        public const int FLAG_USE_ALPHA_SCISSOR = 10;
+        public const int FLAG_MAX = 11;
         public const int DIFFUSE_LAMBERT = 0;
         public const int DIFFUSE_HALF_LAMBERT = 1;
         public const int DIFFUSE_OREN_NAYAR = 2;
@@ -663,74 +667,88 @@ namespace GodotEngine
             return NativeCalls.godot_icall_0_11(method_bind_81, Object.GetPtr(this));
         }
 
-        private IntPtr method_bind_82 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_grow_enabled");
+        private IntPtr method_bind_82 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_alpha_scissor_threshold");
+
+        public void set_alpha_scissor_threshold(float threshold)
+        {
+            NativeCalls.godot_icall_1_10(method_bind_82, Object.GetPtr(this), threshold);
+        }
+
+        private IntPtr method_bind_83 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_alpha_scissor_threshold");
+
+        public float get_alpha_scissor_threshold()
+        {
+            return NativeCalls.godot_icall_0_11(method_bind_83, Object.GetPtr(this));
+        }
+
+        private IntPtr method_bind_84 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_grow_enabled");
 
         public void set_grow_enabled(bool enable)
         {
-            NativeCalls.godot_icall_1_7(method_bind_82, Object.GetPtr(this), enable);
+            NativeCalls.godot_icall_1_7(method_bind_84, Object.GetPtr(this), enable);
         }
 
-        private IntPtr method_bind_83 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_grow_enabled");
+        private IntPtr method_bind_85 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_grow_enabled");
 
         public bool is_grow_enabled()
         {
-            return NativeCalls.godot_icall_0_3(method_bind_83, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_3(method_bind_85, Object.GetPtr(this));
         }
 
-        private IntPtr method_bind_84 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_metallic_texture_channel");
+        private IntPtr method_bind_86 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_metallic_texture_channel");
 
         public void set_metallic_texture_channel(int channel)
-        {
-            NativeCalls.godot_icall_1_0(method_bind_84, Object.GetPtr(this), channel);
-        }
-
-        private IntPtr method_bind_85 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_metallic_texture_channel");
-
-        public int get_metallic_texture_channel()
-        {
-            return NativeCalls.godot_icall_0_1(method_bind_85, Object.GetPtr(this));
-        }
-
-        private IntPtr method_bind_86 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_roughness_texture_channel");
-
-        public void set_roughness_texture_channel(int channel)
         {
             NativeCalls.godot_icall_1_0(method_bind_86, Object.GetPtr(this), channel);
         }
 
-        private IntPtr method_bind_87 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_roughness_texture_channel");
+        private IntPtr method_bind_87 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_metallic_texture_channel");
 
-        public int get_roughness_texture_channel()
+        public int get_metallic_texture_channel()
         {
             return NativeCalls.godot_icall_0_1(method_bind_87, Object.GetPtr(this));
         }
 
-        private IntPtr method_bind_88 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_ao_texture_channel");
+        private IntPtr method_bind_88 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_roughness_texture_channel");
 
-        public void set_ao_texture_channel(int channel)
+        public void set_roughness_texture_channel(int channel)
         {
             NativeCalls.godot_icall_1_0(method_bind_88, Object.GetPtr(this), channel);
         }
 
-        private IntPtr method_bind_89 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_ao_texture_channel");
+        private IntPtr method_bind_89 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_roughness_texture_channel");
 
-        public int get_ao_texture_channel()
+        public int get_roughness_texture_channel()
         {
             return NativeCalls.godot_icall_0_1(method_bind_89, Object.GetPtr(this));
         }
 
-        private IntPtr method_bind_90 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_refraction_texture_channel");
+        private IntPtr method_bind_90 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_ao_texture_channel");
 
-        public void set_refraction_texture_channel(int channel)
+        public void set_ao_texture_channel(int channel)
         {
             NativeCalls.godot_icall_1_0(method_bind_90, Object.GetPtr(this), channel);
         }
 
-        private IntPtr method_bind_91 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_refraction_texture_channel");
+        private IntPtr method_bind_91 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_ao_texture_channel");
+
+        public int get_ao_texture_channel()
+        {
+            return NativeCalls.godot_icall_0_1(method_bind_91, Object.GetPtr(this));
+        }
+
+        private IntPtr method_bind_92 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_refraction_texture_channel");
+
+        public void set_refraction_texture_channel(int channel)
+        {
+            NativeCalls.godot_icall_1_0(method_bind_92, Object.GetPtr(this), channel);
+        }
+
+        private IntPtr method_bind_93 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_refraction_texture_channel");
 
         public int get_refraction_texture_channel()
         {
-            return NativeCalls.godot_icall_0_1(method_bind_91, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_1(method_bind_93, Object.GetPtr(this));
         }
     }
 }

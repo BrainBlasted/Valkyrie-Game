@@ -46,7 +46,7 @@ namespace GodotEngine
 
         public int[] get_polygon(int idx)
         {
-            return NativeCalls.godot_icall_1_285(method_bind_4, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_284(method_bind_4, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_polygons");
@@ -67,7 +67,7 @@ namespace GodotEngine
 
         public void add_outline_at_index(Vector2[] outline, int index)
         {
-            NativeCalls.godot_icall_2_301(method_bind_7, Object.GetPtr(this), outline, index);
+            NativeCalls.godot_icall_2_300(method_bind_7, Object.GetPtr(this), outline, index);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_outline_count");
@@ -81,14 +81,14 @@ namespace GodotEngine
 
         public void set_outline(int idx, Vector2[] outline)
         {
-            NativeCalls.godot_icall_2_302(method_bind_9, Object.GetPtr(this), idx, outline);
+            NativeCalls.godot_icall_2_301(method_bind_9, Object.GetPtr(this), idx, outline);
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_outline");
 
         public Vector2[] get_outline(int idx)
         {
-            return NativeCalls.godot_icall_1_303(method_bind_10, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_302(method_bind_10, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_outline");

@@ -38,7 +38,7 @@ namespace GodotEngine
 
         public Error accept_stream(StreamPeer stream)
         {
-            int ret = NativeCalls.godot_icall_1_450(method_bind_0, Object.GetPtr(this), Object.GetPtr(stream));
+            int ret = NativeCalls.godot_icall_1_449(method_bind_0, Object.GetPtr(this), Object.GetPtr(stream));
             return (Error)ret;
         }
 
@@ -49,7 +49,7 @@ namespace GodotEngine
         /// </summary>
         public Error connect_to_stream(StreamPeer stream, bool validate_certs = false, string for_hostname = "")
         {
-            int ret = NativeCalls.godot_icall_3_451(method_bind_1, Object.GetPtr(this), Object.GetPtr(stream), validate_certs, for_hostname);
+            int ret = NativeCalls.godot_icall_3_450(method_bind_1, Object.GetPtr(this), Object.GetPtr(stream), validate_certs, for_hostname);
             return (Error)ret;
         }
 

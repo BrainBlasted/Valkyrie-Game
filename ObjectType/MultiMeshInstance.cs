@@ -31,7 +31,7 @@ namespace GodotEngine
         /// </summary>
         public MultiMesh get_multimesh()
         {
-            return NativeCalls.godot_icall_0_292(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_291(method_bind_1, Object.GetPtr(this));
         }
     }
 }

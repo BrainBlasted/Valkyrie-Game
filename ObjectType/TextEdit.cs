@@ -335,7 +335,7 @@ namespace GodotEngine
         /// </summary>
         public int[] search(string flags, int from_line, int from_column, int to_line)
         {
-            return NativeCalls.godot_icall_4_461(method_bind_30, Object.GetPtr(this), flags, from_line, from_column, to_line);
+            return NativeCalls.godot_icall_4_460(method_bind_30, Object.GetPtr(this), flags, from_line, from_column, to_line);
         }
 
         private IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "undo");
@@ -445,7 +445,7 @@ namespace GodotEngine
         /// </summary>
         public void add_color_region(string begin_key, string end_key, Color color, bool line_only = false)
         {
-            NativeCalls.godot_icall_4_462(method_bind_41, Object.GetPtr(this), begin_key, end_key, ref color, line_only);
+            NativeCalls.godot_icall_4_461(method_bind_41, Object.GetPtr(this), begin_key, end_key, ref color, line_only);
         }
 
         private IntPtr method_bind_42 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_colors");
@@ -469,7 +469,7 @@ namespace GodotEngine
 
         public PopupMenu get_menu()
         {
-            return NativeCalls.godot_icall_0_276(method_bind_44, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_275(method_bind_44, Object.GetPtr(this));
         }
     }
 }

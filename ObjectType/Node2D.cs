@@ -149,12 +149,9 @@ namespace GodotEngine
             NativeCalls.godot_icall_1_37(method_bind_12, Object.GetPtr(this), ref offset);
         }
 
-        private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "scale");
+        private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "apply_scale");
 
-        /// <summary>
-        /// Apply the 'ratio' scale to the 2D node, according to its current scale value.
-        /// </summary>
-        public void scale(Vector2 ratio)
+        public void apply_scale(Vector2 ratio)
         {
             NativeCalls.godot_icall_1_37(method_bind_13, Object.GetPtr(this), ref ratio);
         }
@@ -278,7 +275,7 @@ namespace GodotEngine
         /// </summary>
         public float get_angle_to(Vector2 point)
         {
-            return NativeCalls.godot_icall_1_320(method_bind_25, Object.GetPtr(this), ref point);
+            return NativeCalls.godot_icall_1_319(method_bind_25, Object.GetPtr(this), ref point);
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "to_local");
@@ -351,7 +348,7 @@ namespace GodotEngine
 
         public Transform2D get_relative_transform_to_parent(Node parent)
         {
-            object ret = NativeCalls.godot_icall_1_321(method_bind_33, Object.GetPtr(this), Object.GetPtr(parent));
+            object ret = NativeCalls.godot_icall_1_320(method_bind_33, Object.GetPtr(this), Object.GetPtr(parent));
             return (Transform2D)ret;
         }
     }

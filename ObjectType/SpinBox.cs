@@ -78,7 +78,7 @@ namespace GodotEngine
 
         public LineEdit get_line_edit()
         {
-            return NativeCalls.godot_icall_0_444(method_bind_6, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_443(method_bind_6, Object.GetPtr(this));
         }
     }
 }

@@ -78,14 +78,14 @@ namespace GodotEngine
 
         public void set_icon_region(int column, Rect2 region)
         {
-            NativeCalls.godot_icall_2_262(method_bind_8, Object.GetPtr(this), column, ref region);
+            NativeCalls.godot_icall_2_261(method_bind_8, Object.GetPtr(this), column, ref region);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_icon_region");
 
         public Rect2 get_icon_region(int column)
         {
-            object ret = NativeCalls.godot_icall_1_263(method_bind_9, Object.GetPtr(this), column);
+            object ret = NativeCalls.godot_icall_1_262(method_bind_9, Object.GetPtr(this), column);
             return (Rect2)ret;
         }
 
@@ -135,7 +135,7 @@ namespace GodotEngine
 
         public void set_metadata(int column, object meta)
         {
-            NativeCalls.godot_icall_2_264(method_bind_16, Object.GetPtr(this), column, meta);
+            NativeCalls.godot_icall_2_263(method_bind_16, Object.GetPtr(this), column, meta);
         }
 
         private IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_metadata");

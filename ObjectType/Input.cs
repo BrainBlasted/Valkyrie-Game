@@ -205,7 +205,7 @@ namespace GodotEngine
         /// </summary>
         public static void start_joy_vibration(int device, float weak_magnitude, float strong_magnitude, float duration = 0)
         {
-            NativeCalls.godot_icall_4_252(method_bind_19, ptr, device, weak_magnitude, strong_magnitude, duration);
+            NativeCalls.godot_icall_4_251(method_bind_19, ptr, device, weak_magnitude, strong_magnitude, duration);
         }
 
         private static IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "stop_joy_vibration");
@@ -339,7 +339,7 @@ namespace GodotEngine
         public static void set_custom_mouse_cursor(Texture image, Nullable<Vector2> hotspot = null)
         {
             Vector2 hotspot_in = hotspot.HasValue ? hotspot.Value : new Vector2(0, 0);
-            NativeCalls.godot_icall_2_253(method_bind_32, ptr, Object.GetPtr(image), ref hotspot_in);
+            NativeCalls.godot_icall_2_252(method_bind_32, ptr, Object.GetPtr(image), ref hotspot_in);
         }
 
         private static IntPtr method_bind_33 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "parse_input_event");

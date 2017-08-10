@@ -18,7 +18,7 @@ namespace GodotEngine
 
         public Error pack(object value)
         {
-            int ret = NativeCalls.godot_icall_1_332(method_bind_0, Object.GetPtr(this), value);
+            int ret = NativeCalls.godot_icall_1_331(method_bind_0, Object.GetPtr(this), value);
             return (Error)ret;
         }
 

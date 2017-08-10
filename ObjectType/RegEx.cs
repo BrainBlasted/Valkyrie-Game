@@ -67,7 +67,7 @@ namespace GodotEngine
         /// </summary>
         public RegExMatch search(string text, int start = 0, int end = -1)
         {
-            return NativeCalls.godot_icall_3_411(method_bind_2, Object.GetPtr(this), text, start, end);
+            return NativeCalls.godot_icall_3_410(method_bind_2, Object.GetPtr(this), text, start, end);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "sub");
@@ -77,7 +77,7 @@ namespace GodotEngine
         /// </summary>
         public string sub(string text, string replacement, bool all = false, int start = 0, int end = -1)
         {
-            return NativeCalls.godot_icall_5_412(method_bind_3, Object.GetPtr(this), text, replacement, all, start, end);
+            return NativeCalls.godot_icall_5_411(method_bind_3, Object.GetPtr(this), text, replacement, all, start, end);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_valid");

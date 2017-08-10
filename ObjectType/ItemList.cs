@@ -33,7 +33,7 @@ namespace GodotEngine
         /// </summary>
         public void add_item(string text, Texture icon = null, bool selectable = true)
         {
-            NativeCalls.godot_icall_3_260(method_bind_0, Object.GetPtr(this), text, Object.GetPtr(icon), selectable);
+            NativeCalls.godot_icall_3_259(method_bind_0, Object.GetPtr(this), text, Object.GetPtr(icon), selectable);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_icon_item");
@@ -43,7 +43,7 @@ namespace GodotEngine
         /// </summary>
         public void add_icon_item(Texture icon, bool selectable = true)
         {
-            NativeCalls.godot_icall_2_261(method_bind_1, Object.GetPtr(this), Object.GetPtr(icon), selectable);
+            NativeCalls.godot_icall_2_260(method_bind_1, Object.GetPtr(this), Object.GetPtr(icon), selectable);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_item_text");
@@ -87,14 +87,14 @@ namespace GodotEngine
 
         public void set_item_icon_region(int idx, Rect2 rect)
         {
-            NativeCalls.godot_icall_2_262(method_bind_6, Object.GetPtr(this), idx, ref rect);
+            NativeCalls.godot_icall_2_261(method_bind_6, Object.GetPtr(this), idx, ref rect);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_icon_region");
 
         public Rect2 get_item_icon_region(int idx)
         {
-            object ret = NativeCalls.godot_icall_1_263(method_bind_7, Object.GetPtr(this), idx);
+            object ret = NativeCalls.godot_icall_1_262(method_bind_7, Object.GetPtr(this), idx);
             return (Rect2)ret;
         }
 
@@ -146,14 +146,14 @@ namespace GodotEngine
         /// </summary>
         public void set_item_metadata(int idx, object metadata)
         {
-            NativeCalls.godot_icall_2_264(method_bind_12, Object.GetPtr(this), idx, metadata);
+            NativeCalls.godot_icall_2_263(method_bind_12, Object.GetPtr(this), idx, metadata);
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_metadata");
 
         public object get_item_metadata(int idx)
         {
-            return NativeCalls.godot_icall_1_265(method_bind_13, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_264(method_bind_13, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_item_custom_bg_color");
@@ -470,7 +470,7 @@ namespace GodotEngine
         /// </summary>
         public int get_item_at_pos(Vector2 pos, bool exact = false)
         {
-            return NativeCalls.godot_icall_2_266(method_bind_48, Object.GetPtr(this), ref pos, exact);
+            return NativeCalls.godot_icall_2_265(method_bind_48, Object.GetPtr(this), ref pos, exact);
         }
 
         private IntPtr method_bind_49 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "ensure_current_is_visible");
@@ -490,7 +490,7 @@ namespace GodotEngine
         /// </summary>
         public VScrollBar get_v_scroll()
         {
-            return NativeCalls.godot_icall_0_267(method_bind_50, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_266(method_bind_50, Object.GetPtr(this));
         }
     }
 }

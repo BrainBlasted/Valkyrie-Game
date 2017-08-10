@@ -42,7 +42,7 @@ namespace GodotEngine
         /// </summary>
         public bool collide(Transform2D local_xform, Shape2D with_shape, Transform2D shape_xform)
         {
-            return NativeCalls.godot_icall_3_434(method_bind_2, Object.GetPtr(this), ref local_xform, Object.GetPtr(with_shape), ref shape_xform);
+            return NativeCalls.godot_icall_3_433(method_bind_2, Object.GetPtr(this), ref local_xform, Object.GetPtr(with_shape), ref shape_xform);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "collide_with_motion");
@@ -53,7 +53,7 @@ namespace GodotEngine
         /// </summary>
         public bool collide_with_motion(Transform2D local_xform, Vector2 local_motion, Shape2D with_shape, Transform2D shape_xform, Vector2 shape_motion)
         {
-            return NativeCalls.godot_icall_5_435(method_bind_3, Object.GetPtr(this), ref local_xform, ref local_motion, Object.GetPtr(with_shape), ref shape_xform, ref shape_motion);
+            return NativeCalls.godot_icall_5_434(method_bind_3, Object.GetPtr(this), ref local_xform, ref local_motion, Object.GetPtr(with_shape), ref shape_xform, ref shape_motion);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "collide_and_get_contacts");
@@ -64,7 +64,7 @@ namespace GodotEngine
         /// </summary>
         public object collide_and_get_contacts(Transform2D local_xform, Shape2D with_shape, Transform2D shape_xform)
         {
-            return NativeCalls.godot_icall_3_436(method_bind_4, Object.GetPtr(this), ref local_xform, Object.GetPtr(with_shape), ref shape_xform);
+            return NativeCalls.godot_icall_3_435(method_bind_4, Object.GetPtr(this), ref local_xform, Object.GetPtr(with_shape), ref shape_xform);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "collide_with_motion_and_get_contacts");
@@ -75,7 +75,7 @@ namespace GodotEngine
         /// </summary>
         public object collide_with_motion_and_get_contacts(Transform2D local_xform, Vector2 local_motion, Shape2D with_shape, Transform2D shape_xform, Vector2 shape_motion)
         {
-            return NativeCalls.godot_icall_5_437(method_bind_5, Object.GetPtr(this), ref local_xform, ref local_motion, Object.GetPtr(with_shape), ref shape_xform, ref shape_motion);
+            return NativeCalls.godot_icall_5_436(method_bind_5, Object.GetPtr(this), ref local_xform, ref local_motion, Object.GetPtr(with_shape), ref shape_xform, ref shape_motion);
         }
     }
 }

@@ -54,7 +54,7 @@ namespace GodotEngine
 
         public static object instance(string @class)
         {
-            return NativeCalls.godot_icall_1_322(method_bind_6, ptr, @class);
+            return NativeCalls.godot_icall_1_321(method_bind_6, ptr, @class);
         }
 
         private static IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "class_has_signal");

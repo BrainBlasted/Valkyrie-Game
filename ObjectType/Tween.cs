@@ -5,25 +5,22 @@ namespace GodotEngine
     /// <summary>
     /// Node useful for animations with unknown start and end points, procedural animations, making one node follow another, and other simple behavior.
     /// Because it is easy to get it wrong, here is a quick usage example:
-    /// <code>
-    ///
+    /// [codeblock]
     /// var tween = get_node("Tween")
     /// tween.interpolate_property(get_node("Node2D_to_move"), "transform/pos", Vector2(0,0), Vector2(100,100), 1, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
     /// tween.start()
-    ///
-    /// </code>
-    ///
+    /// [/codeblock]
     /// Some of the methods of this class require a property name. You can get the property name by hovering over the property in the inspector of the editor.
-    /// Many of the methods accept <code>trans_type</code> and <code>ease_type</code>. The first accepts an TRANS_* constant, and refers to the way the timing of the animation is handled (you might want to see <code>http://easings.net/</code> for some examples). The second accepts an EASE_* constant, and controls the where <code>trans_type</code> is applied to the interpolation (in the beginning, the end, or both). If you don't know which transision and easing to pick, you can try different TRANS_* constants with EASE_IN_OUT, and use the one that looks best.
+    /// Many of the methods accept [code]trans_type[/code] and [code]ease_type[/code]. The first accepts an TRANS_* constant, and refers to the way the timing of the animation is handled (you might want to see [code]http://easings.net/[/code] for some examples). The second accepts an EASE_* constant, and controls the where [code]trans_type[/code] is applied to the interpolation (in the beginning, the end, or both). If you don't know which transision and easing to pick, you can try different TRANS_* constants with EASE_IN_OUT, and use the one that looks best.
     /// </summary>
     public class Tween : Node
     {
         /// <summary>
-        /// The <code>Tween</code> should use <code>_fixed_process</code> for timekeeping when this is enabled.
+        /// The [Tween] should use [code]_fixed_process[/code] for timekeeping when this is enabled.
         /// </summary>
         public const int TWEEN_PROCESS_FIXED = 0;
         /// <summary>
-        /// The [Tween] should use <code>_process</code> for timekeeping when this is enabled (default).
+        /// The [Tween] should use [code]_process[/code] for timekeeping when this is enabled (default).
         /// </summary>
         public const int TWEEN_PROCESS_IDLE = 1;
         /// <summary>
@@ -160,7 +157,7 @@ namespace GodotEngine
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_tween_process_mode");
 
         /// <summary>
-        /// Set whether the Tween uses <code>_process</code> or <code>_fixed_process</code> (accepts TWEEN_PROCESS_IDLE and TWEEN_PROCESS_FIXED constants, respectively).
+        /// Set whether the Tween uses [code]_process[/code] or [code]_fixed_process[/code] (accepts TWEEN_PROCESS_IDLE and TWEEN_PROCESS_FIXED constants, respectively).
         /// </summary>
         public void set_tween_process_mode(int mode)
         {
@@ -270,11 +267,11 @@ namespace GodotEngine
         private IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "seek");
 
         /// <summary>
-        /// Seek the animation to the given <code>time</code> in seconds.
+        /// Seek the animation to the given [code]time[/code] in seconds.
         /// </summary>
         public bool seek(float time)
         {
-            return NativeCalls.godot_icall_1_277(method_bind_17, Object.GetPtr(this), time);
+            return NativeCalls.godot_icall_1_276(method_bind_17, Object.GetPtr(this), time);
         }
 
         private IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tell");
@@ -300,8 +297,8 @@ namespace GodotEngine
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "interpolate_property");
 
         /// <summary>
-        /// Animate <code>property</code> of <code>object</code> from <code>initial_val</code> to <code>final_val</code> for <code>duration</code> seconds, <code>delay</code> seconds later.
-        /// <code>trans_type</code> accepts TRANS_* constants, and is the way the animation is interpolated, while <code>ease_type</code> accepts EASE_* constants, and controls the place of the interpolation (the beginning, the end, or both). You can read more about them in the class description.
+        /// Animate [code]property[/code] of [code]object[/code] from [code]initial_val[/code] to [code]final_val[/code] for [code]duration[/code] seconds, [code]delay[/code] seconds later.
+        /// [code]trans_type[/code] accepts TRANS_* constants, and is the way the animation is interpolated, while [code]ease_type[/code] accepts EASE_* constants, and controls the place of the interpolation (the beginning, the end, or both). You can read more about them in the class description.
         /// </summary>
         public bool interpolate_property(Object @object, string property, object initial_val, object final_val, float duration, int trans_type, int ease_type, float delay = 0)
         {
@@ -311,8 +308,8 @@ namespace GodotEngine
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "interpolate_method");
 
         /// <summary>
-        /// Animate <code>method</code> of <code>object</code> from <code>initial_val</code> to <code>final_val</code> for <code>duration</code> seconds, <code>delay</code> seconds later. Methods are animated by calling them with consecuitive values.
-        /// <code>trans_type</code> accepts TRANS_* constants, and is the way the animation is interpolated, while <code>ease_type</code> accepts EASE_* constants, and controls the place of the interpolation (the beginning, the end, or both). You can read more about them in the class description.
+        /// Animate [code]method[/code] of [code]object[/code] from [code]initial_val[/code] to [code]final_val[/code] for [code]duration[/code] seconds, [code]delay[/code] seconds later. Methods are animated by calling them with consecuitive values.
+        /// [code]trans_type[/code] accepts TRANS_* constants, and is the way the animation is interpolated, while [code]ease_type[/code] accepts EASE_* constants, and controls the place of the interpolation (the beginning, the end, or both). You can read more about them in the class description.
         /// </summary>
         public bool interpolate_method(Object @object, string method, object initial_val, object final_val, float duration, int trans_type, int ease_type, float delay = 0)
         {
@@ -322,7 +319,7 @@ namespace GodotEngine
         private IntPtr method_bind_22 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "interpolate_callback");
 
         /// <summary>
-        /// Call <code>callback</code> of <code>object</code> after <code>duration</code>. <code>arg1</code>-<code>arg5</code> are arguments to be passed to the callback.
+        /// Call [code]callback[/code] of [code]object[/code] after [code]duration[/code]. [code]arg1[/code]-[code]arg5[/code] are arguments to be passed to the callback.
         /// </summary>
         public bool interpolate_callback(Object @object, float duration, string callback, object arg1 = null, object arg2 = null, object arg3 = null, object arg4 = null, object arg5 = null)
         {
@@ -332,7 +329,7 @@ namespace GodotEngine
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "interpolate_deferred_callback");
 
         /// <summary>
-        /// Call <code>callback</code> of <code>object</code> after <code>duration</code> on the main thread (similar to [methog Object.call_deferred). <code>arg1</code>-<code>arg5</code> are arguments to be passed to the callback.
+        /// Call [code]callback[/code] of [code]object[/code] after [code]duration[/code] on the main thread (similar to [methog Object.call_deferred). [code]arg1[/code]-[code]arg5[/code] are arguments to be passed to the callback.
         /// </summary>
         public bool interpolate_deferred_callback(Object @object, float duration, string callback, object arg1 = null, object arg2 = null, object arg3 = null, object arg4 = null, object arg5 = null)
         {
@@ -342,8 +339,8 @@ namespace GodotEngine
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "follow_property");
 
         /// <summary>
-        /// Follow <code>property</code> of <code>object</code> and apply it on <code>target_property</code> of <code>target</code>, beginning from <code>initial_val</code> for <code>duration</code> seconds, <code>delay</code> seconds later. Note that <code>target:target_property</code> would equal <code>object:property</code> at the end of the tween.
-        /// <code>trans_type</code> accepts TRANS_* constants, and is the way the animation is interpolated, while <code>ease_type</code> accepts EASE_* constants, and controls the place of the interpolation (the beginning, the end, or both). You can read more about them in the class description.
+        /// Follow [code]property[/code] of [code]object[/code] and apply it on [code]target_property[/code] of [code]target[/code], beginning from [code]initial_val[/code] for [code]duration[/code] seconds, [code]delay[/code] seconds later. Note that [code]target:target_property[/code] would equal [code]object:property[/code] at the end of the tween.
+        /// [code]trans_type[/code] accepts TRANS_* constants, and is the way the animation is interpolated, while [code]ease_type[/code] accepts EASE_* constants, and controls the place of the interpolation (the beginning, the end, or both). You can read more about them in the class description.
         /// </summary>
         public bool follow_property(Object @object, string property, object initial_val, Object target, string target_property, float duration, int trans_type, int ease_type, float delay = 0)
         {
@@ -353,8 +350,8 @@ namespace GodotEngine
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "follow_method");
 
         /// <summary>
-        /// Follow <code>method</code> of <code>object</code> and apply the returned value on <code>target_method</code> of <code>target</code>, beginning from <code>initial_val</code> for <code>duration</code> seconds, <code>delay</code> later. Methods are animated by calling them with consequitive values.
-        /// <code>trans_type</code> accepts TRANS_* constants, and is the way the animation is interpolated, while <code>ease_type</code> accepts EASE_* constants, and controls the place of the interpolation (the beginning, the end, or both). You can read more about them in the class description.
+        /// Follow [code]method[/code] of [code]object[/code] and apply the returned value on [code]target_method[/code] of [code]target[/code], beginning from [code]initial_val[/code] for [code]duration[/code] seconds, [code]delay[/code] later. Methods are animated by calling them with consequitive values.
+        /// [code]trans_type[/code] accepts TRANS_* constants, and is the way the animation is interpolated, while [code]ease_type[/code] accepts EASE_* constants, and controls the place of the interpolation (the beginning, the end, or both). You can read more about them in the class description.
         /// </summary>
         public bool follow_method(Object @object, string method, object initial_val, Object target, string target_method, float duration, int trans_type, int ease_type, float delay = 0)
         {
@@ -364,8 +361,8 @@ namespace GodotEngine
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "targeting_property");
 
         /// <summary>
-        /// Animate <code>property</code> of <code>object</code> from the current value of the <code>initial_val</code> property of <code>initial</code> to <code>final_val</code> for <code>duration</code> seconds, <code>delay</code> seconds later.
-        /// <code>trans_type</code> accepts TRANS_* constants, and is the way the animation is interpolated, while <code>ease_type</code> accepts EASE_* constants, and controls the place of the interpolation (the beginning, the end, or both). You can read more about them in the class description.
+        /// Animate [code]property[/code] of [code]object[/code] from the current value of the [code]initial_val[/code] property of [code]initial[/code] to [code]final_val[/code] for [code]duration[/code] seconds, [code]delay[/code] seconds later.
+        /// [code]trans_type[/code] accepts TRANS_* constants, and is the way the animation is interpolated, while [code]ease_type[/code] accepts EASE_* constants, and controls the place of the interpolation (the beginning, the end, or both). You can read more about them in the class description.
         /// </summary>
         public bool targeting_property(Object @object, string property, Object initial, string initial_val, object final_val, float duration, int trans_type, int ease_type, float delay = 0)
         {
@@ -375,8 +372,8 @@ namespace GodotEngine
         private IntPtr method_bind_27 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "targeting_method");
 
         /// <summary>
-        /// Animate <code>method</code> of <code>object</code> from the value returned by <code>initial.initial_method</code> to <code>final_val</code> for <code>duration</code> seconds, <code>delay</code> seconds later. Methods are animated by calling them with consecuitive values.
-        /// <code>trans_type</code> accepts TRANS_* constants, and is the way the animation is interpolated, while <code>ease_type</code> accepts EASE_* constants, and controls the place of the interpolation (the beginning, the end, or both). You can read more about them in the class description.
+        /// Animate [code]method[/code] of [code]object[/code] from the value returned by [code]initial.initial_method[/code] to [code]final_val[/code] for [code]duration[/code] seconds, [code]delay[/code] seconds later. Methods are animated by calling them with consecuitive values.
+        /// [code]trans_type[/code] accepts TRANS_* constants, and is the way the animation is interpolated, while [code]ease_type[/code] accepts EASE_* constants, and controls the place of the interpolation (the beginning, the end, or both). You can read more about them in the class description.
         /// </summary>
         public bool targeting_method(Object @object, string method, Object initial, string initial_method, object final_val, float duration, int trans_type, int ease_type, float delay = 0)
         {

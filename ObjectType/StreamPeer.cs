@@ -30,7 +30,7 @@ namespace GodotEngine
         /// </summary>
         public object[] put_partial_data(byte[] data)
         {
-            return NativeCalls.godot_icall_1_448(method_bind_1, Object.GetPtr(this), data);
+            return NativeCalls.godot_icall_1_447(method_bind_1, Object.GetPtr(this), data);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_data");
@@ -40,7 +40,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_data(int bytes)
         {
-            return NativeCalls.godot_icall_1_425(method_bind_2, Object.GetPtr(this), bytes);
+            return NativeCalls.godot_icall_1_424(method_bind_2, Object.GetPtr(this), bytes);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_partial_data");
@@ -50,7 +50,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_partial_data(int bytes)
         {
-            return NativeCalls.godot_icall_1_425(method_bind_3, Object.GetPtr(this), bytes);
+            return NativeCalls.godot_icall_1_424(method_bind_3, Object.GetPtr(this), bytes);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_available_bytes");

@@ -60,7 +60,7 @@ namespace GodotEngine
 
         public ArrayMesh create_outline(float margin)
         {
-            return NativeCalls.godot_icall_1_278(method_bind_2, Object.GetPtr(this), margin);
+            return NativeCalls.godot_icall_1_277(method_bind_2, Object.GetPtr(this), margin);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_faces");
@@ -74,7 +74,7 @@ namespace GodotEngine
 
         public TriangleMesh generate_triangle_mesh()
         {
-            return NativeCalls.godot_icall_0_279(method_bind_4, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_278(method_bind_4, Object.GetPtr(this));
         }
     }
 }

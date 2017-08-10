@@ -241,7 +241,7 @@ namespace GodotEngine
 
         public Mesh get_draw_pass_mesh(int pass)
         {
-            return NativeCalls.godot_icall_1_289(method_bind_31, Object.GetPtr(this), pass);
+            return NativeCalls.godot_icall_1_288(method_bind_31, Object.GetPtr(this), pass);
         }
 
         private IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "restart");

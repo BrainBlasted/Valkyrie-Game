@@ -72,7 +72,7 @@ namespace GodotEngine
         /// </summary>
         public Control get_tab_control(int idx)
         {
-            return NativeCalls.godot_icall_1_459(method_bind_5, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_458(method_bind_5, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_tab_align");
@@ -177,7 +177,7 @@ namespace GodotEngine
 
         public Popup get_popup()
         {
-            return NativeCalls.godot_icall_0_460(method_bind_17, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_459(method_bind_17, Object.GetPtr(this));
         }
     }
 }

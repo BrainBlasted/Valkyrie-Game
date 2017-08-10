@@ -127,7 +127,7 @@ namespace GodotEngine
 
         public void add_exception_rid(RID rid)
         {
-            NativeCalls.godot_icall_1_351(method_bind_10, Object.GetPtr(this), RID.GetPtr(rid));
+            NativeCalls.godot_icall_1_350(method_bind_10, Object.GetPtr(this), RID.GetPtr(rid));
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_exception");
@@ -144,7 +144,7 @@ namespace GodotEngine
 
         public void remove_exception_rid(RID rid)
         {
-            NativeCalls.godot_icall_1_351(method_bind_12, Object.GetPtr(this), RID.GetPtr(rid));
+            NativeCalls.godot_icall_1_350(method_bind_12, Object.GetPtr(this), RID.GetPtr(rid));
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_exception");

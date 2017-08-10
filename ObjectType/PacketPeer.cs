@@ -30,7 +30,7 @@ namespace GodotEngine
         /// </summary>
         public int put_var(object var)
         {
-            return NativeCalls.godot_icall_1_334(method_bind_1, Object.GetPtr(this), var);
+            return NativeCalls.godot_icall_1_333(method_bind_1, Object.GetPtr(this), var);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_packet");
@@ -50,7 +50,7 @@ namespace GodotEngine
         /// </summary>
         public Error put_packet(byte[] buffer)
         {
-            int ret = NativeCalls.godot_icall_1_335(method_bind_3, Object.GetPtr(this), buffer);
+            int ret = NativeCalls.godot_icall_1_334(method_bind_3, Object.GetPtr(this), buffer);
             return (Error)ret;
         }
 

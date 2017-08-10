@@ -67,7 +67,7 @@ namespace GodotEngine
 
         public StreamPeerBuffer duplicate()
         {
-            return NativeCalls.godot_icall_0_449(method_bind_7, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_448(method_bind_7, Object.GetPtr(this));
         }
     }
 }

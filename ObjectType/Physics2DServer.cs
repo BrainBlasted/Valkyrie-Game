@@ -248,7 +248,7 @@ namespace GodotEngine
         /// </summary>
         public static RID shape_create(int type)
         {
-            IntPtr ret = NativeCalls.godot_icall_1_342(method_bind_0, ptr, type);
+            IntPtr ret = NativeCalls.godot_icall_1_341(method_bind_0, ptr, type);
             return new RID(ret);
         }
 
@@ -259,7 +259,7 @@ namespace GodotEngine
         /// </summary>
         public static void shape_set_data(RID shape, object data)
         {
-            NativeCalls.godot_icall_2_349(method_bind_1, ptr, RID.GetPtr(shape), data);
+            NativeCalls.godot_icall_2_348(method_bind_1, ptr, RID.GetPtr(shape), data);
         }
 
         private static IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "shape_get_type");
@@ -269,7 +269,7 @@ namespace GodotEngine
         /// </summary>
         public static int shape_get_type(RID shape)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_2, ptr, RID.GetPtr(shape));
+            return NativeCalls.godot_icall_1_349(method_bind_2, ptr, RID.GetPtr(shape));
         }
 
         private static IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "shape_get_data");
@@ -279,7 +279,7 @@ namespace GodotEngine
         /// </summary>
         public static void shape_get_data(RID shape)
         {
-            NativeCalls.godot_icall_1_351(method_bind_3, ptr, RID.GetPtr(shape));
+            NativeCalls.godot_icall_1_350(method_bind_3, ptr, RID.GetPtr(shape));
         }
 
         private static IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "space_create");
@@ -300,7 +300,7 @@ namespace GodotEngine
         /// </summary>
         public static void space_set_active(RID space, bool active)
         {
-            NativeCalls.godot_icall_2_352(method_bind_5, ptr, RID.GetPtr(space), active);
+            NativeCalls.godot_icall_2_351(method_bind_5, ptr, RID.GetPtr(space), active);
         }
 
         private static IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "space_is_active");
@@ -310,7 +310,7 @@ namespace GodotEngine
         /// </summary>
         public static bool space_is_active(RID space)
         {
-            return NativeCalls.godot_icall_1_353(method_bind_6, ptr, RID.GetPtr(space));
+            return NativeCalls.godot_icall_1_352(method_bind_6, ptr, RID.GetPtr(space));
         }
 
         private static IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "space_set_param");
@@ -320,7 +320,7 @@ namespace GodotEngine
         /// </summary>
         public static void space_set_param(RID space, int param, float value)
         {
-            NativeCalls.godot_icall_3_354(method_bind_7, ptr, RID.GetPtr(space), param, value);
+            NativeCalls.godot_icall_3_353(method_bind_7, ptr, RID.GetPtr(space), param, value);
         }
 
         private static IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "space_get_param");
@@ -330,7 +330,7 @@ namespace GodotEngine
         /// </summary>
         public static float space_get_param(RID space, int param)
         {
-            return NativeCalls.godot_icall_2_355(method_bind_8, ptr, RID.GetPtr(space), param);
+            return NativeCalls.godot_icall_2_354(method_bind_8, ptr, RID.GetPtr(space), param);
         }
 
         private static IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "space_get_direct_state");
@@ -340,7 +340,7 @@ namespace GodotEngine
         /// </summary>
         public static Physics2DDirectSpaceState space_get_direct_state(RID space)
         {
-            return NativeCalls.godot_icall_1_356(method_bind_9, ptr, RID.GetPtr(space));
+            return NativeCalls.godot_icall_1_355(method_bind_9, ptr, RID.GetPtr(space));
         }
 
         private static IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_create");
@@ -361,7 +361,7 @@ namespace GodotEngine
         /// </summary>
         public static void area_set_space(RID area, RID space)
         {
-            NativeCalls.godot_icall_2_357(method_bind_11, ptr, RID.GetPtr(area), RID.GetPtr(space));
+            NativeCalls.godot_icall_2_356(method_bind_11, ptr, RID.GetPtr(area), RID.GetPtr(space));
         }
 
         private static IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_get_space");
@@ -371,7 +371,7 @@ namespace GodotEngine
         /// </summary>
         public static RID area_get_space(RID area)
         {
-            IntPtr ret = NativeCalls.godot_icall_1_358(method_bind_12, ptr, RID.GetPtr(area));
+            IntPtr ret = NativeCalls.godot_icall_1_357(method_bind_12, ptr, RID.GetPtr(area));
             return new RID(ret);
         }
 
@@ -382,7 +382,7 @@ namespace GodotEngine
         /// </summary>
         public static void area_set_space_override_mode(RID area, int mode)
         {
-            NativeCalls.godot_icall_2_359(method_bind_13, ptr, RID.GetPtr(area), mode);
+            NativeCalls.godot_icall_2_358(method_bind_13, ptr, RID.GetPtr(area), mode);
         }
 
         private static IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_get_space_override_mode");
@@ -392,7 +392,7 @@ namespace GodotEngine
         /// </summary>
         public static int area_get_space_override_mode(RID area)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_14, ptr, RID.GetPtr(area));
+            return NativeCalls.godot_icall_1_349(method_bind_14, ptr, RID.GetPtr(area));
         }
 
         private static IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_add_shape");
@@ -404,7 +404,7 @@ namespace GodotEngine
         public static void area_add_shape(RID area, RID shape, Nullable<Transform2D> transform = null)
         {
             Transform2D transform_in = transform.HasValue ? transform.Value : Transform2D.Identity;
-            NativeCalls.godot_icall_3_360(method_bind_15, ptr, RID.GetPtr(area), RID.GetPtr(shape), ref transform_in);
+            NativeCalls.godot_icall_3_359(method_bind_15, ptr, RID.GetPtr(area), RID.GetPtr(shape), ref transform_in);
         }
 
         private static IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_set_shape");
@@ -414,7 +414,7 @@ namespace GodotEngine
         /// </summary>
         public static void area_set_shape(RID area, int shape_idx, RID shape)
         {
-            NativeCalls.godot_icall_3_361(method_bind_16, ptr, RID.GetPtr(area), shape_idx, RID.GetPtr(shape));
+            NativeCalls.godot_icall_3_360(method_bind_16, ptr, RID.GetPtr(area), shape_idx, RID.GetPtr(shape));
         }
 
         private static IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_set_shape_transform");
@@ -424,14 +424,14 @@ namespace GodotEngine
         /// </summary>
         public static void area_set_shape_transform(RID area, int shape_idx, Transform2D transform)
         {
-            NativeCalls.godot_icall_3_362(method_bind_17, ptr, RID.GetPtr(area), shape_idx, ref transform);
+            NativeCalls.godot_icall_3_361(method_bind_17, ptr, RID.GetPtr(area), shape_idx, ref transform);
         }
 
         private static IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_set_shape_disabled");
 
         public static void area_set_shape_disabled(RID area, int shape_idx, bool disable)
         {
-            NativeCalls.godot_icall_3_363(method_bind_18, ptr, RID.GetPtr(area), shape_idx, disable);
+            NativeCalls.godot_icall_3_362(method_bind_18, ptr, RID.GetPtr(area), shape_idx, disable);
         }
 
         private static IntPtr method_bind_19 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_get_shape_count");
@@ -441,7 +441,7 @@ namespace GodotEngine
         /// </summary>
         public static int area_get_shape_count(RID area)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_19, ptr, RID.GetPtr(area));
+            return NativeCalls.godot_icall_1_349(method_bind_19, ptr, RID.GetPtr(area));
         }
 
         private static IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_get_shape");
@@ -451,7 +451,7 @@ namespace GodotEngine
         /// </summary>
         public static RID area_get_shape(RID area, int shape_idx)
         {
-            IntPtr ret = NativeCalls.godot_icall_2_364(method_bind_20, ptr, RID.GetPtr(area), shape_idx);
+            IntPtr ret = NativeCalls.godot_icall_2_363(method_bind_20, ptr, RID.GetPtr(area), shape_idx);
             return new RID(ret);
         }
 
@@ -462,7 +462,7 @@ namespace GodotEngine
         /// </summary>
         public static Transform2D area_get_shape_transform(RID area, int shape_idx)
         {
-            object ret = NativeCalls.godot_icall_2_365(method_bind_21, ptr, RID.GetPtr(area), shape_idx);
+            object ret = NativeCalls.godot_icall_2_364(method_bind_21, ptr, RID.GetPtr(area), shape_idx);
             return (Transform2D)ret;
         }
 
@@ -473,7 +473,7 @@ namespace GodotEngine
         /// </summary>
         public static void area_remove_shape(RID area, int shape_idx)
         {
-            NativeCalls.godot_icall_2_359(method_bind_22, ptr, RID.GetPtr(area), shape_idx);
+            NativeCalls.godot_icall_2_358(method_bind_22, ptr, RID.GetPtr(area), shape_idx);
         }
 
         private static IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_clear_shapes");
@@ -483,7 +483,7 @@ namespace GodotEngine
         /// </summary>
         public static void area_clear_shapes(RID area)
         {
-            NativeCalls.godot_icall_1_351(method_bind_23, ptr, RID.GetPtr(area));
+            NativeCalls.godot_icall_1_350(method_bind_23, ptr, RID.GetPtr(area));
         }
 
         private static IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_set_collision_layer");
@@ -493,7 +493,7 @@ namespace GodotEngine
         /// </summary>
         public static void area_set_collision_layer(RID area, int layer)
         {
-            NativeCalls.godot_icall_2_359(method_bind_24, ptr, RID.GetPtr(area), layer);
+            NativeCalls.godot_icall_2_358(method_bind_24, ptr, RID.GetPtr(area), layer);
         }
 
         private static IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_set_collision_mask");
@@ -503,7 +503,7 @@ namespace GodotEngine
         /// </summary>
         public static void area_set_collision_mask(RID area, int mask)
         {
-            NativeCalls.godot_icall_2_359(method_bind_25, ptr, RID.GetPtr(area), mask);
+            NativeCalls.godot_icall_2_358(method_bind_25, ptr, RID.GetPtr(area), mask);
         }
 
         private static IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_set_param");
@@ -513,7 +513,7 @@ namespace GodotEngine
         /// </summary>
         public static void area_set_param(RID area, int param, object value)
         {
-            NativeCalls.godot_icall_3_366(method_bind_26, ptr, RID.GetPtr(area), param, value);
+            NativeCalls.godot_icall_3_365(method_bind_26, ptr, RID.GetPtr(area), param, value);
         }
 
         private static IntPtr method_bind_27 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_set_transform");
@@ -523,7 +523,7 @@ namespace GodotEngine
         /// </summary>
         public static void area_set_transform(RID area, Transform2D transform)
         {
-            NativeCalls.godot_icall_2_367(method_bind_27, ptr, RID.GetPtr(area), ref transform);
+            NativeCalls.godot_icall_2_366(method_bind_27, ptr, RID.GetPtr(area), ref transform);
         }
 
         private static IntPtr method_bind_28 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_get_param");
@@ -533,7 +533,7 @@ namespace GodotEngine
         /// </summary>
         public static void area_get_param(RID area, int param)
         {
-            NativeCalls.godot_icall_2_359(method_bind_28, ptr, RID.GetPtr(area), param);
+            NativeCalls.godot_icall_2_358(method_bind_28, ptr, RID.GetPtr(area), param);
         }
 
         private static IntPtr method_bind_29 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_get_transform");
@@ -543,28 +543,28 @@ namespace GodotEngine
         /// </summary>
         public static Transform2D area_get_transform(RID area)
         {
-            object ret = NativeCalls.godot_icall_1_368(method_bind_29, ptr, RID.GetPtr(area));
+            object ret = NativeCalls.godot_icall_1_367(method_bind_29, ptr, RID.GetPtr(area));
             return (Transform2D)ret;
         }
 
-        private static IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_attach_object_instance_ID");
+        private static IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_attach_object_instance_id");
 
         /// <summary>
         /// Assign the area to a descendant of [Object], so it can exist in the node tree.
         /// </summary>
-        public static void area_attach_object_instance_ID(RID area, int id)
+        public static void area_attach_object_instance_id(RID area, int id)
         {
-            NativeCalls.godot_icall_2_359(method_bind_30, ptr, RID.GetPtr(area), id);
+            NativeCalls.godot_icall_2_358(method_bind_30, ptr, RID.GetPtr(area), id);
         }
 
-        private static IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_get_object_instance_ID");
+        private static IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_get_object_instance_id");
 
         /// <summary>
         /// Get the instance ID of the object the area is assigned to.
         /// </summary>
-        public static int area_get_object_instance_ID(RID area)
+        public static int area_get_object_instance_id(RID area)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_31, ptr, RID.GetPtr(area));
+            return NativeCalls.godot_icall_1_349(method_bind_31, ptr, RID.GetPtr(area));
         }
 
         private static IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_set_monitor_callback");
@@ -579,7 +579,7 @@ namespace GodotEngine
         /// </summary>
         public static void area_set_monitor_callback(RID area, Object receiver, string method)
         {
-            NativeCalls.godot_icall_3_369(method_bind_32, ptr, RID.GetPtr(area), Object.GetPtr(receiver), method);
+            NativeCalls.godot_icall_3_368(method_bind_32, ptr, RID.GetPtr(area), Object.GetPtr(receiver), method);
         }
 
         private static IntPtr method_bind_33 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_create");
@@ -589,7 +589,7 @@ namespace GodotEngine
         /// </summary>
         public static RID body_create(int mode = 2, bool init_sleeping = false)
         {
-            IntPtr ret = NativeCalls.godot_icall_2_370(method_bind_33, ptr, mode, init_sleeping);
+            IntPtr ret = NativeCalls.godot_icall_2_369(method_bind_33, ptr, mode, init_sleeping);
             return new RID(ret);
         }
 
@@ -600,7 +600,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_set_space(RID body, RID space)
         {
-            NativeCalls.godot_icall_2_357(method_bind_34, ptr, RID.GetPtr(body), RID.GetPtr(space));
+            NativeCalls.godot_icall_2_356(method_bind_34, ptr, RID.GetPtr(body), RID.GetPtr(space));
         }
 
         private static IntPtr method_bind_35 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_get_space");
@@ -610,7 +610,7 @@ namespace GodotEngine
         /// </summary>
         public static RID body_get_space(RID body)
         {
-            IntPtr ret = NativeCalls.godot_icall_1_358(method_bind_35, ptr, RID.GetPtr(body));
+            IntPtr ret = NativeCalls.godot_icall_1_357(method_bind_35, ptr, RID.GetPtr(body));
             return new RID(ret);
         }
 
@@ -621,7 +621,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_set_mode(RID body, int mode)
         {
-            NativeCalls.godot_icall_2_359(method_bind_36, ptr, RID.GetPtr(body), mode);
+            NativeCalls.godot_icall_2_358(method_bind_36, ptr, RID.GetPtr(body), mode);
         }
 
         private static IntPtr method_bind_37 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_get_mode");
@@ -631,7 +631,7 @@ namespace GodotEngine
         /// </summary>
         public static int body_get_mode(RID body)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_37, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_349(method_bind_37, ptr, RID.GetPtr(body));
         }
 
         private static IntPtr method_bind_38 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_add_shape");
@@ -643,7 +643,7 @@ namespace GodotEngine
         public static void body_add_shape(RID body, RID shape, Nullable<Transform2D> transform = null)
         {
             Transform2D transform_in = transform.HasValue ? transform.Value : Transform2D.Identity;
-            NativeCalls.godot_icall_3_360(method_bind_38, ptr, RID.GetPtr(body), RID.GetPtr(shape), ref transform_in);
+            NativeCalls.godot_icall_3_359(method_bind_38, ptr, RID.GetPtr(body), RID.GetPtr(shape), ref transform_in);
         }
 
         private static IntPtr method_bind_39 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_set_shape");
@@ -653,7 +653,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_set_shape(RID body, int shape_idx, RID shape)
         {
-            NativeCalls.godot_icall_3_361(method_bind_39, ptr, RID.GetPtr(body), shape_idx, RID.GetPtr(shape));
+            NativeCalls.godot_icall_3_360(method_bind_39, ptr, RID.GetPtr(body), shape_idx, RID.GetPtr(shape));
         }
 
         private static IntPtr method_bind_40 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_set_shape_transform");
@@ -663,7 +663,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_set_shape_transform(RID body, int shape_idx, Transform2D transform)
         {
-            NativeCalls.godot_icall_3_362(method_bind_40, ptr, RID.GetPtr(body), shape_idx, ref transform);
+            NativeCalls.godot_icall_3_361(method_bind_40, ptr, RID.GetPtr(body), shape_idx, ref transform);
         }
 
         private static IntPtr method_bind_41 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_set_shape_metadata");
@@ -673,7 +673,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_set_shape_metadata(RID body, int shape_idx, object metadata)
         {
-            NativeCalls.godot_icall_3_366(method_bind_41, ptr, RID.GetPtr(body), shape_idx, metadata);
+            NativeCalls.godot_icall_3_365(method_bind_41, ptr, RID.GetPtr(body), shape_idx, metadata);
         }
 
         private static IntPtr method_bind_42 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_get_shape_count");
@@ -683,7 +683,7 @@ namespace GodotEngine
         /// </summary>
         public static int body_get_shape_count(RID body)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_42, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_349(method_bind_42, ptr, RID.GetPtr(body));
         }
 
         private static IntPtr method_bind_43 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_get_shape");
@@ -693,7 +693,7 @@ namespace GodotEngine
         /// </summary>
         public static RID body_get_shape(RID body, int shape_idx)
         {
-            IntPtr ret = NativeCalls.godot_icall_2_364(method_bind_43, ptr, RID.GetPtr(body), shape_idx);
+            IntPtr ret = NativeCalls.godot_icall_2_363(method_bind_43, ptr, RID.GetPtr(body), shape_idx);
             return new RID(ret);
         }
 
@@ -704,7 +704,7 @@ namespace GodotEngine
         /// </summary>
         public static Transform2D body_get_shape_transform(RID body, int shape_idx)
         {
-            object ret = NativeCalls.godot_icall_2_365(method_bind_44, ptr, RID.GetPtr(body), shape_idx);
+            object ret = NativeCalls.godot_icall_2_364(method_bind_44, ptr, RID.GetPtr(body), shape_idx);
             return (Transform2D)ret;
         }
 
@@ -715,7 +715,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_get_shape_metadata(RID body, int shape_idx)
         {
-            NativeCalls.godot_icall_2_359(method_bind_45, ptr, RID.GetPtr(body), shape_idx);
+            NativeCalls.godot_icall_2_358(method_bind_45, ptr, RID.GetPtr(body), shape_idx);
         }
 
         private static IntPtr method_bind_46 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_remove_shape");
@@ -725,7 +725,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_remove_shape(RID body, int shape_idx)
         {
-            NativeCalls.godot_icall_2_359(method_bind_46, ptr, RID.GetPtr(body), shape_idx);
+            NativeCalls.godot_icall_2_358(method_bind_46, ptr, RID.GetPtr(body), shape_idx);
         }
 
         private static IntPtr method_bind_47 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_clear_shapes");
@@ -735,41 +735,41 @@ namespace GodotEngine
         /// </summary>
         public static void body_clear_shapes(RID body)
         {
-            NativeCalls.godot_icall_1_351(method_bind_47, ptr, RID.GetPtr(body));
+            NativeCalls.godot_icall_1_350(method_bind_47, ptr, RID.GetPtr(body));
         }
 
         private static IntPtr method_bind_48 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_set_shape_disabled");
 
         public static void body_set_shape_disabled(RID body, int shape_idx, bool disable)
         {
-            NativeCalls.godot_icall_3_363(method_bind_48, ptr, RID.GetPtr(body), shape_idx, disable);
+            NativeCalls.godot_icall_3_362(method_bind_48, ptr, RID.GetPtr(body), shape_idx, disable);
         }
 
         private static IntPtr method_bind_49 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_set_shape_as_one_way_collision");
 
         public static void body_set_shape_as_one_way_collision(RID body, int shape_idx, bool enable)
         {
-            NativeCalls.godot_icall_3_363(method_bind_49, ptr, RID.GetPtr(body), shape_idx, enable);
+            NativeCalls.godot_icall_3_362(method_bind_49, ptr, RID.GetPtr(body), shape_idx, enable);
         }
 
-        private static IntPtr method_bind_50 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_attach_object_instance_ID");
+        private static IntPtr method_bind_50 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_attach_object_instance_id");
 
         /// <summary>
         /// Assign the area to a descendant of [Object], so it can exist in the node tree.
         /// </summary>
-        public static void body_attach_object_instance_ID(RID body, int id)
+        public static void body_attach_object_instance_id(RID body, int id)
         {
-            NativeCalls.godot_icall_2_359(method_bind_50, ptr, RID.GetPtr(body), id);
+            NativeCalls.godot_icall_2_358(method_bind_50, ptr, RID.GetPtr(body), id);
         }
 
-        private static IntPtr method_bind_51 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_get_object_instance_ID");
+        private static IntPtr method_bind_51 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_get_object_instance_id");
 
         /// <summary>
         /// Get the instance ID of the object the area is assigned to.
         /// </summary>
-        public static int body_get_object_instance_ID(RID body)
+        public static int body_get_object_instance_id(RID body)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_51, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_349(method_bind_51, ptr, RID.GetPtr(body));
         }
 
         private static IntPtr method_bind_52 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_set_continuous_collision_detection_mode");
@@ -780,7 +780,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_set_continuous_collision_detection_mode(RID body, int mode)
         {
-            NativeCalls.godot_icall_2_359(method_bind_52, ptr, RID.GetPtr(body), mode);
+            NativeCalls.godot_icall_2_358(method_bind_52, ptr, RID.GetPtr(body), mode);
         }
 
         private static IntPtr method_bind_53 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_get_continuous_collision_detection_mode");
@@ -790,7 +790,7 @@ namespace GodotEngine
         /// </summary>
         public static int body_get_continuous_collision_detection_mode(RID body)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_53, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_349(method_bind_53, ptr, RID.GetPtr(body));
         }
 
         private static IntPtr method_bind_54 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_set_collision_layer");
@@ -800,7 +800,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_set_collision_layer(RID body, int layer)
         {
-            NativeCalls.godot_icall_2_359(method_bind_54, ptr, RID.GetPtr(body), layer);
+            NativeCalls.godot_icall_2_358(method_bind_54, ptr, RID.GetPtr(body), layer);
         }
 
         private static IntPtr method_bind_55 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_get_collision_layer");
@@ -810,7 +810,7 @@ namespace GodotEngine
         /// </summary>
         public static int body_get_collision_layer(RID body)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_55, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_349(method_bind_55, ptr, RID.GetPtr(body));
         }
 
         private static IntPtr method_bind_56 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_set_collision_mask");
@@ -820,7 +820,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_set_collision_mask(RID body, int mask)
         {
-            NativeCalls.godot_icall_2_359(method_bind_56, ptr, RID.GetPtr(body), mask);
+            NativeCalls.godot_icall_2_358(method_bind_56, ptr, RID.GetPtr(body), mask);
         }
 
         private static IntPtr method_bind_57 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_get_collision_mask");
@@ -830,7 +830,7 @@ namespace GodotEngine
         /// </summary>
         public static int body_get_collision_mask(RID body)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_57, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_349(method_bind_57, ptr, RID.GetPtr(body));
         }
 
         private static IntPtr method_bind_58 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_set_param");
@@ -840,7 +840,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_set_param(RID body, int param, float value)
         {
-            NativeCalls.godot_icall_3_354(method_bind_58, ptr, RID.GetPtr(body), param, value);
+            NativeCalls.godot_icall_3_353(method_bind_58, ptr, RID.GetPtr(body), param, value);
         }
 
         private static IntPtr method_bind_59 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_get_param");
@@ -850,7 +850,7 @@ namespace GodotEngine
         /// </summary>
         public static float body_get_param(RID body, int param)
         {
-            return NativeCalls.godot_icall_2_355(method_bind_59, ptr, RID.GetPtr(body), param);
+            return NativeCalls.godot_icall_2_354(method_bind_59, ptr, RID.GetPtr(body), param);
         }
 
         private static IntPtr method_bind_60 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_set_state");
@@ -860,7 +860,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_set_state(RID body, int state, object value)
         {
-            NativeCalls.godot_icall_3_366(method_bind_60, ptr, RID.GetPtr(body), state, value);
+            NativeCalls.godot_icall_3_365(method_bind_60, ptr, RID.GetPtr(body), state, value);
         }
 
         private static IntPtr method_bind_61 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_get_state");
@@ -870,7 +870,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_get_state(RID body, int state)
         {
-            NativeCalls.godot_icall_2_359(method_bind_61, ptr, RID.GetPtr(body), state);
+            NativeCalls.godot_icall_2_358(method_bind_61, ptr, RID.GetPtr(body), state);
         }
 
         private static IntPtr method_bind_62 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_apply_impulse");
@@ -880,7 +880,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_apply_impulse(RID body, Vector2 pos, Vector2 impulse)
         {
-            NativeCalls.godot_icall_3_371(method_bind_62, ptr, RID.GetPtr(body), ref pos, ref impulse);
+            NativeCalls.godot_icall_3_370(method_bind_62, ptr, RID.GetPtr(body), ref pos, ref impulse);
         }
 
         private static IntPtr method_bind_63 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_add_force");
@@ -890,7 +890,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_add_force(RID body, Vector2 offset, Vector2 force)
         {
-            NativeCalls.godot_icall_3_371(method_bind_63, ptr, RID.GetPtr(body), ref offset, ref force);
+            NativeCalls.godot_icall_3_370(method_bind_63, ptr, RID.GetPtr(body), ref offset, ref force);
         }
 
         private static IntPtr method_bind_64 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_set_axis_velocity");
@@ -900,7 +900,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_set_axis_velocity(RID body, Vector2 axis_velocity)
         {
-            NativeCalls.godot_icall_2_372(method_bind_64, ptr, RID.GetPtr(body), ref axis_velocity);
+            NativeCalls.godot_icall_2_371(method_bind_64, ptr, RID.GetPtr(body), ref axis_velocity);
         }
 
         private static IntPtr method_bind_65 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_add_collision_exception");
@@ -910,7 +910,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_add_collision_exception(RID body, RID excepted_body)
         {
-            NativeCalls.godot_icall_2_357(method_bind_65, ptr, RID.GetPtr(body), RID.GetPtr(excepted_body));
+            NativeCalls.godot_icall_2_356(method_bind_65, ptr, RID.GetPtr(body), RID.GetPtr(excepted_body));
         }
 
         private static IntPtr method_bind_66 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_remove_collision_exception");
@@ -920,7 +920,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_remove_collision_exception(RID body, RID excepted_body)
         {
-            NativeCalls.godot_icall_2_357(method_bind_66, ptr, RID.GetPtr(body), RID.GetPtr(excepted_body));
+            NativeCalls.godot_icall_2_356(method_bind_66, ptr, RID.GetPtr(body), RID.GetPtr(excepted_body));
         }
 
         private static IntPtr method_bind_67 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_set_max_contacts_reported");
@@ -930,7 +930,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_set_max_contacts_reported(RID body, int amount)
         {
-            NativeCalls.godot_icall_2_359(method_bind_67, ptr, RID.GetPtr(body), amount);
+            NativeCalls.godot_icall_2_358(method_bind_67, ptr, RID.GetPtr(body), amount);
         }
 
         private static IntPtr method_bind_68 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_get_max_contacts_reported");
@@ -940,7 +940,7 @@ namespace GodotEngine
         /// </summary>
         public static int body_get_max_contacts_reported(RID body)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_68, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_349(method_bind_68, ptr, RID.GetPtr(body));
         }
 
         private static IntPtr method_bind_69 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_set_omit_force_integration");
@@ -950,7 +950,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_set_omit_force_integration(RID body, bool enable)
         {
-            NativeCalls.godot_icall_2_352(method_bind_69, ptr, RID.GetPtr(body), enable);
+            NativeCalls.godot_icall_2_351(method_bind_69, ptr, RID.GetPtr(body), enable);
         }
 
         private static IntPtr method_bind_70 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_is_omitting_force_integration");
@@ -960,7 +960,7 @@ namespace GodotEngine
         /// </summary>
         public static bool body_is_omitting_force_integration(RID body)
         {
-            return NativeCalls.godot_icall_1_353(method_bind_70, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_352(method_bind_70, ptr, RID.GetPtr(body));
         }
 
         private static IntPtr method_bind_71 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_set_force_integration_callback");
@@ -970,7 +970,7 @@ namespace GodotEngine
         /// </summary>
         public static void body_set_force_integration_callback(RID body, Object receiver, string method, object userdata = null)
         {
-            NativeCalls.godot_icall_4_373(method_bind_71, ptr, RID.GetPtr(body), Object.GetPtr(receiver), method, userdata);
+            NativeCalls.godot_icall_4_372(method_bind_71, ptr, RID.GetPtr(body), Object.GetPtr(receiver), method, userdata);
         }
 
         private static IntPtr method_bind_72 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "body_test_motion");
@@ -980,7 +980,7 @@ namespace GodotEngine
         /// </summary>
         public static bool body_test_motion(RID body, Transform2D from, Vector2 motion, float margin = 0.08f, Physics2DTestMotionResult result = null)
         {
-            return NativeCalls.godot_icall_5_374(method_bind_72, ptr, RID.GetPtr(body), ref from, ref motion, margin, Object.GetPtr(result));
+            return NativeCalls.godot_icall_5_373(method_bind_72, ptr, RID.GetPtr(body), ref from, ref motion, margin, Object.GetPtr(result));
         }
 
         private static IntPtr method_bind_73 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "joint_set_param");
@@ -990,7 +990,7 @@ namespace GodotEngine
         /// </summary>
         public static void joint_set_param(RID joint, int param, float value)
         {
-            NativeCalls.godot_icall_3_354(method_bind_73, ptr, RID.GetPtr(joint), param, value);
+            NativeCalls.godot_icall_3_353(method_bind_73, ptr, RID.GetPtr(joint), param, value);
         }
 
         private static IntPtr method_bind_74 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "joint_get_param");
@@ -1000,7 +1000,7 @@ namespace GodotEngine
         /// </summary>
         public static float joint_get_param(RID joint, int param)
         {
-            return NativeCalls.godot_icall_2_355(method_bind_74, ptr, RID.GetPtr(joint), param);
+            return NativeCalls.godot_icall_2_354(method_bind_74, ptr, RID.GetPtr(joint), param);
         }
 
         private static IntPtr method_bind_75 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "pin_joint_create");
@@ -1012,7 +1012,7 @@ namespace GodotEngine
         public static RID pin_joint_create(Vector2 anchor, RID body_a, RID body_b = null)
         {
             RID body_b_in = body_b != null ? body_b : new RID();
-            IntPtr ret = NativeCalls.godot_icall_3_375(method_bind_75, ptr, ref anchor, RID.GetPtr(body_a), RID.GetPtr(body_b_in));
+            IntPtr ret = NativeCalls.godot_icall_3_374(method_bind_75, ptr, ref anchor, RID.GetPtr(body_a), RID.GetPtr(body_b_in));
             return new RID(ret);
         }
 
@@ -1027,7 +1027,7 @@ namespace GodotEngine
         {
             RID body_a_in = body_a != null ? body_a : new RID();
             RID body_b_in = body_b != null ? body_b : new RID();
-            IntPtr ret = NativeCalls.godot_icall_5_376(method_bind_76, ptr, ref groove1_a, ref groove2_a, ref anchor_b, RID.GetPtr(body_a_in), RID.GetPtr(body_b_in));
+            IntPtr ret = NativeCalls.godot_icall_5_375(method_bind_76, ptr, ref groove1_a, ref groove2_a, ref anchor_b, RID.GetPtr(body_a_in), RID.GetPtr(body_b_in));
             return new RID(ret);
         }
 
@@ -1040,7 +1040,7 @@ namespace GodotEngine
         public static RID damped_spring_joint_create(Vector2 anchor_a, Vector2 anchor_b, RID body_a, RID body_b = null)
         {
             RID body_b_in = body_b != null ? body_b : new RID();
-            IntPtr ret = NativeCalls.godot_icall_4_377(method_bind_77, ptr, ref anchor_a, ref anchor_b, RID.GetPtr(body_a), RID.GetPtr(body_b_in));
+            IntPtr ret = NativeCalls.godot_icall_4_376(method_bind_77, ptr, ref anchor_a, ref anchor_b, RID.GetPtr(body_a), RID.GetPtr(body_b_in));
             return new RID(ret);
         }
 
@@ -1051,7 +1051,7 @@ namespace GodotEngine
         /// </summary>
         public static void damped_string_joint_set_param(RID joint, int param, float value)
         {
-            NativeCalls.godot_icall_3_354(method_bind_78, ptr, RID.GetPtr(joint), param, value);
+            NativeCalls.godot_icall_3_353(method_bind_78, ptr, RID.GetPtr(joint), param, value);
         }
 
         private static IntPtr method_bind_79 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "damped_string_joint_get_param");
@@ -1061,7 +1061,7 @@ namespace GodotEngine
         /// </summary>
         public static float damped_string_joint_get_param(RID joint, int param)
         {
-            return NativeCalls.godot_icall_2_355(method_bind_79, ptr, RID.GetPtr(joint), param);
+            return NativeCalls.godot_icall_2_354(method_bind_79, ptr, RID.GetPtr(joint), param);
         }
 
         private static IntPtr method_bind_80 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "joint_get_type");
@@ -1071,7 +1071,7 @@ namespace GodotEngine
         /// </summary>
         public static int joint_get_type(RID joint)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_80, ptr, RID.GetPtr(joint));
+            return NativeCalls.godot_icall_1_349(method_bind_80, ptr, RID.GetPtr(joint));
         }
 
         private static IntPtr method_bind_81 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "free_rid");
@@ -1081,7 +1081,7 @@ namespace GodotEngine
         /// </summary>
         public static void free_rid(RID rid)
         {
-            NativeCalls.godot_icall_1_351(method_bind_81, ptr, RID.GetPtr(rid));
+            NativeCalls.godot_icall_1_350(method_bind_81, ptr, RID.GetPtr(rid));
         }
 
         private static IntPtr method_bind_82 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_active");

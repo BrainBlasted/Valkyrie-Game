@@ -25,21 +25,21 @@ namespace GodotEngine
 
         public Shader get_shader()
         {
-            return NativeCalls.godot_icall_0_433(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_432(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_shader_param");
 
         public void set_shader_param(string param, object value)
         {
-            NativeCalls.godot_icall_2_318(method_bind_2, Object.GetPtr(this), param, value);
+            NativeCalls.godot_icall_2_317(method_bind_2, Object.GetPtr(this), param, value);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_shader_param");
 
         public object get_shader_param(string param)
         {
-            return NativeCalls.godot_icall_1_322(method_bind_3, Object.GetPtr(this), param);
+            return NativeCalls.godot_icall_1_321(method_bind_3, Object.GetPtr(this), param);
         }
     }
 }

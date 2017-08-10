@@ -19,7 +19,7 @@ namespace GodotEngine
 
         public Dictionary<object, object> get_stored_values(bool with_order = false)
         {
-            return NativeCalls.godot_icall_1_259(method_bind_0, Object.GetPtr(this), with_order);
+            return NativeCalls.godot_icall_1_258(method_bind_0, Object.GetPtr(this), with_order);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "replace_by_instance");

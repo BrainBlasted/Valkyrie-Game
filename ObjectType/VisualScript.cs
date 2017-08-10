@@ -176,7 +176,7 @@ namespace GodotEngine
 
         public void set_variable_default_value(string name, object value)
         {
-            NativeCalls.godot_icall_2_318(method_bind_22, Object.GetPtr(this), name, value);
+            NativeCalls.godot_icall_2_317(method_bind_22, Object.GetPtr(this), name, value);
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_variable_default_value");
@@ -246,7 +246,7 @@ namespace GodotEngine
 
         public void custom_signal_set_argument_type(string name, int argidx, int type)
         {
-            NativeCalls.godot_icall_3_403(method_bind_32, Object.GetPtr(this), name, argidx, type);
+            NativeCalls.godot_icall_3_402(method_bind_32, Object.GetPtr(this), name, argidx, type);
         }
 
         private IntPtr method_bind_33 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "custom_signal_get_argument_type");
@@ -288,7 +288,7 @@ namespace GodotEngine
 
         public void custom_signal_swap_argument(string name, int argidx, int withidx)
         {
-            NativeCalls.godot_icall_3_403(method_bind_38, Object.GetPtr(this), name, argidx, withidx);
+            NativeCalls.godot_icall_3_402(method_bind_38, Object.GetPtr(this), name, argidx, withidx);
         }
 
         private IntPtr method_bind_39 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_custom_signal");

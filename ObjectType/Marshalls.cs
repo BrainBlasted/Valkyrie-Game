@@ -11,14 +11,14 @@ namespace GodotEngine
 
         public static string variant_to_base64(object variant)
         {
-            return NativeCalls.godot_icall_1_413(method_bind_0, ptr, variant);
+            return NativeCalls.godot_icall_1_412(method_bind_0, ptr, variant);
         }
 
         private static IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "base64_to_variant");
 
         public static object base64_to_variant(string base64_str)
         {
-            return NativeCalls.godot_icall_1_322(method_bind_1, ptr, base64_str);
+            return NativeCalls.godot_icall_1_321(method_bind_1, ptr, base64_str);
         }
 
         private static IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "raw_to_base64");

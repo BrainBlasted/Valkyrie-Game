@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public OccluderPolygon2D get_occluder_polygon()
         {
-            return NativeCalls.godot_icall_0_275(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_274(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_occluder_light_mask");

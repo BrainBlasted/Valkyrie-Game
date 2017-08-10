@@ -131,7 +131,7 @@ namespace GodotEngine
         /// </summary>
         public Rect2 get_tab_rect(int tab_idx)
         {
-            object ret = NativeCalls.godot_icall_1_263(method_bind_14, Object.GetPtr(this), tab_idx);
+            object ret = NativeCalls.godot_icall_1_262(method_bind_14, Object.GetPtr(this), tab_idx);
             return (Rect2)ret;
         }
 

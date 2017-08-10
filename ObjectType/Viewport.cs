@@ -139,7 +139,7 @@ namespace GodotEngine
         /// </summary>
         public World get_world()
         {
-            return NativeCalls.godot_icall_0_440(method_bind_8, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_439(method_bind_8, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "find_world");
@@ -149,7 +149,7 @@ namespace GodotEngine
         /// </summary>
         public World find_world()
         {
-            return NativeCalls.godot_icall_0_440(method_bind_9, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_439(method_bind_9, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_canvas_transform");

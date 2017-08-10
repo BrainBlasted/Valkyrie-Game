@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public Curve2D get_curve()
         {
-            return NativeCalls.godot_icall_0_341(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_340(method_bind_1, Object.GetPtr(this));
         }
     }
 }

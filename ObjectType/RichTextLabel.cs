@@ -141,7 +141,7 @@ namespace GodotEngine
 
         public void set_table_column_expand(int column, bool expand, int ratio)
         {
-            NativeCalls.godot_icall_3_417(method_bind_14, Object.GetPtr(this), column, expand, ratio);
+            NativeCalls.godot_icall_3_416(method_bind_14, Object.GetPtr(this), column, expand, ratio);
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "push_cell");
@@ -211,7 +211,7 @@ namespace GodotEngine
 
         public VScrollBar get_v_scroll()
         {
-            return NativeCalls.godot_icall_0_267(method_bind_24, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_266(method_bind_24, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "scroll_to_line");

@@ -53,7 +53,7 @@ namespace GodotEngine
 
         public Texture get_default_texture_param(string param)
         {
-            return NativeCalls.godot_icall_1_432(method_bind_4, Object.GetPtr(this), param);
+            return NativeCalls.godot_icall_1_431(method_bind_4, Object.GetPtr(this), param);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_param");

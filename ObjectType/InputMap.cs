@@ -58,7 +58,7 @@ namespace GodotEngine
 
         public static bool action_has_event(string action, InputEvent @event)
         {
-            return NativeCalls.godot_icall_2_256(method_bind_5, ptr, action, Object.GetPtr(@event));
+            return NativeCalls.godot_icall_2_255(method_bind_5, ptr, action, Object.GetPtr(@event));
         }
 
         private static IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "action_erase_event");
@@ -75,14 +75,14 @@ namespace GodotEngine
         /// </summary>
         public static object[] get_action_list(string action)
         {
-            return NativeCalls.godot_icall_1_257(method_bind_7, ptr, action);
+            return NativeCalls.godot_icall_1_256(method_bind_7, ptr, action);
         }
 
         private static IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "event_is_action");
 
         public static bool event_is_action(InputEvent @event, string action)
         {
-            return NativeCalls.godot_icall_2_258(method_bind_8, ptr, Object.GetPtr(@event), action);
+            return NativeCalls.godot_icall_2_257(method_bind_8, ptr, Object.GetPtr(@event), action);
         }
 
         private static IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "load_from_globals");

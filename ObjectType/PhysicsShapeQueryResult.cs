@@ -21,7 +21,7 @@ namespace GodotEngine
 
         public RID get_result_rid(int idx)
         {
-            IntPtr ret = NativeCalls.godot_icall_1_342(method_bind_1, Object.GetPtr(this), idx);
+            IntPtr ret = NativeCalls.godot_icall_1_341(method_bind_1, Object.GetPtr(this), idx);
             return new RID(ret);
         }
 

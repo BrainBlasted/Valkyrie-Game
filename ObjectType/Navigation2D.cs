@@ -18,7 +18,7 @@ namespace GodotEngine
 
         public int navpoly_create(NavigationPolygon mesh, Transform2D xform, Object owner = null)
         {
-            return NativeCalls.godot_icall_3_297(method_bind_0, Object.GetPtr(this), Object.GetPtr(mesh), ref xform, Object.GetPtr(owner));
+            return NativeCalls.godot_icall_3_296(method_bind_0, Object.GetPtr(this), Object.GetPtr(mesh), ref xform, Object.GetPtr(owner));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "navpoly_set_transform");
@@ -39,7 +39,7 @@ namespace GodotEngine
 
         public Vector2[] get_simple_path(Vector2 start, Vector2 end, bool optimize = true)
         {
-            return NativeCalls.godot_icall_3_298(method_bind_3, Object.GetPtr(this), ref start, ref end, optimize);
+            return NativeCalls.godot_icall_3_297(method_bind_3, Object.GetPtr(this), ref start, ref end, optimize);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_closest_point");
@@ -54,7 +54,7 @@ namespace GodotEngine
 
         public Object get_closest_point_owner(Vector2 to_point)
         {
-            return NativeCalls.godot_icall_1_299(method_bind_5, Object.GetPtr(this), ref to_point);
+            return NativeCalls.godot_icall_1_298(method_bind_5, Object.GetPtr(this), ref to_point);
         }
     }
 }

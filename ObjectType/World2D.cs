@@ -46,7 +46,7 @@ namespace GodotEngine
         /// </summary>
         public Physics2DDirectSpaceState get_direct_space_state()
         {
-            return NativeCalls.godot_icall_0_343(method_bind_2, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_342(method_bind_2, Object.GetPtr(this));
         }
     }
 }

@@ -39,7 +39,7 @@ namespace GodotEngine
 
         public NodePath get_node_path(int idx, bool for_parent = false)
         {
-            IntPtr ret = NativeCalls.godot_icall_2_421(method_bind_3, Object.GetPtr(this), idx, for_parent);
+            IntPtr ret = NativeCalls.godot_icall_2_420(method_bind_3, Object.GetPtr(this), idx, for_parent);
             return new NodePath(ret);
         }
 
@@ -69,14 +69,14 @@ namespace GodotEngine
 
         public PackedScene get_node_instance(int idx)
         {
-            return NativeCalls.godot_icall_1_422(method_bind_7, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_421(method_bind_7, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_node_groups");
 
         public string[] get_node_groups(int idx)
         {
-            return NativeCalls.godot_icall_1_423(method_bind_8, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_422(method_bind_8, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_node_property_count");
@@ -97,7 +97,7 @@ namespace GodotEngine
 
         public object get_node_property_value(int idx, int prop_idx)
         {
-            return NativeCalls.godot_icall_2_424(method_bind_11, Object.GetPtr(this), idx, prop_idx);
+            return NativeCalls.godot_icall_2_423(method_bind_11, Object.GetPtr(this), idx, prop_idx);
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_connection_count");
@@ -148,7 +148,7 @@ namespace GodotEngine
 
         public object[] get_connection_binds(int idx)
         {
-            return NativeCalls.godot_icall_1_425(method_bind_18, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_424(method_bind_18, Object.GetPtr(this), idx);
         }
     }
 }

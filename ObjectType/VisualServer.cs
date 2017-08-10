@@ -31,28 +31,28 @@ namespace GodotEngine
 
         public static void texture_set_flags(RID texture, int arg1)
         {
-            NativeCalls.godot_icall_2_359(method_bind_2, ptr, RID.GetPtr(texture), arg1);
+            NativeCalls.godot_icall_2_358(method_bind_2, ptr, RID.GetPtr(texture), arg1);
         }
 
         private static IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "texture_get_flags");
 
         public static int texture_get_flags(RID texture)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_3, ptr, RID.GetPtr(texture));
+            return NativeCalls.godot_icall_1_349(method_bind_3, ptr, RID.GetPtr(texture));
         }
 
         private static IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "texture_get_width");
 
         public static int texture_get_width(RID texture)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_4, ptr, RID.GetPtr(texture));
+            return NativeCalls.godot_icall_1_349(method_bind_4, ptr, RID.GetPtr(texture));
         }
 
         private static IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "texture_get_height");
 
         public static int texture_get_height(RID texture)
         {
-            return NativeCalls.godot_icall_1_350(method_bind_5, ptr, RID.GetPtr(texture));
+            return NativeCalls.godot_icall_1_349(method_bind_5, ptr, RID.GetPtr(texture));
         }
 
         private static IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "texture_set_shrink_all_x2_on_set_data");

@@ -54,7 +54,7 @@ namespace GodotEngine
         public object[] intersect_point(Vector2 point, int max_results = 32, object[] exclude = null, int collision_layer = 2147483647, int type_mask = 15)
         {
             object[] exclude_in = exclude != null ? exclude : new object[] {};
-            return NativeCalls.godot_icall_5_344(method_bind_0, Object.GetPtr(this), ref point, max_results, exclude_in, collision_layer, type_mask);
+            return NativeCalls.godot_icall_5_343(method_bind_0, Object.GetPtr(this), ref point, max_results, exclude_in, collision_layer, type_mask);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "intersect_ray");
@@ -75,7 +75,7 @@ namespace GodotEngine
         public Dictionary<object, object> intersect_ray(Vector2 from, Vector2 to, object[] exclude = null, int collision_layer = 2147483647, int type_mask = 15)
         {
             object[] exclude_in = exclude != null ? exclude : new object[] {};
-            return NativeCalls.godot_icall_5_345(method_bind_1, Object.GetPtr(this), ref from, ref to, exclude_in, collision_layer, type_mask);
+            return NativeCalls.godot_icall_5_344(method_bind_1, Object.GetPtr(this), ref from, ref to, exclude_in, collision_layer, type_mask);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "intersect_shape");
@@ -91,7 +91,7 @@ namespace GodotEngine
         /// </summary>
         public object[] intersect_shape(Physics2DShapeQueryParameters shape, int max_results = 32)
         {
-            return NativeCalls.godot_icall_2_346(method_bind_2, Object.GetPtr(this), Object.GetPtr(shape), max_results);
+            return NativeCalls.godot_icall_2_345(method_bind_2, Object.GetPtr(this), Object.GetPtr(shape), max_results);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "cast_motion");
@@ -102,7 +102,7 @@ namespace GodotEngine
         /// </summary>
         public object[] cast_motion(Physics2DShapeQueryParameters shape)
         {
-            return NativeCalls.godot_icall_1_347(method_bind_3, Object.GetPtr(this), Object.GetPtr(shape));
+            return NativeCalls.godot_icall_1_346(method_bind_3, Object.GetPtr(this), Object.GetPtr(shape));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "collide_shape");
@@ -112,7 +112,7 @@ namespace GodotEngine
         /// </summary>
         public object[] collide_shape(Physics2DShapeQueryParameters shape, int max_results = 32)
         {
-            return NativeCalls.godot_icall_2_346(method_bind_4, Object.GetPtr(this), Object.GetPtr(shape), max_results);
+            return NativeCalls.godot_icall_2_345(method_bind_4, Object.GetPtr(this), Object.GetPtr(shape), max_results);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_rest_info");
@@ -131,7 +131,7 @@ namespace GodotEngine
         /// </summary>
         public Dictionary<object, object> get_rest_info(Physics2DShapeQueryParameters shape)
         {
-            return NativeCalls.godot_icall_1_348(method_bind_5, Object.GetPtr(this), Object.GetPtr(shape));
+            return NativeCalls.godot_icall_1_347(method_bind_5, Object.GetPtr(this), Object.GetPtr(shape));
         }
     }
 }

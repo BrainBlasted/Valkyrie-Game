@@ -416,12 +416,12 @@ namespace GodotEngine
             return NativeCalls.godot_icall_1_70(method_bind_36, ptr, uri);
         }
 
-        private static IntPtr method_bind_37 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_process_ID");
+        private static IntPtr method_bind_37 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_process_id");
 
         /// <summary>
         /// Returns the game process ID
         /// </summary>
-        public static int get_process_ID()
+        public static int get_process_id()
         {
             return NativeCalls.godot_icall_0_1(method_bind_37, ptr);
         }
@@ -473,7 +473,7 @@ namespace GodotEngine
         /// </summary>
         public static Dictionary<object, object> get_datetime(bool utc = false)
         {
-            return NativeCalls.godot_icall_1_259(method_bind_42, ptr, utc);
+            return NativeCalls.godot_icall_1_258(method_bind_42, ptr, utc);
         }
 
         private static IntPtr method_bind_43 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_date");
@@ -483,7 +483,7 @@ namespace GodotEngine
         /// </summary>
         public static Dictionary<object, object> get_date(bool utc = false)
         {
-            return NativeCalls.godot_icall_1_259(method_bind_43, ptr, utc);
+            return NativeCalls.godot_icall_1_258(method_bind_43, ptr, utc);
         }
 
         private static IntPtr method_bind_44 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_time");
@@ -493,7 +493,7 @@ namespace GodotEngine
         /// </summary>
         public static Dictionary<object, object> get_time(bool utc = false)
         {
-            return NativeCalls.godot_icall_1_259(method_bind_44, ptr, utc);
+            return NativeCalls.godot_icall_1_258(method_bind_44, ptr, utc);
         }
 
         private static IntPtr method_bind_45 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_time_zone_info");
@@ -780,9 +780,9 @@ namespace GodotEngine
             return NativeCalls.godot_icall_1_86(method_bind_75, ptr, dir);
         }
 
-        private static IntPtr method_bind_76 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_unique_ID");
+        private static IntPtr method_bind_76 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_unique_id");
 
-        public static string get_unique_ID()
+        public static string get_unique_id()
         {
             return NativeCalls.godot_icall_0_2(method_bind_76, ptr);
         }

@@ -14,7 +14,7 @@ namespace GodotEngine
 
         public void set_base(RID @base)
         {
-            NativeCalls.godot_icall_1_351(method_bind_0, Object.GetPtr(this), RID.GetPtr(@base));
+            NativeCalls.godot_icall_1_350(method_bind_0, Object.GetPtr(this), RID.GetPtr(@base));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_layer_mask");

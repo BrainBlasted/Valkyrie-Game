@@ -96,7 +96,7 @@ namespace GodotEngine
 
         public Node get_local_scene()
         {
-            return NativeCalls.godot_icall_0_310(method_bind_8, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_309(method_bind_8, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "setup_local_to_scene");
@@ -110,7 +110,7 @@ namespace GodotEngine
 
         public Resource duplicate(bool subresources = false)
         {
-            return NativeCalls.godot_icall_1_414(method_bind_10, Object.GetPtr(this), subresources);
+            return NativeCalls.godot_icall_1_413(method_bind_10, Object.GetPtr(this), subresources);
         }
     }
 }

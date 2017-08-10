@@ -74,7 +74,7 @@ namespace GodotEngine
         public string get_string(object name = null)
         {
             object name_in = name != null ? name : 0;
-            return NativeCalls.godot_icall_1_413(method_bind_5, Object.GetPtr(this), name_in);
+            return NativeCalls.godot_icall_1_412(method_bind_5, Object.GetPtr(this), name_in);
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_start");
@@ -86,7 +86,7 @@ namespace GodotEngine
         public int get_start(object name = null)
         {
             object name_in = name != null ? name : 0;
-            return NativeCalls.godot_icall_1_334(method_bind_6, Object.GetPtr(this), name_in);
+            return NativeCalls.godot_icall_1_333(method_bind_6, Object.GetPtr(this), name_in);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_end");
@@ -98,7 +98,7 @@ namespace GodotEngine
         public int get_end(object name = null)
         {
             object name_in = name != null ? name : 0;
-            return NativeCalls.godot_icall_1_334(method_bind_7, Object.GetPtr(this), name_in);
+            return NativeCalls.godot_icall_1_333(method_bind_7, Object.GetPtr(this), name_in);
         }
     }
 }

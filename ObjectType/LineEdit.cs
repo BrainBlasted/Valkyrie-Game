@@ -273,7 +273,7 @@ namespace GodotEngine
 
         public PopupMenu get_menu()
         {
-            return NativeCalls.godot_icall_0_276(method_bind_27, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_275(method_bind_27, Object.GetPtr(this));
         }
     }
 }

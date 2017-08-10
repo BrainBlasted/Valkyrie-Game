@@ -96,7 +96,7 @@ namespace GodotEngine
 
         public void set_param_texture(int param, Object texture)
         {
-            NativeCalls.godot_icall_2_337(method_bind_8, Object.GetPtr(this), param, Object.GetPtr(texture));
+            NativeCalls.godot_icall_2_336(method_bind_8, Object.GetPtr(this), param, Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_param_texture");
@@ -273,7 +273,7 @@ namespace GodotEngine
 
         public CurveTexture get_trail_size_modifier()
         {
-            return NativeCalls.godot_icall_0_338(method_bind_33, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_337(method_bind_33, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_34 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_trail_color_modifier");
@@ -287,7 +287,7 @@ namespace GodotEngine
 
         public GradientTexture get_trail_color_modifier()
         {
-            return NativeCalls.godot_icall_0_339(method_bind_35, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_338(method_bind_35, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_36 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_gravity");

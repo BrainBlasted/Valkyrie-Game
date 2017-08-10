@@ -128,7 +128,7 @@ namespace GodotEngine
         /// </summary>
         public void bind_child_node_to_bone(int bone_idx, Node node)
         {
-            NativeCalls.godot_icall_2_337(method_bind_11, Object.GetPtr(this), bone_idx, Object.GetPtr(node));
+            NativeCalls.godot_icall_2_336(method_bind_11, Object.GetPtr(this), bone_idx, Object.GetPtr(node));
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "unbind_child_node_from_bone");
@@ -138,7 +138,7 @@ namespace GodotEngine
         /// </summary>
         public void unbind_child_node_from_bone(int bone_idx, Node node)
         {
-            NativeCalls.godot_icall_2_337(method_bind_12, Object.GetPtr(this), bone_idx, Object.GetPtr(node));
+            NativeCalls.godot_icall_2_336(method_bind_12, Object.GetPtr(this), bone_idx, Object.GetPtr(node));
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bound_child_nodes_to_bone");
@@ -148,7 +148,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_bound_child_nodes_to_bone(int bone_idx)
         {
-            return NativeCalls.godot_icall_1_425(method_bind_13, Object.GetPtr(this), bone_idx);
+            return NativeCalls.godot_icall_1_424(method_bind_13, Object.GetPtr(this), bone_idx);
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_bones");

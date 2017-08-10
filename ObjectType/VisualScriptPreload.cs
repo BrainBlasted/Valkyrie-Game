@@ -25,7 +25,7 @@ namespace GodotEngine
 
         public Resource get_preload()
         {
-            return NativeCalls.godot_icall_0_415(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_414(method_bind_1, Object.GetPtr(this));
         }
     }
 }

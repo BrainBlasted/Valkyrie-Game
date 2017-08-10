@@ -50,14 +50,14 @@ namespace GodotEngine
 
         public bool iteration(float delta)
         {
-            return NativeCalls.godot_icall_1_277(method_bind_3, Object.GetPtr(this), delta);
+            return NativeCalls.godot_icall_1_276(method_bind_3, Object.GetPtr(this), delta);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "idle");
 
         public bool idle(float delta)
         {
-            return NativeCalls.godot_icall_1_277(method_bind_4, Object.GetPtr(this), delta);
+            return NativeCalls.godot_icall_1_276(method_bind_4, Object.GetPtr(this), delta);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "finish");
