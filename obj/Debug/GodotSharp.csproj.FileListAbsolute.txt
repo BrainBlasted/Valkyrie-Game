@@ -4,3 +4,4 @@
 /home/chris/Documents/Repos/Valkyrie-Game/obj/Debug/GodotSharp.csproj.CoreCompileInputs.cache
 /home/chris/Documents/Repos/Valkyrie-Game/obj/Debug/GodotSharp.dll
 /home/chris/Documents/Repos/Valkyrie-Game/obj/Debug/GodotSharp.pdb
+/home/chris/Documents/Repos/Valkyrie-Game/bin/Debug/GodotSharp.xml
