@@ -5,3 +5,4 @@
 /home/chris/Documents/Repos/Valkyrie-Game/bin/Debug/GodotSharp.pdb
 /home/chris/Documents/Repos/Valkyrie-Game/obj/Debug/Valkyrie_Game.dll
 /home/chris/Documents/Repos/Valkyrie-Game/obj/Debug/Valkyrie_Game.pdb
+/home/chris/Documents/Repos/Valkyrie-Game/bin/Debug/GodotSharp.xml
