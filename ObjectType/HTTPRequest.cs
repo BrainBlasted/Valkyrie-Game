@@ -69,7 +69,7 @@ namespace GodotEngine
         public int request(string url, string[] custom_headers = null, bool ssl_validate_domain = true, int method = 0, string request_data = "")
         {
             string[] custom_headers_in = custom_headers != null ? custom_headers : new string[] {};
-            return NativeCalls.godot_icall_5_237(method_bind_0, Object.GetPtr(this), url, custom_headers_in, ssl_validate_domain, method, request_data);
+            return NativeCalls.godot_icall_5_235(method_bind_0, Object.GetPtr(this), url, custom_headers_in, ssl_validate_domain, method, request_data);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "cancel_request");
@@ -159,7 +159,7 @@ namespace GodotEngine
         /// </summary>
         public void set_download_file(string path)
         {
-            NativeCalls.godot_icall_1_34(method_bind_9, Object.GetPtr(this), path);
+            NativeCalls.godot_icall_1_35(method_bind_9, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_download_file");

@@ -39,7 +39,7 @@ namespace GodotEngine
         /// </summary>
         public void create(int width, int height, int format, int flags = 7)
         {
-            NativeCalls.godot_icall_4_247(method_bind_0, Object.GetPtr(this), width, height, format, flags);
+            NativeCalls.godot_icall_4_245(method_bind_0, Object.GetPtr(this), width, height, format, flags);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "create_from_image");
@@ -49,7 +49,7 @@ namespace GodotEngine
         /// </summary>
         public void create_from_image(Image image, int flags = 7)
         {
-            NativeCalls.godot_icall_2_248(method_bind_1, Object.GetPtr(this), Object.GetPtr(image), flags);
+            NativeCalls.godot_icall_2_246(method_bind_1, Object.GetPtr(this), Object.GetPtr(image), flags);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_format");
@@ -69,7 +69,7 @@ namespace GodotEngine
         /// </summary>
         public void load(string path)
         {
-            NativeCalls.godot_icall_1_34(method_bind_3, Object.GetPtr(this), path);
+            NativeCalls.godot_icall_1_35(method_bind_3, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_data");
@@ -79,7 +79,7 @@ namespace GodotEngine
         /// </summary>
         public void set_data(Image image)
         {
-            NativeCalls.godot_icall_1_35(method_bind_4, Object.GetPtr(this), Object.GetPtr(image));
+            NativeCalls.godot_icall_1_19(method_bind_4, Object.GetPtr(this), Object.GetPtr(image));
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_storage");

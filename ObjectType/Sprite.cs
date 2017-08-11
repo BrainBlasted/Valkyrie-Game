@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_texture(Texture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_texture");
@@ -34,21 +34,21 @@ namespace GodotEngine
         /// </summary>
         public Texture get_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_normal_map");
 
         public void set_normal_map(Texture normal_map)
         {
-            NativeCalls.godot_icall_1_35(method_bind_2, Object.GetPtr(this), Object.GetPtr(normal_map));
+            NativeCalls.godot_icall_1_19(method_bind_2, Object.GetPtr(this), Object.GetPtr(normal_map));
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_normal_map");
 
         public Texture get_normal_map()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_3, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_centered");
@@ -159,7 +159,7 @@ namespace GodotEngine
         /// </summary>
         public void set_region_rect(Rect2 rect)
         {
-            NativeCalls.godot_icall_1_93(method_bind_14, Object.GetPtr(this), ref rect);
+            NativeCalls.godot_icall_1_94(method_bind_14, Object.GetPtr(this), ref rect);
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_region_rect");
@@ -169,7 +169,7 @@ namespace GodotEngine
         /// </summary>
         public Rect2 get_region_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_15, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_15, Object.GetPtr(this));
             return (Rect2)ret;
         }
 

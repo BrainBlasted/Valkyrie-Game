@@ -18,14 +18,14 @@ namespace GodotEngine
 
         public void set_navigation_polygon(NavigationPolygon navpoly)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(navpoly));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(navpoly));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_navigation_polygon");
 
         public NavigationPolygon get_navigation_polygon()
         {
-            return NativeCalls.godot_icall_0_303(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_301(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_enabled");

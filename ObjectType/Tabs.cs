@@ -51,28 +51,28 @@ namespace GodotEngine
 
         public void set_tab_title(int tab_idx, string title)
         {
-            NativeCalls.godot_icall_2_68(method_bind_3, Object.GetPtr(this), tab_idx, title);
+            NativeCalls.godot_icall_2_69(method_bind_3, Object.GetPtr(this), tab_idx, title);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_tab_title");
 
         public string get_tab_title(int tab_idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_4, Object.GetPtr(this), tab_idx);
+            return NativeCalls.godot_icall_1_87(method_bind_4, Object.GetPtr(this), tab_idx);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_tab_icon");
 
         public void set_tab_icon(int tab_idx, Texture icon)
         {
-            NativeCalls.godot_icall_2_88(method_bind_5, Object.GetPtr(this), tab_idx, Object.GetPtr(icon));
+            NativeCalls.godot_icall_2_89(method_bind_5, Object.GetPtr(this), tab_idx, Object.GetPtr(icon));
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_tab_icon");
 
         public Texture get_tab_icon(int tab_idx)
         {
-            return NativeCalls.godot_icall_1_108(method_bind_6, Object.GetPtr(this), tab_idx);
+            return NativeCalls.godot_icall_1_109(method_bind_6, Object.GetPtr(this), tab_idx);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_tab_disabled");
@@ -100,7 +100,7 @@ namespace GodotEngine
 
         public void add_tab(string title = "", Texture icon = null)
         {
-            NativeCalls.godot_icall_2_72(method_bind_10, Object.GetPtr(this), title, Object.GetPtr(icon));
+            NativeCalls.godot_icall_2_73(method_bind_10, Object.GetPtr(this), title, Object.GetPtr(icon));
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_tab_align");
@@ -131,7 +131,7 @@ namespace GodotEngine
         /// </summary>
         public Rect2 get_tab_rect(int tab_idx)
         {
-            object ret = NativeCalls.godot_icall_1_262(method_bind_14, Object.GetPtr(this), tab_idx);
+            object ret = NativeCalls.godot_icall_1_260(method_bind_14, Object.GetPtr(this), tab_idx);
             return (Rect2)ret;
         }
 

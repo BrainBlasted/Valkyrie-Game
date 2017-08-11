@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public void set_item_name(int id, string name)
         {
-            NativeCalls.godot_icall_2_68(method_bind_1, Object.GetPtr(this), id, name);
+            NativeCalls.godot_icall_2_69(method_bind_1, Object.GetPtr(this), id, name);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_item_mesh");
@@ -44,21 +44,21 @@ namespace GodotEngine
         /// </summary>
         public void set_item_mesh(int id, Mesh mesh)
         {
-            NativeCalls.godot_icall_2_88(method_bind_2, Object.GetPtr(this), id, Object.GetPtr(mesh));
+            NativeCalls.godot_icall_2_89(method_bind_2, Object.GetPtr(this), id, Object.GetPtr(mesh));
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_item_navmesh");
 
         public void set_item_navmesh(int id, NavigationMesh navmesh)
         {
-            NativeCalls.godot_icall_2_88(method_bind_3, Object.GetPtr(this), id, Object.GetPtr(navmesh));
+            NativeCalls.godot_icall_2_89(method_bind_3, Object.GetPtr(this), id, Object.GetPtr(navmesh));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_item_shape");
 
         public void set_item_shape(int id, Shape shape)
         {
-            NativeCalls.godot_icall_2_88(method_bind_4, Object.GetPtr(this), id, Object.GetPtr(shape));
+            NativeCalls.godot_icall_2_89(method_bind_4, Object.GetPtr(this), id, Object.GetPtr(shape));
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_name");
@@ -68,7 +68,7 @@ namespace GodotEngine
         /// </summary>
         public string get_item_name(int id)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_5, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_87(method_bind_5, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_mesh");
@@ -78,21 +78,21 @@ namespace GodotEngine
         /// </summary>
         public Mesh get_item_mesh(int id)
         {
-            return NativeCalls.godot_icall_1_288(method_bind_6, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_286(method_bind_6, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_navmesh");
 
         public NavigationMesh get_item_navmesh(int id)
         {
-            return NativeCalls.godot_icall_1_289(method_bind_7, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_287(method_bind_7, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_shape");
 
         public Shape get_item_shape(int id)
         {
-            return NativeCalls.godot_icall_1_290(method_bind_8, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_288(method_bind_8, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_item");
@@ -122,7 +122,7 @@ namespace GodotEngine
         /// </summary>
         public int[] get_item_list()
         {
-            return NativeCalls.godot_icall_0_210(method_bind_11, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_209(method_bind_11, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_last_unused_item_id");

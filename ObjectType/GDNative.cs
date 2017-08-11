@@ -18,14 +18,14 @@ namespace GodotEngine
 
         public void set_library(GDNativeLibrary library)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(library));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(library));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_library");
 
         public GDNativeLibrary get_library()
         {
-            return NativeCalls.godot_icall_0_204(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_203(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "initialize");
@@ -44,9 +44,9 @@ namespace GodotEngine
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "call_native");
 
-        public object call_native(string procedure_name, object[] arguments, object[] arg2)
+        public object call_native(string procedure_name, string arguments, object[] arg2)
         {
-            return NativeCalls.godot_icall_3_205(method_bind_4, Object.GetPtr(this), procedure_name, arguments, arg2);
+            return NativeCalls.godot_icall_3_204(method_bind_4, Object.GetPtr(this), procedure_name, arguments, arg2);
         }
     }
 }

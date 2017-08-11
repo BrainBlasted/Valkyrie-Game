@@ -17,14 +17,14 @@ namespace GodotEngine
 
         public void set_next_pass(Material next_pass)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(next_pass));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(next_pass));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_next_pass");
 
         public Material get_next_pass()
         {
-            return NativeCalls.godot_icall_0_142(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_143(method_bind_1, Object.GetPtr(this));
         }
     }
 }

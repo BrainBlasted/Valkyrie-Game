@@ -20,7 +20,7 @@ namespace GodotEngine
         /// </summary>
         public object get_var()
         {
-            return NativeCalls.godot_icall_0_120(method_bind_0, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_121(method_bind_0, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "put_var");
@@ -30,7 +30,7 @@ namespace GodotEngine
         /// </summary>
         public int put_var(object var)
         {
-            return NativeCalls.godot_icall_1_333(method_bind_1, Object.GetPtr(this), var);
+            return NativeCalls.godot_icall_1_328(method_bind_1, Object.GetPtr(this), var);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_packet");
@@ -40,7 +40,7 @@ namespace GodotEngine
         /// </summary>
         public byte[] get_packet()
         {
-            return NativeCalls.godot_icall_0_100(method_bind_2, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_101(method_bind_2, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "put_packet");
@@ -48,10 +48,9 @@ namespace GodotEngine
         /// <summary>
         /// Send a raw packet.
         /// </summary>
-        public Error put_packet(byte[] buffer)
+        public int put_packet(byte[] buffer)
         {
-            int ret = NativeCalls.godot_icall_1_334(method_bind_3, Object.GetPtr(this), buffer);
-            return (Error)ret;
+            return NativeCalls.godot_icall_1_232(method_bind_3, Object.GetPtr(this), buffer);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_packet_error");
@@ -59,10 +58,9 @@ namespace GodotEngine
         /// <summary>
         /// Return the error state of the last packet received (via [method get_packet] and [method get_var]).
         /// </summary>
-        public Error get_packet_error()
+        public int get_packet_error()
         {
-            int ret = NativeCalls.godot_icall_0_235(method_bind_4, Object.GetPtr(this));
-            return (Error)ret;
+            return NativeCalls.godot_icall_0_1(method_bind_4, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_available_packet_count");

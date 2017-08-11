@@ -72,7 +72,7 @@ namespace GodotEngine
 
         public void set_visibility_aabb(Rect3 aabb)
         {
-            NativeCalls.godot_icall_1_90(method_bind_7, Object.GetPtr(this), ref aabb);
+            NativeCalls.godot_icall_1_91(method_bind_7, Object.GetPtr(this), ref aabb);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_use_local_coordinates");
@@ -100,7 +100,7 @@ namespace GodotEngine
 
         public void set_process_material(Material material)
         {
-            NativeCalls.godot_icall_1_35(method_bind_11, Object.GetPtr(this), Object.GetPtr(material));
+            NativeCalls.godot_icall_1_19(method_bind_11, Object.GetPtr(this), Object.GetPtr(material));
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_speed_scale");
@@ -163,7 +163,7 @@ namespace GodotEngine
 
         public Rect3 get_visibility_aabb()
         {
-            object ret = NativeCalls.godot_icall_0_91(method_bind_20, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_92(method_bind_20, Object.GetPtr(this));
             return (Rect3)ret;
         }
 
@@ -192,7 +192,7 @@ namespace GodotEngine
 
         public Material get_process_material()
         {
-            return NativeCalls.godot_icall_0_142(method_bind_24, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_143(method_bind_24, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_speed_scale");
@@ -227,7 +227,7 @@ namespace GodotEngine
 
         public void set_draw_pass_mesh(int pass, Mesh mesh)
         {
-            NativeCalls.godot_icall_2_88(method_bind_29, Object.GetPtr(this), pass, Object.GetPtr(mesh));
+            NativeCalls.godot_icall_2_89(method_bind_29, Object.GetPtr(this), pass, Object.GetPtr(mesh));
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_draw_passes");
@@ -241,7 +241,7 @@ namespace GodotEngine
 
         public Mesh get_draw_pass_mesh(int pass)
         {
-            return NativeCalls.godot_icall_1_288(method_bind_31, Object.GetPtr(this), pass);
+            return NativeCalls.godot_icall_1_286(method_bind_31, Object.GetPtr(this), pass);
         }
 
         private IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "restart");
@@ -255,7 +255,7 @@ namespace GodotEngine
 
         public Rect3 capture_aabb()
         {
-            object ret = NativeCalls.godot_icall_0_91(method_bind_33, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_92(method_bind_33, Object.GetPtr(this));
             return (Rect3)ret;
         }
     }

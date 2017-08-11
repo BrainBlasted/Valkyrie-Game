@@ -20,7 +20,7 @@ namespace GodotEngine
         /// </summary>
         public bool test_mask(Vector2 point, Rect2 rect)
         {
-            return NativeCalls.godot_icall_2_451(method_bind_0, Object.GetPtr(this), ref point, ref rect);
+            return NativeCalls.godot_icall_2_447(method_bind_0, Object.GetPtr(this), ref point, ref rect);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_default_margin");
@@ -87,7 +87,7 @@ namespace GodotEngine
 
         public void draw(RID canvas_item, Rect2 rect)
         {
-            NativeCalls.godot_icall_2_452(method_bind_7, Object.GetPtr(this), RID.GetPtr(canvas_item), ref rect);
+            NativeCalls.godot_icall_2_448(method_bind_7, Object.GetPtr(this), RID.GetPtr(canvas_item), ref rect);
         }
     }
 }

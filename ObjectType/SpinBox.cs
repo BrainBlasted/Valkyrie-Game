@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_suffix(string suffix)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, Object.GetPtr(this), suffix);
+            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), suffix);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_suffix");
@@ -44,7 +44,7 @@ namespace GodotEngine
         /// </summary>
         public void set_prefix(string prefix)
         {
-            NativeCalls.godot_icall_1_34(method_bind_2, Object.GetPtr(this), prefix);
+            NativeCalls.godot_icall_1_35(method_bind_2, Object.GetPtr(this), prefix);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_prefix");
@@ -78,7 +78,7 @@ namespace GodotEngine
 
         public LineEdit get_line_edit()
         {
-            return NativeCalls.godot_icall_0_443(method_bind_6, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_440(method_bind_6, Object.GetPtr(this));
         }
     }
 }

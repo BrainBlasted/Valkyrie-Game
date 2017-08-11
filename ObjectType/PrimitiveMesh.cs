@@ -14,14 +14,14 @@ namespace GodotEngine
 
         public void set_material(Material material)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(material));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(material));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_material");
 
         public Material get_material()
         {
-            return NativeCalls.godot_icall_0_142(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_143(method_bind_1, Object.GetPtr(this));
         }
     }
 }

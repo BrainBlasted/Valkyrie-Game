@@ -20,20 +20,21 @@ using GodotEngine;
 public class AngelPlaceholder : KinematicBody2D
 {
     // Motion variables
-    float speed = 75.0f;
+    float speed = 75.0f;    // Separate variables for 
     float xspeed = 25.0f;
     Vector2 velocity;
     Vector2 velocityup;
+    
     void _ready()
     {
         // Called every time the node is added to the scene.
         // Initialization here
         set_fixed_process(true);
-        
     }
 
     void _fixed_process(float delta)
     {
+        // Pulls the player up by a fixed process
         velocityup.y -= delta * speed;
         Vector2 motion = delta * velocityup;
         move(motion);
@@ -70,6 +71,4 @@ public class AngelPlaceholder : KinematicBody2D
     {
         velocity.x = 0;
     }
-
-    
 }

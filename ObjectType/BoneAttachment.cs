@@ -21,7 +21,7 @@ namespace GodotEngine
 
         public void set_bone_name(string bone_name)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, Object.GetPtr(this), bone_name);
+            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), bone_name);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bone_name");

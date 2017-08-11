@@ -25,10 +25,9 @@ namespace GodotEngine
         /// If "bind_address" is set as "0.0.0.0" (for IPv4) or "::" (for IPv6), the peer will listen on all available addresses matching that IP type.
         /// If "bind_address" is set to any valid address (e.g. "192.168.1.101", "::1", etc), the peer will only listen on the interface with that addresses (or fail if no interface with the given address exists).
         /// </summary>
-        public Error listen(int port, string bind_address = "*", int recv_buf_size = 65536)
+        public int listen(int port, string bind_address = "*", int recv_buf_size = 65536)
         {
-            int ret = NativeCalls.godot_icall_3_335(method_bind_0, Object.GetPtr(this), port, bind_address, recv_buf_size);
-            return (Error)ret;
+            return NativeCalls.godot_icall_3_330(method_bind_0, Object.GetPtr(this), port, bind_address, recv_buf_size);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "close");
@@ -46,10 +45,9 @@ namespace GodotEngine
         /// <summary>
         /// Wait for a packet to arrive on the listening port, see [method listen].
         /// </summary>
-        public Error wait()
+        public int wait()
         {
-            int ret = NativeCalls.godot_icall_0_235(method_bind_2, Object.GetPtr(this));
-            return (Error)ret;
+            return NativeCalls.godot_icall_0_1(method_bind_2, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_listening");
@@ -89,7 +87,7 @@ namespace GodotEngine
         /// </summary>
         public int set_dest_address(string host, int port)
         {
-            return NativeCalls.godot_icall_2_238(method_bind_6, Object.GetPtr(this), host, port);
+            return NativeCalls.godot_icall_2_236(method_bind_6, Object.GetPtr(this), host, port);
         }
     }
 }

@@ -32,14 +32,14 @@ namespace GodotEngine
 
         public void set_polygon(Vector2[] polygon)
         {
-            NativeCalls.godot_icall_1_152(method_bind_2, Object.GetPtr(this), polygon);
+            NativeCalls.godot_icall_1_154(method_bind_2, Object.GetPtr(this), polygon);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_polygon");
 
         public Vector2[] get_polygon()
         {
-            return NativeCalls.godot_icall_0_153(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_155(method_bind_3, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_disabled");

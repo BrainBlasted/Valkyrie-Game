@@ -217,7 +217,7 @@ namespace GodotEngine
         /// </summary>
         public Vector3[] get_baked_points()
         {
-            return NativeCalls.godot_icall_0_158(method_bind_18, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_160(method_bind_18, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_19 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_baked_tilts");

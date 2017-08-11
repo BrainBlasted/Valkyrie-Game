@@ -93,7 +93,7 @@ namespace GodotEngine
         /// </summary>
         public static MainLoop get_main_loop()
         {
-            return NativeCalls.godot_icall_0_529(method_bind_9, ptr);
+            return NativeCalls.godot_icall_0_524(method_bind_9, ptr);
         }
 
         private static IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_version_info");
@@ -109,7 +109,7 @@ namespace GodotEngine
         /// </summary>
         public static Dictionary<object, object> get_version_info()
         {
-            return NativeCalls.godot_icall_0_234(method_bind_10, ptr);
+            return NativeCalls.godot_icall_0_233(method_bind_10, ptr);
         }
 
         private static IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_in_fixed_frame");

@@ -18,14 +18,14 @@ namespace GodotEngine
 
         public void set_plane(Plane plane)
         {
-            NativeCalls.godot_icall_1_249(method_bind_0, Object.GetPtr(this), ref plane);
+            NativeCalls.godot_icall_1_247(method_bind_0, Object.GetPtr(this), ref plane);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_plane");
 
         public Plane get_plane()
         {
-            object ret = NativeCalls.godot_icall_0_398(method_bind_1, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_395(method_bind_1, Object.GetPtr(this));
             return (Plane)ret;
         }
     }

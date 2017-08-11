@@ -16,10 +16,9 @@ namespace GodotEngine
 
         private IntPtr method_bind_0 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "pack");
 
-        public Error pack(object value)
+        public int pack(object value)
         {
-            int ret = NativeCalls.godot_icall_1_331(method_bind_0, Object.GetPtr(this), value);
-            return (Error)ret;
+            return NativeCalls.godot_icall_1_328(method_bind_0, Object.GetPtr(this), value);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "size");

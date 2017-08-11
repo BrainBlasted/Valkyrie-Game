@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_sprite_frames(SpriteFrames sprite_frames)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(sprite_frames));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(sprite_frames));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_sprite_frames");
@@ -44,7 +44,7 @@ namespace GodotEngine
         /// </summary>
         public void set_animation(string animation)
         {
-            NativeCalls.godot_icall_1_34(method_bind_2, Object.GetPtr(this), animation);
+            NativeCalls.godot_icall_1_35(method_bind_2, Object.GetPtr(this), animation);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_animation");
@@ -64,7 +64,7 @@ namespace GodotEngine
         /// </summary>
         public void play(string anim = "")
         {
-            NativeCalls.godot_icall_1_34(method_bind_4, Object.GetPtr(this), anim);
+            NativeCalls.godot_icall_1_35(method_bind_4, Object.GetPtr(this), anim);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "stop");

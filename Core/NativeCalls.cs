@@ -839,17 +839,17 @@ namespace GodotEngine
         [MethodImpl(MethodImplOptions.InternalCall)]
         internal extern static int[] godot_icall_2_29(IntPtr method, IntPtr ptr, int arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Object godot_icall_0_30(IntPtr method, IntPtr ptr);
+        internal extern static Button godot_icall_0_30(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Button godot_icall_3_31(IntPtr method, IntPtr ptr, string arg1, bool arg2, string arg3);
+        internal extern static Label godot_icall_0_31(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Button godot_icall_1_32(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static Button godot_icall_3_32(IntPtr method, IntPtr ptr, string arg1, bool arg2, string arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static LineEdit godot_icall_1_33(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static Button godot_icall_1_33(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_34(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static void godot_icall_1_34(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_35(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static void godot_icall_1_35(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
         internal extern static SpriteFrames godot_icall_0_36(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
@@ -877,237 +877,237 @@ namespace GodotEngine
         [MethodImpl(MethodImplOptions.InternalCall)]
         internal extern static float godot_icall_2_48(IntPtr method, IntPtr ptr, int arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_3_49(IntPtr method, IntPtr ptr, int arg1, float arg2, bool arg3);
+        internal extern static object godot_icall_2_49(IntPtr method, IntPtr ptr, int arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_2_50(IntPtr method, IntPtr ptr, int arg1, float arg2);
+        internal extern static int godot_icall_3_50(IntPtr method, IntPtr ptr, int arg1, float arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int[] godot_icall_3_51(IntPtr method, IntPtr ptr, int arg1, float arg2, float arg3);
+        internal extern static object[] godot_icall_2_51(IntPtr method, IntPtr ptr, int arg1, float arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static string godot_icall_2_52(IntPtr method, IntPtr ptr, int arg1, int arg2);
+        internal extern static int[] godot_icall_3_52(IntPtr method, IntPtr ptr, int arg1, float arg2, float arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_2_53(IntPtr method, IntPtr ptr, int arg1, int arg2);
+        internal extern static string godot_icall_2_53(IntPtr method, IntPtr ptr, int arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_2_54(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2);
+        internal extern static object[] godot_icall_2_54(IntPtr method, IntPtr ptr, int arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_55(IntPtr method, IntPtr ptr, string arg1, string arg2);
+        internal extern static int godot_icall_2_55(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_1_56(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static void godot_icall_2_56(IntPtr method, IntPtr ptr, string arg1, string arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Animation godot_icall_1_57(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static bool godot_icall_1_57(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static string[] godot_icall_0_58(IntPtr method, IntPtr ptr);
+        internal extern static Animation godot_icall_1_58(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static string godot_icall_1_59(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static string[] godot_icall_0_59(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_60(IntPtr method, IntPtr ptr, string arg1, string arg2, float arg3);
+        internal extern static string godot_icall_1_60(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static float godot_icall_2_61(IntPtr method, IntPtr ptr, string arg1, string arg2);
+        internal extern static void godot_icall_3_61(IntPtr method, IntPtr ptr, string arg1, string arg2, float arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_62(IntPtr method, IntPtr ptr, string arg1, float arg2, float arg3, bool arg4);
+        internal extern static float godot_icall_2_62(IntPtr method, IntPtr ptr, string arg1, string arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_63(IntPtr method, IntPtr ptr, string arg1, float arg2);
+        internal extern static void godot_icall_4_63(IntPtr method, IntPtr ptr, string arg1, float arg2, float arg3, bool arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_64(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static void godot_icall_2_64(IntPtr method, IntPtr ptr, string arg1, float arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static IntPtr godot_icall_0_65(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_1_65(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_66(IntPtr method, IntPtr ptr, float arg1, bool arg2);
+        internal extern static IntPtr godot_icall_0_66(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static string godot_icall_1_67(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static void godot_icall_2_67(IntPtr method, IntPtr ptr, float arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_68(IntPtr method, IntPtr ptr, int arg1, string arg2);
+        internal extern static string godot_icall_1_68(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_2_69(IntPtr method, IntPtr ptr, string arg1, string arg2);
+        internal extern static void godot_icall_2_69(IntPtr method, IntPtr ptr, int arg1, string arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_1_70(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static int godot_icall_2_70(IntPtr method, IntPtr ptr, string arg1, string arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static string godot_icall_2_71(IntPtr method, IntPtr ptr, string arg1, int arg2);
+        internal extern static int godot_icall_1_71(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_72(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2);
+        internal extern static string godot_icall_2_72(IntPtr method, IntPtr ptr, string arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_73(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2, bool arg3);
+        internal extern static void godot_icall_2_73(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static float godot_icall_1_74(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static void godot_icall_3_74(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_75(IntPtr method, IntPtr ptr, string arg1, bool arg2);
+        internal extern static float godot_icall_1_75(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_76(IntPtr method, IntPtr ptr, string arg1, ref Vector2 arg2);
+        internal extern static void godot_icall_2_76(IntPtr method, IntPtr ptr, string arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_77(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static void godot_icall_2_77(IntPtr method, IntPtr ptr, string arg1, ref Vector2 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_78(IntPtr method, IntPtr ptr, string arg1, int arg2);
+        internal extern static object godot_icall_1_78(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_79(IntPtr method, IntPtr ptr, string arg1, int arg2, bool arg3);
+        internal extern static void godot_icall_2_79(IntPtr method, IntPtr ptr, string arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_2_80(IntPtr method, IntPtr ptr, string arg1, int arg2);
+        internal extern static void godot_icall_3_80(IntPtr method, IntPtr ptr, string arg1, int arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_3_81(IntPtr method, IntPtr ptr, string arg1, string arg2, int arg3);
+        internal extern static bool godot_icall_2_81(IntPtr method, IntPtr ptr, string arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_3_82(IntPtr method, IntPtr ptr, string arg1, string arg2, int arg3);
+        internal extern static int godot_icall_3_82(IntPtr method, IntPtr ptr, string arg1, string arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_83(IntPtr method, IntPtr ptr, ref Vector3 arg1);
+        internal extern static bool godot_icall_3_83(IntPtr method, IntPtr ptr, string arg1, string arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_0_84(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_1_84(IntPtr method, IntPtr ptr, ref Vector3 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_1_85(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static object[] godot_icall_0_85(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static string godot_icall_1_86(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static bool godot_icall_1_86(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_87(IntPtr method, IntPtr ptr, int arg1, object[] arg2, object[] arg3, int arg4);
+        internal extern static string godot_icall_1_87(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_88(IntPtr method, IntPtr ptr, int arg1, IntPtr arg2);
+        internal extern static void godot_icall_4_88(IntPtr method, IntPtr ptr, int arg1, object[] arg2, object[] arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Material godot_icall_1_89(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static void godot_icall_2_89(IntPtr method, IntPtr ptr, int arg1, IntPtr arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_90(IntPtr method, IntPtr ptr, ref Rect3 arg1);
+        internal extern static Material godot_icall_1_90(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_0_91(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_1_91(IntPtr method, IntPtr ptr, ref Rect3 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Texture godot_icall_0_92(IntPtr method, IntPtr ptr);
+        internal extern static object godot_icall_0_92(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_93(IntPtr method, IntPtr ptr, ref Rect2 arg1);
+        internal extern static Texture godot_icall_0_93(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_0_94(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_1_94(IntPtr method, IntPtr ptr, ref Rect2 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_95(IntPtr method, IntPtr ptr, int arg1, IntPtr arg2, int arg3);
+        internal extern static object godot_icall_0_95(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static AudioEffect godot_icall_2_96(IntPtr method, IntPtr ptr, int arg1, int arg2);
+        internal extern static void godot_icall_3_96(IntPtr method, IntPtr ptr, int arg1, IntPtr arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_97(IntPtr method, IntPtr ptr, int arg1, int arg2, int arg3);
+        internal extern static AudioEffect godot_icall_2_97(IntPtr method, IntPtr ptr, int arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static AudioBusLayout godot_icall_0_98(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_3_98(IntPtr method, IntPtr ptr, int arg1, int arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_99(IntPtr method, IntPtr ptr, byte[] arg1);
+        internal extern static AudioBusLayout godot_icall_0_99(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static byte[] godot_icall_0_100(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_1_100(IntPtr method, IntPtr ptr, byte[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static AudioStream godot_icall_0_101(IntPtr method, IntPtr ptr);
+        internal extern static byte[] godot_icall_0_101(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static ShortCut godot_icall_0_102(IntPtr method, IntPtr ptr);
+        internal extern static AudioStream godot_icall_0_102(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static ButtonGroup godot_icall_0_103(IntPtr method, IntPtr ptr);
+        internal extern static ShortCut godot_icall_0_103(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_104(IntPtr method, IntPtr ptr, ref Vector2 arg1, bool arg2);
+        internal extern static ButtonGroup godot_icall_0_104(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_1_105(IntPtr method, IntPtr ptr, ref Vector2 arg1);
+        internal extern static void godot_icall_2_105(IntPtr method, IntPtr ptr, ref Vector2 arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_106(IntPtr method, IntPtr ptr, ref Rect2 arg1, bool arg2);
+        internal extern static bool godot_icall_1_106(IntPtr method, IntPtr ptr, ref Vector2 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_5_107(IntPtr method, IntPtr ptr, int arg1, int arg2, ref Rect2 arg3, ref Vector2 arg4, float arg5);
+        internal extern static void godot_icall_2_107(IntPtr method, IntPtr ptr, ref Rect2 arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Texture godot_icall_1_108(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static void godot_icall_5_108(IntPtr method, IntPtr ptr, int arg1, int arg2, ref Rect2 arg3, ref Vector2 arg4, float arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_2_109(IntPtr method, IntPtr ptr, int arg1, int arg2);
+        internal extern static Texture godot_icall_1_109(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static BitmapFont godot_icall_0_110(IntPtr method, IntPtr ptr);
+        internal extern static object godot_icall_2_110(IntPtr method, IntPtr ptr, int arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static BaseButton godot_icall_0_111(IntPtr method, IntPtr ptr);
+        internal extern static BitmapFont godot_icall_0_111(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Object godot_icall_1_112(IntPtr method, IntPtr ptr, object[] arg1);
+        internal extern static BaseButton godot_icall_0_112(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_113(IntPtr method, IntPtr ptr, ref Vector2 arg1);
+        internal extern static object godot_icall_1_113(IntPtr method, IntPtr ptr, object[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_114(IntPtr method, IntPtr ptr, ref Vector3 arg1);
+        internal extern static object godot_icall_1_114(IntPtr method, IntPtr ptr, ref Vector2 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_1_115(IntPtr method, IntPtr ptr, ref Vector3 arg1);
+        internal extern static object godot_icall_1_115(IntPtr method, IntPtr ptr, ref Vector3 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_116(IntPtr method, IntPtr ptr, float arg1, float arg2, float arg3);
+        internal extern static bool godot_icall_1_116(IntPtr method, IntPtr ptr, ref Vector3 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Environment godot_icall_0_117(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_3_117(IntPtr method, IntPtr ptr, float arg1, float arg2, float arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Viewport godot_icall_0_118(IntPtr method, IntPtr ptr);
+        internal extern static Environment godot_icall_0_118(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_119(IntPtr method, IntPtr ptr, object arg1);
+        internal extern static Node godot_icall_0_119(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_0_120(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_1_120(IntPtr method, IntPtr ptr, object arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static IntPtr godot_icall_0_121(IntPtr method, IntPtr ptr);
+        internal extern static object godot_icall_0_121(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_122(IntPtr method, IntPtr ptr, ref Color arg1);
+        internal extern static IntPtr godot_icall_0_122(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_0_123(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_1_123(IntPtr method, IntPtr ptr, ref Color arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_5_124(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, ref Color arg3, float arg4, bool arg5);
+        internal extern static object godot_icall_0_124(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_125(IntPtr method, IntPtr ptr, Vector2[] arg1, ref Color arg2, float arg3, bool arg4);
+        internal extern static void godot_icall_5_125(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, ref Color arg3, float arg4, bool arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_126(IntPtr method, IntPtr ptr, Vector2[] arg1, Color[] arg2, float arg3, bool arg4);
+        internal extern static void godot_icall_4_126(IntPtr method, IntPtr ptr, Vector2[] arg1, ref Color arg2, float arg3, bool arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_127(IntPtr method, IntPtr ptr, ref Rect2 arg1, ref Color arg2, bool arg3);
+        internal extern static void godot_icall_4_127(IntPtr method, IntPtr ptr, Vector2[] arg1, Color[] arg2, float arg3, bool arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_128(IntPtr method, IntPtr ptr, ref Vector2 arg1, float arg2, ref Color arg3);
+        internal extern static void godot_icall_3_128(IntPtr method, IntPtr ptr, ref Rect2 arg1, ref Color arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_129(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2, ref Color arg3, IntPtr arg4);
+        internal extern static void godot_icall_3_129(IntPtr method, IntPtr ptr, ref Vector2 arg1, float arg2, ref Color arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_6_130(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2, bool arg3, ref Color arg4, bool arg5, IntPtr arg6);
+        internal extern static void godot_icall_4_130(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2, ref Color arg3, IntPtr arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_7_131(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2, ref Rect2 arg3, ref Color arg4, bool arg5, IntPtr arg6, bool arg7);
+        internal extern static void godot_icall_6_131(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2, bool arg3, ref Color arg4, bool arg5, IntPtr arg6);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_132(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2);
+        internal extern static void godot_icall_7_132(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2, ref Rect2 arg3, ref Color arg4, bool arg5, IntPtr arg6, bool arg7);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_6_133(IntPtr method, IntPtr ptr, Vector2[] arg1, Color[] arg2, Vector2[] arg3, IntPtr arg4, float arg5, IntPtr arg6);
+        internal extern static void godot_icall_2_133(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_5_134(IntPtr method, IntPtr ptr, Vector2[] arg1, Color[] arg2, Vector2[] arg3, IntPtr arg4, IntPtr arg5);
+        internal extern static void godot_icall_6_134(IntPtr method, IntPtr ptr, Vector2[] arg1, Color[] arg2, Vector2[] arg3, IntPtr arg4, float arg5, IntPtr arg6);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_5_135(IntPtr method, IntPtr ptr, Vector2[] arg1, ref Color arg2, Vector2[] arg3, IntPtr arg4, IntPtr arg5);
+        internal extern static void godot_icall_5_135(IntPtr method, IntPtr ptr, Vector2[] arg1, Color[] arg2, Vector2[] arg3, IntPtr arg4, IntPtr arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_5_136(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2, string arg3, ref Color arg4, int arg5);
+        internal extern static void godot_icall_5_136(IntPtr method, IntPtr ptr, Vector2[] arg1, ref Color arg2, Vector2[] arg3, IntPtr arg4, IntPtr arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static float godot_icall_5_137(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2, string arg3, string arg4, ref Color arg5);
+        internal extern static void godot_icall_5_137(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2, string arg3, ref Color arg4, int arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_138(IntPtr method, IntPtr ptr, ref Vector2 arg1, float arg2, ref Vector2 arg3);
+        internal extern static float godot_icall_5_138(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2, string arg3, string arg4, ref Color arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_139(IntPtr method, IntPtr ptr, ref Transform2D arg1);
+        internal extern static void godot_icall_3_139(IntPtr method, IntPtr ptr, ref Vector2 arg1, float arg2, ref Vector2 arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_0_140(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_1_140(IntPtr method, IntPtr ptr, ref Transform2D arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static World2D godot_icall_0_141(IntPtr method, IntPtr ptr);
+        internal extern static object godot_icall_0_141(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Material godot_icall_0_142(IntPtr method, IntPtr ptr);
+        internal extern static World2D godot_icall_0_142(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_143(IntPtr method, IntPtr ptr, ref Vector2 arg1);
+        internal extern static Material godot_icall_0_143(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static InputEvent godot_icall_1_144(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static object godot_icall_1_144(IntPtr method, IntPtr ptr, ref Vector2 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_1_145(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static InputEvent godot_icall_1_145(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_146(IntPtr method, IntPtr ptr, int arg1, ref Transform arg2);
+        internal extern static int godot_icall_1_146(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_147(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static void godot_icall_2_147(IntPtr method, IntPtr ptr, int arg1, ref Transform arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Object godot_icall_1_148(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static object godot_icall_1_148(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Object godot_icall_2_149(IntPtr method, IntPtr ptr, int arg1, int arg2);
+        internal extern static Object godot_icall_1_149(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_150(IntPtr method, IntPtr ptr, int arg1, ref Transform2D arg2);
+        internal extern static Shape godot_icall_2_150(IntPtr method, IntPtr ptr, int arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_151(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static void godot_icall_2_151(IntPtr method, IntPtr ptr, int arg1, ref Transform2D arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_152(IntPtr method, IntPtr ptr, Vector2[] arg1);
+        internal extern static object godot_icall_1_152(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Vector2[] godot_icall_0_153(IntPtr method, IntPtr ptr);
+        internal extern static Shape2D godot_icall_2_153(IntPtr method, IntPtr ptr, int arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Shape godot_icall_0_154(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_1_154(IntPtr method, IntPtr ptr, Vector2[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Shape2D godot_icall_0_155(IntPtr method, IntPtr ptr);
+        internal extern static Vector2[] godot_icall_0_155(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static ColorPicker godot_icall_0_156(IntPtr method, IntPtr ptr);
+        internal extern static Shape godot_icall_0_156(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_157(IntPtr method, IntPtr ptr, Vector3[] arg1);
+        internal extern static Shape2D godot_icall_0_157(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Vector3[] godot_icall_0_158(IntPtr method, IntPtr ptr);
+        internal extern static ColorPicker godot_icall_0_158(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_159(IntPtr method, IntPtr ptr, string arg1, string arg2, object arg3);
+        internal extern static void godot_icall_1_159(IntPtr method, IntPtr ptr, Vector3[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_3_160(IntPtr method, IntPtr ptr, string arg1, string arg2, object arg3);
+        internal extern static Vector3[] godot_icall_0_160(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_2_161(IntPtr method, IntPtr ptr, string arg1, string arg2);
+        internal extern static void godot_icall_3_161(IntPtr method, IntPtr ptr, string arg1, string arg2, object arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static string[] godot_icall_1_162(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static object godot_icall_3_162(IntPtr method, IntPtr ptr, string arg1, string arg2, object arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_1_163(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static bool godot_icall_2_163(IntPtr method, IntPtr ptr, string arg1, string arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Button godot_icall_0_164(IntPtr method, IntPtr ptr);
+        internal extern static string[] godot_icall_1_164(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
         internal extern static void godot_icall_2_165(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
@@ -1171,7 +1171,7 @@ namespace GodotEngine
         [MethodImpl(MethodImplOptions.InternalCall)]
         internal extern static DynamicFontData godot_icall_1_195(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static CubeMap godot_icall_0_196(IntPtr method, IntPtr ptr);
+        internal extern static Sky godot_icall_0_196(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
         internal extern static void godot_icall_1_197(IntPtr method, IntPtr ptr, string[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
@@ -1181,722 +1181,712 @@ namespace GodotEngine
         [MethodImpl(MethodImplOptions.InternalCall)]
         internal extern static float godot_icall_5_200(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2, int arg3, int arg4, ref Color arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_201(IntPtr method, IntPtr ptr, object[] arg1);
+        internal extern static object godot_icall_1_201(IntPtr method, IntPtr ptr, object arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_202(IntPtr method, IntPtr ptr, object arg1);
+        internal extern static bool godot_icall_1_202(IntPtr method, IntPtr ptr, bool arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_1_203(IntPtr method, IntPtr ptr, bool arg1);
+        internal extern static GDNativeLibrary godot_icall_0_203(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static GDNativeLibrary godot_icall_0_204(IntPtr method, IntPtr ptr);
+        internal extern static object godot_icall_3_204(IntPtr method, IntPtr ptr, string arg1, string arg2, object[] arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_3_205(IntPtr method, IntPtr ptr, string arg1, object[] arg2, object[] arg3);
+        internal extern static GIProbeData godot_icall_0_205(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static GIProbeData godot_icall_0_206(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_2_206(IntPtr method, IntPtr ptr, IntPtr arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_207(IntPtr method, IntPtr ptr, IntPtr arg1, bool arg2);
+        internal extern static void godot_icall_1_207(IntPtr method, IntPtr ptr, ref Transform arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_208(IntPtr method, IntPtr ptr, ref Transform arg1);
+        internal extern static void godot_icall_1_208(IntPtr method, IntPtr ptr, int[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_209(IntPtr method, IntPtr ptr, int[] arg1);
+        internal extern static int[] godot_icall_0_209(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int[] godot_icall_0_210(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_2_210(IntPtr method, IntPtr ptr, float arg1, ref Color arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_211(IntPtr method, IntPtr ptr, float arg1, ref Color arg2);
+        internal extern static void godot_icall_2_211(IntPtr method, IntPtr ptr, int arg1, ref Color arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_212(IntPtr method, IntPtr ptr, int arg1, ref Color arg2);
+        internal extern static object godot_icall_1_212(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_213(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static object godot_icall_1_213(IntPtr method, IntPtr ptr, float arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_214(IntPtr method, IntPtr ptr, float arg1);
+        internal extern static void godot_icall_1_214(IntPtr method, IntPtr ptr, float[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_215(IntPtr method, IntPtr ptr, float[] arg1);
+        internal extern static void godot_icall_1_215(IntPtr method, IntPtr ptr, Color[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_216(IntPtr method, IntPtr ptr, Color[] arg1);
+        internal extern static Color[] godot_icall_0_216(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Color[] godot_icall_0_217(IntPtr method, IntPtr ptr);
+        internal extern static Gradient godot_icall_0_217(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Gradient godot_icall_0_218(IntPtr method, IntPtr ptr);
+        internal extern static int godot_icall_4_218(IntPtr method, IntPtr ptr, string arg1, int arg2, string arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_4_219(IntPtr method, IntPtr ptr, string arg1, int arg2, string arg3, int arg4);
+        internal extern static bool godot_icall_4_219(IntPtr method, IntPtr ptr, string arg1, int arg2, string arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_4_220(IntPtr method, IntPtr ptr, string arg1, int arg2, string arg3, int arg4);
+        internal extern static void godot_icall_4_220(IntPtr method, IntPtr ptr, string arg1, int arg2, string arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_221(IntPtr method, IntPtr ptr, string arg1, int arg2, string arg3, int arg4);
+        internal extern static void godot_icall_9_221(IntPtr method, IntPtr ptr, int arg1, bool arg2, int arg3, ref Color arg4, bool arg5, int arg6, ref Color arg7, IntPtr arg8, IntPtr arg9);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_9_222(IntPtr method, IntPtr ptr, int arg1, bool arg2, int arg3, ref Color arg4, bool arg5, int arg6, ref Color arg7, IntPtr arg8, IntPtr arg9);
+        internal extern static MeshLibrary godot_icall_0_222(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static MeshLibrary godot_icall_0_223(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_5_223(IntPtr method, IntPtr ptr, int arg1, int arg2, int arg3, int arg4, int arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_5_224(IntPtr method, IntPtr ptr, int arg1, int arg2, int arg3, int arg4, int arg5);
+        internal extern static int godot_icall_3_224(IntPtr method, IntPtr ptr, int arg1, int arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_3_225(IntPtr method, IntPtr ptr, int arg1, int arg2, int arg3);
+        internal extern static void godot_icall_4_225(IntPtr method, IntPtr ptr, bool arg1, bool arg2, int arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_226(IntPtr method, IntPtr ptr, bool arg1, bool arg2, int arg3, int arg4);
+        internal extern static int godot_icall_2_226(IntPtr method, IntPtr ptr, int arg1, ref Rect3 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_2_227(IntPtr method, IntPtr ptr, int arg1, ref Rect3 arg2);
+        internal extern static object godot_icall_1_227(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_228(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static int godot_icall_4_228(IntPtr method, IntPtr ptr, string arg1, int arg2, bool arg3, bool arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_4_229(IntPtr method, IntPtr ptr, string arg1, int arg2, bool arg3, bool arg4);
+        internal extern static StreamPeer godot_icall_0_229(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static StreamPeer godot_icall_0_230(IntPtr method, IntPtr ptr);
+        internal extern static int godot_icall_4_230(IntPtr method, IntPtr ptr, int arg1, string arg2, string[] arg3, byte[] arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_4_231(IntPtr method, IntPtr ptr, int arg1, string arg2, string[] arg3, byte[] arg4);
+        internal extern static int godot_icall_4_231(IntPtr method, IntPtr ptr, int arg1, string arg2, string[] arg3, string arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_4_232(IntPtr method, IntPtr ptr, int arg1, string arg2, string[] arg3, string arg4);
+        internal extern static int godot_icall_1_232(IntPtr method, IntPtr ptr, byte[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_1_233(IntPtr method, IntPtr ptr, byte[] arg1);
+        internal extern static Dictionary<object, object> godot_icall_0_233(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Dictionary<object, object> godot_icall_0_234(IntPtr method, IntPtr ptr);
+        internal extern static string godot_icall_1_234(IntPtr method, IntPtr ptr, Dictionary<object, object> arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_0_235(IntPtr method, IntPtr ptr);
+        internal extern static int godot_icall_5_235(IntPtr method, IntPtr ptr, string arg1, string[] arg2, bool arg3, int arg4, string arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static string godot_icall_1_236(IntPtr method, IntPtr ptr, Dictionary<object, object> arg1);
+        internal extern static int godot_icall_2_236(IntPtr method, IntPtr ptr, string arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_5_237(IntPtr method, IntPtr ptr, string arg1, string[] arg2, bool arg3, int arg4, string arg5);
+        internal extern static void godot_icall_4_237(IntPtr method, IntPtr ptr, int arg1, int arg2, bool arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_2_238(IntPtr method, IntPtr ptr, string arg1, int arg2);
+        internal extern static void godot_icall_5_238(IntPtr method, IntPtr ptr, int arg1, int arg2, bool arg3, int arg4, byte[] arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_239(IntPtr method, IntPtr ptr, int arg1, int arg2, bool arg3, int arg4);
+        internal extern static int godot_icall_3_239(IntPtr method, IntPtr ptr, int arg1, int arg2, float arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_5_240(IntPtr method, IntPtr ptr, int arg1, int arg2, bool arg3, int arg4, byte[] arg5);
+        internal extern static void godot_icall_3_240(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2, ref Vector2 arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_3_241(IntPtr method, IntPtr ptr, int arg1, int arg2, float arg3);
+        internal extern static void godot_icall_4_241(IntPtr method, IntPtr ptr, IntPtr arg1, IntPtr arg2, ref Rect2 arg3, ref Vector2 arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_242(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2, ref Vector2 arg3);
+        internal extern static Image godot_icall_1_242(IntPtr method, IntPtr ptr, ref Rect2 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_243(IntPtr method, IntPtr ptr, IntPtr arg1, IntPtr arg2, ref Rect2 arg3, ref Vector2 arg4);
+        internal extern static void godot_icall_3_243(IntPtr method, IntPtr ptr, int arg1, int arg2, ref Color arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Image godot_icall_1_244(IntPtr method, IntPtr ptr, ref Rect2 arg1);
+        internal extern static object godot_icall_2_244(IntPtr method, IntPtr ptr, int arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_245(IntPtr method, IntPtr ptr, int arg1, int arg2, ref Color arg3);
+        internal extern static void godot_icall_4_245(IntPtr method, IntPtr ptr, int arg1, int arg2, int arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_2_246(IntPtr method, IntPtr ptr, int arg1, int arg2);
+        internal extern static void godot_icall_2_246(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_247(IntPtr method, IntPtr ptr, int arg1, int arg2, int arg3, int arg4);
+        internal extern static void godot_icall_1_247(IntPtr method, IntPtr ptr, ref Plane arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_248(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
+        internal extern static void godot_icall_4_248(IntPtr method, IntPtr ptr, int arg1, int arg2, float arg3, bool arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_249(IntPtr method, IntPtr ptr, ref Plane arg1);
+        internal extern static void godot_icall_4_249(IntPtr method, IntPtr ptr, int arg1, float arg2, float arg3, float arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_250(IntPtr method, IntPtr ptr, int arg1, int arg2, float arg3, bool arg4);
+        internal extern static void godot_icall_2_250(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_251(IntPtr method, IntPtr ptr, int arg1, float arg2, float arg3, float arg4);
+        internal extern static bool godot_icall_1_251(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_252(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2);
+        internal extern static InputEvent godot_icall_2_252(IntPtr method, IntPtr ptr, ref Transform2D arg1, ref Vector2 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_1_253(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static bool godot_icall_2_253(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static InputEvent godot_icall_2_254(IntPtr method, IntPtr ptr, ref Transform2D arg1, ref Vector2 arg2);
+        internal extern static object[] godot_icall_1_254(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_2_255(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2);
+        internal extern static bool godot_icall_2_255(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_1_256(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static Dictionary<object, object> godot_icall_1_256(IntPtr method, IntPtr ptr, bool arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_2_257(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2);
+        internal extern static void godot_icall_3_257(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Dictionary<object, object> godot_icall_1_258(IntPtr method, IntPtr ptr, bool arg1);
+        internal extern static void godot_icall_2_258(IntPtr method, IntPtr ptr, IntPtr arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_259(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2, bool arg3);
+        internal extern static void godot_icall_2_259(IntPtr method, IntPtr ptr, int arg1, ref Rect2 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_260(IntPtr method, IntPtr ptr, IntPtr arg1, bool arg2);
+        internal extern static object godot_icall_1_260(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_261(IntPtr method, IntPtr ptr, int arg1, ref Rect2 arg2);
+        internal extern static void godot_icall_2_261(IntPtr method, IntPtr ptr, int arg1, object arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
         internal extern static object godot_icall_1_262(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_263(IntPtr method, IntPtr ptr, int arg1, object arg2);
+        internal extern static int godot_icall_2_263(IntPtr method, IntPtr ptr, ref Vector2 arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_264(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static VScrollBar godot_icall_0_264(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_2_265(IntPtr method, IntPtr ptr, ref Vector2 arg1, bool arg2);
+        internal extern static Dictionary<object, object> godot_icall_1_265(IntPtr method, IntPtr ptr, ref Vector3 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static VScrollBar godot_icall_0_266(IntPtr method, IntPtr ptr);
+        internal extern static object godot_icall_5_266(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, float arg3, int arg4, float arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Dictionary<object, object> godot_icall_1_267(IntPtr method, IntPtr ptr, ref Vector3 arg1);
+        internal extern static bool godot_icall_2_267(IntPtr method, IntPtr ptr, ref Transform arg1, ref Vector3 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_5_268(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, float arg3, int arg4, float arg5);
+        internal extern static Dictionary<object, object> godot_icall_1_268(IntPtr method, IntPtr ptr, ref Vector2 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_2_269(IntPtr method, IntPtr ptr, ref Transform arg1, ref Vector3 arg2);
+        internal extern static object godot_icall_5_269(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, float arg3, int arg4, float arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Dictionary<object, object> godot_icall_1_270(IntPtr method, IntPtr ptr, ref Vector2 arg1);
+        internal extern static bool godot_icall_2_270(IntPtr method, IntPtr ptr, ref Transform2D arg1, ref Vector2 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_5_271(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, float arg3, int arg4, float arg5);
+        internal extern static int godot_icall_2_271(IntPtr method, IntPtr ptr, ref Vector2 arg1, IntPtr arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_2_272(IntPtr method, IntPtr ptr, ref Transform2D arg1, ref Vector2 arg2);
+        internal extern static OccluderPolygon2D godot_icall_0_272(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_2_273(IntPtr method, IntPtr ptr, ref Vector2 arg1, IntPtr arg2);
+        internal extern static PopupMenu godot_icall_0_273(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static OccluderPolygon2D godot_icall_0_274(IntPtr method, IntPtr ptr);
+        internal extern static bool godot_icall_1_274(IntPtr method, IntPtr ptr, float arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static PopupMenu godot_icall_0_275(IntPtr method, IntPtr ptr);
+        internal extern static Mesh godot_icall_1_275(IntPtr method, IntPtr ptr, float arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_1_276(IntPtr method, IntPtr ptr, float arg1);
+        internal extern static TriangleMesh godot_icall_0_276(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static ArrayMesh godot_icall_1_277(IntPtr method, IntPtr ptr, float arg1);
+        internal extern static int godot_icall_2_277(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static TriangleMesh godot_icall_0_278(IntPtr method, IntPtr ptr);
+        internal extern static int godot_icall_1_278(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_2_279(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
+        internal extern static void godot_icall_2_279(IntPtr method, IntPtr ptr, int arg1, ref Plane arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_1_280(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static object godot_icall_1_280(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_281(IntPtr method, IntPtr ptr, int arg1, ref Plane arg2);
+        internal extern static void godot_icall_2_281(IntPtr method, IntPtr ptr, int arg1, int[] arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_282(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static int[] godot_icall_1_282(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_283(IntPtr method, IntPtr ptr, int arg1, int[] arg2);
+        internal extern static void godot_icall_2_283(IntPtr method, IntPtr ptr, int arg1, float[] arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int[] godot_icall_1_284(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static float[] godot_icall_1_284(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_285(IntPtr method, IntPtr ptr, int arg1, float[] arg2);
+        internal extern static Mesh godot_icall_0_285(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static float[] godot_icall_1_286(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static Mesh godot_icall_1_286(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Mesh godot_icall_0_287(IntPtr method, IntPtr ptr);
+        internal extern static NavigationMesh godot_icall_1_287(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Mesh godot_icall_1_288(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static Shape godot_icall_1_288(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static NavigationMesh godot_icall_1_289(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static MultiMesh godot_icall_0_289(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Shape godot_icall_1_290(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static int godot_icall_3_290(IntPtr method, IntPtr ptr, IntPtr arg1, ref Transform arg2, IntPtr arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static MultiMesh godot_icall_0_291(IntPtr method, IntPtr ptr);
+        internal extern static Vector3[] godot_icall_3_291(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_3_292(IntPtr method, IntPtr ptr, IntPtr arg1, ref Transform arg2, IntPtr arg3);
+        internal extern static object godot_icall_3_292(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Vector3[] godot_icall_3_293(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, bool arg3);
+        internal extern static Object godot_icall_1_293(IntPtr method, IntPtr ptr, ref Vector3 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_3_294(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, bool arg3);
+        internal extern static int godot_icall_3_294(IntPtr method, IntPtr ptr, IntPtr arg1, ref Transform2D arg2, IntPtr arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Object godot_icall_1_295(IntPtr method, IntPtr ptr, ref Vector3 arg1);
+        internal extern static Vector2[] godot_icall_3_295(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_3_296(IntPtr method, IntPtr ptr, IntPtr arg1, ref Transform2D arg2, IntPtr arg3);
+        internal extern static Object godot_icall_1_296(IntPtr method, IntPtr ptr, ref Vector2 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Vector2[] godot_icall_3_297(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, bool arg3);
+        internal extern static NavigationMesh godot_icall_0_297(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Object godot_icall_1_298(IntPtr method, IntPtr ptr, ref Vector2 arg1);
+        internal extern static void godot_icall_2_298(IntPtr method, IntPtr ptr, Vector2[] arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static NavigationMesh godot_icall_0_299(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_2_299(IntPtr method, IntPtr ptr, int arg1, Vector2[] arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_300(IntPtr method, IntPtr ptr, Vector2[] arg1, int arg2);
+        internal extern static Vector2[] godot_icall_1_300(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_301(IntPtr method, IntPtr ptr, int arg1, Vector2[] arg2);
+        internal extern static NavigationPolygon godot_icall_0_301(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Vector2[] godot_icall_1_302(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static int godot_icall_4_302(IntPtr method, IntPtr ptr, int arg1, int arg2, int arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static NavigationPolygon godot_icall_0_303(IntPtr method, IntPtr ptr);
+        internal extern static int godot_icall_4_303(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_4_304(IntPtr method, IntPtr ptr, int arg1, int arg2, int arg3, int arg4);
+        internal extern static Node godot_icall_1_304(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_4_305(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3, int arg4);
+        internal extern static bool godot_icall_1_305(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Node godot_icall_1_306(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static Node godot_icall_1_306(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_1_307(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static Node godot_icall_3_307(IntPtr method, IntPtr ptr, string arg1, bool arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Node godot_icall_1_308(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static object[] godot_icall_1_308(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Node godot_icall_0_309(IntPtr method, IntPtr ptr);
+        internal extern static IntPtr godot_icall_1_309(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Node godot_icall_3_310(IntPtr method, IntPtr ptr, string arg1, bool arg2, bool arg3);
+        internal extern static void godot_icall_2_310(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_1_311(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static SceneTree godot_icall_0_311(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static IntPtr godot_icall_1_312(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static Viewport godot_icall_0_312(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_313(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
+        internal extern static object godot_icall_2_313(IntPtr method, IntPtr ptr, string arg1, object[] arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static SceneTree godot_icall_0_314(IntPtr method, IntPtr ptr);
+        internal extern static object godot_icall_3_314(IntPtr method, IntPtr ptr, int arg1, string arg2, object[] arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_315(IntPtr method, IntPtr ptr, string arg1, object[] arg2);
+        internal extern static void godot_icall_2_315(IntPtr method, IntPtr ptr, string arg1, object arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_316(IntPtr method, IntPtr ptr, int arg1, string arg2, object[] arg3);
+        internal extern static void godot_icall_3_316(IntPtr method, IntPtr ptr, int arg1, string arg2, object arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_317(IntPtr method, IntPtr ptr, string arg1, object arg2);
+        internal extern static float godot_icall_1_317(IntPtr method, IntPtr ptr, ref Vector2 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_318(IntPtr method, IntPtr ptr, int arg1, string arg2, object arg3);
+        internal extern static object godot_icall_1_318(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static float godot_icall_1_319(IntPtr method, IntPtr ptr, ref Vector2 arg1);
+        internal extern static object godot_icall_1_319(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_320(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static Reference godot_icall_0_320(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_321(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static void godot_icall_2_321(IntPtr method, IntPtr ptr, string arg1, object[] arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Script godot_icall_0_322(IntPtr method, IntPtr ptr);
+        internal extern static object godot_icall_2_322(IntPtr method, IntPtr ptr, string arg1, object[] arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_323(IntPtr method, IntPtr ptr, string arg1, object[] arg2);
+        internal extern static int godot_icall_5_323(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2, string arg3, object[] arg4, int arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_2_324(IntPtr method, IntPtr ptr, string arg1, object[] arg2);
+        internal extern static void godot_icall_3_324(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2, string arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_2_325(IntPtr method, IntPtr ptr, string arg1, object[] arg2);
+        internal extern static bool godot_icall_3_325(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2, string arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_5_326(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2, string arg3, object[] arg4, int arg5);
+        internal extern static void godot_icall_3_326(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_327(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2, string arg3);
+        internal extern static int godot_icall_1_327(IntPtr method, IntPtr ptr, bool arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_3_328(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2, string arg3);
+        internal extern static int godot_icall_1_328(IntPtr method, IntPtr ptr, object arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_329(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, int arg3);
+        internal extern static SceneState godot_icall_0_329(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_1_330(IntPtr method, IntPtr ptr, bool arg1);
+        internal extern static int godot_icall_3_330(IntPtr method, IntPtr ptr, int arg1, string arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_1_331(IntPtr method, IntPtr ptr, object arg1);
+        internal extern static CurveTexture godot_icall_0_331(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static SceneState godot_icall_0_332(IntPtr method, IntPtr ptr);
+        internal extern static GradientTexture godot_icall_0_332(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_1_333(IntPtr method, IntPtr ptr, object arg1);
+        internal extern static Curve3D godot_icall_0_333(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_1_334(IntPtr method, IntPtr ptr, byte[] arg1);
+        internal extern static Curve2D godot_icall_0_334(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_3_335(IntPtr method, IntPtr ptr, int arg1, string arg2, int arg3);
+        internal extern static IntPtr godot_icall_1_335(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_336(IntPtr method, IntPtr ptr, int arg1, IntPtr arg2);
+        internal extern static Physics2DDirectSpaceState godot_icall_0_336(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static CurveTexture godot_icall_0_337(IntPtr method, IntPtr ptr);
+        internal extern static object[] godot_icall_5_337(IntPtr method, IntPtr ptr, ref Vector2 arg1, int arg2, object[] arg3, int arg4, int arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static GradientTexture godot_icall_0_338(IntPtr method, IntPtr ptr);
+        internal extern static Dictionary<object, object> godot_icall_5_338(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, object[] arg3, int arg4, int arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Curve3D godot_icall_0_339(IntPtr method, IntPtr ptr);
+        internal extern static object[] godot_icall_2_339(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Curve2D godot_icall_0_340(IntPtr method, IntPtr ptr);
+        internal extern static object[] godot_icall_1_340(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static IntPtr godot_icall_1_341(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static Dictionary<object, object> godot_icall_1_341(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Physics2DDirectSpaceState godot_icall_0_342(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_2_342(IntPtr method, IntPtr ptr, IntPtr arg1, object arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_5_343(IntPtr method, IntPtr ptr, ref Vector2 arg1, int arg2, object[] arg3, int arg4, int arg5);
+        internal extern static int godot_icall_1_343(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Dictionary<object, object> godot_icall_5_344(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, object[] arg3, int arg4, int arg5);
+        internal extern static object godot_icall_1_344(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_2_345(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
+        internal extern static void godot_icall_2_345(IntPtr method, IntPtr ptr, IntPtr arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_1_346(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static bool godot_icall_1_346(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Dictionary<object, object> godot_icall_1_347(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static void godot_icall_3_347(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, float arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_348(IntPtr method, IntPtr ptr, IntPtr arg1, object arg2);
+        internal extern static float godot_icall_2_348(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_1_349(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static Physics2DDirectSpaceState godot_icall_1_349(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_350(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static void godot_icall_2_350(IntPtr method, IntPtr ptr, IntPtr arg1, IntPtr arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_351(IntPtr method, IntPtr ptr, IntPtr arg1, bool arg2);
+        internal extern static IntPtr godot_icall_1_351(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_1_352(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static void godot_icall_2_352(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_353(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, float arg3);
+        internal extern static void godot_icall_3_353(IntPtr method, IntPtr ptr, IntPtr arg1, IntPtr arg2, ref Transform2D arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static float godot_icall_2_354(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
+        internal extern static void godot_icall_3_354(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, IntPtr arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Physics2DDirectSpaceState godot_icall_1_355(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static void godot_icall_3_355(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, ref Transform2D arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_356(IntPtr method, IntPtr ptr, IntPtr arg1, IntPtr arg2);
+        internal extern static void godot_icall_3_356(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static IntPtr godot_icall_1_357(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static IntPtr godot_icall_2_357(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_358(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
+        internal extern static object godot_icall_2_358(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_359(IntPtr method, IntPtr ptr, IntPtr arg1, IntPtr arg2, ref Transform2D arg3);
+        internal extern static void godot_icall_1_359(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_360(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, IntPtr arg3);
+        internal extern static void godot_icall_3_360(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, object arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_361(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, ref Transform2D arg3);
+        internal extern static void godot_icall_2_361(IntPtr method, IntPtr ptr, IntPtr arg1, ref Transform2D arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_362(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, bool arg3);
+        internal extern static object godot_icall_2_362(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static IntPtr godot_icall_2_363(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
+        internal extern static object godot_icall_1_363(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_2_364(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
+        internal extern static void godot_icall_3_364(IntPtr method, IntPtr ptr, IntPtr arg1, IntPtr arg2, string arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_365(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, object arg3);
+        internal extern static IntPtr godot_icall_2_365(IntPtr method, IntPtr ptr, int arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_366(IntPtr method, IntPtr ptr, IntPtr arg1, ref Transform2D arg2);
+        internal extern static void godot_icall_3_366(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2, ref Vector2 arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_367(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static void godot_icall_2_367(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_368(IntPtr method, IntPtr ptr, IntPtr arg1, IntPtr arg2, string arg3);
+        internal extern static void godot_icall_4_368(IntPtr method, IntPtr ptr, IntPtr arg1, IntPtr arg2, string arg3, object arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static IntPtr godot_icall_2_369(IntPtr method, IntPtr ptr, int arg1, bool arg2);
+        internal extern static bool godot_icall_5_369(IntPtr method, IntPtr ptr, IntPtr arg1, ref Transform2D arg2, ref Vector2 arg3, float arg4, IntPtr arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_370(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2, ref Vector2 arg3);
+        internal extern static IntPtr godot_icall_3_370(IntPtr method, IntPtr ptr, ref Vector2 arg1, IntPtr arg2, IntPtr arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_371(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2);
+        internal extern static IntPtr godot_icall_5_371(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, ref Vector2 arg3, IntPtr arg4, IntPtr arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_372(IntPtr method, IntPtr ptr, IntPtr arg1, IntPtr arg2, string arg3, object arg4);
+        internal extern static IntPtr godot_icall_4_372(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, IntPtr arg3, IntPtr arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_5_373(IntPtr method, IntPtr ptr, IntPtr arg1, ref Transform2D arg2, ref Vector2 arg3, float arg4, IntPtr arg5);
+        internal extern static void godot_icall_1_373(IntPtr method, IntPtr ptr, object[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static IntPtr godot_icall_3_374(IntPtr method, IntPtr ptr, ref Vector2 arg1, IntPtr arg2, IntPtr arg3);
+        internal extern static Object godot_icall_0_374(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static IntPtr godot_icall_5_375(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, ref Vector2 arg3, IntPtr arg4, IntPtr arg5);
+        internal extern static void godot_icall_2_375(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static IntPtr godot_icall_4_376(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, IntPtr arg3, IntPtr arg4);
+        internal extern static PhysicsDirectSpaceState godot_icall_0_376(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_377(IntPtr method, IntPtr ptr, object[] arg1);
+        internal extern static Dictionary<object, object> godot_icall_5_377(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, object[] arg3, int arg4, int arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_378(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2);
+        internal extern static object[] godot_icall_2_378(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector3 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static PhysicsDirectSpaceState godot_icall_0_379(IntPtr method, IntPtr ptr);
+        internal extern static PhysicsDirectSpaceState godot_icall_1_379(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Dictionary<object, object> godot_icall_5_380(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, object[] arg3, int arg4, int arg5);
+        internal extern static void godot_icall_3_380(IntPtr method, IntPtr ptr, IntPtr arg1, IntPtr arg2, ref Transform arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_2_381(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector3 arg2);
+        internal extern static void godot_icall_3_381(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, ref Transform arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static PhysicsDirectSpaceState godot_icall_1_382(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static object godot_icall_2_382(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_383(IntPtr method, IntPtr ptr, IntPtr arg1, IntPtr arg2, ref Transform arg3);
+        internal extern static void godot_icall_2_383(IntPtr method, IntPtr ptr, IntPtr arg1, ref Transform arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_384(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, ref Transform arg3);
+        internal extern static object godot_icall_1_384(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_2_385(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
+        internal extern static void godot_icall_3_385(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector3 arg2, ref Vector3 arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_386(IntPtr method, IntPtr ptr, IntPtr arg1, ref Transform arg2);
+        internal extern static void godot_icall_2_386(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector3 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_387(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static IntPtr godot_icall_4_387(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector3 arg2, IntPtr arg3, ref Vector3 arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_388(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector3 arg2, ref Vector3 arg3);
+        internal extern static object godot_icall_1_388(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_389(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector3 arg2);
+        internal extern static IntPtr godot_icall_4_389(IntPtr method, IntPtr ptr, IntPtr arg1, ref Transform arg2, IntPtr arg3, ref Transform arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static IntPtr godot_icall_4_390(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector3 arg2, IntPtr arg3, ref Vector3 arg4);
+        internal extern static bool godot_icall_2_390(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_1_391(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static void godot_icall_4_391(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, int arg3, float arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static IntPtr godot_icall_4_392(IntPtr method, IntPtr ptr, IntPtr arg1, ref Transform arg2, IntPtr arg3, ref Transform arg4);
+        internal extern static float godot_icall_3_392(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_2_393(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
+        internal extern static void godot_icall_4_393(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, int arg3, bool arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_394(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, int arg3, float arg4);
+        internal extern static bool godot_icall_3_394(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static float godot_icall_3_395(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, int arg3);
+        internal extern static object godot_icall_0_395(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_396(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, int arg3, bool arg4);
+        internal extern static void godot_icall_2_396(IntPtr method, IntPtr ptr, Vector2[] arg1, int[] arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_3_397(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, int arg3);
+        internal extern static Vector2[] godot_icall_2_397(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_0_398(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_4_398(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, int arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_399(IntPtr method, IntPtr ptr, Vector2[] arg1, int[] arg2);
+        internal extern static void godot_icall_3_399(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Vector2[] godot_icall_2_400(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2);
+        internal extern static void godot_icall_3_400(IntPtr method, IntPtr ptr, string arg1, string arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_401(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, int arg3, int arg4);
+        internal extern static void godot_icall_4_401(IntPtr method, IntPtr ptr, IntPtr arg1, IntPtr arg2, int arg3, bool arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_402(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3);
+        internal extern static void godot_icall_3_402(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_403(IntPtr method, IntPtr ptr, string arg1, string arg2, int arg3);
+        internal extern static void godot_icall_3_403(IntPtr method, IntPtr ptr, int arg1, IntPtr arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_404(IntPtr method, IntPtr ptr, IntPtr arg1, IntPtr arg2, int arg3, bool arg4);
+        internal extern static ShortCut godot_icall_1_404(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_405(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, bool arg3);
+        internal extern static void godot_icall_1_405(IntPtr method, IntPtr ptr, Dictionary<object, object> arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_406(IntPtr method, IntPtr ptr, int arg1, IntPtr arg2, bool arg3);
+        internal extern static Object godot_icall_1_406(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static ShortCut godot_icall_1_407(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static RegExMatch godot_icall_3_407(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_1_408(IntPtr method, IntPtr ptr, Dictionary<object, object> arg1);
+        internal extern static string godot_icall_5_408(IntPtr method, IntPtr ptr, string arg1, string arg2, bool arg3, int arg4, int arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Object godot_icall_1_409(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static string godot_icall_1_409(IntPtr method, IntPtr ptr, object arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static RegExMatch godot_icall_3_410(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3);
+        internal extern static Resource godot_icall_1_410(IntPtr method, IntPtr ptr, bool arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static string godot_icall_5_411(IntPtr method, IntPtr ptr, string arg1, string arg2, bool arg3, int arg4, int arg5);
+        internal extern static Resource godot_icall_0_411(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static string godot_icall_1_412(IntPtr method, IntPtr ptr, object arg1);
+        internal extern static Resource godot_icall_1_412(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Resource godot_icall_1_413(IntPtr method, IntPtr ptr, bool arg1);
+        internal extern static void godot_icall_3_413(IntPtr method, IntPtr ptr, int arg1, bool arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Resource godot_icall_0_414(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_2_414(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Resource godot_icall_1_415(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static bool godot_icall_3_415(IntPtr method, IntPtr ptr, ref Vector2 arg1, float arg2, IntPtr arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_416(IntPtr method, IntPtr ptr, int arg1, bool arg2, int arg3);
+        internal extern static RoomBounds godot_icall_0_416(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_417(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2);
+        internal extern static IntPtr godot_icall_2_417(IntPtr method, IntPtr ptr, int arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_3_418(IntPtr method, IntPtr ptr, ref Vector2 arg1, float arg2, IntPtr arg3);
+        internal extern static PackedScene godot_icall_1_418(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Room godot_icall_0_419(IntPtr method, IntPtr ptr);
+        internal extern static string[] godot_icall_1_419(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static IntPtr godot_icall_2_420(IntPtr method, IntPtr ptr, int arg1, bool arg2);
+        internal extern static object[] godot_icall_1_420(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static PackedScene godot_icall_1_421(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static SceneTreeTimer godot_icall_2_421(IntPtr method, IntPtr ptr, float arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static string[] godot_icall_1_422(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static void godot_icall_4_422(IntPtr method, IntPtr ptr, int arg1, int arg2, ref Vector2 arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_2_423(IntPtr method, IntPtr ptr, int arg1, int arg2);
+        internal extern static object godot_icall_4_423(IntPtr method, IntPtr ptr, int arg1, string arg2, string arg3, object[] arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_1_424(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static void godot_icall_3_424(IntPtr method, IntPtr ptr, int arg1, string arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static SceneTreeTimer godot_icall_2_425(IntPtr method, IntPtr ptr, float arg1, bool arg2);
+        internal extern static void godot_icall_4_425(IntPtr method, IntPtr ptr, int arg1, string arg2, string arg3, object arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_426(IntPtr method, IntPtr ptr, int arg1, int arg2, ref Vector2 arg3, int arg4);
+        internal extern static object godot_icall_3_426(IntPtr method, IntPtr ptr, string arg1, string arg2, object[] arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_427(IntPtr method, IntPtr ptr, int arg1, string arg2, string arg3, object[] arg4);
+        internal extern static Texture godot_icall_1_427(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_428(IntPtr method, IntPtr ptr, int arg1, string arg2, int arg3);
+        internal extern static Shader godot_icall_0_428(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_429(IntPtr method, IntPtr ptr, int arg1, string arg2, string arg3, object arg4);
+        internal extern static bool godot_icall_3_429(IntPtr method, IntPtr ptr, ref Transform2D arg1, IntPtr arg2, ref Transform2D arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_430(IntPtr method, IntPtr ptr, string arg1, string arg2, object[] arg3);
+        internal extern static bool godot_icall_5_430(IntPtr method, IntPtr ptr, ref Transform2D arg1, ref Vector2 arg2, IntPtr arg3, ref Transform2D arg4, ref Vector2 arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Texture godot_icall_1_431(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static object godot_icall_3_431(IntPtr method, IntPtr ptr, ref Transform2D arg1, IntPtr arg2, ref Transform2D arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Shader godot_icall_0_432(IntPtr method, IntPtr ptr);
+        internal extern static object godot_icall_5_432(IntPtr method, IntPtr ptr, ref Transform2D arg1, ref Vector2 arg2, IntPtr arg3, ref Transform2D arg4, ref Vector2 arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_3_433(IntPtr method, IntPtr ptr, ref Transform2D arg1, IntPtr arg2, ref Transform2D arg3);
+        internal extern static InputEvent godot_icall_0_433(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_5_434(IntPtr method, IntPtr ptr, ref Transform2D arg1, ref Vector2 arg2, IntPtr arg3, ref Transform2D arg4, ref Vector2 arg5);
+        internal extern static void godot_icall_2_434(IntPtr method, IntPtr ptr, int arg1, IntPtr arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_3_435(IntPtr method, IntPtr ptr, ref Transform2D arg1, IntPtr arg2, ref Transform2D arg3);
+        internal extern static Spatial godot_icall_0_435(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_5_436(IntPtr method, IntPtr ptr, ref Transform2D arg1, ref Vector2 arg2, IntPtr arg3, ref Transform2D arg4, ref Vector2 arg5);
+        internal extern static World godot_icall_0_436(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static InputEvent godot_icall_0_437(IntPtr method, IntPtr ptr);
+        internal extern static SpatialGizmo godot_icall_0_437(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Spatial godot_icall_0_438(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_2_438(IntPtr method, IntPtr ptr, ref Vector3 arg1, float arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static World godot_icall_0_439(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_3_439(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, ref Vector3 arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static SpatialGizmo godot_icall_0_440(IntPtr method, IntPtr ptr);
+        internal extern static LineEdit godot_icall_0_440(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_441(IntPtr method, IntPtr ptr, ref Vector3 arg1, float arg2);
+        internal extern static void godot_icall_3_441(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_442(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, ref Vector3 arg3);
+        internal extern static Texture godot_icall_2_442(IntPtr method, IntPtr ptr, string arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static LineEdit godot_icall_0_443(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_3_443(IntPtr method, IntPtr ptr, string arg1, int arg2, IntPtr arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_444(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2, int arg3);
+        internal extern static object[] godot_icall_1_444(IntPtr method, IntPtr ptr, byte[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Texture godot_icall_2_445(IntPtr method, IntPtr ptr, string arg1, int arg2);
+        internal extern static StreamPeerBuffer godot_icall_0_445(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_446(IntPtr method, IntPtr ptr, string arg1, int arg2, IntPtr arg3);
+        internal extern static int godot_icall_3_446(IntPtr method, IntPtr ptr, IntPtr arg1, bool arg2, string arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_1_447(IntPtr method, IntPtr ptr, byte[] arg1);
+        internal extern static bool godot_icall_2_447(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Rect2 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static StreamPeerBuffer godot_icall_0_448(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_2_448(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_1_449(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static void godot_icall_6_449(IntPtr method, IntPtr ptr, Vector3[] arg1, Vector2[] arg2, Color[] arg3, Vector2[] arg4, Vector3[] arg5, object[] arg6);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_3_450(IntPtr method, IntPtr ptr, IntPtr arg1, bool arg2, string arg3);
+        internal extern static void godot_icall_3_450(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, ref Transform arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_2_451(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Rect2 arg2);
+        internal extern static ArrayMesh godot_icall_1_451(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_452(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2);
+        internal extern static int godot_icall_2_452(IntPtr method, IntPtr ptr, int arg1, string arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_6_453(IntPtr method, IntPtr ptr, Vector3[] arg1, Vector2[] arg2, Color[] arg3, Vector2[] arg4, Vector3[] arg5, object[] arg6);
+        internal extern static StreamPeerTCP godot_icall_0_453(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_454(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2, ref Transform arg3);
+        internal extern static Control godot_icall_1_454(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Mesh godot_icall_1_455(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static Popup godot_icall_0_455(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_2_456(IntPtr method, IntPtr ptr, int arg1, string arg2);
+        internal extern static int[] godot_icall_4_456(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static StreamPeerTCP godot_icall_0_457(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_4_457(IntPtr method, IntPtr ptr, string arg1, string arg2, ref Color arg3, bool arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Control godot_icall_1_458(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static void godot_icall_5_458(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2, ref Color arg3, bool arg4, IntPtr arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Popup godot_icall_0_459(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_6_459(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2, bool arg3, ref Color arg4, bool arg5, IntPtr arg6);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int[] godot_icall_4_460(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3, int arg4);
+        internal extern static void godot_icall_7_460(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2, ref Rect2 arg3, ref Color arg4, bool arg5, IntPtr arg6, bool arg7);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_461(IntPtr method, IntPtr ptr, string arg1, string arg2, ref Color arg3, bool arg4);
+        internal extern static Image godot_icall_0_461(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_5_462(IntPtr method, IntPtr ptr, IntPtr arg1, ref Vector2 arg2, ref Color arg3, bool arg4, IntPtr arg5);
+        internal extern static BitMap godot_icall_0_462(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_6_463(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2, bool arg3, ref Color arg4, bool arg5, IntPtr arg6);
+        internal extern static void godot_icall_3_463(IntPtr method, IntPtr ptr, string arg1, string arg2, IntPtr arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_7_464(IntPtr method, IntPtr ptr, IntPtr arg1, ref Rect2 arg2, ref Rect2 arg3, ref Color arg4, bool arg5, IntPtr arg6, bool arg7);
+        internal extern static void godot_icall_3_464(IntPtr method, IntPtr ptr, string arg1, string arg2, ref Color arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Image godot_icall_0_465(IntPtr method, IntPtr ptr);
+        internal extern static Font godot_icall_0_465(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static BitMap godot_icall_0_466(IntPtr method, IntPtr ptr);
+        internal extern static TileSet godot_icall_0_466(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_467(IntPtr method, IntPtr ptr, string arg1, string arg2, IntPtr arg3);
+        internal extern static void godot_icall_6_467(IntPtr method, IntPtr ptr, int arg1, int arg2, int arg3, bool arg4, bool arg5, bool arg6);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_468(IntPtr method, IntPtr ptr, string arg1, string arg2, ref Color arg3);
+        internal extern static void godot_icall_5_468(IntPtr method, IntPtr ptr, ref Vector2 arg1, int arg2, bool arg3, bool arg4, bool arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Font godot_icall_0_469(IntPtr method, IntPtr ptr);
+        internal extern static object godot_icall_2_469(IntPtr method, IntPtr ptr, ref Vector2 arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static TileSet godot_icall_0_470(IntPtr method, IntPtr ptr);
+        internal extern static ShaderMaterial godot_icall_1_470(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_6_471(IntPtr method, IntPtr ptr, int arg1, int arg2, int arg3, bool arg4, bool arg5, bool arg6);
+        internal extern static void godot_icall_3_471(IntPtr method, IntPtr ptr, int arg1, int arg2, IntPtr arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_5_472(IntPtr method, IntPtr ptr, ref Vector2 arg1, int arg2, bool arg3, bool arg4, bool arg5);
+        internal extern static void godot_icall_3_472(IntPtr method, IntPtr ptr, int arg1, int arg2, ref Transform2D arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_2_473(IntPtr method, IntPtr ptr, ref Vector2 arg1, bool arg2);
+        internal extern static object godot_icall_2_473(IntPtr method, IntPtr ptr, int arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static ShaderMaterial godot_icall_1_474(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static void godot_icall_4_474(IntPtr method, IntPtr ptr, int arg1, IntPtr arg2, ref Transform2D arg3, bool arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_475(IntPtr method, IntPtr ptr, int arg1, int arg2, IntPtr arg3);
+        internal extern static void godot_icall_2_475(IntPtr method, IntPtr ptr, int arg1, object[] arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Shape2D godot_icall_2_476(IntPtr method, IntPtr ptr, int arg1, int arg2);
+        internal extern static NavigationPolygon godot_icall_1_476(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_477(IntPtr method, IntPtr ptr, int arg1, int arg2, ref Transform2D arg3);
+        internal extern static OccluderPolygon2D godot_icall_1_477(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_2_478(IntPtr method, IntPtr ptr, int arg1, int arg2);
+        internal extern static Object godot_icall_1_478(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_479(IntPtr method, IntPtr ptr, int arg1, IntPtr arg2, ref Transform2D arg3, bool arg4);
+        internal extern static TreeItem godot_icall_0_479(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_480(IntPtr method, IntPtr ptr, int arg1, object[] arg2);
+        internal extern static TreeItem godot_icall_1_480(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static NavigationPolygon godot_icall_1_481(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static object godot_icall_2_481(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static OccluderPolygon2D godot_icall_1_482(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static TreeItem godot_icall_1_482(IntPtr method, IntPtr ptr, ref Vector2 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static TreeItem godot_icall_1_483(IntPtr method, IntPtr ptr, IntPtr arg1);
+        internal extern static void godot_icall_5_483(IntPtr method, IntPtr ptr, int arg1, float arg2, float arg3, float arg4, bool arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static TreeItem godot_icall_0_484(IntPtr method, IntPtr ptr);
+        internal extern static Dictionary<object, object> godot_icall_1_484(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_2_485(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
+        internal extern static void godot_icall_3_485(IntPtr method, IntPtr ptr, int arg1, IntPtr arg2, string arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static TreeItem godot_icall_1_486(IntPtr method, IntPtr ptr, ref Vector2 arg1);
+        internal extern static void godot_icall_3_486(IntPtr method, IntPtr ptr, int arg1, ref Color arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_5_487(IntPtr method, IntPtr ptr, int arg1, float arg2, float arg3, float arg4, bool arg5);
+        internal extern static void godot_icall_5_487(IntPtr method, IntPtr ptr, int arg1, IntPtr arg2, int arg3, bool arg4, string arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Dictionary<object, object> godot_icall_1_488(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static Texture godot_icall_2_488(IntPtr method, IntPtr ptr, int arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_489(IntPtr method, IntPtr ptr, int arg1, IntPtr arg2, string arg3);
+        internal extern static bool godot_icall_2_489(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_490(IntPtr method, IntPtr ptr, int arg1, ref Color arg2, bool arg3);
+        internal extern static bool godot_icall_8_490(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, object arg3, object arg4, float arg5, int arg6, int arg7, float arg8);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_5_491(IntPtr method, IntPtr ptr, int arg1, IntPtr arg2, int arg3, bool arg4, string arg5);
+        internal extern static bool godot_icall_8_491(IntPtr method, IntPtr ptr, IntPtr arg1, float arg2, string arg3, object arg4, object arg5, object arg6, object arg7, object arg8);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Texture godot_icall_2_492(IntPtr method, IntPtr ptr, int arg1, int arg2);
+        internal extern static bool godot_icall_9_492(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, object arg3, IntPtr arg4, string arg5, float arg6, int arg7, int arg8, float arg9);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_2_493(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2);
+        internal extern static bool godot_icall_9_493(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, IntPtr arg3, string arg4, object arg5, float arg6, int arg7, int arg8, float arg9);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_8_494(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, object arg3, object arg4, float arg5, int arg6, int arg7, float arg8);
+        internal extern static object godot_icall_3_494(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, object[] arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_8_495(IntPtr method, IntPtr ptr, IntPtr arg1, float arg2, string arg3, object arg4, object arg5, object arg6, object arg7, object arg8);
+        internal extern static void godot_icall_3_495(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, object arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_9_496(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, object arg3, IntPtr arg4, string arg5, float arg6, int arg7, int arg8, float arg9);
+        internal extern static VideoStream godot_icall_0_496(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_9_497(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, IntPtr arg3, string arg4, object arg5, float arg6, int arg7, int arg8, float arg9);
+        internal extern static void godot_icall_3_497(IntPtr method, IntPtr ptr, bool arg1, ref Vector2 arg2, ref Vector2 arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_498(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, object[] arg3);
+        internal extern static ViewportTexture godot_icall_0_498(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_499(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, object arg3);
+        internal extern static Camera godot_icall_0_499(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static VideoStream godot_icall_0_500(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_4_500(IntPtr method, IntPtr ptr, string arg1, int arg2, IntPtr arg3, ref Vector2 arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_501(IntPtr method, IntPtr ptr, bool arg1, ref Vector2 arg2, ref Vector2 arg3);
+        internal extern static VisualScriptNode godot_icall_2_501(IntPtr method, IntPtr ptr, string arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static ViewportTexture godot_icall_0_502(IntPtr method, IntPtr ptr);
+        internal extern static void godot_icall_3_502(IntPtr method, IntPtr ptr, string arg1, int arg2, ref Vector2 arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Camera godot_icall_0_503(IntPtr method, IntPtr ptr);
+        internal extern static object godot_icall_2_503(IntPtr method, IntPtr ptr, string arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_504(IntPtr method, IntPtr ptr, string arg1, int arg2, IntPtr arg3, ref Vector2 arg4);
+        internal extern static void godot_icall_4_504(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static VisualScriptNode godot_icall_2_505(IntPtr method, IntPtr ptr, string arg1, int arg2);
+        internal extern static bool godot_icall_4_505(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_506(IntPtr method, IntPtr ptr, string arg1, int arg2, ref Vector2 arg3);
+        internal extern static void godot_icall_5_506(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3, int arg4, int arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_2_507(IntPtr method, IntPtr ptr, string arg1, int arg2);
+        internal extern static bool godot_icall_5_507(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3, int arg4, int arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_508(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3, int arg4);
+        internal extern static void godot_icall_3_508(IntPtr method, IntPtr ptr, string arg1, object arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_4_509(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3, int arg4);
+        internal extern static void godot_icall_2_509(IntPtr method, IntPtr ptr, string arg1, Dictionary<object, object> arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_5_510(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3, int arg4, int arg5);
+        internal extern static Dictionary<object, object> godot_icall_1_510(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_5_511(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3, int arg4, int arg5);
+        internal extern static void godot_icall_3_511(IntPtr method, IntPtr ptr, string arg1, int arg2, string arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_512(IntPtr method, IntPtr ptr, string arg1, object arg2, bool arg3);
+        internal extern static void godot_icall_3_512(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, object[] arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_2_513(IntPtr method, IntPtr ptr, string arg1, Dictionary<object, object> arg2);
+        internal extern static object godot_icall_1_513(IntPtr method, IntPtr ptr, object[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Dictionary<object, object> godot_icall_1_514(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static VisualScript godot_icall_0_514(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_515(IntPtr method, IntPtr ptr, string arg1, int arg2, string arg3);
+        internal extern static IntPtr godot_icall_2_515(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_3_516(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, object[] arg3);
+        internal extern static TextureButton godot_icall_0_516(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_1_517(IntPtr method, IntPtr ptr, object[] arg1);
+        internal extern static Dictionary<object, object> godot_icall_2_517(IntPtr method, IntPtr ptr, string arg1, string arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static VisualScript godot_icall_0_518(IntPtr method, IntPtr ptr);
+        internal extern static object[] godot_icall_2_518(IntPtr method, IntPtr ptr, string arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static IntPtr godot_icall_2_519(IntPtr method, IntPtr ptr, IntPtr arg1, int arg2);
+        internal extern static object godot_icall_2_519(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static TextureButton godot_icall_0_520(IntPtr method, IntPtr ptr);
+        internal extern static int godot_icall_3_520(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, object arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Dictionary<object, object> godot_icall_2_521(IntPtr method, IntPtr ptr, string arg1, string arg2);
+        internal extern static bool godot_icall_3_521(IntPtr method, IntPtr ptr, string arg1, string arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_2_522(IntPtr method, IntPtr ptr, string arg1, bool arg2);
+        internal extern static string[] godot_icall_2_522(IntPtr method, IntPtr ptr, string arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_2_523(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2);
+        internal extern static int godot_icall_2_523(IntPtr method, IntPtr ptr, bool arg1, bool arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_3_524(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, object arg3);
+        internal extern static MainLoop godot_icall_0_524(IntPtr method, IntPtr ptr);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_3_525(IntPtr method, IntPtr ptr, string arg1, string arg2, bool arg3);
+        internal extern static int godot_icall_3_525(IntPtr method, IntPtr ptr, string arg1, int arg2, byte[] arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static string[] godot_icall_2_526(IntPtr method, IntPtr ptr, string arg1, bool arg2);
+        internal extern static int godot_icall_3_526(IntPtr method, IntPtr ptr, string arg1, int arg2, string arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_2_527(IntPtr method, IntPtr ptr, bool arg1, bool arg2);
+        internal extern static int godot_icall_3_527(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_2_528(IntPtr method, IntPtr ptr, string arg1, string arg2);
+        internal extern static byte[] godot_icall_1_528(IntPtr method, IntPtr ptr, int arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static MainLoop godot_icall_0_529(IntPtr method, IntPtr ptr);
+        internal extern static object[] godot_icall_1_529(IntPtr method, IntPtr ptr, ref Vector3 arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_3_530(IntPtr method, IntPtr ptr, string arg1, int arg2, byte[] arg3);
+        internal extern static object[] godot_icall_4_530(IntPtr method, IntPtr ptr, float arg1, float arg2, int arg3, int arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_3_531(IntPtr method, IntPtr ptr, string arg1, int arg2, string arg3);
+        internal extern static object[] godot_icall_5_531(IntPtr method, IntPtr ptr, float arg1, float arg2, int arg3, int arg4, int arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_3_532(IntPtr method, IntPtr ptr, string arg1, int arg2, int arg3);
+        internal extern static float godot_icall_4_532(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, ref Vector2 arg3, float arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static byte[] godot_icall_1_533(IntPtr method, IntPtr ptr, int arg1);
+        internal extern static object godot_icall_4_533(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, ref Vector2 arg3, ref Vector2 arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_1_534(IntPtr method, IntPtr ptr, ref Vector3 arg1);
+        internal extern static Vector2[] godot_icall_4_534(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, ref Vector2 arg3, ref Vector2 arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_4_535(IntPtr method, IntPtr ptr, float arg1, float arg2, int arg3, int arg4);
+        internal extern static Vector3[] godot_icall_4_535(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, ref Vector3 arg3, ref Vector3 arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object[] godot_icall_5_536(IntPtr method, IntPtr ptr, float arg1, float arg2, int arg3, int arg4, int arg5);
+        internal extern static object godot_icall_3_536(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, ref Vector2 arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static float godot_icall_4_537(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, ref Vector2 arg3, float arg4);
+        internal extern static object godot_icall_3_537(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, ref Vector3 arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_4_538(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, ref Vector2 arg3, ref Vector2 arg4);
+        internal extern static object godot_icall_5_538(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, ref Vector3 arg3, ref Vector3 arg4, ref Vector3 arg5);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Vector2[] godot_icall_4_539(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, ref Vector2 arg3, ref Vector2 arg4);
+        internal extern static Vector3[] godot_icall_4_539(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, ref Vector3 arg3, float arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Vector3[] godot_icall_4_540(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, ref Vector3 arg3, ref Vector3 arg4);
+        internal extern static Vector3[] godot_icall_4_540(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, float arg3, float arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_3_541(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, ref Vector2 arg3);
+        internal extern static Vector3[] godot_icall_3_541(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, object[] arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static object godot_icall_3_542(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, ref Vector3 arg3);
+        internal extern static bool godot_icall_4_542(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, ref Vector2 arg3, ref Vector2 arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static void godot_icall_5_543(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, ref Vector3 arg3, ref Vector3 arg4, ref Vector3 arg5);
+        internal extern static int[] godot_icall_1_543(IntPtr method, IntPtr ptr, Vector2[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Vector3[] godot_icall_4_544(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, ref Vector3 arg3, float arg4);
+        internal extern static Dictionary<object, object> godot_icall_1_544(IntPtr method, IntPtr ptr, Vector2[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Vector3[] godot_icall_4_545(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, float arg3, float arg4);
+        internal extern static string godot_icall_1_545(IntPtr method, IntPtr ptr, byte[] arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Vector3[] godot_icall_3_546(IntPtr method, IntPtr ptr, ref Vector3 arg1, ref Vector3 arg2, object[] arg3);
+        internal extern static byte[] godot_icall_1_546(IntPtr method, IntPtr ptr, string arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static bool godot_icall_4_547(IntPtr method, IntPtr ptr, ref Vector2 arg1, ref Vector2 arg2, ref Vector2 arg3, ref Vector2 arg4);
+        internal extern static int godot_icall_4_547(IntPtr method, IntPtr ptr, string arg1, string[] arg2, bool arg3, object[] arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int[] godot_icall_1_548(IntPtr method, IntPtr ptr, Vector2[] arg1);
+        internal extern static int godot_icall_1_548(IntPtr method, IntPtr ptr, Dictionary<object, object> arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Dictionary<object, object> godot_icall_1_549(IntPtr method, IntPtr ptr, Vector2[] arg1);
+        internal extern static int godot_icall_4_549(IntPtr method, IntPtr ptr, string arg1, float arg2, string arg3, string arg4);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static string godot_icall_1_550(IntPtr method, IntPtr ptr, byte[] arg1);
+        internal extern static ResourceInteractiveLoader godot_icall_2_550(IntPtr method, IntPtr ptr, string arg1, string arg2);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static byte[] godot_icall_1_551(IntPtr method, IntPtr ptr, string arg1);
+        internal extern static Resource godot_icall_3_551(IntPtr method, IntPtr ptr, string arg1, string arg2, bool arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_4_552(IntPtr method, IntPtr ptr, string arg1, string[] arg2, bool arg3, object[] arg4);
+        internal extern static int godot_icall_3_552(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2, int arg3);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_1_553(IntPtr method, IntPtr ptr, Dictionary<object, object> arg1);
+        internal extern static string[] godot_icall_1_553(IntPtr method, IntPtr ptr, IntPtr arg1);
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_4_554(IntPtr method, IntPtr ptr, string arg1, float arg2, string arg3, string arg4);
-        [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static ResourceInteractiveLoader godot_icall_2_555(IntPtr method, IntPtr ptr, string arg1, string arg2);
-        [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static Resource godot_icall_3_556(IntPtr method, IntPtr ptr, string arg1, string arg2, bool arg3);
-        [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_3_557(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2, int arg3);
-        [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static string[] godot_icall_1_558(IntPtr method, IntPtr ptr, IntPtr arg1);
-        [MethodImpl(MethodImplOptions.InternalCall)]
-        internal extern static int godot_icall_4_559(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, object arg3, int arg4);
+        internal extern static int godot_icall_4_554(IntPtr method, IntPtr ptr, IntPtr arg1, string arg2, object arg3, int arg4);
     }
 }

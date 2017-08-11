@@ -41,7 +41,7 @@ namespace GodotEngine
         /// </summary>
         public int connect_to_host(string host, int port)
         {
-            return NativeCalls.godot_icall_2_238(method_bind_0, Object.GetPtr(this), host, port);
+            return NativeCalls.godot_icall_2_236(method_bind_0, Object.GetPtr(this), host, port);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_connected_to_host");

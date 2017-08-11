@@ -67,7 +67,7 @@ namespace GodotEngine
         /// </summary>
         public void add_filter(string filter)
         {
-            NativeCalls.godot_icall_1_34(method_bind_1, Object.GetPtr(this), filter);
+            NativeCalls.godot_icall_1_35(method_bind_1, Object.GetPtr(this), filter);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_filters");
@@ -81,7 +81,7 @@ namespace GodotEngine
 
         public string[] get_filters()
         {
-            return NativeCalls.godot_icall_0_58(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_59(method_bind_3, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_current_dir");
@@ -121,7 +121,7 @@ namespace GodotEngine
         /// </summary>
         public void set_current_dir(string dir)
         {
-            NativeCalls.godot_icall_1_34(method_bind_7, Object.GetPtr(this), dir);
+            NativeCalls.godot_icall_1_35(method_bind_7, Object.GetPtr(this), dir);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_current_file");
@@ -131,7 +131,7 @@ namespace GodotEngine
         /// </summary>
         public void set_current_file(string file)
         {
-            NativeCalls.godot_icall_1_34(method_bind_8, Object.GetPtr(this), file);
+            NativeCalls.godot_icall_1_35(method_bind_8, Object.GetPtr(this), file);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_current_path");
@@ -141,7 +141,7 @@ namespace GodotEngine
         /// </summary>
         public void set_current_path(string path)
         {
-            NativeCalls.godot_icall_1_34(method_bind_9, Object.GetPtr(this), path);
+            NativeCalls.godot_icall_1_35(method_bind_9, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_mode");

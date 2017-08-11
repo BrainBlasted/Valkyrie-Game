@@ -367,7 +367,7 @@ namespace GodotEngine
         /// </summary>
         public void apply_impulse(Vector2 offset, Vector2 impulse)
         {
-            NativeCalls.godot_icall_2_417(method_bind_31, Object.GetPtr(this), ref offset, ref impulse);
+            NativeCalls.godot_icall_2_414(method_bind_31, Object.GetPtr(this), ref offset, ref impulse);
         }
 
         private IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_applied_force");
@@ -418,7 +418,7 @@ namespace GodotEngine
         /// </summary>
         public void add_force(Vector2 offset, Vector2 force)
         {
-            NativeCalls.godot_icall_2_417(method_bind_36, Object.GetPtr(this), ref offset, ref force);
+            NativeCalls.godot_icall_2_414(method_bind_36, Object.GetPtr(this), ref offset, ref force);
         }
 
         private IntPtr method_bind_37 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_sleeping");
@@ -469,7 +469,7 @@ namespace GodotEngine
         /// </summary>
         public bool test_motion(Vector2 motion, float margin = 0.08f, Physics2DTestMotionResult result = null)
         {
-            return NativeCalls.godot_icall_3_418(method_bind_41, Object.GetPtr(this), ref motion, margin, Object.GetPtr(result));
+            return NativeCalls.godot_icall_3_415(method_bind_41, Object.GetPtr(this), ref motion, margin, Object.GetPtr(result));
         }
 
         private IntPtr method_bind_42 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_colliding_bodies");
@@ -479,7 +479,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_colliding_bodies()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_42, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_85(method_bind_42, Object.GetPtr(this));
         }
     }
 }

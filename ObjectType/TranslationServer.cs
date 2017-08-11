@@ -11,7 +11,7 @@ namespace GodotEngine
 
         public static void set_locale(string locale)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, ptr, locale);
+            NativeCalls.godot_icall_1_35(method_bind_0, ptr, locale);
         }
 
         private static IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_locale");
@@ -25,21 +25,21 @@ namespace GodotEngine
 
         public static string translate(string message)
         {
-            return NativeCalls.godot_icall_1_59(method_bind_2, ptr, message);
+            return NativeCalls.godot_icall_1_60(method_bind_2, ptr, message);
         }
 
         private static IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_translation");
 
         public static void add_translation(Translation translation)
         {
-            NativeCalls.godot_icall_1_35(method_bind_3, ptr, Object.GetPtr(translation));
+            NativeCalls.godot_icall_1_19(method_bind_3, ptr, Object.GetPtr(translation));
         }
 
         private static IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_translation");
 
         public static void remove_translation(Translation translation)
         {
-            NativeCalls.godot_icall_1_35(method_bind_4, ptr, Object.GetPtr(translation));
+            NativeCalls.godot_icall_1_19(method_bind_4, ptr, Object.GetPtr(translation));
         }
 
         private static IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear");

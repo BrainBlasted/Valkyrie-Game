@@ -38,7 +38,7 @@ namespace GodotEngine
         /// </summary>
         public Vector3 project_ray_normal(Vector2 screen_point)
         {
-            object ret = NativeCalls.godot_icall_1_113(method_bind_0, Object.GetPtr(this), ref screen_point);
+            object ret = NativeCalls.godot_icall_1_114(method_bind_0, Object.GetPtr(this), ref screen_point);
             return (Vector3)ret;
         }
 
@@ -46,7 +46,7 @@ namespace GodotEngine
 
         public Vector3 project_local_ray_normal(Vector2 screen_point)
         {
-            object ret = NativeCalls.godot_icall_1_113(method_bind_1, Object.GetPtr(this), ref screen_point);
+            object ret = NativeCalls.godot_icall_1_114(method_bind_1, Object.GetPtr(this), ref screen_point);
             return (Vector3)ret;
         }
 
@@ -57,7 +57,7 @@ namespace GodotEngine
         /// </summary>
         public Vector3 project_ray_origin(Vector2 screen_point)
         {
-            object ret = NativeCalls.godot_icall_1_113(method_bind_2, Object.GetPtr(this), ref screen_point);
+            object ret = NativeCalls.godot_icall_1_114(method_bind_2, Object.GetPtr(this), ref screen_point);
             return (Vector3)ret;
         }
 
@@ -68,7 +68,7 @@ namespace GodotEngine
         /// </summary>
         public Vector2 unproject_position(Vector3 world_point)
         {
-            object ret = NativeCalls.godot_icall_1_114(method_bind_3, Object.GetPtr(this), ref world_point);
+            object ret = NativeCalls.godot_icall_1_115(method_bind_3, Object.GetPtr(this), ref world_point);
             return (Vector2)ret;
         }
 
@@ -76,14 +76,14 @@ namespace GodotEngine
 
         public bool is_position_behind(Vector3 world_point)
         {
-            return NativeCalls.godot_icall_1_115(method_bind_4, Object.GetPtr(this), ref world_point);
+            return NativeCalls.godot_icall_1_116(method_bind_4, Object.GetPtr(this), ref world_point);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "project_position");
 
         public Vector3 project_position(Vector2 screen_point)
         {
-            object ret = NativeCalls.godot_icall_1_113(method_bind_5, Object.GetPtr(this), ref screen_point);
+            object ret = NativeCalls.godot_icall_1_114(method_bind_5, Object.GetPtr(this), ref screen_point);
             return (Vector3)ret;
         }
 
@@ -94,7 +94,7 @@ namespace GodotEngine
         /// </summary>
         public void set_perspective(float fov, float z_near, float z_far)
         {
-            NativeCalls.godot_icall_3_116(method_bind_6, Object.GetPtr(this), fov, z_near, z_far);
+            NativeCalls.godot_icall_3_117(method_bind_6, Object.GetPtr(this), fov, z_near, z_far);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_orthogonal");
@@ -104,7 +104,7 @@ namespace GodotEngine
         /// </summary>
         public void set_orthogonal(float size, float z_near, float z_far)
         {
-            NativeCalls.godot_icall_3_116(method_bind_7, Object.GetPtr(this), size, z_near, z_far);
+            NativeCalls.godot_icall_3_117(method_bind_7, Object.GetPtr(this), size, z_near, z_far);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "make_current");
@@ -226,14 +226,14 @@ namespace GodotEngine
 
         public void set_environment(Environment env)
         {
-            NativeCalls.godot_icall_1_35(method_bind_23, Object.GetPtr(this), Object.GetPtr(env));
+            NativeCalls.godot_icall_1_19(method_bind_23, Object.GetPtr(this), Object.GetPtr(env));
         }
 
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_environment");
 
         public Environment get_environment()
         {
-            return NativeCalls.godot_icall_0_117(method_bind_24, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_118(method_bind_24, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_keep_aspect_mode");

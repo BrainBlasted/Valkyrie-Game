@@ -55,7 +55,7 @@ namespace GodotEngine
         /// </summary>
         public bool is_action(string action)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_5, Object.GetPtr(this), action);
+            return NativeCalls.godot_icall_1_57(method_bind_5, Object.GetPtr(this), action);
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_action_pressed");
@@ -65,7 +65,7 @@ namespace GodotEngine
         /// </summary>
         public bool is_action_pressed(string action)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_6, Object.GetPtr(this), action);
+            return NativeCalls.godot_icall_1_57(method_bind_6, Object.GetPtr(this), action);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_action_released");
@@ -75,7 +75,7 @@ namespace GodotEngine
         /// </summary>
         public bool is_action_released(string action)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_7, Object.GetPtr(this), action);
+            return NativeCalls.godot_icall_1_57(method_bind_7, Object.GetPtr(this), action);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_echo");
@@ -99,14 +99,14 @@ namespace GodotEngine
 
         public bool action_match(InputEvent @event)
         {
-            return NativeCalls.godot_icall_1_253(method_bind_10, Object.GetPtr(this), Object.GetPtr(@event));
+            return NativeCalls.godot_icall_1_251(method_bind_10, Object.GetPtr(this), Object.GetPtr(@event));
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "shortcut_match");
 
         public bool shortcut_match(InputEvent @event)
         {
-            return NativeCalls.godot_icall_1_253(method_bind_11, Object.GetPtr(this), Object.GetPtr(@event));
+            return NativeCalls.godot_icall_1_251(method_bind_11, Object.GetPtr(this), Object.GetPtr(@event));
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_action_type");
@@ -121,7 +121,7 @@ namespace GodotEngine
         public InputEvent xformed_by(Transform2D xform, Nullable<Vector2> local_ofs = null)
         {
             Vector2 local_ofs_in = local_ofs.HasValue ? local_ofs.Value : new Vector2(0, 0);
-            return NativeCalls.godot_icall_2_254(method_bind_13, Object.GetPtr(this), ref xform, ref local_ofs_in);
+            return NativeCalls.godot_icall_2_252(method_bind_13, Object.GetPtr(this), ref xform, ref local_ofs_in);
         }
     }
 }

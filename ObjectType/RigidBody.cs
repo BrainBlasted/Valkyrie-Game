@@ -141,7 +141,7 @@ namespace GodotEngine
         /// </summary>
         public void set_linear_velocity(Vector3 linear_velocity)
         {
-            NativeCalls.godot_icall_1_83(method_bind_10, Object.GetPtr(this), ref linear_velocity);
+            NativeCalls.godot_icall_1_84(method_bind_10, Object.GetPtr(this), ref linear_velocity);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_linear_velocity");
@@ -162,7 +162,7 @@ namespace GodotEngine
         /// </summary>
         public void set_angular_velocity(Vector3 angular_velocity)
         {
-            NativeCalls.godot_icall_1_83(method_bind_12, Object.GetPtr(this), ref angular_velocity);
+            NativeCalls.godot_icall_1_84(method_bind_12, Object.GetPtr(this), ref angular_velocity);
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_angular_velocity");
@@ -324,7 +324,7 @@ namespace GodotEngine
         /// </summary>
         public void set_axis_velocity(Vector3 axis_velocity)
         {
-            NativeCalls.godot_icall_1_83(method_bind_28, Object.GetPtr(this), ref axis_velocity);
+            NativeCalls.godot_icall_1_84(method_bind_28, Object.GetPtr(this), ref axis_velocity);
         }
 
         private IntPtr method_bind_29 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "apply_impulse");
@@ -334,7 +334,7 @@ namespace GodotEngine
         /// </summary>
         public void apply_impulse(Vector3 pos, Vector3 impulse)
         {
-            NativeCalls.godot_icall_2_378(method_bind_29, Object.GetPtr(this), ref pos, ref impulse);
+            NativeCalls.godot_icall_2_375(method_bind_29, Object.GetPtr(this), ref pos, ref impulse);
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_sleeping");
@@ -405,7 +405,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_colliding_bodies()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_36, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_85(method_bind_36, Object.GetPtr(this));
         }
     }
 }

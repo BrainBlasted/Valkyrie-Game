@@ -30,14 +30,14 @@ namespace GodotEngine
 
         public void set_texture(Texture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_texture");
 
         public Texture get_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_expand");

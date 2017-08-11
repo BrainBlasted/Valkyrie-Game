@@ -29,7 +29,7 @@ namespace GodotEngine
         /// </summary>
         public void create_action(string name, int merge_mode = 0)
         {
-            NativeCalls.godot_icall_2_78(method_bind_0, Object.GetPtr(this), name, merge_mode);
+            NativeCalls.godot_icall_2_79(method_bind_0, Object.GetPtr(this), name, merge_mode);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "commit_action");
@@ -44,16 +44,16 @@ namespace GodotEngine
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_do_method");
 
-        public void add_do_method(Object @object, string method, params object[] @args)
+        public object add_do_method(Object @object, string method, params object[] @args)
         {
-            NativeCalls.godot_icall_3_498(method_bind_2, Object.GetPtr(this), Object.GetPtr(@object), method, @args);
+            return NativeCalls.godot_icall_3_494(method_bind_2, Object.GetPtr(this), Object.GetPtr(@object), method, @args);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_undo_method");
 
-        public void add_undo_method(Object @object, string method, params object[] @args)
+        public object add_undo_method(Object @object, string method, params object[] @args)
         {
-            NativeCalls.godot_icall_3_498(method_bind_3, Object.GetPtr(this), Object.GetPtr(@object), method, @args);
+            return NativeCalls.godot_icall_3_494(method_bind_3, Object.GetPtr(this), Object.GetPtr(@object), method, @args);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_do_property");
@@ -63,7 +63,7 @@ namespace GodotEngine
         /// </summary>
         public void add_do_property(Object @object, string property, object value)
         {
-            NativeCalls.godot_icall_3_499(method_bind_4, Object.GetPtr(this), Object.GetPtr(@object), property, value);
+            NativeCalls.godot_icall_3_495(method_bind_4, Object.GetPtr(this), Object.GetPtr(@object), property, value);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_undo_property");
@@ -73,7 +73,7 @@ namespace GodotEngine
         /// </summary>
         public void add_undo_property(Object @object, string property, object value)
         {
-            NativeCalls.godot_icall_3_499(method_bind_5, Object.GetPtr(this), Object.GetPtr(@object), property, value);
+            NativeCalls.godot_icall_3_495(method_bind_5, Object.GetPtr(this), Object.GetPtr(@object), property, value);
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_do_reference");
@@ -83,7 +83,7 @@ namespace GodotEngine
         /// </summary>
         public void add_do_reference(Object @object)
         {
-            NativeCalls.godot_icall_1_19(method_bind_6, Object.GetPtr(this), Object.GetPtr(@object));
+            NativeCalls.godot_icall_1_34(method_bind_6, Object.GetPtr(this), Object.GetPtr(@object));
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_undo_reference");
@@ -93,7 +93,7 @@ namespace GodotEngine
         /// </summary>
         public void add_undo_reference(Object @object)
         {
-            NativeCalls.godot_icall_1_19(method_bind_7, Object.GetPtr(this), Object.GetPtr(@object));
+            NativeCalls.godot_icall_1_34(method_bind_7, Object.GetPtr(this), Object.GetPtr(@object));
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_history");

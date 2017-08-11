@@ -79,14 +79,14 @@ namespace GodotEngine
 
         public void set_modulate(Color modulate)
         {
-            NativeCalls.godot_icall_1_122(method_bind_8, Object.GetPtr(this), ref modulate);
+            NativeCalls.godot_icall_1_123(method_bind_8, Object.GetPtr(this), ref modulate);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_modulate");
 
         public Color get_modulate()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_9, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_9, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -164,7 +164,7 @@ namespace GodotEngine
 
         public Rect2 get_item_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_20, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_20, Object.GetPtr(this));
             return (Rect2)ret;
         }
     }

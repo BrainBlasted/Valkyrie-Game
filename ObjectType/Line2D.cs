@@ -27,14 +27,14 @@ namespace GodotEngine
 
         public void set_points(Vector2[] points)
         {
-            NativeCalls.godot_icall_1_152(method_bind_0, Object.GetPtr(this), points);
+            NativeCalls.godot_icall_1_154(method_bind_0, Object.GetPtr(this), points);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_points");
 
         public Vector2[] get_points()
         {
-            return NativeCalls.godot_icall_0_153(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_155(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_point_pos");
@@ -91,14 +91,14 @@ namespace GodotEngine
 
         public void set_default_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_9, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_9, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_default_color");
 
         public Color get_default_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_10, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_10, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -106,28 +106,28 @@ namespace GodotEngine
 
         public void set_gradient(Gradient color)
         {
-            NativeCalls.godot_icall_1_35(method_bind_11, Object.GetPtr(this), Object.GetPtr(color));
+            NativeCalls.godot_icall_1_19(method_bind_11, Object.GetPtr(this), Object.GetPtr(color));
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_gradient");
 
         public Gradient get_gradient()
         {
-            return NativeCalls.godot_icall_0_218(method_bind_12, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_217(method_bind_12, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_texture");
 
         public void set_texture(Texture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_13, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_13, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_texture");
 
         public Texture get_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_14, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_14, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_texture_mode");

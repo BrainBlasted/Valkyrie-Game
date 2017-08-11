@@ -37,7 +37,7 @@ namespace GodotEngine
         /// </summary>
         public void set_text(string text)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, Object.GetPtr(this), text);
+            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), text);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_text");

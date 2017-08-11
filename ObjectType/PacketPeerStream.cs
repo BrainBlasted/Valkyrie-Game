@@ -19,12 +19,9 @@ namespace GodotEngine
 
         private IntPtr method_bind_0 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_stream_peer");
 
-        /// <summary>
-        /// Set the StreamPeer object to be wrapped
-        /// </summary>
-        public void set_stream_peer(StreamPeer peer)
+        public void set_stream_peer(Reference peer)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(peer));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(peer));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_input_buffer_max_size");

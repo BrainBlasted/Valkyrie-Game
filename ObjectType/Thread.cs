@@ -27,10 +27,9 @@ namespace GodotEngine
         /// Start a new [Thread], it will run "method" on object "instance" using "userdata" as an argument and running with "priority", one of PRIORITY_* enum.
         /// Returns OK on success, or ERR_CANT_CREATE on failure.
         /// </summary>
-        public Error start(Object instance, string method, object userdata = null, int priority = 1)
+        public int start(Object instance, string method, object userdata = null, int priority = 1)
         {
-            int ret = NativeCalls.godot_icall_4_559(method_bind_0, Object.GetPtr(this), Object.GetPtr(instance), method, userdata, priority);
-            return (Error)ret;
+            return NativeCalls.godot_icall_4_554(method_bind_0, Object.GetPtr(this), Object.GetPtr(instance), method, userdata, priority);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_id");
@@ -60,7 +59,7 @@ namespace GodotEngine
         /// </summary>
         public object wait_to_finish()
         {
-            return NativeCalls.godot_icall_0_120(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_121(method_bind_3, Object.GetPtr(this));
         }
     }
 }

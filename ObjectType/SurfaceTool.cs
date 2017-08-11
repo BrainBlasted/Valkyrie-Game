@@ -43,7 +43,7 @@ namespace GodotEngine
         /// </summary>
         public void add_vertex(Vector3 vertex)
         {
-            NativeCalls.godot_icall_1_83(method_bind_1, Object.GetPtr(this), ref vertex);
+            NativeCalls.godot_icall_1_84(method_bind_1, Object.GetPtr(this), ref vertex);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_color");
@@ -53,7 +53,7 @@ namespace GodotEngine
         /// </summary>
         public void add_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_2, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_2, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_normal");
@@ -63,7 +63,7 @@ namespace GodotEngine
         /// </summary>
         public void add_normal(Vector3 normal)
         {
-            NativeCalls.godot_icall_1_83(method_bind_3, Object.GetPtr(this), ref normal);
+            NativeCalls.godot_icall_1_84(method_bind_3, Object.GetPtr(this), ref normal);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_tangent");
@@ -73,7 +73,7 @@ namespace GodotEngine
         /// </summary>
         public void add_tangent(Plane tangent)
         {
-            NativeCalls.godot_icall_1_249(method_bind_4, Object.GetPtr(this), ref tangent);
+            NativeCalls.godot_icall_1_247(method_bind_4, Object.GetPtr(this), ref tangent);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_uv");
@@ -103,7 +103,7 @@ namespace GodotEngine
         /// </summary>
         public void add_bones(int[] bones)
         {
-            NativeCalls.godot_icall_1_209(method_bind_7, Object.GetPtr(this), bones);
+            NativeCalls.godot_icall_1_208(method_bind_7, Object.GetPtr(this), bones);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_weights");
@@ -113,7 +113,7 @@ namespace GodotEngine
         /// </summary>
         public void add_weights(float[] weights)
         {
-            NativeCalls.godot_icall_1_215(method_bind_8, Object.GetPtr(this), weights);
+            NativeCalls.godot_icall_1_214(method_bind_8, Object.GetPtr(this), weights);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_smooth_group");
@@ -143,7 +143,7 @@ namespace GodotEngine
             Vector2[] uv2s_in = uv2s != null ? uv2s : new Vector2[] {};
             Vector3[] normals_in = normals != null ? normals : new Vector3[] {};
             object[] tangents_in = tangents != null ? tangents : new object[] {};
-            NativeCalls.godot_icall_6_453(method_bind_10, Object.GetPtr(this), vertexes, uvs_in, colors_in, uv2s_in, normals_in, tangents_in);
+            NativeCalls.godot_icall_6_449(method_bind_10, Object.GetPtr(this), vertexes, uvs_in, colors_in, uv2s_in, normals_in, tangents_in);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_index");
@@ -207,7 +207,7 @@ namespace GodotEngine
         /// </summary>
         public void set_material(Material material)
         {
-            NativeCalls.godot_icall_1_35(method_bind_17, Object.GetPtr(this), Object.GetPtr(material));
+            NativeCalls.godot_icall_1_19(method_bind_17, Object.GetPtr(this), Object.GetPtr(material));
         }
 
         private IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear");
@@ -224,24 +224,21 @@ namespace GodotEngine
 
         public void create_from(Mesh existing, int surface)
         {
-            NativeCalls.godot_icall_2_248(method_bind_19, Object.GetPtr(this), Object.GetPtr(existing), surface);
+            NativeCalls.godot_icall_2_246(method_bind_19, Object.GetPtr(this), Object.GetPtr(existing), surface);
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "append_from");
 
         public void append_from(Mesh existing, int surface, Transform transform)
         {
-            NativeCalls.godot_icall_3_454(method_bind_20, Object.GetPtr(this), Object.GetPtr(existing), surface, ref transform);
+            NativeCalls.godot_icall_3_450(method_bind_20, Object.GetPtr(this), Object.GetPtr(existing), surface, ref transform);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "commit");
 
-        /// <summary>
-        /// Returns a constructed [Mesh] from current information passed in. If an existing [Mesh] is passed in as an argument, will add an extra surface to the existing [Mesh].
-        /// </summary>
-        public Mesh commit(Mesh existing = null)
+        public ArrayMesh commit(ArrayMesh existing = null)
         {
-            return NativeCalls.godot_icall_1_455(method_bind_21, Object.GetPtr(this), Object.GetPtr(existing));
+            return NativeCalls.godot_icall_1_451(method_bind_21, Object.GetPtr(this), Object.GetPtr(existing));
         }
     }
 }

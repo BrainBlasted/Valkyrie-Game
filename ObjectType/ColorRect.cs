@@ -18,14 +18,14 @@ namespace GodotEngine
 
         public void set_frame_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_0, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_0, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_frame_color");
 
         public Color get_frame_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_1, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_1, Object.GetPtr(this));
             return (Color)ret;
         }
     }

@@ -23,7 +23,7 @@ namespace GodotEngine
 
         public void set_font_data(DynamicFontData data)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(data));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(data));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_font_data");
@@ -93,14 +93,14 @@ namespace GodotEngine
 
         public void add_fallback(DynamicFontData data)
         {
-            NativeCalls.godot_icall_1_35(method_bind_10, Object.GetPtr(this), Object.GetPtr(data));
+            NativeCalls.godot_icall_1_19(method_bind_10, Object.GetPtr(this), Object.GetPtr(data));
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_fallback");
 
         public void set_fallback(int idx, DynamicFontData data)
         {
-            NativeCalls.godot_icall_2_88(method_bind_11, Object.GetPtr(this), idx, Object.GetPtr(data));
+            NativeCalls.godot_icall_2_89(method_bind_11, Object.GetPtr(this), idx, Object.GetPtr(data));
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_fallback");

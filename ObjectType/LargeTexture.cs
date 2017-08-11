@@ -25,7 +25,7 @@ namespace GodotEngine
         /// </summary>
         public int add_piece(Vector2 ofs, Texture texture)
         {
-            return NativeCalls.godot_icall_2_273(method_bind_0, Object.GetPtr(this), ref ofs, Object.GetPtr(texture));
+            return NativeCalls.godot_icall_2_271(method_bind_0, Object.GetPtr(this), ref ofs, Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_piece_offset");
@@ -45,7 +45,7 @@ namespace GodotEngine
         /// </summary>
         public void set_piece_texture(int idx, Texture texture)
         {
-            NativeCalls.godot_icall_2_88(method_bind_2, Object.GetPtr(this), idx, Object.GetPtr(texture));
+            NativeCalls.godot_icall_2_89(method_bind_2, Object.GetPtr(this), idx, Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_size");
@@ -96,7 +96,7 @@ namespace GodotEngine
         /// </summary>
         public Texture get_piece_texture(int idx)
         {
-            return NativeCalls.godot_icall_1_108(method_bind_7, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_109(method_bind_7, Object.GetPtr(this), idx);
         }
     }
 }

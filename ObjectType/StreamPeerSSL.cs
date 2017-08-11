@@ -36,10 +36,9 @@ namespace GodotEngine
 
         private IntPtr method_bind_0 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "accept_stream");
 
-        public Error accept_stream(StreamPeer stream)
+        public int accept_stream(StreamPeer stream)
         {
-            int ret = NativeCalls.godot_icall_1_449(method_bind_0, Object.GetPtr(this), Object.GetPtr(stream));
-            return (Error)ret;
+            return NativeCalls.godot_icall_1_278(method_bind_0, Object.GetPtr(this), Object.GetPtr(stream));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "connect_to_stream");
@@ -47,10 +46,9 @@ namespace GodotEngine
         /// <summary>
         /// Connect to a peer using an underlying [StreamPeer] "stream", when "validate_certs" is true, [StreamPeerSSL] will validate that the certificate presented by the peer matches the "for_hostname".
         /// </summary>
-        public Error connect_to_stream(StreamPeer stream, bool validate_certs = false, string for_hostname = "")
+        public int connect_to_stream(StreamPeer stream, bool validate_certs = false, string for_hostname = "")
         {
-            int ret = NativeCalls.godot_icall_3_450(method_bind_1, Object.GetPtr(this), Object.GetPtr(stream), validate_certs, for_hostname);
-            return (Error)ret;
+            return NativeCalls.godot_icall_3_446(method_bind_1, Object.GetPtr(this), Object.GetPtr(stream), validate_certs, for_hostname);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_status");

@@ -35,7 +35,7 @@ namespace GodotEngine
         /// </summary>
         public void tile_set_name(int id, string name)
         {
-            NativeCalls.godot_icall_2_68(method_bind_1, Object.GetPtr(this), id, name);
+            NativeCalls.godot_icall_2_69(method_bind_1, Object.GetPtr(this), id, name);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_get_name");
@@ -45,7 +45,7 @@ namespace GodotEngine
         /// </summary>
         public string tile_get_name(int id)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_2, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_87(method_bind_2, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_set_texture");
@@ -55,7 +55,7 @@ namespace GodotEngine
         /// </summary>
         public void tile_set_texture(int id, Texture texture)
         {
-            NativeCalls.godot_icall_2_88(method_bind_3, Object.GetPtr(this), id, Object.GetPtr(texture));
+            NativeCalls.godot_icall_2_89(method_bind_3, Object.GetPtr(this), id, Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_get_texture");
@@ -65,21 +65,21 @@ namespace GodotEngine
         /// </summary>
         public Texture tile_get_texture(int id)
         {
-            return NativeCalls.godot_icall_1_108(method_bind_4, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_109(method_bind_4, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_set_normal_map");
 
         public void tile_set_normal_map(int id, Texture normal_map)
         {
-            NativeCalls.godot_icall_2_88(method_bind_5, Object.GetPtr(this), id, Object.GetPtr(normal_map));
+            NativeCalls.godot_icall_2_89(method_bind_5, Object.GetPtr(this), id, Object.GetPtr(normal_map));
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_get_normal_map");
 
         public Texture tile_get_normal_map(int id)
         {
-            return NativeCalls.godot_icall_1_108(method_bind_6, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_109(method_bind_6, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_set_material");
@@ -89,7 +89,7 @@ namespace GodotEngine
         /// </summary>
         public void tile_set_material(int id, ShaderMaterial material)
         {
-            NativeCalls.godot_icall_2_88(method_bind_7, Object.GetPtr(this), id, Object.GetPtr(material));
+            NativeCalls.godot_icall_2_89(method_bind_7, Object.GetPtr(this), id, Object.GetPtr(material));
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_get_material");
@@ -99,7 +99,7 @@ namespace GodotEngine
         /// </summary>
         public ShaderMaterial tile_get_material(int id)
         {
-            return NativeCalls.godot_icall_1_474(method_bind_8, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_470(method_bind_8, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_set_texture_offset");
@@ -130,7 +130,7 @@ namespace GodotEngine
         /// </summary>
         public void tile_set_region(int id, Rect2 region)
         {
-            NativeCalls.godot_icall_2_261(method_bind_11, Object.GetPtr(this), id, ref region);
+            NativeCalls.godot_icall_2_259(method_bind_11, Object.GetPtr(this), id, ref region);
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_get_region");
@@ -140,7 +140,7 @@ namespace GodotEngine
         /// </summary>
         public Rect2 tile_get_region(int id)
         {
-            object ret = NativeCalls.godot_icall_1_262(method_bind_12, Object.GetPtr(this), id);
+            object ret = NativeCalls.godot_icall_1_260(method_bind_12, Object.GetPtr(this), id);
             return (Rect2)ret;
         }
 
@@ -148,28 +148,28 @@ namespace GodotEngine
 
         public void tile_set_shape(int id, int shape_id, Shape2D shape)
         {
-            NativeCalls.godot_icall_3_475(method_bind_13, Object.GetPtr(this), id, shape_id, Object.GetPtr(shape));
+            NativeCalls.godot_icall_3_471(method_bind_13, Object.GetPtr(this), id, shape_id, Object.GetPtr(shape));
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_get_shape");
 
         public Shape2D tile_get_shape(int id, int shape_id)
         {
-            return NativeCalls.godot_icall_2_476(method_bind_14, Object.GetPtr(this), id, shape_id);
+            return NativeCalls.godot_icall_2_153(method_bind_14, Object.GetPtr(this), id, shape_id);
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_set_shape_transform");
 
         public void tile_set_shape_transform(int id, int shape_id, Transform2D shape_transform)
         {
-            NativeCalls.godot_icall_3_477(method_bind_15, Object.GetPtr(this), id, shape_id, ref shape_transform);
+            NativeCalls.godot_icall_3_472(method_bind_15, Object.GetPtr(this), id, shape_id, ref shape_transform);
         }
 
         private IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_get_shape_transform");
 
         public Transform2D tile_get_shape_transform(int id, int shape_id)
         {
-            object ret = NativeCalls.godot_icall_2_478(method_bind_16, Object.GetPtr(this), id, shape_id);
+            object ret = NativeCalls.godot_icall_2_473(method_bind_16, Object.GetPtr(this), id, shape_id);
             return (Transform2D)ret;
         }
 
@@ -191,7 +191,7 @@ namespace GodotEngine
 
         public void tile_add_shape(int id, Shape2D shape, Transform2D shape_transform, bool one_way = false)
         {
-            NativeCalls.godot_icall_4_479(method_bind_19, Object.GetPtr(this), id, Object.GetPtr(shape), ref shape_transform, one_way);
+            NativeCalls.godot_icall_4_474(method_bind_19, Object.GetPtr(this), id, Object.GetPtr(shape), ref shape_transform, one_way);
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_get_shape_count");
@@ -208,7 +208,7 @@ namespace GodotEngine
         /// </summary>
         public void tile_set_shapes(int id, object[] shapes)
         {
-            NativeCalls.godot_icall_2_480(method_bind_21, Object.GetPtr(this), id, shapes);
+            NativeCalls.godot_icall_2_475(method_bind_21, Object.GetPtr(this), id, shapes);
         }
 
         private IntPtr method_bind_22 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_get_shapes");
@@ -218,7 +218,7 @@ namespace GodotEngine
         /// </summary>
         public object[] tile_get_shapes(int id)
         {
-            return NativeCalls.godot_icall_1_424(method_bind_22, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_420(method_bind_22, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_set_navigation_polygon");
@@ -228,7 +228,7 @@ namespace GodotEngine
         /// </summary>
         public void tile_set_navigation_polygon(int id, NavigationPolygon navigation_polygon)
         {
-            NativeCalls.godot_icall_2_88(method_bind_23, Object.GetPtr(this), id, Object.GetPtr(navigation_polygon));
+            NativeCalls.godot_icall_2_89(method_bind_23, Object.GetPtr(this), id, Object.GetPtr(navigation_polygon));
         }
 
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_get_navigation_polygon");
@@ -238,7 +238,7 @@ namespace GodotEngine
         /// </summary>
         public NavigationPolygon tile_get_navigation_polygon(int id)
         {
-            return NativeCalls.godot_icall_1_481(method_bind_24, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_476(method_bind_24, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_set_navigation_polygon_offset");
@@ -269,7 +269,7 @@ namespace GodotEngine
         /// </summary>
         public void tile_set_light_occluder(int id, OccluderPolygon2D light_occluder)
         {
-            NativeCalls.godot_icall_2_88(method_bind_27, Object.GetPtr(this), id, Object.GetPtr(light_occluder));
+            NativeCalls.godot_icall_2_89(method_bind_27, Object.GetPtr(this), id, Object.GetPtr(light_occluder));
         }
 
         private IntPtr method_bind_28 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_get_light_occluder");
@@ -279,7 +279,7 @@ namespace GodotEngine
         /// </summary>
         public OccluderPolygon2D tile_get_light_occluder(int id)
         {
-            return NativeCalls.godot_icall_1_482(method_bind_28, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_477(method_bind_28, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_29 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tile_set_occluder_offset");
@@ -340,7 +340,7 @@ namespace GodotEngine
         /// </summary>
         public int find_tile_by_name(string name)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_34, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_71(method_bind_34, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_35 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_tiles_ids");
@@ -350,7 +350,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_tiles_ids()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_35, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_85(method_bind_35, Object.GetPtr(this));
         }
     }
 }

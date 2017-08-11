@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_environment(Environment env)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(env));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(env));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_environment");
@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public Environment get_environment()
         {
-            return NativeCalls.godot_icall_0_117(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_118(method_bind_1, Object.GetPtr(this));
         }
     }
 }

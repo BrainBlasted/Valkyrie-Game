@@ -65,7 +65,7 @@ namespace GodotEngine
         /// </summary>
         public void edit_set_state(object state)
         {
-            NativeCalls.godot_icall_1_119(method_bind_0, Object.GetPtr(this), state);
+            NativeCalls.godot_icall_1_120(method_bind_0, Object.GetPtr(this), state);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "edit_get_state");
@@ -75,14 +75,14 @@ namespace GodotEngine
         /// </summary>
         public object edit_get_state()
         {
-            return NativeCalls.godot_icall_0_120(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_121(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "edit_set_rect");
 
         public void edit_set_rect(Rect2 rect)
         {
-            NativeCalls.godot_icall_1_93(method_bind_2, Object.GetPtr(this), ref rect);
+            NativeCalls.godot_icall_1_94(method_bind_2, Object.GetPtr(this), ref rect);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "edit_rotate");
@@ -102,7 +102,7 @@ namespace GodotEngine
         /// </summary>
         public Rect2 get_item_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_4, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_4, Object.GetPtr(this));
             return (Rect2)ret;
         }
 
@@ -113,7 +113,7 @@ namespace GodotEngine
         /// </summary>
         public Rect2 get_item_and_children_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_5, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_5, Object.GetPtr(this));
             return (Rect2)ret;
         }
 
@@ -124,7 +124,7 @@ namespace GodotEngine
         /// </summary>
         public RID get_canvas_item()
         {
-            IntPtr ret = NativeCalls.godot_icall_0_121(method_bind_6, Object.GetPtr(this));
+            IntPtr ret = NativeCalls.godot_icall_0_122(method_bind_6, Object.GetPtr(this));
             return new RID(ret);
         }
 
@@ -233,7 +233,7 @@ namespace GodotEngine
         /// </summary>
         public void set_modulate(Color modulate)
         {
-            NativeCalls.godot_icall_1_122(method_bind_17, Object.GetPtr(this), ref modulate);
+            NativeCalls.godot_icall_1_123(method_bind_17, Object.GetPtr(this), ref modulate);
         }
 
         private IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_modulate");
@@ -243,7 +243,7 @@ namespace GodotEngine
         /// </summary>
         public Color get_modulate()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_18, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_18, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -254,7 +254,7 @@ namespace GodotEngine
         /// </summary>
         public void set_self_modulate(Color self_modulate)
         {
-            NativeCalls.godot_icall_1_122(method_bind_19, Object.GetPtr(this), ref self_modulate);
+            NativeCalls.godot_icall_1_123(method_bind_19, Object.GetPtr(this), ref self_modulate);
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_self_modulate");
@@ -264,7 +264,7 @@ namespace GodotEngine
         /// </summary>
         public Color get_self_modulate()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_20, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_20, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -295,21 +295,21 @@ namespace GodotEngine
         /// </summary>
         public void draw_line(Vector2 from, Vector2 to, Color color, float width = 1f, bool antialiased = false)
         {
-            NativeCalls.godot_icall_5_124(method_bind_23, Object.GetPtr(this), ref from, ref to, ref color, width, antialiased);
+            NativeCalls.godot_icall_5_125(method_bind_23, Object.GetPtr(this), ref from, ref to, ref color, width, antialiased);
         }
 
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_polyline");
 
         public void draw_polyline(Vector2[] points, Color color, float width = 1f, bool antialiased = false)
         {
-            NativeCalls.godot_icall_4_125(method_bind_24, Object.GetPtr(this), points, ref color, width, antialiased);
+            NativeCalls.godot_icall_4_126(method_bind_24, Object.GetPtr(this), points, ref color, width, antialiased);
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_polyline_colors");
 
         public void draw_polyline_colors(Vector2[] points, Color[] colors, float width = 1f, bool antialiased = false)
         {
-            NativeCalls.godot_icall_4_126(method_bind_25, Object.GetPtr(this), points, colors, width, antialiased);
+            NativeCalls.godot_icall_4_127(method_bind_25, Object.GetPtr(this), points, colors, width, antialiased);
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_rect");
@@ -319,7 +319,7 @@ namespace GodotEngine
         /// </summary>
         public void draw_rect(Rect2 rect, Color color, bool filled = true)
         {
-            NativeCalls.godot_icall_3_127(method_bind_26, Object.GetPtr(this), ref rect, ref color, filled);
+            NativeCalls.godot_icall_3_128(method_bind_26, Object.GetPtr(this), ref rect, ref color, filled);
         }
 
         private IntPtr method_bind_27 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_circle");
@@ -329,7 +329,7 @@ namespace GodotEngine
         /// </summary>
         public void draw_circle(Vector2 pos, float radius, Color color)
         {
-            NativeCalls.godot_icall_3_128(method_bind_27, Object.GetPtr(this), ref pos, radius, ref color);
+            NativeCalls.godot_icall_3_129(method_bind_27, Object.GetPtr(this), ref pos, radius, ref color);
         }
 
         private IntPtr method_bind_28 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_texture");
@@ -341,7 +341,7 @@ namespace GodotEngine
         public void draw_texture(Texture texture, Vector2 pos, Nullable<Color> modulate = null, Texture normal_map = null)
         {
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            NativeCalls.godot_icall_4_129(method_bind_28, Object.GetPtr(this), Object.GetPtr(texture), ref pos, ref modulate_in, Object.GetPtr(normal_map));
+            NativeCalls.godot_icall_4_130(method_bind_28, Object.GetPtr(this), Object.GetPtr(texture), ref pos, ref modulate_in, Object.GetPtr(normal_map));
         }
 
         private IntPtr method_bind_29 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_texture_rect");
@@ -353,7 +353,7 @@ namespace GodotEngine
         public void draw_texture_rect(Texture texture, Rect2 rect, bool tile, Nullable<Color> modulate = null, bool transpose = false, Texture normal_map = null)
         {
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            NativeCalls.godot_icall_6_130(method_bind_29, Object.GetPtr(this), Object.GetPtr(texture), ref rect, tile, ref modulate_in, transpose, Object.GetPtr(normal_map));
+            NativeCalls.godot_icall_6_131(method_bind_29, Object.GetPtr(this), Object.GetPtr(texture), ref rect, tile, ref modulate_in, transpose, Object.GetPtr(normal_map));
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_texture_rect_region");
@@ -365,7 +365,7 @@ namespace GodotEngine
         public void draw_texture_rect_region(Texture texture, Rect2 rect, Rect2 src_rect, Nullable<Color> modulate = null, bool transpose = false, Texture normal_map = null, bool clip_uv = true)
         {
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            NativeCalls.godot_icall_7_131(method_bind_30, Object.GetPtr(this), Object.GetPtr(texture), ref rect, ref src_rect, ref modulate_in, transpose, Object.GetPtr(normal_map), clip_uv);
+            NativeCalls.godot_icall_7_132(method_bind_30, Object.GetPtr(this), Object.GetPtr(texture), ref rect, ref src_rect, ref modulate_in, transpose, Object.GetPtr(normal_map), clip_uv);
         }
 
         private IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_style_box");
@@ -375,7 +375,7 @@ namespace GodotEngine
         /// </summary>
         public void draw_style_box(StyleBox style_box, Rect2 rect)
         {
-            NativeCalls.godot_icall_2_132(method_bind_31, Object.GetPtr(this), Object.GetPtr(style_box), ref rect);
+            NativeCalls.godot_icall_2_133(method_bind_31, Object.GetPtr(this), Object.GetPtr(style_box), ref rect);
         }
 
         private IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_primitive");
@@ -385,7 +385,7 @@ namespace GodotEngine
         /// </summary>
         public void draw_primitive(Vector2[] points, Color[] colors, Vector2[] uvs, Texture texture = null, float width = 1f, Texture normal_map = null)
         {
-            NativeCalls.godot_icall_6_133(method_bind_32, Object.GetPtr(this), points, colors, uvs, Object.GetPtr(texture), width, Object.GetPtr(normal_map));
+            NativeCalls.godot_icall_6_134(method_bind_32, Object.GetPtr(this), points, colors, uvs, Object.GetPtr(texture), width, Object.GetPtr(normal_map));
         }
 
         private IntPtr method_bind_33 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_polygon");
@@ -397,7 +397,7 @@ namespace GodotEngine
         public void draw_polygon(Vector2[] points, Color[] colors, Vector2[] uvs = null, Texture texture = null, Texture normal_map = null)
         {
             Vector2[] uvs_in = uvs != null ? uvs : new Vector2[] {};
-            NativeCalls.godot_icall_5_134(method_bind_33, Object.GetPtr(this), points, colors, uvs_in, Object.GetPtr(texture), Object.GetPtr(normal_map));
+            NativeCalls.godot_icall_5_135(method_bind_33, Object.GetPtr(this), points, colors, uvs_in, Object.GetPtr(texture), Object.GetPtr(normal_map));
         }
 
         private IntPtr method_bind_34 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_colored_polygon");
@@ -409,7 +409,7 @@ namespace GodotEngine
         public void draw_colored_polygon(Vector2[] points, Color color, Vector2[] uvs = null, Texture texture = null, Texture normal_map = null)
         {
             Vector2[] uvs_in = uvs != null ? uvs : new Vector2[] {};
-            NativeCalls.godot_icall_5_135(method_bind_34, Object.GetPtr(this), points, ref color, uvs_in, Object.GetPtr(texture), Object.GetPtr(normal_map));
+            NativeCalls.godot_icall_5_136(method_bind_34, Object.GetPtr(this), points, ref color, uvs_in, Object.GetPtr(texture), Object.GetPtr(normal_map));
         }
 
         private IntPtr method_bind_35 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_string");
@@ -421,7 +421,7 @@ namespace GodotEngine
         public void draw_string(Font font, Vector2 pos, string text, Nullable<Color> modulate = null, int clip_w = -1)
         {
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            NativeCalls.godot_icall_5_136(method_bind_35, Object.GetPtr(this), Object.GetPtr(font), ref pos, text, ref modulate_in, clip_w);
+            NativeCalls.godot_icall_5_137(method_bind_35, Object.GetPtr(this), Object.GetPtr(font), ref pos, text, ref modulate_in, clip_w);
         }
 
         private IntPtr method_bind_36 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_char");
@@ -433,7 +433,7 @@ namespace GodotEngine
         public float draw_char(Font font, Vector2 pos, string @char, string next, Nullable<Color> modulate = null)
         {
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            return NativeCalls.godot_icall_5_137(method_bind_36, Object.GetPtr(this), Object.GetPtr(font), ref pos, @char, next, ref modulate_in);
+            return NativeCalls.godot_icall_5_138(method_bind_36, Object.GetPtr(this), Object.GetPtr(font), ref pos, @char, next, ref modulate_in);
         }
 
         private IntPtr method_bind_37 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_set_transform");
@@ -443,14 +443,14 @@ namespace GodotEngine
         /// </summary>
         public void draw_set_transform(Vector2 pos, float rot, Vector2 scale)
         {
-            NativeCalls.godot_icall_3_138(method_bind_37, Object.GetPtr(this), ref pos, rot, ref scale);
+            NativeCalls.godot_icall_3_139(method_bind_37, Object.GetPtr(this), ref pos, rot, ref scale);
         }
 
         private IntPtr method_bind_38 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "draw_set_transform_matrix");
 
         public void draw_set_transform_matrix(Transform2D xform)
         {
-            NativeCalls.godot_icall_1_139(method_bind_38, Object.GetPtr(this), ref xform);
+            NativeCalls.godot_icall_1_140(method_bind_38, Object.GetPtr(this), ref xform);
         }
 
         private IntPtr method_bind_39 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_transform");
@@ -460,7 +460,7 @@ namespace GodotEngine
         /// </summary>
         public Transform2D get_transform()
         {
-            object ret = NativeCalls.godot_icall_0_140(method_bind_39, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_141(method_bind_39, Object.GetPtr(this));
             return (Transform2D)ret;
         }
 
@@ -471,7 +471,7 @@ namespace GodotEngine
         /// </summary>
         public Transform2D get_global_transform()
         {
-            object ret = NativeCalls.godot_icall_0_140(method_bind_40, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_141(method_bind_40, Object.GetPtr(this));
             return (Transform2D)ret;
         }
 
@@ -482,7 +482,7 @@ namespace GodotEngine
         /// </summary>
         public Transform2D get_global_transform_with_canvas()
         {
-            object ret = NativeCalls.godot_icall_0_140(method_bind_41, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_141(method_bind_41, Object.GetPtr(this));
             return (Transform2D)ret;
         }
 
@@ -493,7 +493,7 @@ namespace GodotEngine
         /// </summary>
         public Transform2D get_viewport_transform()
         {
-            object ret = NativeCalls.godot_icall_0_140(method_bind_42, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_141(method_bind_42, Object.GetPtr(this));
             return (Transform2D)ret;
         }
 
@@ -504,7 +504,7 @@ namespace GodotEngine
         /// </summary>
         public Rect2 get_viewport_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_43, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_43, Object.GetPtr(this));
             return (Rect2)ret;
         }
 
@@ -515,7 +515,7 @@ namespace GodotEngine
         /// </summary>
         public Transform2D get_canvas_transform()
         {
-            object ret = NativeCalls.godot_icall_0_140(method_bind_44, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_141(method_bind_44, Object.GetPtr(this));
             return (Transform2D)ret;
         }
 
@@ -548,7 +548,7 @@ namespace GodotEngine
         /// </summary>
         public RID get_canvas()
         {
-            IntPtr ret = NativeCalls.godot_icall_0_121(method_bind_47, Object.GetPtr(this));
+            IntPtr ret = NativeCalls.godot_icall_0_122(method_bind_47, Object.GetPtr(this));
             return new RID(ret);
         }
 
@@ -559,7 +559,7 @@ namespace GodotEngine
         /// </summary>
         public World2D get_world_2d()
         {
-            return NativeCalls.godot_icall_0_141(method_bind_48, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_142(method_bind_48, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_49 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_material");
@@ -569,7 +569,7 @@ namespace GodotEngine
         /// </summary>
         public void set_material(Material material)
         {
-            NativeCalls.godot_icall_1_35(method_bind_49, Object.GetPtr(this), Object.GetPtr(material));
+            NativeCalls.godot_icall_1_19(method_bind_49, Object.GetPtr(this), Object.GetPtr(material));
         }
 
         private IntPtr method_bind_50 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_material");
@@ -579,7 +579,7 @@ namespace GodotEngine
         /// </summary>
         public Material get_material()
         {
-            return NativeCalls.godot_icall_0_142(method_bind_50, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_143(method_bind_50, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_51 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_use_parent_material");
@@ -634,7 +634,7 @@ namespace GodotEngine
 
         public Vector2 make_canvas_pos_local(Vector2 screen_point)
         {
-            object ret = NativeCalls.godot_icall_1_143(method_bind_57, Object.GetPtr(this), ref screen_point);
+            object ret = NativeCalls.godot_icall_1_144(method_bind_57, Object.GetPtr(this), ref screen_point);
             return (Vector2)ret;
         }
 
@@ -642,7 +642,7 @@ namespace GodotEngine
 
         public InputEvent make_input_local(InputEvent @event)
         {
-            return NativeCalls.godot_icall_1_144(method_bind_58, Object.GetPtr(this), Object.GetPtr(@event));
+            return NativeCalls.godot_icall_1_145(method_bind_58, Object.GetPtr(this), Object.GetPtr(@event));
         }
     }
 }

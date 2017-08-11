@@ -18,22 +18,22 @@ namespace GodotEngine
 
         public void set_target_path(NodePath target_path)
         {
-            NativeCalls.godot_icall_1_64(method_bind_0, Object.GetPtr(this), NodePath.GetPtr(target_path));
+            NativeCalls.godot_icall_1_65(method_bind_0, Object.GetPtr(this), NodePath.GetPtr(target_path));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_target_path");
 
         public NodePath get_target_path()
         {
-            IntPtr ret = NativeCalls.godot_icall_0_65(method_bind_1, Object.GetPtr(this));
+            IntPtr ret = NativeCalls.godot_icall_0_66(method_bind_1, Object.GetPtr(this));
             return new NodePath(ret);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_target");
 
-        public void set_target(Camera target)
+        public void set_target(Object target)
         {
-            NativeCalls.godot_icall_1_19(method_bind_2, Object.GetPtr(this), Object.GetPtr(target));
+            NativeCalls.godot_icall_1_34(method_bind_2, Object.GetPtr(this), Object.GetPtr(target));
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_speed");

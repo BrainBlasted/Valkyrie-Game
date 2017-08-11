@@ -111,11 +111,6 @@
             Add custom cancel button to the dialog and return the created button.
             </summary>
         </member>
-        <member name="M:GodotEngine.AcceptDialog.register_text_enter(GodotEngine.Object)">
-            <summary>
-            Register a [LineEdit] in the dialog. When the enter key is pressed, the dialog will be accepted.
-            </summary>
-        </member>
         <member name="M:GodotEngine.AcceptDialog.set_text(System.String)">
             <summary>
             Set the built-in label text.
@@ -879,16 +874,6 @@
             Return a list of the areas that are totally or partially inside this area.
             </summary>
         </member>
-        <member name="M:GodotEngine.Area.overlaps_body(GodotEngine.Object)">
-            <summary>
-            Return whether the body passed is totally or partially inside this area.
-            </summary>
-        </member>
-        <member name="M:GodotEngine.Area.overlaps_area(GodotEngine.Object)">
-            <summary>
-            Return whether the area passed is totally or partially inside this area.
-            </summary>
-        </member>
         <member name="T:GodotEngine.Area2D">
             <summary>
             General purpose area detection for 2D physics. Areas can be used for detection of objects that enter/exit them, as well as overriding space parameters (changing gravity, damping, etc). For this, use any space override different from AREA_SPACE_OVERRIDE_DISABLE and point gravity at the center of mass.
@@ -1054,16 +1039,6 @@
         <member name="M:GodotEngine.Area2D.get_overlapping_areas">
             <summary>
             Return a list of the areas that are totally or partially inside this area.
-            </summary>
-        </member>
-        <member name="M:GodotEngine.Area2D.overlaps_body(GodotEngine.Object)">
-            <summary>
-            Return whether the body passed is totally or partially inside this area.
-            </summary>
-        </member>
-        <member name="M:GodotEngine.Area2D.overlaps_area(GodotEngine.Object)">
-            <summary>
-            Return whether the area passed is totally or partially inside this area.
             </summary>
         </member>
         <member name="F:GodotEngine.ArrayMesh.NO_INDEX_ARRAY">
@@ -3239,11 +3214,6 @@
             Base node for geometry based visual instances. Shares some common functionality like visibility and custom materials.
             </summary>
         </member>
-        <member name="M:GodotEngine.GeometryInstance.set_material_override(GodotEngine.Object)">
-            <summary>
-            Set the material override for the whole geometry.
-            </summary>
-        </member>
         <member name="M:GodotEngine.GeometryInstance.get_material_override">
             <summary>
             Return the material override for the whole geometry.
@@ -4154,12 +4124,6 @@
         <member name="M:GodotEngine.Input.action_release(System.String)">
             <summary>
             If the specified action is already pressed, this will release it.
-            </summary>
-        </member>
-        <member name="M:GodotEngine.Input.set_custom_mouse_cursor(GodotEngine.Texture,System.Nullable{GodotEngine.Vector2})">
-            <summary>
-            Set a custom mouse cursor image, which is only visible inside the game window. The hotspot can also be specified.
-            <param name="hotspot">If the param is null, then the default value is new Vector2(0, 0)</param>
             </summary>
         </member>
         <member name="M:GodotEngine.InputEvent.is_pressed">
@@ -5794,11 +5758,6 @@
             Return the instance ID. All objects have a unique instance ID.
             </summary>
         </member>
-        <member name="M:GodotEngine.Object.set_script(GodotEngine.Script)">
-            <summary>
-            Set a script into the object, scripts extend the object functionality.
-            </summary>
-        </member>
         <member name="M:GodotEngine.Object.get_script">
             <summary>
             Return the object script (or null if it doesn't have one).
@@ -6018,11 +5977,6 @@
         <member name="T:GodotEngine.PacketPeerStream">
             <summary>
             PacketStreamPeer provides a wrapper for working using packets over a stream. This allows for using packet based code with StreamPeers. PacketPeerStream implements a custom protocol over the StreamPeer, so the user should not read or write to the wrapped StreamPeer directly.
-            </summary>
-        </member>
-        <member name="M:GodotEngine.PacketPeerStream.set_stream_peer(GodotEngine.StreamPeer)">
-            <summary>
-            Set the StreamPeer object to be wrapped
             </summary>
         </member>
         <member name="T:GodotEngine.PacketPeerUDP">
@@ -7361,11 +7315,6 @@
             This class contains the shape and other parameters for intersection/collision queries.
             </summary>
         </member>
-        <member name="M:GodotEngine.Physics2DShapeQueryParameters.set_shape(GodotEngine.Shape2D)">
-            <summary>
-            Set the [Shape2D] that will be used for collision/intersection queries.
-            </summary>
-        </member>
         <member name="M:GodotEngine.Physics2DShapeQueryParameters.set_shape_rid(GodotEngine.RID)">
             <summary>
             Set the [RID] of the shape to be used in queries.
@@ -7486,16 +7435,6 @@
         <member name="M:GodotEngine.PhysicsBody2D.get_collision_layer_bit(System.Int32)">
             <summary>
             Return an individual bit on the collision mask.
-            </summary>
-        </member>
-        <member name="M:GodotEngine.PhysicsBody2D.add_collision_exception_with(GodotEngine.PhysicsBody2D)">
-            <summary>
-            Adds a body to the collision exception list. This list contains bodies that this body will not collide with.
-            </summary>
-        </member>
-        <member name="M:GodotEngine.PhysicsBody2D.remove_collision_exception_with(GodotEngine.PhysicsBody2D)">
-            <summary>
-            Removes a body from the collision exception list.
             </summary>
         </member>
         <member name="F:GodotEngine.PhysicsServer.AREA_SPACE_OVERRIDE_DISABLED">
@@ -9964,11 +9903,6 @@
             Clear all information passed into the surface tool so far.
             </summary>
         </member>
-        <member name="M:GodotEngine.SurfaceTool.commit(GodotEngine.Mesh)">
-            <summary>
-            Returns a constructed [Mesh] from current information passed in. If an existing [Mesh] is passed in as an argument, will add an extra surface to the existing [Mesh].
-            </summary>
-        </member>
         <member name="T:GodotEngine.TCP_Server">
             <summary>
             TCP Server class. Listens to connections on a port and returns a [StreamPeerTCP] when got a connection.
@@ -10913,11 +10847,6 @@
             Clear the tree. This erases all of the items.
             </summary>
         </member>
-        <member name="M:GodotEngine.Tree.create_item(GodotEngine.TreeItem)">
-            <summary>
-            Create an item in the tree and add it as the last child of [code]parent[/code]. If parent is not given, it will be added as the last child of the root, or it'll the be the root itself if the tree is empty.
-            </summary>
-        </member>
         <member name="M:GodotEngine.Tree.get_root">
             <summary>
             Get the root item of the tree.
@@ -10941,11 +10870,6 @@
         <member name="M:GodotEngine.Tree.set_hide_root(System.Boolean)">
             <summary>
             Set whether the root of the tree should be hidden.
-            </summary>
-        </member>
-        <member name="M:GodotEngine.Tree.get_next_selected(GodotEngine.TreeItem)">
-            <summary>
-            Get the next selected item after the given one.
             </summary>
         </member>
         <member name="M:GodotEngine.Tree.get_selected">
@@ -10991,11 +10915,6 @@
         <member name="M:GodotEngine.Tree.get_custom_popup_rect">
             <summary>
             Get the rectangle for custom popups. Helper to create custom cell controls that display a popup. See [method TreeItem.set_cell_mode].
-            </summary>
-        </member>
-        <member name="M:GodotEngine.Tree.get_item_area_rect(GodotEngine.TreeItem,System.Int32)">
-            <summary>
-            Get the rectangle area of the the specified item. If column is specified, only get the position and size of that column, otherwise get the rectangle containing all columns.
             </summary>
         </member>
         <member name="M:GodotEngine.Tree.get_item_at_pos(GodotEngine.Vector2)">

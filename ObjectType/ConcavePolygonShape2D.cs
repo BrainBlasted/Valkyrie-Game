@@ -25,7 +25,7 @@ namespace GodotEngine
         /// </summary>
         public void set_segments(Vector2[] segments)
         {
-            NativeCalls.godot_icall_1_152(method_bind_0, Object.GetPtr(this), segments);
+            NativeCalls.godot_icall_1_154(method_bind_0, Object.GetPtr(this), segments);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_segments");
@@ -35,7 +35,7 @@ namespace GodotEngine
         /// </summary>
         public Vector2[] get_segments()
         {
-            return NativeCalls.godot_icall_0_153(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_155(method_bind_1, Object.GetPtr(this));
         }
     }
 }

@@ -18,7 +18,7 @@ namespace GodotEngine
 
         public void set_font_path(string path)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, Object.GetPtr(this), path);
+            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_font_path");

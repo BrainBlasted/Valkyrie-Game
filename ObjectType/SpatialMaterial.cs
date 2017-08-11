@@ -91,14 +91,14 @@ namespace GodotEngine
 
         public void set_albedo(Color albedo)
         {
-            NativeCalls.godot_icall_1_122(method_bind_0, Object.GetPtr(this), ref albedo);
+            NativeCalls.godot_icall_1_123(method_bind_0, Object.GetPtr(this), ref albedo);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_albedo");
 
         public Color get_albedo()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_1, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_1, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -148,14 +148,14 @@ namespace GodotEngine
 
         public void set_emission(Color emission)
         {
-            NativeCalls.godot_icall_1_122(method_bind_8, Object.GetPtr(this), ref emission);
+            NativeCalls.godot_icall_1_123(method_bind_8, Object.GetPtr(this), ref emission);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_emission");
 
         public Color get_emission()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_9, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_9, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -443,14 +443,14 @@ namespace GodotEngine
 
         public void set_texture(int param, Texture texture)
         {
-            NativeCalls.godot_icall_2_88(method_bind_50, Object.GetPtr(this), param, Object.GetPtr(texture));
+            NativeCalls.godot_icall_2_89(method_bind_50, Object.GetPtr(this), param, Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_51 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_texture");
 
         public Texture get_texture(int param)
         {
-            return NativeCalls.godot_icall_1_108(method_bind_51, Object.GetPtr(this), param);
+            return NativeCalls.godot_icall_1_109(method_bind_51, Object.GetPtr(this), param);
         }
 
         private IntPtr method_bind_52 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_detail_blend_mode");
@@ -471,7 +471,7 @@ namespace GodotEngine
 
         public void set_uv1_scale(Vector3 scale)
         {
-            NativeCalls.godot_icall_1_83(method_bind_54, Object.GetPtr(this), ref scale);
+            NativeCalls.godot_icall_1_84(method_bind_54, Object.GetPtr(this), ref scale);
         }
 
         private IntPtr method_bind_55 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_uv1_scale");
@@ -486,7 +486,7 @@ namespace GodotEngine
 
         public void set_uv1_offset(Vector3 offset)
         {
-            NativeCalls.godot_icall_1_83(method_bind_56, Object.GetPtr(this), ref offset);
+            NativeCalls.godot_icall_1_84(method_bind_56, Object.GetPtr(this), ref offset);
         }
 
         private IntPtr method_bind_57 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_uv1_offset");
@@ -515,7 +515,7 @@ namespace GodotEngine
 
         public void set_uv2_scale(Vector3 scale)
         {
-            NativeCalls.godot_icall_1_83(method_bind_60, Object.GetPtr(this), ref scale);
+            NativeCalls.godot_icall_1_84(method_bind_60, Object.GetPtr(this), ref scale);
         }
 
         private IntPtr method_bind_61 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_uv2_scale");
@@ -530,7 +530,7 @@ namespace GodotEngine
 
         public void set_uv2_offset(Vector3 offset)
         {
-            NativeCalls.godot_icall_1_83(method_bind_62, Object.GetPtr(this), ref offset);
+            NativeCalls.godot_icall_1_84(method_bind_62, Object.GetPtr(this), ref offset);
         }
 
         private IntPtr method_bind_63 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_uv2_offset");

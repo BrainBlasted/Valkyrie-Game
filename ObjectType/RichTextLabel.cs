@@ -50,21 +50,21 @@ namespace GodotEngine
 
         public void add_text(string text)
         {
-            NativeCalls.godot_icall_1_34(method_bind_1, Object.GetPtr(this), text);
+            NativeCalls.godot_icall_1_35(method_bind_1, Object.GetPtr(this), text);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_text");
 
         public void set_text(string text)
         {
-            NativeCalls.godot_icall_1_34(method_bind_2, Object.GetPtr(this), text);
+            NativeCalls.godot_icall_1_35(method_bind_2, Object.GetPtr(this), text);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_image");
 
         public void add_image(Texture image)
         {
-            NativeCalls.godot_icall_1_35(method_bind_3, Object.GetPtr(this), Object.GetPtr(image));
+            NativeCalls.godot_icall_1_19(method_bind_3, Object.GetPtr(this), Object.GetPtr(image));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "newline");
@@ -85,14 +85,14 @@ namespace GodotEngine
 
         public void push_font(Font font)
         {
-            NativeCalls.godot_icall_1_35(method_bind_6, Object.GetPtr(this), Object.GetPtr(font));
+            NativeCalls.godot_icall_1_19(method_bind_6, Object.GetPtr(this), Object.GetPtr(font));
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "push_color");
 
         public void push_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_7, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_7, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "push_align");
@@ -120,7 +120,7 @@ namespace GodotEngine
 
         public void push_meta(object data)
         {
-            NativeCalls.godot_icall_1_119(method_bind_11, Object.GetPtr(this), data);
+            NativeCalls.godot_icall_1_120(method_bind_11, Object.GetPtr(this), data);
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "push_underline");
@@ -141,7 +141,7 @@ namespace GodotEngine
 
         public void set_table_column_expand(int column, bool expand, int ratio)
         {
-            NativeCalls.godot_icall_3_416(method_bind_14, Object.GetPtr(this), column, expand, ratio);
+            NativeCalls.godot_icall_3_413(method_bind_14, Object.GetPtr(this), column, expand, ratio);
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "push_cell");
@@ -211,7 +211,7 @@ namespace GodotEngine
 
         public VScrollBar get_v_scroll()
         {
-            return NativeCalls.godot_icall_0_266(method_bind_24, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_264(method_bind_24, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "scroll_to_line");
@@ -259,21 +259,21 @@ namespace GodotEngine
 
         public int parse_bbcode(string bbcode)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_30, Object.GetPtr(this), bbcode);
+            return NativeCalls.godot_icall_1_71(method_bind_30, Object.GetPtr(this), bbcode);
         }
 
         private IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "append_bbcode");
 
         public int append_bbcode(string bbcode)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_31, Object.GetPtr(this), bbcode);
+            return NativeCalls.godot_icall_1_71(method_bind_31, Object.GetPtr(this), bbcode);
         }
 
         private IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_bbcode");
 
         public void set_bbcode(string text)
         {
-            NativeCalls.godot_icall_1_34(method_bind_32, Object.GetPtr(this), text);
+            NativeCalls.godot_icall_1_35(method_bind_32, Object.GetPtr(this), text);
         }
 
         private IntPtr method_bind_33 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bbcode");

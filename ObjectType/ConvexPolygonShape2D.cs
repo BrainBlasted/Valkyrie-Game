@@ -25,7 +25,7 @@ namespace GodotEngine
         /// </summary>
         public void set_point_cloud(Vector2[] point_cloud)
         {
-            NativeCalls.godot_icall_1_152(method_bind_0, Object.GetPtr(this), point_cloud);
+            NativeCalls.godot_icall_1_154(method_bind_0, Object.GetPtr(this), point_cloud);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_points");
@@ -35,7 +35,7 @@ namespace GodotEngine
         /// </summary>
         public void set_points(Vector2[] points)
         {
-            NativeCalls.godot_icall_1_152(method_bind_1, Object.GetPtr(this), points);
+            NativeCalls.godot_icall_1_154(method_bind_1, Object.GetPtr(this), points);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_points");
@@ -45,7 +45,7 @@ namespace GodotEngine
         /// </summary>
         public Vector2[] get_points()
         {
-            return NativeCalls.godot_icall_0_153(method_bind_2, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_155(method_bind_2, Object.GetPtr(this));
         }
     }
 }

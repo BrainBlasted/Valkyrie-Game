@@ -20,7 +20,7 @@ namespace GodotEngine
         /// </summary>
         public RID get_rid()
         {
-            IntPtr ret = NativeCalls.godot_icall_0_121(method_bind_0, Object.GetPtr(this));
+            IntPtr ret = NativeCalls.godot_icall_0_122(method_bind_0, Object.GetPtr(this));
             return new RID(ret);
         }
 
@@ -51,7 +51,7 @@ namespace GodotEngine
         /// </summary>
         public int create_shape_owner(Object owner)
         {
-            return NativeCalls.godot_icall_1_145(method_bind_3, Object.GetPtr(this), Object.GetPtr(owner));
+            return NativeCalls.godot_icall_1_146(method_bind_3, Object.GetPtr(this), Object.GetPtr(owner));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_shape_owner");
@@ -68,14 +68,14 @@ namespace GodotEngine
         /// </summary>
         public object[] get_shape_owners()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_5, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_85(method_bind_5, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "shape_owner_set_transform");
 
         public void shape_owner_set_transform(int owner_id, Transform2D transform)
         {
-            NativeCalls.godot_icall_2_150(method_bind_6, Object.GetPtr(this), owner_id, ref transform);
+            NativeCalls.godot_icall_2_151(method_bind_6, Object.GetPtr(this), owner_id, ref transform);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "shape_owner_get_transform");
@@ -85,7 +85,7 @@ namespace GodotEngine
         /// </summary>
         public Transform2D shape_owner_get_transform(int owner_id)
         {
-            object ret = NativeCalls.godot_icall_1_151(method_bind_7, Object.GetPtr(this), owner_id);
+            object ret = NativeCalls.godot_icall_1_152(method_bind_7, Object.GetPtr(this), owner_id);
             return (Transform2D)ret;
         }
 
@@ -93,7 +93,7 @@ namespace GodotEngine
 
         public Object shape_owner_get_owner(int owner_id)
         {
-            return NativeCalls.godot_icall_1_148(method_bind_8, Object.GetPtr(this), owner_id);
+            return NativeCalls.godot_icall_1_149(method_bind_8, Object.GetPtr(this), owner_id);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "shape_owner_set_disabled");
@@ -128,7 +128,7 @@ namespace GodotEngine
 
         public void shape_owner_add_shape(int owner_id, Shape2D shape)
         {
-            NativeCalls.godot_icall_2_88(method_bind_13, Object.GetPtr(this), owner_id, Object.GetPtr(shape));
+            NativeCalls.godot_icall_2_89(method_bind_13, Object.GetPtr(this), owner_id, Object.GetPtr(shape));
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "shape_owner_get_shape_count");
@@ -146,9 +146,9 @@ namespace GodotEngine
         /// <summary>
         /// Will return a [Shape2D]. First argument owner_id is an integer that can be obtained from [method get_shape_owners]. Shape_id is a position of the shape inside owner; it's a value in range from 0 to [method shape_owner_get_shape_count].
         /// </summary>
-        public Object shape_owner_get_shape(int owner_id, int shape_id)
+        public Shape2D shape_owner_get_shape(int owner_id, int shape_id)
         {
-            return NativeCalls.godot_icall_2_149(method_bind_15, Object.GetPtr(this), owner_id, shape_id);
+            return NativeCalls.godot_icall_2_153(method_bind_15, Object.GetPtr(this), owner_id, shape_id);
         }
 
         private IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "shape_owner_get_shape_index");

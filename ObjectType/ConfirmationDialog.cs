@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public Button get_cancel()
         {
-            return NativeCalls.godot_icall_0_164(method_bind_0, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_30(method_bind_0, Object.GetPtr(this));
         }
     }
 }

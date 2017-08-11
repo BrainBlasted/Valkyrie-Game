@@ -25,7 +25,7 @@ namespace GodotEngine
 
         public void set_curve(Curve curve)
         {
-            NativeCalls.godot_icall_1_35(method_bind_1, Object.GetPtr(this), Object.GetPtr(curve));
+            NativeCalls.godot_icall_1_19(method_bind_1, Object.GetPtr(this), Object.GetPtr(curve));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_curve");

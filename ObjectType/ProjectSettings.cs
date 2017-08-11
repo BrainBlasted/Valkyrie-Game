@@ -18,7 +18,7 @@ namespace GodotEngine
         /// </summary>
         public static bool has(string name)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_0, ptr, name);
+            return NativeCalls.godot_icall_1_57(method_bind_0, ptr, name);
         }
 
         private static IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_order");
@@ -28,7 +28,7 @@ namespace GodotEngine
         /// </summary>
         public static void set_order(string name, int pos)
         {
-            NativeCalls.godot_icall_2_78(method_bind_1, ptr, name, pos);
+            NativeCalls.godot_icall_2_79(method_bind_1, ptr, name, pos);
         }
 
         private static IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_order");
@@ -38,14 +38,14 @@ namespace GodotEngine
         /// </summary>
         public static int get_order(string name)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_2, ptr, name);
+            return NativeCalls.godot_icall_1_71(method_bind_2, ptr, name);
         }
 
         private static IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_initial_value");
 
         public static void set_initial_value(string name, object value)
         {
-            NativeCalls.godot_icall_2_317(method_bind_3, ptr, name, value);
+            NativeCalls.godot_icall_2_315(method_bind_3, ptr, name, value);
         }
 
         private static IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_property_info");
@@ -66,7 +66,7 @@ namespace GodotEngine
         /// </summary>
         public static void add_property_info(Dictionary<object, object> hint)
         {
-            NativeCalls.godot_icall_1_408(method_bind_4, ptr, hint);
+            NativeCalls.godot_icall_1_405(method_bind_4, ptr, hint);
         }
 
         private static IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear");
@@ -76,7 +76,7 @@ namespace GodotEngine
         /// </summary>
         public static void clear(string name)
         {
-            NativeCalls.godot_icall_1_34(method_bind_5, ptr, name);
+            NativeCalls.godot_icall_1_35(method_bind_5, ptr, name);
         }
 
         private static IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "localize_path");
@@ -86,7 +86,7 @@ namespace GodotEngine
         /// </summary>
         public static string localize_path(string path)
         {
-            return NativeCalls.godot_icall_1_59(method_bind_6, ptr, path);
+            return NativeCalls.godot_icall_1_60(method_bind_6, ptr, path);
         }
 
         private static IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "globalize_path");
@@ -96,7 +96,7 @@ namespace GodotEngine
         /// </summary>
         public static string globalize_path(string path)
         {
-            return NativeCalls.godot_icall_1_59(method_bind_7, ptr, path);
+            return NativeCalls.godot_icall_1_60(method_bind_7, ptr, path);
         }
 
         private static IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "save");
@@ -110,42 +110,42 @@ namespace GodotEngine
 
         public static bool has_singleton(string name)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_9, ptr, name);
+            return NativeCalls.godot_icall_1_57(method_bind_9, ptr, name);
         }
 
         private static IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_singleton");
 
         public static Object get_singleton(string name)
         {
-            return NativeCalls.godot_icall_1_409(method_bind_10, ptr, name);
+            return NativeCalls.godot_icall_1_406(method_bind_10, ptr, name);
         }
 
         private static IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "load_resource_pack");
 
         public static bool load_resource_pack(string pack)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_11, ptr, pack);
+            return NativeCalls.godot_icall_1_57(method_bind_11, ptr, pack);
         }
 
         private static IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "property_can_revert");
 
         public static bool property_can_revert(string name)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_12, ptr, name);
+            return NativeCalls.godot_icall_1_57(method_bind_12, ptr, name);
         }
 
         private static IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "property_get_revert");
 
         public static object property_get_revert(string name)
         {
-            return NativeCalls.godot_icall_1_321(method_bind_13, ptr, name);
+            return NativeCalls.godot_icall_1_319(method_bind_13, ptr, name);
         }
 
         private static IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "save_custom");
 
         public static int save_custom(string file)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_14, ptr, file);
+            return NativeCalls.godot_icall_1_71(method_bind_14, ptr, file);
         }
     }
 }

@@ -21,14 +21,14 @@ namespace GodotEngine
 
         public void set_points(Vector3[] points)
         {
-            NativeCalls.godot_icall_1_157(method_bind_0, Object.GetPtr(this), points);
+            NativeCalls.godot_icall_1_159(method_bind_0, Object.GetPtr(this), points);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_points");
 
         public Vector3[] get_points()
         {
-            return NativeCalls.godot_icall_0_158(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_160(method_bind_1, Object.GetPtr(this));
         }
     }
 }

@@ -26,7 +26,7 @@ namespace GodotEngine
         /// </summary>
         public void set_constant_linear_velocity(Vector3 vel)
         {
-            NativeCalls.godot_icall_1_83(method_bind_0, Object.GetPtr(this), ref vel);
+            NativeCalls.godot_icall_1_84(method_bind_0, Object.GetPtr(this), ref vel);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_constant_angular_velocity");
@@ -36,7 +36,7 @@ namespace GodotEngine
         /// </summary>
         public void set_constant_angular_velocity(Vector3 vel)
         {
-            NativeCalls.godot_icall_1_83(method_bind_1, Object.GetPtr(this), ref vel);
+            NativeCalls.godot_icall_1_84(method_bind_1, Object.GetPtr(this), ref vel);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_constant_linear_velocity");

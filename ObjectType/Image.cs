@@ -114,7 +114,7 @@ namespace GodotEngine
         /// </summary>
         public byte[] get_data()
         {
-            return NativeCalls.godot_icall_0_100(method_bind_4, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_101(method_bind_4, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "convert");
@@ -142,7 +142,7 @@ namespace GodotEngine
 
         public void resize(int width, int height, int interpolation = 1)
         {
-            NativeCalls.godot_icall_3_97(method_bind_8, Object.GetPtr(this), width, height, interpolation);
+            NativeCalls.godot_icall_3_98(method_bind_8, Object.GetPtr(this), width, height, interpolation);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "shrink_x2");
@@ -201,14 +201,14 @@ namespace GodotEngine
         /// </summary>
         public void create(int width, int height, bool use_mipmaps, int format)
         {
-            NativeCalls.godot_icall_4_239(method_bind_16, Object.GetPtr(this), width, height, use_mipmaps, format);
+            NativeCalls.godot_icall_4_237(method_bind_16, Object.GetPtr(this), width, height, use_mipmaps, format);
         }
 
         private IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "create_from_data");
 
         public void create_from_data(int width, int height, bool use_mipmaps, int format, byte[] data)
         {
-            NativeCalls.godot_icall_5_240(method_bind_17, Object.GetPtr(this), width, height, use_mipmaps, format, data);
+            NativeCalls.godot_icall_5_238(method_bind_17, Object.GetPtr(this), width, height, use_mipmaps, format, data);
         }
 
         private IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_empty");
@@ -225,7 +225,7 @@ namespace GodotEngine
         /// </summary>
         public int load(string path)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_19, Object.GetPtr(this), path);
+            return NativeCalls.godot_icall_1_71(method_bind_19, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "save_png");
@@ -235,7 +235,7 @@ namespace GodotEngine
         /// </summary>
         public int save_png(string path)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_20, Object.GetPtr(this), path);
+            return NativeCalls.godot_icall_1_71(method_bind_20, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "detect_alpha");
@@ -256,7 +256,7 @@ namespace GodotEngine
 
         public int compress(int mode, int source, float lossy_quality)
         {
-            return NativeCalls.godot_icall_3_241(method_bind_23, Object.GetPtr(this), mode, source, lossy_quality);
+            return NativeCalls.godot_icall_3_239(method_bind_23, Object.GetPtr(this), mode, source, lossy_quality);
         }
 
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "decompress");
@@ -308,7 +308,7 @@ namespace GodotEngine
         /// </summary>
         public void blit_rect(Image src, Rect2 src_rect, Vector2 dst)
         {
-            NativeCalls.godot_icall_3_242(method_bind_30, Object.GetPtr(this), Object.GetPtr(src), ref src_rect, ref dst);
+            NativeCalls.godot_icall_3_240(method_bind_30, Object.GetPtr(this), Object.GetPtr(src), ref src_rect, ref dst);
         }
 
         private IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "blit_rect_mask");
@@ -318,7 +318,7 @@ namespace GodotEngine
         /// </summary>
         public void blit_rect_mask(Image src, Image mask, Rect2 src_rect, Vector2 dst)
         {
-            NativeCalls.godot_icall_4_243(method_bind_31, Object.GetPtr(this), Object.GetPtr(src), Object.GetPtr(mask), ref src_rect, ref dst);
+            NativeCalls.godot_icall_4_241(method_bind_31, Object.GetPtr(this), Object.GetPtr(src), Object.GetPtr(mask), ref src_rect, ref dst);
         }
 
         private IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "blend_rect");
@@ -328,7 +328,7 @@ namespace GodotEngine
         /// </summary>
         public void blend_rect(Image src, Rect2 src_rect, Vector2 dst)
         {
-            NativeCalls.godot_icall_3_242(method_bind_32, Object.GetPtr(this), Object.GetPtr(src), ref src_rect, ref dst);
+            NativeCalls.godot_icall_3_240(method_bind_32, Object.GetPtr(this), Object.GetPtr(src), ref src_rect, ref dst);
         }
 
         private IntPtr method_bind_33 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "blend_rect_mask");
@@ -338,7 +338,7 @@ namespace GodotEngine
         /// </summary>
         public void blend_rect_mask(Image src, Image mask, Rect2 src_rect, Vector2 dst)
         {
-            NativeCalls.godot_icall_4_243(method_bind_33, Object.GetPtr(this), Object.GetPtr(src), Object.GetPtr(mask), ref src_rect, ref dst);
+            NativeCalls.godot_icall_4_241(method_bind_33, Object.GetPtr(this), Object.GetPtr(src), Object.GetPtr(mask), ref src_rect, ref dst);
         }
 
         private IntPtr method_bind_34 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "fill");
@@ -348,7 +348,7 @@ namespace GodotEngine
         /// </summary>
         public void fill(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_34, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_34, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_35 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_used_rect");
@@ -358,7 +358,7 @@ namespace GodotEngine
         /// </summary>
         public Rect2 get_used_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_35, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_35, Object.GetPtr(this));
             return (Rect2)ret;
         }
 
@@ -369,14 +369,14 @@ namespace GodotEngine
         /// </summary>
         public Image get_rect(Rect2 rect)
         {
-            return NativeCalls.godot_icall_1_244(method_bind_36, Object.GetPtr(this), ref rect);
+            return NativeCalls.godot_icall_1_242(method_bind_36, Object.GetPtr(this), ref rect);
         }
 
         private IntPtr method_bind_37 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "copy_from");
 
         public void copy_from(Image src)
         {
-            NativeCalls.godot_icall_1_35(method_bind_37, Object.GetPtr(this), Object.GetPtr(src));
+            NativeCalls.godot_icall_1_19(method_bind_37, Object.GetPtr(this), Object.GetPtr(src));
         }
 
         private IntPtr method_bind_38 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "lock");
@@ -397,14 +397,14 @@ namespace GodotEngine
 
         public void set_pixel(int x, int y, Color color)
         {
-            NativeCalls.godot_icall_3_245(method_bind_40, Object.GetPtr(this), x, y, ref color);
+            NativeCalls.godot_icall_3_243(method_bind_40, Object.GetPtr(this), x, y, ref color);
         }
 
         private IntPtr method_bind_41 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_pixel");
 
         public Color get_pixel(int x, int y)
         {
-            object ret = NativeCalls.godot_icall_2_246(method_bind_41, Object.GetPtr(this), x, y);
+            object ret = NativeCalls.godot_icall_2_244(method_bind_41, Object.GetPtr(this), x, y);
             return (Color)ret;
         }
     }

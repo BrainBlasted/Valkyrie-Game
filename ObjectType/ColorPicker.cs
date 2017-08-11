@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_pick_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_0, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_0, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_pick_color");
@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public Color get_pick_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_1, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_1, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -85,7 +85,7 @@ namespace GodotEngine
         /// </summary>
         public void add_preset(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_6, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_6, Object.GetPtr(this), ref color);
         }
     }
 }

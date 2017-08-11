@@ -32,10 +32,9 @@ namespace GodotEngine
         /// <summary>
         /// Try locking this [Mutex], does not block. Returns [OK] on success else [ERR_BUSY].
         /// </summary>
-        public Error try_lock()
+        public int try_lock()
         {
-            int ret = NativeCalls.godot_icall_0_235(method_bind_1, Object.GetPtr(this));
-            return (Error)ret;
+            return NativeCalls.godot_icall_0_1(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "unlock");

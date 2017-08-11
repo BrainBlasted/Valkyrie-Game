@@ -18,14 +18,14 @@ namespace GodotEngine
 
         public void set_bounds(Rect3 bounds)
         {
-            NativeCalls.godot_icall_1_90(method_bind_0, Object.GetPtr(this), ref bounds);
+            NativeCalls.godot_icall_1_91(method_bind_0, Object.GetPtr(this), ref bounds);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bounds");
 
         public Rect3 get_bounds()
         {
-            object ret = NativeCalls.godot_icall_0_91(method_bind_1, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_92(method_bind_1, Object.GetPtr(this));
             return (Rect3)ret;
         }
 
@@ -47,7 +47,7 @@ namespace GodotEngine
 
         public void set_to_cell_xform(Transform to_cell_xform)
         {
-            NativeCalls.godot_icall_1_208(method_bind_4, Object.GetPtr(this), ref to_cell_xform);
+            NativeCalls.godot_icall_1_207(method_bind_4, Object.GetPtr(this), ref to_cell_xform);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_to_cell_xform");
@@ -62,14 +62,14 @@ namespace GodotEngine
 
         public void set_dynamic_data(int[] dynamic_data)
         {
-            NativeCalls.godot_icall_1_209(method_bind_6, Object.GetPtr(this), dynamic_data);
+            NativeCalls.godot_icall_1_208(method_bind_6, Object.GetPtr(this), dynamic_data);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_dynamic_data");
 
         public int[] get_dynamic_data()
         {
-            return NativeCalls.godot_icall_0_210(method_bind_7, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_209(method_bind_7, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_dynamic_range");

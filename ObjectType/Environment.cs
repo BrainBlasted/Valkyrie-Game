@@ -43,7 +43,7 @@ namespace GodotEngine
 
         public void set_sky(Sky sky)
         {
-            NativeCalls.godot_icall_1_35(method_bind_1, Object.GetPtr(this), Object.GetPtr(sky));
+            NativeCalls.godot_icall_1_19(method_bind_1, Object.GetPtr(this), Object.GetPtr(sky));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_sky_scale");
@@ -57,7 +57,7 @@ namespace GodotEngine
 
         public void set_bg_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_3, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_3, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_bg_energy");
@@ -78,7 +78,7 @@ namespace GodotEngine
 
         public void set_ambient_light_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_6, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_6, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_ambient_light_energy");
@@ -104,7 +104,7 @@ namespace GodotEngine
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_sky");
 
-        public CubeMap get_sky()
+        public Sky get_sky()
         {
             return NativeCalls.godot_icall_0_196(method_bind_10, Object.GetPtr(this));
         }
@@ -120,7 +120,7 @@ namespace GodotEngine
 
         public Color get_bg_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_12, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_12, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -142,7 +142,7 @@ namespace GodotEngine
 
         public Color get_ambient_light_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_15, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_15, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -178,14 +178,14 @@ namespace GodotEngine
 
         public void set_fog_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_20, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_20, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_fog_color");
 
         public Color get_fog_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_21, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_21, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -193,14 +193,14 @@ namespace GodotEngine
 
         public void set_fog_sun_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_22, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_22, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_fog_sun_color");
 
         public Color get_fog_sun_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_23, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_23, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -642,14 +642,14 @@ namespace GodotEngine
 
         public void set_ssao_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_86, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_86, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_87 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_ssao_color");
 
         public Color get_ssao_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_87, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_87, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -993,14 +993,14 @@ namespace GodotEngine
 
         public void set_adjustment_color_correction(Texture color_correction)
         {
-            NativeCalls.godot_icall_1_35(method_bind_136, Object.GetPtr(this), Object.GetPtr(color_correction));
+            NativeCalls.godot_icall_1_19(method_bind_136, Object.GetPtr(this), Object.GetPtr(color_correction));
         }
 
         private IntPtr method_bind_137 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_adjustment_color_correction");
 
         public Texture get_adjustment_color_correction()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_137, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_137, Object.GetPtr(this));
         }
     }
 }

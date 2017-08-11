@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_stream(VideoStream stream)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(stream));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(stream));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_stream");
@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public VideoStream get_stream()
         {
-            return NativeCalls.godot_icall_0_500(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_496(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "play");
@@ -234,7 +234,7 @@ namespace GodotEngine
         /// </summary>
         public Texture get_video_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_21, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_21, Object.GetPtr(this));
         }
     }
 }

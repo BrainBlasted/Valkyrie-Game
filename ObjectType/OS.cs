@@ -58,7 +58,7 @@ namespace GodotEngine
         /// </summary>
         public static void set_clipboard(string clipboard)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, ptr, clipboard);
+            NativeCalls.godot_icall_1_35(method_bind_0, ptr, clipboard);
         }
 
         private static IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_clipboard");
@@ -344,7 +344,7 @@ namespace GodotEngine
         /// </summary>
         public static void set_window_title(string title)
         {
-            NativeCalls.godot_icall_1_34(method_bind_29, ptr, title);
+            NativeCalls.godot_icall_1_35(method_bind_29, ptr, title);
         }
 
         private static IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_low_processor_usage_mode");
@@ -396,7 +396,7 @@ namespace GodotEngine
         public static int execute(string path, string[] arguments, bool blocking, object[] output = null)
         {
             object[] output_in = output != null ? output : new object[] {};
-            return NativeCalls.godot_icall_4_552(method_bind_34, ptr, path, arguments, blocking, output_in);
+            return NativeCalls.godot_icall_4_547(method_bind_34, ptr, path, arguments, blocking, output_in);
         }
 
         private static IntPtr method_bind_35 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "kill");
@@ -413,7 +413,7 @@ namespace GodotEngine
 
         public static int shell_open(string uri)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_36, ptr, uri);
+            return NativeCalls.godot_icall_1_71(method_bind_36, ptr, uri);
         }
 
         private static IntPtr method_bind_37 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_process_id");
@@ -433,7 +433,7 @@ namespace GodotEngine
         /// </summary>
         public static string get_environment(string environment)
         {
-            return NativeCalls.godot_icall_1_59(method_bind_38, ptr, environment);
+            return NativeCalls.godot_icall_1_60(method_bind_38, ptr, environment);
         }
 
         private static IntPtr method_bind_39 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_environment");
@@ -443,7 +443,7 @@ namespace GodotEngine
         /// </summary>
         public static bool has_environment(string environment)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_39, ptr, environment);
+            return NativeCalls.godot_icall_1_57(method_bind_39, ptr, environment);
         }
 
         private static IntPtr method_bind_40 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_name");
@@ -463,7 +463,7 @@ namespace GodotEngine
         /// </summary>
         public static string[] get_cmdline_args()
         {
-            return NativeCalls.godot_icall_0_58(method_bind_41, ptr);
+            return NativeCalls.godot_icall_0_59(method_bind_41, ptr);
         }
 
         private static IntPtr method_bind_42 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_datetime");
@@ -473,7 +473,7 @@ namespace GodotEngine
         /// </summary>
         public static Dictionary<object, object> get_datetime(bool utc = false)
         {
-            return NativeCalls.godot_icall_1_258(method_bind_42, ptr, utc);
+            return NativeCalls.godot_icall_1_256(method_bind_42, ptr, utc);
         }
 
         private static IntPtr method_bind_43 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_date");
@@ -483,7 +483,7 @@ namespace GodotEngine
         /// </summary>
         public static Dictionary<object, object> get_date(bool utc = false)
         {
-            return NativeCalls.godot_icall_1_258(method_bind_43, ptr, utc);
+            return NativeCalls.godot_icall_1_256(method_bind_43, ptr, utc);
         }
 
         private static IntPtr method_bind_44 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_time");
@@ -493,14 +493,14 @@ namespace GodotEngine
         /// </summary>
         public static Dictionary<object, object> get_time(bool utc = false)
         {
-            return NativeCalls.godot_icall_1_258(method_bind_44, ptr, utc);
+            return NativeCalls.godot_icall_1_256(method_bind_44, ptr, utc);
         }
 
         private static IntPtr method_bind_45 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_time_zone_info");
 
         public static Dictionary<object, object> get_time_zone_info()
         {
-            return NativeCalls.godot_icall_0_234(method_bind_45, ptr);
+            return NativeCalls.godot_icall_0_233(method_bind_45, ptr);
         }
 
         private static IntPtr method_bind_46 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_unix_time");
@@ -521,7 +521,7 @@ namespace GodotEngine
         /// </summary>
         public static Dictionary<object, object> get_datetime_from_unix_time(int unix_time_val)
         {
-            return NativeCalls.godot_icall_1_488(method_bind_47, ptr, unix_time_val);
+            return NativeCalls.godot_icall_1_484(method_bind_47, ptr, unix_time_val);
         }
 
         private static IntPtr method_bind_48 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_unix_time_from_datetime");
@@ -533,7 +533,7 @@ namespace GodotEngine
         /// </summary>
         public static int get_unix_time_from_datetime(Dictionary<object, object> datetime)
         {
-            return NativeCalls.godot_icall_1_553(method_bind_48, ptr, datetime);
+            return NativeCalls.godot_icall_1_548(method_bind_48, ptr, datetime);
         }
 
         private static IntPtr method_bind_49 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_system_time_secs");
@@ -547,7 +547,7 @@ namespace GodotEngine
 
         public static void set_icon(Image icon)
         {
-            NativeCalls.godot_icall_1_35(method_bind_50, ptr, Object.GetPtr(icon));
+            NativeCalls.godot_icall_1_19(method_bind_50, ptr, Object.GetPtr(icon));
         }
 
         private static IntPtr method_bind_51 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_exit_code");
@@ -677,7 +677,7 @@ namespace GodotEngine
         /// </summary>
         public static void dump_memory_to_file(string file)
         {
-            NativeCalls.godot_icall_1_34(method_bind_64, ptr, file);
+            NativeCalls.godot_icall_1_35(method_bind_64, ptr, file);
         }
 
         private static IntPtr method_bind_65 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "dump_resources_to_file");
@@ -689,7 +689,7 @@ namespace GodotEngine
         /// </summary>
         public static void dump_resources_to_file(string file)
         {
-            NativeCalls.godot_icall_1_34(method_bind_65, ptr, file);
+            NativeCalls.godot_icall_1_35(method_bind_65, ptr, file);
         }
 
         private static IntPtr method_bind_66 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_virtual_keyboard");
@@ -709,7 +709,7 @@ namespace GodotEngine
         /// </summary>
         public static void show_virtual_keyboard(string existing_text = "")
         {
-            NativeCalls.godot_icall_1_34(method_bind_67, ptr, existing_text);
+            NativeCalls.godot_icall_1_35(method_bind_67, ptr, existing_text);
         }
 
         private static IntPtr method_bind_68 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "hide_virtual_keyboard");
@@ -733,7 +733,7 @@ namespace GodotEngine
 
         public static void print_all_resources(string tofile = "")
         {
-            NativeCalls.godot_icall_1_34(method_bind_70, ptr, tofile);
+            NativeCalls.godot_icall_1_35(method_bind_70, ptr, tofile);
         }
 
         private static IntPtr method_bind_71 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_static_memory_usage");
@@ -777,7 +777,7 @@ namespace GodotEngine
 
         public static string get_system_dir(int dir)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_75, ptr, dir);
+            return NativeCalls.godot_icall_1_87(method_bind_75, ptr, dir);
         }
 
         private static IntPtr method_bind_76 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_unique_id");
@@ -812,7 +812,7 @@ namespace GodotEngine
 
         public static int native_video_play(string path, float volume, string audio_track, string subtitle_track)
         {
-            return NativeCalls.godot_icall_4_554(method_bind_80, ptr, path, volume, audio_track, subtitle_track);
+            return NativeCalls.godot_icall_4_549(method_bind_80, ptr, path, volume, audio_track, subtitle_track);
         }
 
         private static IntPtr method_bind_81 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "native_video_is_playing");
@@ -850,7 +850,7 @@ namespace GodotEngine
         /// </summary>
         public static string get_scancode_string(int code)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_85, ptr, code);
+            return NativeCalls.godot_icall_1_87(method_bind_85, ptr, code);
         }
 
         private static IntPtr method_bind_86 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_scancode_unicode");
@@ -867,7 +867,7 @@ namespace GodotEngine
         /// </summary>
         public static int find_scancode_from_string(string @string)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_87, ptr, @string);
+            return NativeCalls.godot_icall_1_71(method_bind_87, ptr, @string);
         }
 
         private static IntPtr method_bind_88 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_use_file_access_save_and_swap");
@@ -884,14 +884,14 @@ namespace GodotEngine
         /// </summary>
         public static void alert(string text, string title = "Alert!")
         {
-            NativeCalls.godot_icall_2_55(method_bind_89, ptr, text, title);
+            NativeCalls.godot_icall_2_56(method_bind_89, ptr, text, title);
         }
 
         private static IntPtr method_bind_90 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_thread_name");
 
         public static int set_thread_name(string name)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_90, ptr, name);
+            return NativeCalls.godot_icall_1_71(method_bind_90, ptr, name);
         }
 
         private static IntPtr method_bind_91 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_use_vsync");

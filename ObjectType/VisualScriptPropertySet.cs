@@ -22,7 +22,7 @@ namespace GodotEngine
 
         public void set_base_type(string base_type)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, Object.GetPtr(this), base_type);
+            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), base_type);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_base_type");
@@ -36,7 +36,7 @@ namespace GodotEngine
 
         public void set_base_script(string base_script)
         {
-            NativeCalls.godot_icall_1_34(method_bind_2, Object.GetPtr(this), base_script);
+            NativeCalls.godot_icall_1_35(method_bind_2, Object.GetPtr(this), base_script);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_base_script");
@@ -64,7 +64,7 @@ namespace GodotEngine
 
         public void set_property(string property)
         {
-            NativeCalls.godot_icall_1_34(method_bind_6, Object.GetPtr(this), property);
+            NativeCalls.godot_icall_1_35(method_bind_6, Object.GetPtr(this), property);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_property");
@@ -92,14 +92,14 @@ namespace GodotEngine
 
         public void set_base_path(NodePath base_path)
         {
-            NativeCalls.godot_icall_1_64(method_bind_10, Object.GetPtr(this), NodePath.GetPtr(base_path));
+            NativeCalls.godot_icall_1_65(method_bind_10, Object.GetPtr(this), NodePath.GetPtr(base_path));
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_base_path");
 
         public NodePath get_base_path()
         {
-            IntPtr ret = NativeCalls.godot_icall_0_65(method_bind_11, Object.GetPtr(this));
+            IntPtr ret = NativeCalls.godot_icall_0_66(method_bind_11, Object.GetPtr(this));
             return new NodePath(ret);
         }
 
@@ -107,7 +107,7 @@ namespace GodotEngine
 
         public void set_index(string index)
         {
-            NativeCalls.godot_icall_1_34(method_bind_12, Object.GetPtr(this), index);
+            NativeCalls.godot_icall_1_35(method_bind_12, Object.GetPtr(this), index);
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_index");

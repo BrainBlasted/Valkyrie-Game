@@ -21,14 +21,14 @@ namespace GodotEngine
 
         public void set_data(byte[] data)
         {
-            NativeCalls.godot_icall_1_99(method_bind_0, Object.GetPtr(this), data);
+            NativeCalls.godot_icall_1_100(method_bind_0, Object.GetPtr(this), data);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_data");
 
         public byte[] get_data()
         {
-            return NativeCalls.godot_icall_0_100(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_101(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_loop");

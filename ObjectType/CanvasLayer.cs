@@ -44,7 +44,7 @@ namespace GodotEngine
         /// </summary>
         public void set_transform(Transform2D transform)
         {
-            NativeCalls.godot_icall_1_139(method_bind_2, Object.GetPtr(this), ref transform);
+            NativeCalls.godot_icall_1_140(method_bind_2, Object.GetPtr(this), ref transform);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_transform");
@@ -54,7 +54,7 @@ namespace GodotEngine
         /// </summary>
         public Transform2D get_transform()
         {
-            object ret = NativeCalls.godot_icall_0_140(method_bind_3, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_141(method_bind_3, Object.GetPtr(this));
             return (Transform2D)ret;
         }
 
@@ -142,16 +142,16 @@ namespace GodotEngine
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_custom_viewport");
 
-        public void set_custom_viewport(Viewport viewport)
+        public void set_custom_viewport(Node viewport)
         {
-            NativeCalls.godot_icall_1_19(method_bind_12, Object.GetPtr(this), Object.GetPtr(viewport));
+            NativeCalls.godot_icall_1_34(method_bind_12, Object.GetPtr(this), Object.GetPtr(viewport));
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_custom_viewport");
 
-        public Viewport get_custom_viewport()
+        public Node get_custom_viewport()
         {
-            return NativeCalls.godot_icall_0_118(method_bind_13, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_119(method_bind_13, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_world_2d");
@@ -161,7 +161,7 @@ namespace GodotEngine
         /// </summary>
         public World2D get_world_2d()
         {
-            return NativeCalls.godot_icall_0_141(method_bind_14, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_142(method_bind_14, Object.GetPtr(this));
         }
     }
 }

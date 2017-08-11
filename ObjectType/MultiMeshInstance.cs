@@ -21,7 +21,7 @@ namespace GodotEngine
 
         public void set_multimesh(MultiMesh multimesh)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(multimesh));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(multimesh));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_multimesh");
@@ -31,7 +31,7 @@ namespace GodotEngine
         /// </summary>
         public MultiMesh get_multimesh()
         {
-            return NativeCalls.godot_icall_0_291(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_289(method_bind_1, Object.GetPtr(this));
         }
     }
 }

@@ -160,7 +160,7 @@ namespace GodotEngine
 
         public void share(Node with)
         {
-            NativeCalls.godot_icall_1_19(method_bind_16, Object.GetPtr(this), Object.GetPtr(with));
+            NativeCalls.godot_icall_1_34(method_bind_16, Object.GetPtr(this), Object.GetPtr(with));
         }
 
         private IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "unshare");

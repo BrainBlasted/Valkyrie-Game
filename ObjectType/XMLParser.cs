@@ -113,7 +113,7 @@ namespace GodotEngine
         /// </summary>
         public string get_attribute_name(int idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_6, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_87(method_bind_6, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_attribute_value");
@@ -123,7 +123,7 @@ namespace GodotEngine
         /// </summary>
         public string get_attribute_value(int idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_7, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_87(method_bind_7, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_attribute");
@@ -133,7 +133,7 @@ namespace GodotEngine
         /// </summary>
         public bool has_attribute(string name)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_8, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_57(method_bind_8, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_named_attribute_value");
@@ -143,7 +143,7 @@ namespace GodotEngine
         /// </summary>
         public string get_named_attribute_value(string name)
         {
-            return NativeCalls.godot_icall_1_59(method_bind_9, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_60(method_bind_9, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_named_attribute_value_safe");
@@ -153,7 +153,7 @@ namespace GodotEngine
         /// </summary>
         public string get_named_attribute_value_safe(string name)
         {
-            return NativeCalls.godot_icall_1_59(method_bind_10, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_60(method_bind_10, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_empty");
@@ -203,7 +203,7 @@ namespace GodotEngine
         /// </summary>
         public int open(string file)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_15, Object.GetPtr(this), file);
+            return NativeCalls.godot_icall_1_71(method_bind_15, Object.GetPtr(this), file);
         }
 
         private IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "open_buffer");
@@ -213,7 +213,7 @@ namespace GodotEngine
         /// </summary>
         public int open_buffer(byte[] buffer)
         {
-            return NativeCalls.godot_icall_1_233(method_bind_16, Object.GetPtr(this), buffer);
+            return NativeCalls.godot_icall_1_232(method_bind_16, Object.GetPtr(this), buffer);
         }
     }
 }

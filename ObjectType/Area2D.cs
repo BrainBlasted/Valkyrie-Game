@@ -317,7 +317,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_overlapping_bodies()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_28, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_85(method_bind_28, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_29 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_overlapping_areas");
@@ -327,34 +327,28 @@ namespace GodotEngine
         /// </summary>
         public object[] get_overlapping_areas()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_29, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_85(method_bind_29, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "overlaps_body");
 
-        /// <summary>
-        /// Return whether the body passed is totally or partially inside this area.
-        /// </summary>
-        public bool overlaps_body(Object body)
+        public bool overlaps_body(Node body)
         {
-            return NativeCalls.godot_icall_1_85(method_bind_30, Object.GetPtr(this), Object.GetPtr(body));
+            return NativeCalls.godot_icall_1_86(method_bind_30, Object.GetPtr(this), Object.GetPtr(body));
         }
 
         private IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "overlaps_area");
 
-        /// <summary>
-        /// Return whether the area passed is totally or partially inside this area.
-        /// </summary>
-        public bool overlaps_area(Object area)
+        public bool overlaps_area(Node area)
         {
-            return NativeCalls.godot_icall_1_85(method_bind_31, Object.GetPtr(this), Object.GetPtr(area));
+            return NativeCalls.godot_icall_1_86(method_bind_31, Object.GetPtr(this), Object.GetPtr(area));
         }
 
         private IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_audio_bus");
 
         public void set_audio_bus(string name)
         {
-            NativeCalls.godot_icall_1_34(method_bind_32, Object.GetPtr(this), name);
+            NativeCalls.godot_icall_1_35(method_bind_32, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_33 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_audio_bus");

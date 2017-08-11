@@ -22,9 +22,9 @@ namespace GodotEngine
         /// <summary>
         /// Returns the [Object] this weakref is referring to.
         /// </summary>
-        public Object get_ref()
+        public object get_ref()
         {
-            return NativeCalls.godot_icall_0_30(method_bind_0, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_121(method_bind_0, Object.GetPtr(this));
         }
     }
 }

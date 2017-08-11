@@ -12,9 +12,9 @@ namespace GodotEngine
 
         private IntPtr method_bind_0 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "new");
 
-        public void @new()
+        public object @new()
         {
-            NativeCalls.godot_icall_0_8(method_bind_0, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_121(method_bind_0, Object.GetPtr(this));
         }
     }
 }

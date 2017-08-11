@@ -44,7 +44,7 @@ namespace GodotEngine
         /// </summary>
         public void set_text(string text)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, Object.GetPtr(this), text);
+            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), text);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "insert_text_at_cursor");
@@ -54,7 +54,7 @@ namespace GodotEngine
         /// </summary>
         public void insert_text_at_cursor(string text)
         {
-            NativeCalls.godot_icall_1_34(method_bind_1, Object.GetPtr(this), text);
+            NativeCalls.godot_icall_1_35(method_bind_1, Object.GetPtr(this), text);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_line_count");
@@ -84,7 +84,7 @@ namespace GodotEngine
         /// </summary>
         public string get_line(int line)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_4, Object.GetPtr(this), line);
+            return NativeCalls.godot_icall_1_87(method_bind_4, Object.GetPtr(this), line);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "cursor_set_column");
@@ -258,7 +258,7 @@ namespace GodotEngine
         /// </summary>
         public void select(int from_line, int from_column, int to_line, int to_column)
         {
-            NativeCalls.godot_icall_4_247(method_bind_22, Object.GetPtr(this), from_line, from_column, to_line, to_column);
+            NativeCalls.godot_icall_4_245(method_bind_22, Object.GetPtr(this), from_line, from_column, to_line, to_column);
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_selection_active");
@@ -333,9 +333,9 @@ namespace GodotEngine
         /// <summary>
         /// Perform a search inside the text. Search flags can be specified in the SEARCH_* enum.
         /// </summary>
-        public int[] search(string flags, int from_line, int from_column, int to_line)
+        public int[] search(string key, int flags, int from_line, int from_column)
         {
-            return NativeCalls.godot_icall_4_460(method_bind_30, Object.GetPtr(this), flags, from_line, from_column, to_line);
+            return NativeCalls.godot_icall_4_456(method_bind_30, Object.GetPtr(this), key, flags, from_line, from_column);
         }
 
         private IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "undo");
@@ -445,7 +445,7 @@ namespace GodotEngine
         /// </summary>
         public void add_color_region(string begin_key, string end_key, Color color, bool line_only = false)
         {
-            NativeCalls.godot_icall_4_461(method_bind_41, Object.GetPtr(this), begin_key, end_key, ref color, line_only);
+            NativeCalls.godot_icall_4_457(method_bind_41, Object.GetPtr(this), begin_key, end_key, ref color, line_only);
         }
 
         private IntPtr method_bind_42 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_colors");
@@ -469,7 +469,7 @@ namespace GodotEngine
 
         public PopupMenu get_menu()
         {
-            return NativeCalls.godot_icall_0_275(method_bind_44, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_273(method_bind_44, Object.GetPtr(this));
         }
     }
 }

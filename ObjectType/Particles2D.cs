@@ -82,7 +82,7 @@ namespace GodotEngine
 
         public void set_visibility_rect(Rect2 aabb)
         {
-            NativeCalls.godot_icall_1_93(method_bind_7, Object.GetPtr(this), ref aabb);
+            NativeCalls.godot_icall_1_94(method_bind_7, Object.GetPtr(this), ref aabb);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_use_local_coordinates");
@@ -110,7 +110,7 @@ namespace GodotEngine
 
         public void set_process_material(Material material)
         {
-            NativeCalls.godot_icall_1_35(method_bind_11, Object.GetPtr(this), Object.GetPtr(material));
+            NativeCalls.godot_icall_1_19(method_bind_11, Object.GetPtr(this), Object.GetPtr(material));
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_speed_scale");
@@ -182,7 +182,7 @@ namespace GodotEngine
 
         public Rect2 get_visibility_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_20, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_20, Object.GetPtr(this));
             return (Rect2)ret;
         }
 
@@ -211,7 +211,7 @@ namespace GodotEngine
 
         public Material get_process_material()
         {
-            return NativeCalls.godot_icall_0_142(method_bind_24, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_143(method_bind_24, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_speed_scale");
@@ -239,7 +239,7 @@ namespace GodotEngine
 
         public void set_texture(Texture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_28, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_28, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_29 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_texture");
@@ -249,28 +249,28 @@ namespace GodotEngine
         /// </summary>
         public Texture get_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_29, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_29, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_normal_map");
 
         public void set_normal_map(Texture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_30, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_30, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_normal_map");
 
         public Texture get_normal_map()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_31, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_31, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "capture_rect");
 
         public Rect2 capture_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_32, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_32, Object.GetPtr(this));
             return (Rect2)ret;
         }
 

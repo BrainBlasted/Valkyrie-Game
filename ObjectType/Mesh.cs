@@ -46,35 +46,35 @@ namespace GodotEngine
 
         public Shape create_trimesh_shape()
         {
-            return NativeCalls.godot_icall_0_154(method_bind_0, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_156(method_bind_0, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "create_convex_shape");
 
         public Shape create_convex_shape()
         {
-            return NativeCalls.godot_icall_0_154(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_156(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "create_outline");
 
-        public ArrayMesh create_outline(float margin)
+        public Mesh create_outline(float margin)
         {
-            return NativeCalls.godot_icall_1_277(method_bind_2, Object.GetPtr(this), margin);
+            return NativeCalls.godot_icall_1_275(method_bind_2, Object.GetPtr(this), margin);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_faces");
 
         public Vector3[] get_faces()
         {
-            return NativeCalls.godot_icall_0_158(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_160(method_bind_3, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "generate_triangle_mesh");
 
         public TriangleMesh generate_triangle_mesh()
         {
-            return NativeCalls.godot_icall_0_278(method_bind_4, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_276(method_bind_4, Object.GetPtr(this));
         }
     }
 }

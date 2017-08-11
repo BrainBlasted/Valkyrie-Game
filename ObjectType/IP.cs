@@ -28,7 +28,7 @@ namespace GodotEngine
         /// </summary>
         public static string resolve_hostname(string host, int ip_type = 3)
         {
-            return NativeCalls.godot_icall_2_71(method_bind_0, ptr, host, ip_type);
+            return NativeCalls.godot_icall_2_72(method_bind_0, ptr, host, ip_type);
         }
 
         private static IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "resolve_hostname_queue_item");
@@ -38,7 +38,7 @@ namespace GodotEngine
         /// </summary>
         public static int resolve_hostname_queue_item(string host, int ip_type = 3)
         {
-            return NativeCalls.godot_icall_2_238(method_bind_1, ptr, host, ip_type);
+            return NativeCalls.godot_icall_2_236(method_bind_1, ptr, host, ip_type);
         }
 
         private static IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_resolve_item_status");
@@ -58,7 +58,7 @@ namespace GodotEngine
         /// </summary>
         public static string get_resolve_item_address(int id)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_3, ptr, id);
+            return NativeCalls.godot_icall_1_87(method_bind_3, ptr, id);
         }
 
         private static IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "erase_resolve_item");
@@ -75,14 +75,14 @@ namespace GodotEngine
 
         public static object[] get_local_addresses()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_5, ptr);
+            return NativeCalls.godot_icall_0_85(method_bind_5, ptr);
         }
 
         private static IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_cache");
 
         public static void clear_cache(string hostname = "")
         {
-            NativeCalls.godot_icall_1_34(method_bind_6, ptr, hostname);
+            NativeCalls.godot_icall_1_35(method_bind_6, ptr, hostname);
         }
     }
 }

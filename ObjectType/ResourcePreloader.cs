@@ -21,7 +21,7 @@ namespace GodotEngine
 
         public void add_resource(string name, Resource resource)
         {
-            NativeCalls.godot_icall_2_72(method_bind_0, Object.GetPtr(this), name, Object.GetPtr(resource));
+            NativeCalls.godot_icall_2_73(method_bind_0, Object.GetPtr(this), name, Object.GetPtr(resource));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_resource");
@@ -31,7 +31,7 @@ namespace GodotEngine
         /// </summary>
         public void remove_resource(string name)
         {
-            NativeCalls.godot_icall_1_34(method_bind_1, Object.GetPtr(this), name);
+            NativeCalls.godot_icall_1_35(method_bind_1, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "rename_resource");
@@ -41,7 +41,7 @@ namespace GodotEngine
         /// </summary>
         public void rename_resource(string name, string newname)
         {
-            NativeCalls.godot_icall_2_55(method_bind_2, Object.GetPtr(this), name, newname);
+            NativeCalls.godot_icall_2_56(method_bind_2, Object.GetPtr(this), name, newname);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_resource");
@@ -51,7 +51,7 @@ namespace GodotEngine
         /// </summary>
         public bool has_resource(string name)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_3, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_57(method_bind_3, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_resource");
@@ -61,7 +61,7 @@ namespace GodotEngine
         /// </summary>
         public Resource get_resource(string name)
         {
-            return NativeCalls.godot_icall_1_415(method_bind_4, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_412(method_bind_4, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_resource_list");
@@ -71,7 +71,7 @@ namespace GodotEngine
         /// </summary>
         public string[] get_resource_list()
         {
-            return NativeCalls.godot_icall_0_58(method_bind_5, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_59(method_bind_5, Object.GetPtr(this));
         }
     }
 }

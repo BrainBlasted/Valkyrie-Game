@@ -88,7 +88,7 @@ namespace GodotEngine
         /// </summary>
         public Object get_collider()
         {
-            return NativeCalls.godot_icall_0_30(method_bind_6, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_374(method_bind_6, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_collider_shape");
@@ -127,7 +127,7 @@ namespace GodotEngine
 
         public void add_exception_rid(RID rid)
         {
-            NativeCalls.godot_icall_1_350(method_bind_10, Object.GetPtr(this), RID.GetPtr(rid));
+            NativeCalls.godot_icall_1_359(method_bind_10, Object.GetPtr(this), RID.GetPtr(rid));
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_exception");
@@ -137,14 +137,14 @@ namespace GodotEngine
         /// </summary>
         public void add_exception(Object node)
         {
-            NativeCalls.godot_icall_1_19(method_bind_11, Object.GetPtr(this), Object.GetPtr(node));
+            NativeCalls.godot_icall_1_34(method_bind_11, Object.GetPtr(this), Object.GetPtr(node));
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_exception_rid");
 
         public void remove_exception_rid(RID rid)
         {
-            NativeCalls.godot_icall_1_350(method_bind_12, Object.GetPtr(this), RID.GetPtr(rid));
+            NativeCalls.godot_icall_1_359(method_bind_12, Object.GetPtr(this), RID.GetPtr(rid));
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_exception");
@@ -154,7 +154,7 @@ namespace GodotEngine
         /// </summary>
         public void remove_exception(Object node)
         {
-            NativeCalls.godot_icall_1_19(method_bind_13, Object.GetPtr(this), Object.GetPtr(node));
+            NativeCalls.godot_icall_1_34(method_bind_13, Object.GetPtr(this), Object.GetPtr(node));
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_exceptions");

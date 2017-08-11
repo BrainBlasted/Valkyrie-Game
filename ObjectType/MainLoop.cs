@@ -29,14 +29,14 @@ namespace GodotEngine
 
         public void input_event(InputEvent ev)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(ev));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(ev));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "input_text");
 
         public void input_text(string text)
         {
-            NativeCalls.godot_icall_1_34(method_bind_1, Object.GetPtr(this), text);
+            NativeCalls.godot_icall_1_35(method_bind_1, Object.GetPtr(this), text);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "init");
@@ -50,14 +50,14 @@ namespace GodotEngine
 
         public bool iteration(float delta)
         {
-            return NativeCalls.godot_icall_1_276(method_bind_3, Object.GetPtr(this), delta);
+            return NativeCalls.godot_icall_1_274(method_bind_3, Object.GetPtr(this), delta);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "idle");
 
         public bool idle(float delta)
         {
-            return NativeCalls.godot_icall_1_276(method_bind_4, Object.GetPtr(this), delta);
+            return NativeCalls.godot_icall_1_274(method_bind_4, Object.GetPtr(this), delta);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "finish");

@@ -22,7 +22,7 @@ namespace GodotEngine
         /// </summary>
         public object resume(object arg = null)
         {
-            return NativeCalls.godot_icall_1_202(method_bind_0, Object.GetPtr(this), arg);
+            return NativeCalls.godot_icall_1_201(method_bind_0, Object.GetPtr(this), arg);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_valid");
@@ -33,7 +33,7 @@ namespace GodotEngine
         /// </summary>
         public bool is_valid(bool extended_check = false)
         {
-            return NativeCalls.godot_icall_1_203(method_bind_1, Object.GetPtr(this), extended_check);
+            return NativeCalls.godot_icall_1_202(method_bind_1, Object.GetPtr(this), extended_check);
         }
     }
 }

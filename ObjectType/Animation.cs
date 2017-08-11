@@ -242,9 +242,9 @@ namespace GodotEngine
         /// <summary>
         /// Return the value of a given key in a given track.
         /// </summary>
-        public void track_get_key_value(int idx, int key_idx)
+        public object track_get_key_value(int idx, int key_idx)
         {
-            NativeCalls.godot_icall_2_24(method_bind_19, Object.GetPtr(this), idx, key_idx);
+            return NativeCalls.godot_icall_2_49(method_bind_19, Object.GetPtr(this), idx, key_idx);
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "track_get_key_time");
@@ -264,7 +264,7 @@ namespace GodotEngine
         /// </summary>
         public int track_find_key(int idx, float time, bool exact = false)
         {
-            return NativeCalls.godot_icall_3_49(method_bind_21, Object.GetPtr(this), idx, time, exact);
+            return NativeCalls.godot_icall_3_50(method_bind_21, Object.GetPtr(this), idx, time, exact);
         }
 
         private IntPtr method_bind_22 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "track_set_interpolation_type");
@@ -308,7 +308,7 @@ namespace GodotEngine
         /// </summary>
         public object[] transform_track_interpolate(int idx, float time_sec)
         {
-            return NativeCalls.godot_icall_2_50(method_bind_26, Object.GetPtr(this), idx, time_sec);
+            return NativeCalls.godot_icall_2_51(method_bind_26, Object.GetPtr(this), idx, time_sec);
         }
 
         private IntPtr method_bind_27 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "value_track_set_update_mode");
@@ -332,7 +332,7 @@ namespace GodotEngine
         /// </summary>
         public int[] value_track_get_key_indices(int idx, float time_sec, float delta)
         {
-            return NativeCalls.godot_icall_3_51(method_bind_29, Object.GetPtr(this), idx, time_sec, delta);
+            return NativeCalls.godot_icall_3_52(method_bind_29, Object.GetPtr(this), idx, time_sec, delta);
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "method_track_get_key_indices");
@@ -342,7 +342,7 @@ namespace GodotEngine
         /// </summary>
         public int[] method_track_get_key_indices(int idx, float time_sec, float delta)
         {
-            return NativeCalls.godot_icall_3_51(method_bind_30, Object.GetPtr(this), idx, time_sec, delta);
+            return NativeCalls.godot_icall_3_52(method_bind_30, Object.GetPtr(this), idx, time_sec, delta);
         }
 
         private IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "method_track_get_name");
@@ -352,7 +352,7 @@ namespace GodotEngine
         /// </summary>
         public string method_track_get_name(int idx, int key_idx)
         {
-            return NativeCalls.godot_icall_2_52(method_bind_31, Object.GetPtr(this), idx, key_idx);
+            return NativeCalls.godot_icall_2_53(method_bind_31, Object.GetPtr(this), idx, key_idx);
         }
 
         private IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "method_track_get_params");
@@ -362,7 +362,7 @@ namespace GodotEngine
         /// </summary>
         public object[] method_track_get_params(int idx, int key_idx)
         {
-            return NativeCalls.godot_icall_2_53(method_bind_32, Object.GetPtr(this), idx, key_idx);
+            return NativeCalls.godot_icall_2_54(method_bind_32, Object.GetPtr(this), idx, key_idx);
         }
 
         private IntPtr method_bind_33 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_length");

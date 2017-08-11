@@ -25,14 +25,14 @@ namespace GodotEngine
 
         public int create_from_surface(ArrayMesh mesh, int surface)
         {
-            return NativeCalls.godot_icall_2_279(method_bind_1, Object.GetPtr(this), Object.GetPtr(mesh), surface);
+            return NativeCalls.godot_icall_2_277(method_bind_1, Object.GetPtr(this), Object.GetPtr(mesh), surface);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "commit_to_surface");
 
         public int commit_to_surface(ArrayMesh mesh)
         {
-            return NativeCalls.godot_icall_1_280(method_bind_2, Object.GetPtr(this), Object.GetPtr(mesh));
+            return NativeCalls.godot_icall_1_278(method_bind_2, Object.GetPtr(this), Object.GetPtr(mesh));
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_format");
@@ -97,14 +97,14 @@ namespace GodotEngine
 
         public void set_vertex_tangent(int idx, Plane tangent)
         {
-            NativeCalls.godot_icall_2_281(method_bind_11, Object.GetPtr(this), idx, ref tangent);
+            NativeCalls.godot_icall_2_279(method_bind_11, Object.GetPtr(this), idx, ref tangent);
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_vertex_tangent");
 
         public Plane get_vertex_tangent(int idx)
         {
-            object ret = NativeCalls.godot_icall_1_282(method_bind_12, Object.GetPtr(this), idx);
+            object ret = NativeCalls.godot_icall_1_280(method_bind_12, Object.GetPtr(this), idx);
             return (Plane)ret;
         }
 
@@ -142,14 +142,14 @@ namespace GodotEngine
 
         public void set_vertex_color(int idx, Color color)
         {
-            NativeCalls.godot_icall_2_212(method_bind_17, Object.GetPtr(this), idx, ref color);
+            NativeCalls.godot_icall_2_211(method_bind_17, Object.GetPtr(this), idx, ref color);
         }
 
         private IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_vertex_color");
 
         public Color get_vertex_color(int idx)
         {
-            object ret = NativeCalls.godot_icall_1_213(method_bind_18, Object.GetPtr(this), idx);
+            object ret = NativeCalls.godot_icall_1_212(method_bind_18, Object.GetPtr(this), idx);
             return (Color)ret;
         }
 
@@ -157,56 +157,56 @@ namespace GodotEngine
 
         public void set_vertex_bones(int idx, int[] bones)
         {
-            NativeCalls.godot_icall_2_283(method_bind_19, Object.GetPtr(this), idx, bones);
+            NativeCalls.godot_icall_2_281(method_bind_19, Object.GetPtr(this), idx, bones);
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_vertex_bones");
 
         public int[] get_vertex_bones(int idx)
         {
-            return NativeCalls.godot_icall_1_284(method_bind_20, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_282(method_bind_20, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_vertex_weights");
 
         public void set_vertex_weights(int idx, float[] weights)
         {
-            NativeCalls.godot_icall_2_285(method_bind_21, Object.GetPtr(this), idx, weights);
+            NativeCalls.godot_icall_2_283(method_bind_21, Object.GetPtr(this), idx, weights);
         }
 
         private IntPtr method_bind_22 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_vertex_weights");
 
         public float[] get_vertex_weights(int idx)
         {
-            return NativeCalls.godot_icall_1_286(method_bind_22, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_284(method_bind_22, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_vertex_meta");
 
         public void set_vertex_meta(int idx, object meta)
         {
-            NativeCalls.godot_icall_2_263(method_bind_23, Object.GetPtr(this), idx, meta);
+            NativeCalls.godot_icall_2_261(method_bind_23, Object.GetPtr(this), idx, meta);
         }
 
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_vertex_meta");
 
         public object get_vertex_meta(int idx)
         {
-            return NativeCalls.godot_icall_1_264(method_bind_24, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_262(method_bind_24, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_vertex_edges");
 
         public int[] get_vertex_edges(int idx)
         {
-            return NativeCalls.godot_icall_1_284(method_bind_25, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_282(method_bind_25, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_vertex_faces");
 
         public int[] get_vertex_faces(int idx)
         {
-            return NativeCalls.godot_icall_1_284(method_bind_26, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_282(method_bind_26, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_27 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_edge_vertex");
@@ -220,21 +220,21 @@ namespace GodotEngine
 
         public int[] get_edge_faces(int idx)
         {
-            return NativeCalls.godot_icall_1_284(method_bind_28, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_282(method_bind_28, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_29 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_edge_meta");
 
         public void set_edge_meta(int idx, object meta)
         {
-            NativeCalls.godot_icall_2_263(method_bind_29, Object.GetPtr(this), idx, meta);
+            NativeCalls.godot_icall_2_261(method_bind_29, Object.GetPtr(this), idx, meta);
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_edge_meta");
 
         public object get_edge_meta(int idx)
         {
-            return NativeCalls.godot_icall_1_264(method_bind_30, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_262(method_bind_30, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_face_vertex");
@@ -255,14 +255,14 @@ namespace GodotEngine
 
         public void set_face_meta(int idx, object meta)
         {
-            NativeCalls.godot_icall_2_263(method_bind_33, Object.GetPtr(this), idx, meta);
+            NativeCalls.godot_icall_2_261(method_bind_33, Object.GetPtr(this), idx, meta);
         }
 
         private IntPtr method_bind_34 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_face_meta");
 
         public object get_face_meta(int idx)
         {
-            return NativeCalls.godot_icall_1_264(method_bind_34, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_262(method_bind_34, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_35 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_face_normal");
@@ -277,14 +277,14 @@ namespace GodotEngine
 
         public void set_material(Material material)
         {
-            NativeCalls.godot_icall_1_35(method_bind_36, Object.GetPtr(this), Object.GetPtr(material));
+            NativeCalls.godot_icall_1_19(method_bind_36, Object.GetPtr(this), Object.GetPtr(material));
         }
 
         private IntPtr method_bind_37 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_material");
 
         public Material get_material()
         {
-            return NativeCalls.godot_icall_0_142(method_bind_37, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_143(method_bind_37, Object.GetPtr(this));
         }
     }
 }

@@ -32,7 +32,7 @@ namespace GodotEngine
 
         public void set_basic_type_constant(string name)
         {
-            NativeCalls.godot_icall_1_34(method_bind_2, Object.GetPtr(this), name);
+            NativeCalls.godot_icall_1_35(method_bind_2, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_basic_type_constant");

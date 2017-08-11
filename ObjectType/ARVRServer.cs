@@ -80,21 +80,21 @@ namespace GodotEngine
 
         private static IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_primary_interface");
 
-        public static void set_primary_interface(Object arg0)
+        public static void set_primary_interface(ARVRInterface arg0)
         {
             NativeCalls.godot_icall_1_19(method_bind_9, ptr, Object.GetPtr(arg0));
         }
 
         private static IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_interface");
 
-        public static void add_interface(Object arg0)
+        public static void add_interface(ARVRInterface arg0)
         {
             NativeCalls.godot_icall_1_19(method_bind_10, ptr, Object.GetPtr(arg0));
         }
 
         private static IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_interface");
 
-        public static void remove_interface(Object arg0)
+        public static void remove_interface(ARVRInterface arg0)
         {
             NativeCalls.godot_icall_1_19(method_bind_11, ptr, Object.GetPtr(arg0));
         }

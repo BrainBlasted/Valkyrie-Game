@@ -18,21 +18,21 @@ namespace GodotEngine
 
         public void set_vertices(Vector3[] vertices)
         {
-            NativeCalls.godot_icall_1_157(method_bind_0, Object.GetPtr(this), vertices);
+            NativeCalls.godot_icall_1_159(method_bind_0, Object.GetPtr(this), vertices);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_vertices");
 
         public Vector3[] get_vertices()
         {
-            return NativeCalls.godot_icall_0_158(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_160(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_polygon");
 
         public void add_polygon(int[] polygon)
         {
-            NativeCalls.godot_icall_1_209(method_bind_2, Object.GetPtr(this), polygon);
+            NativeCalls.godot_icall_1_208(method_bind_2, Object.GetPtr(this), polygon);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_polygon_count");
@@ -46,7 +46,7 @@ namespace GodotEngine
 
         public int[] get_polygon(int idx)
         {
-            return NativeCalls.godot_icall_1_284(method_bind_4, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_282(method_bind_4, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_polygons");

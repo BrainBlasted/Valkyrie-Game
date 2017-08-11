@@ -49,21 +49,21 @@ namespace GodotEngine
 
         public static void set_bus_name(int bus_idx, string name)
         {
-            NativeCalls.godot_icall_2_68(method_bind_5, ptr, bus_idx, name);
+            NativeCalls.godot_icall_2_69(method_bind_5, ptr, bus_idx, name);
         }
 
         private static IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bus_name");
 
         public static string get_bus_name(int bus_idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_6, ptr, bus_idx);
+            return NativeCalls.godot_icall_1_87(method_bind_6, ptr, bus_idx);
         }
 
         private static IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bus_index");
 
         public static int get_bus_index(string bus_name)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_7, ptr, bus_name);
+            return NativeCalls.godot_icall_1_71(method_bind_7, ptr, bus_name);
         }
 
         private static IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_bus_volume_db");
@@ -84,14 +84,14 @@ namespace GodotEngine
 
         public static void set_bus_send(int bus_idx, string send)
         {
-            NativeCalls.godot_icall_2_68(method_bind_10, ptr, bus_idx, send);
+            NativeCalls.godot_icall_2_69(method_bind_10, ptr, bus_idx, send);
         }
 
         private static IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bus_send");
 
         public static string get_bus_send(int bus_idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_11, ptr, bus_idx);
+            return NativeCalls.godot_icall_1_87(method_bind_11, ptr, bus_idx);
         }
 
         private static IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_bus_solo");
@@ -140,7 +140,7 @@ namespace GodotEngine
 
         public static void add_bus_effect(int bus_idx, AudioEffect effect, int at_pos = -1)
         {
-            NativeCalls.godot_icall_3_95(method_bind_18, ptr, bus_idx, Object.GetPtr(effect), at_pos);
+            NativeCalls.godot_icall_3_96(method_bind_18, ptr, bus_idx, Object.GetPtr(effect), at_pos);
         }
 
         private static IntPtr method_bind_19 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_bus_effect");
@@ -161,14 +161,14 @@ namespace GodotEngine
 
         public static AudioEffect get_bus_effect(int bus_idx, int effect_idx)
         {
-            return NativeCalls.godot_icall_2_96(method_bind_21, ptr, bus_idx, effect_idx);
+            return NativeCalls.godot_icall_2_97(method_bind_21, ptr, bus_idx, effect_idx);
         }
 
         private static IntPtr method_bind_22 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "swap_bus_effects");
 
         public static void swap_bus_effects(int bus_idx, int effect_idx, int by_effect_idx)
         {
-            NativeCalls.godot_icall_3_97(method_bind_22, ptr, bus_idx, effect_idx, by_effect_idx);
+            NativeCalls.godot_icall_3_98(method_bind_22, ptr, bus_idx, effect_idx, by_effect_idx);
         }
 
         private static IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_bus_effect_enabled");
@@ -231,14 +231,14 @@ namespace GodotEngine
 
         public static void set_bus_layout(AudioBusLayout bus_layout)
         {
-            NativeCalls.godot_icall_1_35(method_bind_31, ptr, Object.GetPtr(bus_layout));
+            NativeCalls.godot_icall_1_19(method_bind_31, ptr, Object.GetPtr(bus_layout));
         }
 
         private static IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "generate_bus_layout");
 
         public static AudioBusLayout generate_bus_layout()
         {
-            return NativeCalls.godot_icall_0_98(method_bind_32, ptr);
+            return NativeCalls.godot_icall_0_99(method_bind_32, ptr);
         }
     }
 }

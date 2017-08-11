@@ -16,16 +16,16 @@ namespace GodotEngine
 
         private IntPtr method_bind_0 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_audio_stream");
 
-        public void set_audio_stream(Object stream)
+        public void set_audio_stream(AudioStream stream)
         {
             NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(stream));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_audio_stream");
 
-        public Object get_audio_stream()
+        public AudioStream get_audio_stream()
         {
-            return NativeCalls.godot_icall_0_30(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_102(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_random_pitch");

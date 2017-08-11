@@ -65,7 +65,7 @@ namespace GodotEngine
 
         public RID get_collider_rid()
         {
-            IntPtr ret = NativeCalls.godot_icall_0_121(method_bind_6, Object.GetPtr(this));
+            IntPtr ret = NativeCalls.godot_icall_0_122(method_bind_6, Object.GetPtr(this));
             return new RID(ret);
         }
 
@@ -73,7 +73,7 @@ namespace GodotEngine
 
         public Object get_collider()
         {
-            return NativeCalls.godot_icall_0_30(method_bind_7, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_374(method_bind_7, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_collider_shape");

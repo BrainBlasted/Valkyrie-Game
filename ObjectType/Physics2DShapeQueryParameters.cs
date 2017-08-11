@@ -19,12 +19,9 @@ namespace GodotEngine
 
         private IntPtr method_bind_0 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_shape");
 
-        /// <summary>
-        /// Set the [Shape2D] that will be used for collision/intersection queries.
-        /// </summary>
-        public void set_shape(Shape2D shape)
+        public void set_shape(Resource shape)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(shape));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(shape));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_shape_rid");
@@ -34,7 +31,7 @@ namespace GodotEngine
         /// </summary>
         public void set_shape_rid(RID shape)
         {
-            NativeCalls.godot_icall_1_350(method_bind_1, Object.GetPtr(this), RID.GetPtr(shape));
+            NativeCalls.godot_icall_1_359(method_bind_1, Object.GetPtr(this), RID.GetPtr(shape));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_shape_rid");
@@ -44,7 +41,7 @@ namespace GodotEngine
         /// </summary>
         public RID get_shape_rid()
         {
-            IntPtr ret = NativeCalls.godot_icall_0_121(method_bind_2, Object.GetPtr(this));
+            IntPtr ret = NativeCalls.godot_icall_0_122(method_bind_2, Object.GetPtr(this));
             return new RID(ret);
         }
 
@@ -55,7 +52,7 @@ namespace GodotEngine
         /// </summary>
         public void set_transform(Transform2D transform)
         {
-            NativeCalls.godot_icall_1_139(method_bind_3, Object.GetPtr(this), ref transform);
+            NativeCalls.godot_icall_1_140(method_bind_3, Object.GetPtr(this), ref transform);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_transform");
@@ -65,7 +62,7 @@ namespace GodotEngine
         /// </summary>
         public Transform2D get_transform()
         {
-            object ret = NativeCalls.godot_icall_0_140(method_bind_4, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_141(method_bind_4, Object.GetPtr(this));
             return (Transform2D)ret;
         }
 
@@ -157,7 +154,7 @@ namespace GodotEngine
         /// </summary>
         public void set_exclude(object[] exclude)
         {
-            NativeCalls.godot_icall_1_377(method_bind_13, Object.GetPtr(this), exclude);
+            NativeCalls.godot_icall_1_373(method_bind_13, Object.GetPtr(this), exclude);
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_exclude");
@@ -167,7 +164,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_exclude()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_14, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_85(method_bind_14, Object.GetPtr(this));
         }
     }
 }

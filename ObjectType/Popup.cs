@@ -69,7 +69,7 @@ namespace GodotEngine
         public void popup(Nullable<Rect2> bounds = null)
         {
             Rect2 bounds_in = bounds.HasValue ? bounds.Value : new Rect2(0, 0, 0, 0);
-            NativeCalls.godot_icall_1_93(method_bind_3, Object.GetPtr(this), ref bounds_in);
+            NativeCalls.godot_icall_1_94(method_bind_3, Object.GetPtr(this), ref bounds_in);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_exclusive");

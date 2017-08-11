@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_polygon(Vector2[] polygon)
         {
-            NativeCalls.godot_icall_1_152(method_bind_0, Object.GetPtr(this), polygon);
+            NativeCalls.godot_icall_1_154(method_bind_0, Object.GetPtr(this), polygon);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_polygon");
@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public Vector2[] get_polygon()
         {
-            return NativeCalls.godot_icall_0_153(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_155(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_uv");
@@ -44,7 +44,7 @@ namespace GodotEngine
         /// </summary>
         public void set_uv(Vector2[] uv)
         {
-            NativeCalls.godot_icall_1_152(method_bind_2, Object.GetPtr(this), uv);
+            NativeCalls.godot_icall_1_154(method_bind_2, Object.GetPtr(this), uv);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_uv");
@@ -54,7 +54,7 @@ namespace GodotEngine
         /// </summary>
         public Vector2[] get_uv()
         {
-            return NativeCalls.godot_icall_0_153(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_155(method_bind_3, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_color");
@@ -64,7 +64,7 @@ namespace GodotEngine
         /// </summary>
         public void set_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_4, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_4, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_color");
@@ -74,7 +74,7 @@ namespace GodotEngine
         /// </summary>
         public Color get_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_5, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_5, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -86,7 +86,7 @@ namespace GodotEngine
         /// </summary>
         public void set_vertex_colors(Color[] vertex_colors)
         {
-            NativeCalls.godot_icall_1_216(method_bind_6, Object.GetPtr(this), vertex_colors);
+            NativeCalls.godot_icall_1_215(method_bind_6, Object.GetPtr(this), vertex_colors);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_vertex_colors");
@@ -96,14 +96,14 @@ namespace GodotEngine
         /// </summary>
         public Color[] get_vertex_colors()
         {
-            return NativeCalls.godot_icall_0_217(method_bind_7, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_216(method_bind_7, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_texture");
 
         public void set_texture(Texture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_8, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_8, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_texture");
@@ -113,7 +113,7 @@ namespace GodotEngine
         /// </summary>
         public Texture get_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_9, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_9, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_texture_offset");

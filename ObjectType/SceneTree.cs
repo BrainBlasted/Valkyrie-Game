@@ -30,14 +30,14 @@ namespace GodotEngine
 
         public Viewport get_root()
         {
-            return NativeCalls.godot_icall_0_118(method_bind_0, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_312(method_bind_0, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_group");
 
         public bool has_group(string name)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_1, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_57(method_bind_1, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_auto_accept_quit");
@@ -93,14 +93,14 @@ namespace GodotEngine
 
         public void set_edited_scene_root(Node scene)
         {
-            NativeCalls.godot_icall_1_19(method_bind_9, Object.GetPtr(this), Object.GetPtr(scene));
+            NativeCalls.godot_icall_1_34(method_bind_9, Object.GetPtr(this), Object.GetPtr(scene));
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_edited_scene_root");
 
         public Node get_edited_scene_root()
         {
-            return NativeCalls.godot_icall_0_309(method_bind_10, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_119(method_bind_10, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_pause");
@@ -135,7 +135,7 @@ namespace GodotEngine
 
         public SceneTreeTimer create_timer(float time_sec, bool pause_mode_process = true)
         {
-            return NativeCalls.godot_icall_2_425(method_bind_15, Object.GetPtr(this), time_sec, pause_mode_process);
+            return NativeCalls.godot_icall_2_421(method_bind_15, Object.GetPtr(this), time_sec, pause_mode_process);
         }
 
         private IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_node_count");
@@ -163,91 +163,91 @@ namespace GodotEngine
 
         public void set_screen_stretch(int mode, int aspect, Vector2 minsize, int shrink = 1)
         {
-            NativeCalls.godot_icall_4_426(method_bind_19, Object.GetPtr(this), mode, aspect, ref minsize, shrink);
+            NativeCalls.godot_icall_4_422(method_bind_19, Object.GetPtr(this), mode, aspect, ref minsize, shrink);
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "queue_delete");
 
         public void queue_delete(Object obj)
         {
-            NativeCalls.godot_icall_1_19(method_bind_20, Object.GetPtr(this), Object.GetPtr(obj));
+            NativeCalls.godot_icall_1_34(method_bind_20, Object.GetPtr(this), Object.GetPtr(obj));
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "call_group_flags");
 
-        public void call_group_flags(int flags, string group, string method, params object[] @args)
+        public object call_group_flags(int flags, string group, string method, params object[] @args)
         {
-            NativeCalls.godot_icall_4_427(method_bind_21, Object.GetPtr(this), flags, group, method, @args);
+            return NativeCalls.godot_icall_4_423(method_bind_21, Object.GetPtr(this), flags, group, method, @args);
         }
 
         private IntPtr method_bind_22 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "notify_group_flags");
 
         public void notify_group_flags(int call_flags, string group, int notification)
         {
-            NativeCalls.godot_icall_3_428(method_bind_22, Object.GetPtr(this), call_flags, group, notification);
+            NativeCalls.godot_icall_3_424(method_bind_22, Object.GetPtr(this), call_flags, group, notification);
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_group_flags");
 
         public void set_group_flags(int call_flags, string group, string property, object value)
         {
-            NativeCalls.godot_icall_4_429(method_bind_23, Object.GetPtr(this), call_flags, group, property, value);
+            NativeCalls.godot_icall_4_425(method_bind_23, Object.GetPtr(this), call_flags, group, property, value);
         }
 
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "call_group");
 
-        public void call_group(string group, string method, params object[] @args)
+        public object call_group(string group, string method, params object[] @args)
         {
-            NativeCalls.godot_icall_3_430(method_bind_24, Object.GetPtr(this), group, method, @args);
+            return NativeCalls.godot_icall_3_426(method_bind_24, Object.GetPtr(this), group, method, @args);
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "notify_group");
 
-        public void notify_group(string call_flags, int group)
+        public void notify_group(string group, int notification)
         {
-            NativeCalls.godot_icall_2_78(method_bind_25, Object.GetPtr(this), call_flags, group);
+            NativeCalls.godot_icall_2_79(method_bind_25, Object.GetPtr(this), group, notification);
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_group");
 
-        public void set_group(string call_flags, string group, object property)
+        public void set_group(string group, string property, object value)
         {
-            NativeCalls.godot_icall_3_159(method_bind_26, Object.GetPtr(this), call_flags, group, property);
+            NativeCalls.godot_icall_3_161(method_bind_26, Object.GetPtr(this), group, property, value);
         }
 
         private IntPtr method_bind_27 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_nodes_in_group");
 
         public object[] get_nodes_in_group(string group)
         {
-            return NativeCalls.godot_icall_1_256(method_bind_27, Object.GetPtr(this), group);
+            return NativeCalls.godot_icall_1_254(method_bind_27, Object.GetPtr(this), group);
         }
 
         private IntPtr method_bind_28 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_current_scene");
 
         public void set_current_scene(Node child_node)
         {
-            NativeCalls.godot_icall_1_19(method_bind_28, Object.GetPtr(this), Object.GetPtr(child_node));
+            NativeCalls.godot_icall_1_34(method_bind_28, Object.GetPtr(this), Object.GetPtr(child_node));
         }
 
         private IntPtr method_bind_29 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_current_scene");
 
         public Node get_current_scene()
         {
-            return NativeCalls.godot_icall_0_309(method_bind_29, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_119(method_bind_29, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "change_scene");
 
         public int change_scene(string path)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_30, Object.GetPtr(this), path);
+            return NativeCalls.godot_icall_1_71(method_bind_30, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "change_scene_to");
 
         public int change_scene_to(PackedScene packed_scene)
         {
-            return NativeCalls.godot_icall_1_280(method_bind_31, Object.GetPtr(this), Object.GetPtr(packed_scene));
+            return NativeCalls.godot_icall_1_278(method_bind_31, Object.GetPtr(this), Object.GetPtr(packed_scene));
         }
 
         private IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "reload_current_scene");
@@ -264,7 +264,7 @@ namespace GodotEngine
         /// </summary>
         public void set_network_peer(NetworkedMultiplayerPeer peer)
         {
-            NativeCalls.godot_icall_1_35(method_bind_33, Object.GetPtr(this), Object.GetPtr(peer));
+            NativeCalls.godot_icall_1_19(method_bind_33, Object.GetPtr(this), Object.GetPtr(peer));
         }
 
         private IntPtr method_bind_34 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_network_server");
@@ -291,7 +291,7 @@ namespace GodotEngine
 
         public int[] get_network_connected_peers()
         {
-            return NativeCalls.godot_icall_0_210(method_bind_36, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_209(method_bind_36, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_37 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_network_unique_id");

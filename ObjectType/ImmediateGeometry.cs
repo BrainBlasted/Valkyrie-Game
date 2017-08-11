@@ -22,7 +22,7 @@ namespace GodotEngine
         /// </summary>
         public void begin(int primitive, Texture texture = null)
         {
-            NativeCalls.godot_icall_2_88(method_bind_0, Object.GetPtr(this), primitive, Object.GetPtr(texture));
+            NativeCalls.godot_icall_2_89(method_bind_0, Object.GetPtr(this), primitive, Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_normal");
@@ -32,7 +32,7 @@ namespace GodotEngine
         /// </summary>
         public void set_normal(Vector3 normal)
         {
-            NativeCalls.godot_icall_1_83(method_bind_1, Object.GetPtr(this), ref normal);
+            NativeCalls.godot_icall_1_84(method_bind_1, Object.GetPtr(this), ref normal);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_tangent");
@@ -42,7 +42,7 @@ namespace GodotEngine
         /// </summary>
         public void set_tangent(Plane tangent)
         {
-            NativeCalls.godot_icall_1_249(method_bind_2, Object.GetPtr(this), ref tangent);
+            NativeCalls.godot_icall_1_247(method_bind_2, Object.GetPtr(this), ref tangent);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_color");
@@ -52,7 +52,7 @@ namespace GodotEngine
         /// </summary>
         public void set_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_3, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_3, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_uv");
@@ -82,7 +82,7 @@ namespace GodotEngine
         /// </summary>
         public void add_vertex(Vector3 pos)
         {
-            NativeCalls.godot_icall_1_83(method_bind_6, Object.GetPtr(this), ref pos);
+            NativeCalls.godot_icall_1_84(method_bind_6, Object.GetPtr(this), ref pos);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_sphere");
@@ -92,7 +92,7 @@ namespace GodotEngine
         /// </summary>
         public void add_sphere(int lats, int lons, float radius, bool add_uv = true)
         {
-            NativeCalls.godot_icall_4_250(method_bind_7, Object.GetPtr(this), lats, lons, radius, add_uv);
+            NativeCalls.godot_icall_4_248(method_bind_7, Object.GetPtr(this), lats, lons, radius, add_uv);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "end");

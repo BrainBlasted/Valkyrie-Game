@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void add_point(float offset, Color color)
         {
-            NativeCalls.godot_icall_2_211(method_bind_0, Object.GetPtr(this), offset, ref color);
+            NativeCalls.godot_icall_2_210(method_bind_0, Object.GetPtr(this), offset, ref color);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_point");
@@ -64,7 +64,7 @@ namespace GodotEngine
         /// </summary>
         public void set_color(int point, Color color)
         {
-            NativeCalls.godot_icall_2_212(method_bind_4, Object.GetPtr(this), point, ref color);
+            NativeCalls.godot_icall_2_211(method_bind_4, Object.GetPtr(this), point, ref color);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_color");
@@ -74,7 +74,7 @@ namespace GodotEngine
         /// </summary>
         public Color get_color(int point)
         {
-            object ret = NativeCalls.godot_icall_1_213(method_bind_5, Object.GetPtr(this), point);
+            object ret = NativeCalls.godot_icall_1_212(method_bind_5, Object.GetPtr(this), point);
             return (Color)ret;
         }
 
@@ -85,7 +85,7 @@ namespace GodotEngine
         /// </summary>
         public Color interpolate(float offset)
         {
-            object ret = NativeCalls.godot_icall_1_214(method_bind_6, Object.GetPtr(this), offset);
+            object ret = NativeCalls.godot_icall_1_213(method_bind_6, Object.GetPtr(this), offset);
             return (Color)ret;
         }
 
@@ -106,7 +106,7 @@ namespace GodotEngine
         /// </summary>
         public void set_offsets(float[] offsets)
         {
-            NativeCalls.godot_icall_1_215(method_bind_8, Object.GetPtr(this), offsets);
+            NativeCalls.godot_icall_1_214(method_bind_8, Object.GetPtr(this), offsets);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_offsets");
@@ -126,7 +126,7 @@ namespace GodotEngine
         /// </summary>
         public void set_colors(Color[] colors)
         {
-            NativeCalls.godot_icall_1_216(method_bind_10, Object.GetPtr(this), colors);
+            NativeCalls.godot_icall_1_215(method_bind_10, Object.GetPtr(this), colors);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_colors");
@@ -136,7 +136,7 @@ namespace GodotEngine
         /// </summary>
         public Color[] get_colors()
         {
-            return NativeCalls.godot_icall_0_217(method_bind_11, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_216(method_bind_11, Object.GetPtr(this));
         }
     }
 }

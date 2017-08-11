@@ -37,7 +37,7 @@ namespace GodotEngine
         /// </summary>
         public void set_value(string section, string key, object value)
         {
-            NativeCalls.godot_icall_3_159(method_bind_0, Object.GetPtr(this), section, key, value);
+            NativeCalls.godot_icall_3_161(method_bind_0, Object.GetPtr(this), section, key, value);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_value");
@@ -47,7 +47,7 @@ namespace GodotEngine
         /// </summary>
         public object get_value(string section, string key, object @default = null)
         {
-            return NativeCalls.godot_icall_3_160(method_bind_1, Object.GetPtr(this), section, key, @default);
+            return NativeCalls.godot_icall_3_162(method_bind_1, Object.GetPtr(this), section, key, @default);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_section");
@@ -57,7 +57,7 @@ namespace GodotEngine
         /// </summary>
         public bool has_section(string section)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_2, Object.GetPtr(this), section);
+            return NativeCalls.godot_icall_1_57(method_bind_2, Object.GetPtr(this), section);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_section_key");
@@ -67,7 +67,7 @@ namespace GodotEngine
         /// </summary>
         public bool has_section_key(string section, string key)
         {
-            return NativeCalls.godot_icall_2_161(method_bind_3, Object.GetPtr(this), section, key);
+            return NativeCalls.godot_icall_2_163(method_bind_3, Object.GetPtr(this), section, key);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_sections");
@@ -77,7 +77,7 @@ namespace GodotEngine
         /// </summary>
         public string[] get_sections()
         {
-            return NativeCalls.godot_icall_0_58(method_bind_4, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_59(method_bind_4, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_section_keys");
@@ -87,14 +87,14 @@ namespace GodotEngine
         /// </summary>
         public string[] get_section_keys(string section)
         {
-            return NativeCalls.godot_icall_1_162(method_bind_5, Object.GetPtr(this), section);
+            return NativeCalls.godot_icall_1_164(method_bind_5, Object.GetPtr(this), section);
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "erase_section");
 
         public void erase_section(string section)
         {
-            NativeCalls.godot_icall_1_34(method_bind_6, Object.GetPtr(this), section);
+            NativeCalls.godot_icall_1_35(method_bind_6, Object.GetPtr(this), section);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "load");
@@ -102,10 +102,9 @@ namespace GodotEngine
         /// <summary>
         /// Load the config file specified as a parameter. The file's contents are parsed and loaded in the ConfigFile object from which the method was called. The return value is one of the OK, FAILED or ERR_* constants listed in [@Global Scope] (if the load was successful, it returns OK).
         /// </summary>
-        public Error load(string path)
+        public int load(string path)
         {
-            int ret = NativeCalls.godot_icall_1_163(method_bind_7, Object.GetPtr(this), path);
-            return (Error)ret;
+            return NativeCalls.godot_icall_1_71(method_bind_7, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "save");
@@ -114,10 +113,9 @@ namespace GodotEngine
         /// Save the contents of the ConfigFile object to the file specified as a parameter. The output file uses an INI-style structure.
         /// The return value is one of the OK, FAILED or ERR_* constants listed in [@Global Scope] (if the save was successful, it returns OK).
         /// </summary>
-        public Error save(string path)
+        public int save(string path)
         {
-            int ret = NativeCalls.godot_icall_1_163(method_bind_8, Object.GetPtr(this), path);
-            return (Error)ret;
+            return NativeCalls.godot_icall_1_71(method_bind_8, Object.GetPtr(this), path);
         }
     }
 }

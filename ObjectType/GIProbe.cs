@@ -23,14 +23,14 @@ namespace GodotEngine
 
         public void set_probe_data(GIProbeData data)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(data));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(data));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_probe_data");
 
         public GIProbeData get_probe_data()
         {
-            return NativeCalls.godot_icall_0_206(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_205(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_subdiv");
@@ -51,7 +51,7 @@ namespace GodotEngine
 
         public void set_extents(Vector3 extents)
         {
-            NativeCalls.godot_icall_1_83(method_bind_4, Object.GetPtr(this), ref extents);
+            NativeCalls.godot_icall_1_84(method_bind_4, Object.GetPtr(this), ref extents);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_extents");
@@ -164,7 +164,7 @@ namespace GodotEngine
 
         public void bake(Node from_node = null, bool create_visual_debug = false)
         {
-            NativeCalls.godot_icall_2_207(method_bind_20, Object.GetPtr(this), Object.GetPtr(from_node), create_visual_debug);
+            NativeCalls.godot_icall_2_206(method_bind_20, Object.GetPtr(this), Object.GetPtr(from_node), create_visual_debug);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "debug_bake");

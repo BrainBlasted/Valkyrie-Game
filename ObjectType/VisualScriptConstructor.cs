@@ -33,14 +33,14 @@ namespace GodotEngine
 
         public void set_constructor(Dictionary<object, object> constructor)
         {
-            NativeCalls.godot_icall_1_408(method_bind_2, Object.GetPtr(this), constructor);
+            NativeCalls.godot_icall_1_405(method_bind_2, Object.GetPtr(this), constructor);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_constructor");
 
         public Dictionary<object, object> get_constructor()
         {
-            return NativeCalls.godot_icall_0_234(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_233(method_bind_3, Object.GetPtr(this));
         }
     }
 }

@@ -21,14 +21,14 @@ namespace GodotEngine
 
         public void set_group_name(string name)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, Object.GetPtr(this), name);
+            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "broadcast");
 
         public void broadcast(string name, object parameters)
         {
-            NativeCalls.godot_icall_2_317(method_bind_1, Object.GetPtr(this), name, parameters);
+            NativeCalls.godot_icall_2_315(method_bind_1, Object.GetPtr(this), name, parameters);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_dispatch_mode");
@@ -42,7 +42,7 @@ namespace GodotEngine
 
         public void set_grid_radius(Vector3 radius)
         {
-            NativeCalls.godot_icall_1_83(method_bind_3, Object.GetPtr(this), ref radius);
+            NativeCalls.godot_icall_1_84(method_bind_3, Object.GetPtr(this), ref radius);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_grid_radius");

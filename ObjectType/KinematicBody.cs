@@ -36,7 +36,7 @@ namespace GodotEngine
         /// </summary>
         public Dictionary<object, object> move(Vector3 rel_vec)
         {
-            return NativeCalls.godot_icall_1_267(method_bind_0, Object.GetPtr(this), ref rel_vec);
+            return NativeCalls.godot_icall_1_265(method_bind_0, Object.GetPtr(this), ref rel_vec);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "move_and_slide");
@@ -44,7 +44,7 @@ namespace GodotEngine
         public Vector3 move_and_slide(Vector3 linear_velocity, Nullable<Vector3> floor_normal = null, float slope_stop_min_velocity = 0.05f, int max_bounces = 4, float floor_max_angle = 0.785398f)
         {
             Vector3 floor_normal_in = floor_normal.HasValue ? floor_normal.Value : new Vector3(0, 0, 0);
-            object ret = NativeCalls.godot_icall_5_268(method_bind_1, Object.GetPtr(this), ref linear_velocity, ref floor_normal_in, slope_stop_min_velocity, max_bounces, floor_max_angle);
+            object ret = NativeCalls.godot_icall_5_266(method_bind_1, Object.GetPtr(this), ref linear_velocity, ref floor_normal_in, slope_stop_min_velocity, max_bounces, floor_max_angle);
             return (Vector3)ret;
         }
 
@@ -52,7 +52,7 @@ namespace GodotEngine
 
         public bool test_move(Transform from, Vector3 rel_vec)
         {
-            return NativeCalls.godot_icall_2_269(method_bind_2, Object.GetPtr(this), ref from, ref rel_vec);
+            return NativeCalls.godot_icall_2_267(method_bind_2, Object.GetPtr(this), ref from, ref rel_vec);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_on_floor");
@@ -141,14 +141,14 @@ namespace GodotEngine
 
         public Object get_collision_local_shape(int collision)
         {
-            return NativeCalls.godot_icall_1_148(method_bind_14, Object.GetPtr(this), collision);
+            return NativeCalls.godot_icall_1_149(method_bind_14, Object.GetPtr(this), collision);
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_collision_collider");
 
         public Object get_collision_collider(int collision)
         {
-            return NativeCalls.godot_icall_1_148(method_bind_15, Object.GetPtr(this), collision);
+            return NativeCalls.godot_icall_1_149(method_bind_15, Object.GetPtr(this), collision);
         }
 
         private IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_collision_collider_id");
@@ -162,7 +162,7 @@ namespace GodotEngine
 
         public Object get_collision_collider_shape(int collision)
         {
-            return NativeCalls.godot_icall_1_148(method_bind_17, Object.GetPtr(this), collision);
+            return NativeCalls.godot_icall_1_149(method_bind_17, Object.GetPtr(this), collision);
         }
 
         private IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_collision_collider_shape_index");
@@ -182,9 +182,9 @@ namespace GodotEngine
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_collision_collider_metadata");
 
-        public void get_collision_collider_metadata(int collision)
+        public object get_collision_collider_metadata(int collision)
         {
-            NativeCalls.godot_icall_1_0(method_bind_20, Object.GetPtr(this), collision);
+            return NativeCalls.godot_icall_1_262(method_bind_20, Object.GetPtr(this), collision);
         }
     }
 }

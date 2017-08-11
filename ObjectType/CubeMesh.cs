@@ -18,7 +18,7 @@ namespace GodotEngine
 
         public void set_size(Vector3 size)
         {
-            NativeCalls.godot_icall_1_83(method_bind_0, Object.GetPtr(this), ref size);
+            NativeCalls.godot_icall_1_84(method_bind_0, Object.GetPtr(this), ref size);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_size");

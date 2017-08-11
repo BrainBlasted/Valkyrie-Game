@@ -61,21 +61,21 @@ namespace GodotEngine
         /// </summary>
         public static bool is_action_pressed(string action)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_3, ptr, action);
+            return NativeCalls.godot_icall_1_57(method_bind_3, ptr, action);
         }
 
         private static IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_action_just_pressed");
 
         public static bool is_action_just_pressed(string action)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_4, ptr, action);
+            return NativeCalls.godot_icall_1_57(method_bind_4, ptr, action);
         }
 
         private static IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_action_just_released");
 
         public static bool is_action_just_released(string action)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_5, ptr, action);
+            return NativeCalls.godot_icall_1_57(method_bind_5, ptr, action);
         }
 
         private static IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_joy_mapping");
@@ -85,7 +85,7 @@ namespace GodotEngine
         /// </summary>
         public static void add_joy_mapping(string mapping, bool update_existing = false)
         {
-            NativeCalls.godot_icall_2_75(method_bind_6, ptr, mapping, update_existing);
+            NativeCalls.godot_icall_2_76(method_bind_6, ptr, mapping, update_existing);
         }
 
         private static IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_joy_mapping");
@@ -95,7 +95,7 @@ namespace GodotEngine
         /// </summary>
         public static void remove_joy_mapping(string guid)
         {
-            NativeCalls.godot_icall_1_34(method_bind_7, ptr, guid);
+            NativeCalls.godot_icall_1_35(method_bind_7, ptr, guid);
         }
 
         private static IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_joy_known");
@@ -125,7 +125,7 @@ namespace GodotEngine
         /// </summary>
         public static string get_joy_name(int device)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_10, ptr, device);
+            return NativeCalls.godot_icall_1_87(method_bind_10, ptr, device);
         }
 
         private static IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_joy_guid");
@@ -135,7 +135,7 @@ namespace GodotEngine
         /// </summary>
         public static string get_joy_guid(int device)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_11, ptr, device);
+            return NativeCalls.godot_icall_1_87(method_bind_11, ptr, device);
         }
 
         private static IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_connected_joypads");
@@ -145,7 +145,7 @@ namespace GodotEngine
         /// </summary>
         public static object[] get_connected_joypads()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_12, ptr);
+            return NativeCalls.godot_icall_0_85(method_bind_12, ptr);
         }
 
         private static IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_joy_vibration_strength");
@@ -173,28 +173,28 @@ namespace GodotEngine
 
         public static string get_joy_button_string(int button_index)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_15, ptr, button_index);
+            return NativeCalls.godot_icall_1_87(method_bind_15, ptr, button_index);
         }
 
         private static IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_joy_button_index_from_string");
 
         public static int get_joy_button_index_from_string(string button)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_16, ptr, button);
+            return NativeCalls.godot_icall_1_71(method_bind_16, ptr, button);
         }
 
         private static IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_joy_axis_string");
 
         public static string get_joy_axis_string(int axis_index)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_17, ptr, axis_index);
+            return NativeCalls.godot_icall_1_87(method_bind_17, ptr, axis_index);
         }
 
         private static IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_joy_axis_index_from_string");
 
         public static int get_joy_axis_index_from_string(string axis)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_18, ptr, axis);
+            return NativeCalls.godot_icall_1_71(method_bind_18, ptr, axis);
         }
 
         private static IntPtr method_bind_19 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "start_joy_vibration");
@@ -205,7 +205,7 @@ namespace GodotEngine
         /// </summary>
         public static void start_joy_vibration(int device, float weak_magnitude, float strong_magnitude, float duration = 0)
         {
-            NativeCalls.godot_icall_4_251(method_bind_19, ptr, device, weak_magnitude, strong_magnitude, duration);
+            NativeCalls.godot_icall_4_249(method_bind_19, ptr, device, weak_magnitude, strong_magnitude, duration);
         }
 
         private static IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "stop_joy_vibration");
@@ -317,7 +317,7 @@ namespace GodotEngine
         /// </summary>
         public static void action_press(string action)
         {
-            NativeCalls.godot_icall_1_34(method_bind_30, ptr, action);
+            NativeCalls.godot_icall_1_35(method_bind_30, ptr, action);
         }
 
         private static IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "action_release");
@@ -327,26 +327,22 @@ namespace GodotEngine
         /// </summary>
         public static void action_release(string action)
         {
-            NativeCalls.godot_icall_1_34(method_bind_31, ptr, action);
+            NativeCalls.godot_icall_1_35(method_bind_31, ptr, action);
         }
 
         private static IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_custom_mouse_cursor");
 
-        /// <summary>
-        /// Set a custom mouse cursor image, which is only visible inside the game window. The hotspot can also be specified.
-        /// <param name="hotspot">If the param is null, then the default value is new Vector2(0, 0)</param>
-        /// </summary>
-        public static void set_custom_mouse_cursor(Texture image, Nullable<Vector2> hotspot = null)
+        public static void set_custom_mouse_cursor(Resource image, Nullable<Vector2> hotspot = null)
         {
             Vector2 hotspot_in = hotspot.HasValue ? hotspot.Value : new Vector2(0, 0);
-            NativeCalls.godot_icall_2_252(method_bind_32, ptr, Object.GetPtr(image), ref hotspot_in);
+            NativeCalls.godot_icall_2_250(method_bind_32, ptr, Object.GetPtr(image), ref hotspot_in);
         }
 
         private static IntPtr method_bind_33 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "parse_input_event");
 
         public static void parse_input_event(InputEvent @event)
         {
-            NativeCalls.godot_icall_1_35(method_bind_33, ptr, Object.GetPtr(@event));
+            NativeCalls.godot_icall_1_19(method_bind_33, ptr, Object.GetPtr(@event));
         }
     }
 }

@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_aabb(Rect3 rect)
         {
-            NativeCalls.godot_icall_1_90(method_bind_0, Object.GetPtr(this), ref rect);
+            NativeCalls.godot_icall_1_91(method_bind_0, Object.GetPtr(this), ref rect);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_aabb");
@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public Rect3 get_aabb()
         {
-            object ret = NativeCalls.godot_icall_0_91(method_bind_1, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_92(method_bind_1, Object.GetPtr(this));
             return (Rect3)ret;
         }
 

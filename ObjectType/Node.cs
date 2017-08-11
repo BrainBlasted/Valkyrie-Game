@@ -72,7 +72,7 @@ namespace GodotEngine
         /// </summary>
         public void set_name(string name)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, Object.GetPtr(this), name);
+            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_name");
@@ -93,7 +93,7 @@ namespace GodotEngine
         /// </summary>
         public void add_child(Node node, bool legible_unique_name = false)
         {
-            NativeCalls.godot_icall_2_207(method_bind_2, Object.GetPtr(this), Object.GetPtr(node), legible_unique_name);
+            NativeCalls.godot_icall_2_206(method_bind_2, Object.GetPtr(this), Object.GetPtr(node), legible_unique_name);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_child");
@@ -103,7 +103,7 @@ namespace GodotEngine
         /// </summary>
         public void remove_child(Node node)
         {
-            NativeCalls.godot_icall_1_19(method_bind_3, Object.GetPtr(this), Object.GetPtr(node));
+            NativeCalls.godot_icall_1_34(method_bind_3, Object.GetPtr(this), Object.GetPtr(node));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_child_count");
@@ -123,7 +123,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_children()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_5, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_85(method_bind_5, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_child");
@@ -133,14 +133,14 @@ namespace GodotEngine
         /// </summary>
         public Node get_child(int idx)
         {
-            return NativeCalls.godot_icall_1_306(method_bind_6, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_304(method_bind_6, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_node");
 
         public bool has_node(NodePath path)
         {
-            return NativeCalls.godot_icall_1_307(method_bind_7, Object.GetPtr(this), NodePath.GetPtr(path));
+            return NativeCalls.godot_icall_1_305(method_bind_7, Object.GetPtr(this), NodePath.GetPtr(path));
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_node");
@@ -169,7 +169,7 @@ namespace GodotEngine
         /// </summary>
         public Node get_node(NodePath path)
         {
-            return NativeCalls.godot_icall_1_308(method_bind_8, Object.GetPtr(this), NodePath.GetPtr(path));
+            return NativeCalls.godot_icall_1_306(method_bind_8, Object.GetPtr(this), NodePath.GetPtr(path));
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_parent");
@@ -179,7 +179,7 @@ namespace GodotEngine
         /// </summary>
         public Node get_parent()
         {
-            return NativeCalls.godot_icall_0_309(method_bind_9, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_119(method_bind_9, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "find_node");
@@ -189,21 +189,21 @@ namespace GodotEngine
         /// </summary>
         public Node find_node(string mask, bool recursive = true, bool owned = true)
         {
-            return NativeCalls.godot_icall_3_310(method_bind_10, Object.GetPtr(this), mask, recursive, owned);
+            return NativeCalls.godot_icall_3_307(method_bind_10, Object.GetPtr(this), mask, recursive, owned);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_node_and_resource");
 
         public bool has_node_and_resource(NodePath path)
         {
-            return NativeCalls.godot_icall_1_307(method_bind_11, Object.GetPtr(this), NodePath.GetPtr(path));
+            return NativeCalls.godot_icall_1_305(method_bind_11, Object.GetPtr(this), NodePath.GetPtr(path));
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_node_and_resource");
 
         public object[] get_node_and_resource(NodePath path)
         {
-            return NativeCalls.godot_icall_1_311(method_bind_12, Object.GetPtr(this), NodePath.GetPtr(path));
+            return NativeCalls.godot_icall_1_308(method_bind_12, Object.GetPtr(this), NodePath.GetPtr(path));
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_inside_tree");
@@ -220,7 +220,7 @@ namespace GodotEngine
         /// </summary>
         public bool is_a_parent_of(Node node)
         {
-            return NativeCalls.godot_icall_1_85(method_bind_14, Object.GetPtr(this), Object.GetPtr(node));
+            return NativeCalls.godot_icall_1_86(method_bind_14, Object.GetPtr(this), Object.GetPtr(node));
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_greater_than");
@@ -230,7 +230,7 @@ namespace GodotEngine
         /// </summary>
         public bool is_greater_than(Node node)
         {
-            return NativeCalls.godot_icall_1_85(method_bind_15, Object.GetPtr(this), Object.GetPtr(node));
+            return NativeCalls.godot_icall_1_86(method_bind_15, Object.GetPtr(this), Object.GetPtr(node));
         }
 
         private IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_path");
@@ -240,7 +240,7 @@ namespace GodotEngine
         /// </summary>
         public NodePath get_path()
         {
-            IntPtr ret = NativeCalls.godot_icall_0_65(method_bind_16, Object.GetPtr(this));
+            IntPtr ret = NativeCalls.godot_icall_0_66(method_bind_16, Object.GetPtr(this));
             return new NodePath(ret);
         }
 
@@ -251,7 +251,7 @@ namespace GodotEngine
         /// </summary>
         public NodePath get_path_to(Node node)
         {
-            IntPtr ret = NativeCalls.godot_icall_1_312(method_bind_17, Object.GetPtr(this), Object.GetPtr(node));
+            IntPtr ret = NativeCalls.godot_icall_1_309(method_bind_17, Object.GetPtr(this), Object.GetPtr(node));
             return new NodePath(ret);
         }
 
@@ -262,7 +262,7 @@ namespace GodotEngine
         /// </summary>
         public void add_to_group(string group, bool persistent = false)
         {
-            NativeCalls.godot_icall_2_75(method_bind_18, Object.GetPtr(this), group, persistent);
+            NativeCalls.godot_icall_2_76(method_bind_18, Object.GetPtr(this), group, persistent);
         }
 
         private IntPtr method_bind_19 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_from_group");
@@ -272,14 +272,14 @@ namespace GodotEngine
         /// </summary>
         public void remove_from_group(string group)
         {
-            NativeCalls.godot_icall_1_34(method_bind_19, Object.GetPtr(this), group);
+            NativeCalls.godot_icall_1_35(method_bind_19, Object.GetPtr(this), group);
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_in_group");
 
         public bool is_in_group(string group)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_20, Object.GetPtr(this), group);
+            return NativeCalls.godot_icall_1_57(method_bind_20, Object.GetPtr(this), group);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "move_child");
@@ -289,7 +289,7 @@ namespace GodotEngine
         /// </summary>
         public void move_child(Node child_node, int to_pos)
         {
-            NativeCalls.godot_icall_2_313(method_bind_21, Object.GetPtr(this), Object.GetPtr(child_node), to_pos);
+            NativeCalls.godot_icall_2_310(method_bind_21, Object.GetPtr(this), Object.GetPtr(child_node), to_pos);
         }
 
         private IntPtr method_bind_22 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_groups");
@@ -299,7 +299,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_groups()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_22, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_85(method_bind_22, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "raise");
@@ -319,7 +319,7 @@ namespace GodotEngine
         /// </summary>
         public void set_owner(Node owner)
         {
-            NativeCalls.godot_icall_1_19(method_bind_24, Object.GetPtr(this), Object.GetPtr(owner));
+            NativeCalls.godot_icall_1_34(method_bind_24, Object.GetPtr(this), Object.GetPtr(owner));
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_owner");
@@ -329,7 +329,7 @@ namespace GodotEngine
         /// </summary>
         public Node get_owner()
         {
-            return NativeCalls.godot_icall_0_309(method_bind_25, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_119(method_bind_25, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_and_skip");
@@ -369,7 +369,7 @@ namespace GodotEngine
         /// </summary>
         public void set_filename(string filename)
         {
-            NativeCalls.godot_icall_1_34(method_bind_29, Object.GetPtr(this), filename);
+            NativeCalls.godot_icall_1_35(method_bind_29, Object.GetPtr(this), filename);
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_filename");
@@ -590,7 +590,7 @@ namespace GodotEngine
 
         public SceneTree get_tree()
         {
-            return NativeCalls.godot_icall_0_314(method_bind_55, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_311(method_bind_55, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_56 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "duplicate");
@@ -601,7 +601,7 @@ namespace GodotEngine
         /// </summary>
         public Node duplicate(int flags = 15)
         {
-            return NativeCalls.godot_icall_1_306(method_bind_56, Object.GetPtr(this), flags);
+            return NativeCalls.godot_icall_1_304(method_bind_56, Object.GetPtr(this), flags);
         }
 
         private IntPtr method_bind_57 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "replace_by");
@@ -611,7 +611,7 @@ namespace GodotEngine
         /// </summary>
         public void replace_by(Node node, bool keep_data = false)
         {
-            NativeCalls.godot_icall_2_207(method_bind_57, Object.GetPtr(this), Object.GetPtr(node), keep_data);
+            NativeCalls.godot_icall_2_206(method_bind_57, Object.GetPtr(this), Object.GetPtr(node), keep_data);
         }
 
         private IntPtr method_bind_58 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_scene_instance_load_placeholder");
@@ -632,7 +632,7 @@ namespace GodotEngine
 
         public Viewport get_viewport()
         {
-            return NativeCalls.godot_icall_0_118(method_bind_60, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_312(method_bind_60, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_61 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "queue_free");
@@ -677,7 +677,7 @@ namespace GodotEngine
         /// </summary>
         public void rpc_config(string method, int mode)
         {
-            NativeCalls.godot_icall_2_78(method_bind_66, Object.GetPtr(this), method, mode);
+            NativeCalls.godot_icall_2_79(method_bind_66, Object.GetPtr(this), method, mode);
         }
 
         private IntPtr method_bind_67 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "rset_config");
@@ -687,7 +687,7 @@ namespace GodotEngine
         /// </summary>
         public void rset_config(string property, int mode)
         {
-            NativeCalls.godot_icall_2_78(method_bind_67, Object.GetPtr(this), property, mode);
+            NativeCalls.godot_icall_2_79(method_bind_67, Object.GetPtr(this), property, mode);
         }
 
         private IntPtr method_bind_68 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "rpc");
@@ -695,9 +695,9 @@ namespace GodotEngine
         /// <summary>
         /// Send a remote procedure call request to all peers on the network (and locally), optionally sending additional data as arguments. Call request will be received by nodes with the same [NodePath].
         /// </summary>
-        public void rpc(string method, params object[] @args)
+        public object rpc(string method, params object[] @args)
         {
-            NativeCalls.godot_icall_2_315(method_bind_68, Object.GetPtr(this), method, @args);
+            return NativeCalls.godot_icall_2_313(method_bind_68, Object.GetPtr(this), method, @args);
         }
 
         private IntPtr method_bind_69 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "rpc_unreliable");
@@ -705,9 +705,9 @@ namespace GodotEngine
         /// <summary>
         /// Send a [method rpc] using an unreliable protocol.
         /// </summary>
-        public void rpc_unreliable(string method, params object[] @args)
+        public object rpc_unreliable(string method, params object[] @args)
         {
-            NativeCalls.godot_icall_2_315(method_bind_69, Object.GetPtr(this), method, @args);
+            return NativeCalls.godot_icall_2_313(method_bind_69, Object.GetPtr(this), method, @args);
         }
 
         private IntPtr method_bind_70 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "rpc_id");
@@ -715,9 +715,9 @@ namespace GodotEngine
         /// <summary>
         /// Send a [method rpc] to a specific peer identified by [i]peer_id[/i].
         /// </summary>
-        public void rpc_id(int peer_id, string method, params object[] @args)
+        public object rpc_id(int peer_id, string method, params object[] @args)
         {
-            NativeCalls.godot_icall_3_316(method_bind_70, Object.GetPtr(this), peer_id, method, @args);
+            return NativeCalls.godot_icall_3_314(method_bind_70, Object.GetPtr(this), peer_id, method, @args);
         }
 
         private IntPtr method_bind_71 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "rpc_unreliable_id");
@@ -725,9 +725,9 @@ namespace GodotEngine
         /// <summary>
         /// Send a [method rpc] to a specific peer identified by [i]peer_id[/i] using an unreliable protocol.
         /// </summary>
-        public void rpc_unreliable_id(int peer_id, string method, params object[] @args)
+        public object rpc_unreliable_id(int peer_id, string method, params object[] @args)
         {
-            NativeCalls.godot_icall_3_316(method_bind_71, Object.GetPtr(this), peer_id, method, @args);
+            return NativeCalls.godot_icall_3_314(method_bind_71, Object.GetPtr(this), peer_id, method, @args);
         }
 
         private IntPtr method_bind_72 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "rset");
@@ -737,7 +737,7 @@ namespace GodotEngine
         /// </summary>
         public void rset(string property, object value)
         {
-            NativeCalls.godot_icall_2_317(method_bind_72, Object.GetPtr(this), property, value);
+            NativeCalls.godot_icall_2_315(method_bind_72, Object.GetPtr(this), property, value);
         }
 
         private IntPtr method_bind_73 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "rset_id");
@@ -747,7 +747,7 @@ namespace GodotEngine
         /// </summary>
         public void rset_id(int peer_id, string property, object value)
         {
-            NativeCalls.godot_icall_3_318(method_bind_73, Object.GetPtr(this), peer_id, property, value);
+            NativeCalls.godot_icall_3_316(method_bind_73, Object.GetPtr(this), peer_id, property, value);
         }
 
         private IntPtr method_bind_74 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "rset_unreliable");
@@ -757,7 +757,7 @@ namespace GodotEngine
         /// </summary>
         public void rset_unreliable(string property, object value)
         {
-            NativeCalls.godot_icall_2_317(method_bind_74, Object.GetPtr(this), property, value);
+            NativeCalls.godot_icall_2_315(method_bind_74, Object.GetPtr(this), property, value);
         }
 
         private IntPtr method_bind_75 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "rset_unreliable_id");
@@ -767,7 +767,7 @@ namespace GodotEngine
         /// </summary>
         public void rset_unreliable_id(int peer_id, string property, object value)
         {
-            NativeCalls.godot_icall_3_318(method_bind_75, Object.GetPtr(this), peer_id, property, value);
+            NativeCalls.godot_icall_3_316(method_bind_75, Object.GetPtr(this), peer_id, property, value);
         }
     }
 }

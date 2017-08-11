@@ -112,7 +112,7 @@ namespace GodotEngine
         /// </summary>
         public void set_transform(Transform2D transform)
         {
-            NativeCalls.godot_icall_1_139(method_bind_9, Object.GetPtr(this), ref transform);
+            NativeCalls.godot_icall_1_140(method_bind_9, Object.GetPtr(this), ref transform);
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_transform");
@@ -122,7 +122,7 @@ namespace GodotEngine
         /// </summary>
         public Transform2D get_transform()
         {
-            object ret = NativeCalls.godot_icall_0_140(method_bind_10, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_141(method_bind_10, Object.GetPtr(this));
             return (Transform2D)ret;
         }
 
@@ -195,7 +195,7 @@ namespace GodotEngine
         /// </summary>
         public RID get_contact_collider(int contact_idx)
         {
-            IntPtr ret = NativeCalls.godot_icall_1_341(method_bind_17, Object.GetPtr(this), contact_idx);
+            IntPtr ret = NativeCalls.godot_icall_1_335(method_bind_17, Object.GetPtr(this), contact_idx);
             return new RID(ret);
         }
 
@@ -227,7 +227,7 @@ namespace GodotEngine
         /// </summary>
         public Object get_contact_collider_object(int contact_idx)
         {
-            return NativeCalls.godot_icall_1_148(method_bind_20, Object.GetPtr(this), contact_idx);
+            return NativeCalls.godot_icall_1_149(method_bind_20, Object.GetPtr(this), contact_idx);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_contact_collider_shape");
@@ -247,7 +247,7 @@ namespace GodotEngine
         /// </summary>
         public object get_contact_collider_shape_metadata(int contact_idx)
         {
-            return NativeCalls.godot_icall_1_264(method_bind_22, Object.GetPtr(this), contact_idx);
+            return NativeCalls.godot_icall_1_262(method_bind_22, Object.GetPtr(this), contact_idx);
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_contact_collider_velocity_at_pos");
@@ -288,7 +288,7 @@ namespace GodotEngine
         /// </summary>
         public Physics2DDirectSpaceState get_space_state()
         {
-            return NativeCalls.godot_icall_0_342(method_bind_26, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_336(method_bind_26, Object.GetPtr(this));
         }
     }
 }

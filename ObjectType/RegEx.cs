@@ -57,7 +57,7 @@ namespace GodotEngine
         /// </summary>
         public int compile(string pattern)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_1, Object.GetPtr(this), pattern);
+            return NativeCalls.godot_icall_1_71(method_bind_1, Object.GetPtr(this), pattern);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "search");
@@ -67,7 +67,7 @@ namespace GodotEngine
         /// </summary>
         public RegExMatch search(string text, int start = 0, int end = -1)
         {
-            return NativeCalls.godot_icall_3_410(method_bind_2, Object.GetPtr(this), text, start, end);
+            return NativeCalls.godot_icall_3_407(method_bind_2, Object.GetPtr(this), text, start, end);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "sub");
@@ -77,7 +77,7 @@ namespace GodotEngine
         /// </summary>
         public string sub(string text, string replacement, bool all = false, int start = 0, int end = -1)
         {
-            return NativeCalls.godot_icall_5_411(method_bind_3, Object.GetPtr(this), text, replacement, all, start, end);
+            return NativeCalls.godot_icall_5_408(method_bind_3, Object.GetPtr(this), text, replacement, all, start, end);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_valid");
@@ -117,7 +117,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_names()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_7, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_85(method_bind_7, Object.GetPtr(this));
         }
     }
 }

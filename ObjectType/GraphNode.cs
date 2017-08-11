@@ -28,7 +28,7 @@ namespace GodotEngine
         /// </summary>
         public void set_title(string title)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, Object.GetPtr(this), title);
+            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), title);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_title");
@@ -43,9 +43,9 @@ namespace GodotEngine
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_slot");
 
-        public void set_slot(int idx, bool enable_left, int type_left, Color color_left, bool enable_right, int type_right, Color color_right, Object custom_left = null, Object custom_right = null)
+        public void set_slot(int idx, bool enable_left, int type_left, Color color_left, bool enable_right, int type_right, Color color_right, Texture custom_left = null, Texture custom_right = null)
         {
-            NativeCalls.godot_icall_9_222(method_bind_2, Object.GetPtr(this), idx, enable_left, type_left, ref color_left, enable_right, type_right, ref color_right, Object.GetPtr(custom_left), Object.GetPtr(custom_right));
+            NativeCalls.godot_icall_9_221(method_bind_2, Object.GetPtr(this), idx, enable_left, type_left, ref color_left, enable_right, type_right, ref color_right, Object.GetPtr(custom_left), Object.GetPtr(custom_right));
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_slot");
@@ -95,7 +95,7 @@ namespace GodotEngine
         /// </summary>
         public Color get_slot_color_left(int idx)
         {
-            object ret = NativeCalls.godot_icall_1_213(method_bind_7, Object.GetPtr(this), idx);
+            object ret = NativeCalls.godot_icall_1_212(method_bind_7, Object.GetPtr(this), idx);
             return (Color)ret;
         }
 
@@ -126,7 +126,7 @@ namespace GodotEngine
         /// </summary>
         public Color get_slot_color_right(int idx)
         {
-            object ret = NativeCalls.godot_icall_1_213(method_bind_10, Object.GetPtr(this), idx);
+            object ret = NativeCalls.godot_icall_1_212(method_bind_10, Object.GetPtr(this), idx);
             return (Color)ret;
         }
 
@@ -241,7 +241,7 @@ namespace GodotEngine
         /// </summary>
         public Color get_connection_output_color(int idx)
         {
-            object ret = NativeCalls.godot_icall_1_213(method_bind_23, Object.GetPtr(this), idx);
+            object ret = NativeCalls.godot_icall_1_212(method_bind_23, Object.GetPtr(this), idx);
             return (Color)ret;
         }
 
@@ -273,7 +273,7 @@ namespace GodotEngine
         /// </summary>
         public Color get_connection_input_color(int idx)
         {
-            object ret = NativeCalls.godot_icall_1_213(method_bind_26, Object.GetPtr(this), idx);
+            object ret = NativeCalls.godot_icall_1_212(method_bind_26, Object.GetPtr(this), idx);
             return (Color)ret;
         }
 

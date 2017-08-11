@@ -102,7 +102,7 @@ namespace GodotEngine
 
         public void set_sidechain(string sidechain)
         {
-            NativeCalls.godot_icall_1_34(method_bind_12, Object.GetPtr(this), sidechain);
+            NativeCalls.godot_icall_1_35(method_bind_12, Object.GetPtr(this), sidechain);
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_sidechain");

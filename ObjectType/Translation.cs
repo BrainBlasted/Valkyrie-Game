@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_locale(string locale)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, Object.GetPtr(this), locale);
+            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), locale);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_locale");
@@ -44,7 +44,7 @@ namespace GodotEngine
         /// </summary>
         public void add_message(string src_message, string xlated_message)
         {
-            NativeCalls.godot_icall_2_55(method_bind_2, Object.GetPtr(this), src_message, xlated_message);
+            NativeCalls.godot_icall_2_56(method_bind_2, Object.GetPtr(this), src_message, xlated_message);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_message");
@@ -54,7 +54,7 @@ namespace GodotEngine
         /// </summary>
         public string get_message(string src_message)
         {
-            return NativeCalls.godot_icall_1_59(method_bind_3, Object.GetPtr(this), src_message);
+            return NativeCalls.godot_icall_1_60(method_bind_3, Object.GetPtr(this), src_message);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "erase_message");
@@ -64,7 +64,7 @@ namespace GodotEngine
         /// </summary>
         public void erase_message(string src_message)
         {
-            NativeCalls.godot_icall_1_34(method_bind_4, Object.GetPtr(this), src_message);
+            NativeCalls.godot_icall_1_35(method_bind_4, Object.GetPtr(this), src_message);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_message_list");
@@ -74,7 +74,7 @@ namespace GodotEngine
         /// </summary>
         public string[] get_message_list()
         {
-            return NativeCalls.godot_icall_0_58(method_bind_5, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_59(method_bind_5, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_message_count");

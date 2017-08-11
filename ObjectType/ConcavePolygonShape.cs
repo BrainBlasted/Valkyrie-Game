@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_faces(Vector3[] faces)
         {
-            NativeCalls.godot_icall_1_157(method_bind_0, Object.GetPtr(this), faces);
+            NativeCalls.godot_icall_1_159(method_bind_0, Object.GetPtr(this), faces);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_faces");
@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public Vector3[] get_faces()
         {
-            return NativeCalls.godot_icall_0_158(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_160(method_bind_1, Object.GetPtr(this));
         }
     }
 }

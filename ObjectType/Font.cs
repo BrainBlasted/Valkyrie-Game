@@ -69,7 +69,7 @@ namespace GodotEngine
         /// </summary>
         public Vector2 get_string_size(string @string)
         {
-            object ret = NativeCalls.godot_icall_1_77(method_bind_5, Object.GetPtr(this), @string);
+            object ret = NativeCalls.godot_icall_1_78(method_bind_5, Object.GetPtr(this), @string);
             return (Vector2)ret;
         }
 

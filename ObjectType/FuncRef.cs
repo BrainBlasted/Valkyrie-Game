@@ -22,7 +22,7 @@ namespace GodotEngine
 
         public object call_func(params object[] @args)
         {
-            return NativeCalls.godot_icall_1_201(method_bind_0, Object.GetPtr(this), @args);
+            return NativeCalls.godot_icall_1_113(method_bind_0, Object.GetPtr(this), @args);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_instance");
@@ -32,7 +32,7 @@ namespace GodotEngine
         /// </summary>
         public void set_instance(Object instance)
         {
-            NativeCalls.godot_icall_1_19(method_bind_1, Object.GetPtr(this), Object.GetPtr(instance));
+            NativeCalls.godot_icall_1_34(method_bind_1, Object.GetPtr(this), Object.GetPtr(instance));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_function");
@@ -42,7 +42,7 @@ namespace GodotEngine
         /// </summary>
         public void set_function(string name)
         {
-            NativeCalls.godot_icall_1_34(method_bind_2, Object.GetPtr(this), name);
+            NativeCalls.godot_icall_1_35(method_bind_2, Object.GetPtr(this), name);
         }
     }
 }

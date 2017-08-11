@@ -22,7 +22,7 @@ namespace GodotEngine
 
         public void set_icon(string name, string type, Texture texture)
         {
-            NativeCalls.godot_icall_3_467(method_bind_0, Object.GetPtr(this), name, type, Object.GetPtr(texture));
+            NativeCalls.godot_icall_3_463(method_bind_0, Object.GetPtr(this), name, type, Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_icon");
@@ -36,28 +36,28 @@ namespace GodotEngine
 
         public bool has_icon(string name, string type)
         {
-            return NativeCalls.godot_icall_2_161(method_bind_2, Object.GetPtr(this), name, type);
+            return NativeCalls.godot_icall_2_163(method_bind_2, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_icon");
 
         public void clear_icon(string name, string type)
         {
-            NativeCalls.godot_icall_2_55(method_bind_3, Object.GetPtr(this), name, type);
+            NativeCalls.godot_icall_2_56(method_bind_3, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_icon_list");
 
         public string[] get_icon_list(string type)
         {
-            return NativeCalls.godot_icall_1_162(method_bind_4, Object.GetPtr(this), type);
+            return NativeCalls.godot_icall_1_164(method_bind_4, Object.GetPtr(this), type);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_stylebox");
 
         public void set_stylebox(string name, string type, StyleBox texture)
         {
-            NativeCalls.godot_icall_3_467(method_bind_5, Object.GetPtr(this), name, type, Object.GetPtr(texture));
+            NativeCalls.godot_icall_3_463(method_bind_5, Object.GetPtr(this), name, type, Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_stylebox");
@@ -71,35 +71,35 @@ namespace GodotEngine
 
         public bool has_stylebox(string name, string type)
         {
-            return NativeCalls.godot_icall_2_161(method_bind_7, Object.GetPtr(this), name, type);
+            return NativeCalls.godot_icall_2_163(method_bind_7, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_stylebox");
 
         public void clear_stylebox(string name, string type)
         {
-            NativeCalls.godot_icall_2_55(method_bind_8, Object.GetPtr(this), name, type);
+            NativeCalls.godot_icall_2_56(method_bind_8, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_stylebox_list");
 
         public string[] get_stylebox_list(string type)
         {
-            return NativeCalls.godot_icall_1_162(method_bind_9, Object.GetPtr(this), type);
+            return NativeCalls.godot_icall_1_164(method_bind_9, Object.GetPtr(this), type);
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_stylebox_types");
 
         public string[] get_stylebox_types()
         {
-            return NativeCalls.godot_icall_0_58(method_bind_10, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_59(method_bind_10, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_font");
 
         public void set_font(string name, string type, Font font)
         {
-            NativeCalls.godot_icall_3_467(method_bind_11, Object.GetPtr(this), name, type, Object.GetPtr(font));
+            NativeCalls.godot_icall_3_463(method_bind_11, Object.GetPtr(this), name, type, Object.GetPtr(font));
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_font");
@@ -113,28 +113,28 @@ namespace GodotEngine
 
         public bool has_font(string name, string type)
         {
-            return NativeCalls.godot_icall_2_161(method_bind_13, Object.GetPtr(this), name, type);
+            return NativeCalls.godot_icall_2_163(method_bind_13, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_font");
 
         public void clear_font(string name, string type)
         {
-            NativeCalls.godot_icall_2_55(method_bind_14, Object.GetPtr(this), name, type);
+            NativeCalls.godot_icall_2_56(method_bind_14, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_font_list");
 
         public string[] get_font_list(string type)
         {
-            return NativeCalls.godot_icall_1_162(method_bind_15, Object.GetPtr(this), type);
+            return NativeCalls.godot_icall_1_164(method_bind_15, Object.GetPtr(this), type);
         }
 
         private IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_color");
 
         public void set_color(string name, string type, Color color)
         {
-            NativeCalls.godot_icall_3_468(method_bind_16, Object.GetPtr(this), name, type, ref color);
+            NativeCalls.godot_icall_3_464(method_bind_16, Object.GetPtr(this), name, type, ref color);
         }
 
         private IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_color");
@@ -149,77 +149,77 @@ namespace GodotEngine
 
         public bool has_color(string name, string type)
         {
-            return NativeCalls.godot_icall_2_161(method_bind_18, Object.GetPtr(this), name, type);
+            return NativeCalls.godot_icall_2_163(method_bind_18, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_19 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_color");
 
         public void clear_color(string name, string type)
         {
-            NativeCalls.godot_icall_2_55(method_bind_19, Object.GetPtr(this), name, type);
+            NativeCalls.godot_icall_2_56(method_bind_19, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_color_list");
 
         public string[] get_color_list(string type)
         {
-            return NativeCalls.godot_icall_1_162(method_bind_20, Object.GetPtr(this), type);
+            return NativeCalls.godot_icall_1_164(method_bind_20, Object.GetPtr(this), type);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_constant");
 
         public void set_constant(string name, string type, int constant)
         {
-            NativeCalls.godot_icall_3_403(method_bind_21, Object.GetPtr(this), name, type, constant);
+            NativeCalls.godot_icall_3_400(method_bind_21, Object.GetPtr(this), name, type, constant);
         }
 
         private IntPtr method_bind_22 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_constant");
 
         public int get_constant(string name, string type)
         {
-            return NativeCalls.godot_icall_2_69(method_bind_22, Object.GetPtr(this), name, type);
+            return NativeCalls.godot_icall_2_70(method_bind_22, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_constant");
 
         public bool has_constant(string name, string type)
         {
-            return NativeCalls.godot_icall_2_161(method_bind_23, Object.GetPtr(this), name, type);
+            return NativeCalls.godot_icall_2_163(method_bind_23, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_constant");
 
         public void clear_constant(string name, string type)
         {
-            NativeCalls.godot_icall_2_55(method_bind_24, Object.GetPtr(this), name, type);
+            NativeCalls.godot_icall_2_56(method_bind_24, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_constant_list");
 
         public string[] get_constant_list(string type)
         {
-            return NativeCalls.godot_icall_1_162(method_bind_25, Object.GetPtr(this), type);
+            return NativeCalls.godot_icall_1_164(method_bind_25, Object.GetPtr(this), type);
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_default_font");
 
         public void set_default_font(Font font)
         {
-            NativeCalls.godot_icall_1_35(method_bind_26, Object.GetPtr(this), Object.GetPtr(font));
+            NativeCalls.godot_icall_1_19(method_bind_26, Object.GetPtr(this), Object.GetPtr(font));
         }
 
         private IntPtr method_bind_27 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_default_font");
 
         public Font get_default_font()
         {
-            return NativeCalls.godot_icall_0_469(method_bind_27, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_465(method_bind_27, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_28 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_type_list");
 
         public string[] get_type_list(string type)
         {
-            return NativeCalls.godot_icall_1_162(method_bind_28, Object.GetPtr(this), type);
+            return NativeCalls.godot_icall_1_164(method_bind_28, Object.GetPtr(this), type);
         }
 
         private IntPtr method_bind_29 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "copy_default_theme");

@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_mesh(Mesh mesh)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(mesh));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(mesh));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_mesh");
@@ -34,21 +34,21 @@ namespace GodotEngine
         /// </summary>
         public Mesh get_mesh()
         {
-            return NativeCalls.godot_icall_0_287(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_285(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_skeleton_path");
 
         public void set_skeleton_path(NodePath skeleton_path)
         {
-            NativeCalls.godot_icall_1_64(method_bind_2, Object.GetPtr(this), NodePath.GetPtr(skeleton_path));
+            NativeCalls.godot_icall_1_65(method_bind_2, Object.GetPtr(this), NodePath.GetPtr(skeleton_path));
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_skeleton_path");
 
         public NodePath get_skeleton_path()
         {
-            IntPtr ret = NativeCalls.godot_icall_0_65(method_bind_3, Object.GetPtr(this));
+            IntPtr ret = NativeCalls.godot_icall_0_66(method_bind_3, Object.GetPtr(this));
             return new NodePath(ret);
         }
 
@@ -56,14 +56,14 @@ namespace GodotEngine
 
         public void set_surface_material(int surface, Material material)
         {
-            NativeCalls.godot_icall_2_88(method_bind_4, Object.GetPtr(this), surface, Object.GetPtr(material));
+            NativeCalls.godot_icall_2_89(method_bind_4, Object.GetPtr(this), surface, Object.GetPtr(material));
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_surface_material");
 
         public Material get_surface_material(int surface)
         {
-            return NativeCalls.godot_icall_1_89(method_bind_5, Object.GetPtr(this), surface);
+            return NativeCalls.godot_icall_1_90(method_bind_5, Object.GetPtr(this), surface);
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "create_trimesh_collision");

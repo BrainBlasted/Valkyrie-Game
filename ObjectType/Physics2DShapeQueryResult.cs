@@ -21,7 +21,7 @@ namespace GodotEngine
 
         public RID get_result_rid(int idx)
         {
-            IntPtr ret = NativeCalls.godot_icall_1_341(method_bind_1, Object.GetPtr(this), idx);
+            IntPtr ret = NativeCalls.godot_icall_1_335(method_bind_1, Object.GetPtr(this), idx);
             return new RID(ret);
         }
 
@@ -36,7 +36,7 @@ namespace GodotEngine
 
         public Object get_result_object(int idx)
         {
-            return NativeCalls.godot_icall_1_148(method_bind_3, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_149(method_bind_3, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_result_object_shape");

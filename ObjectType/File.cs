@@ -68,7 +68,7 @@ namespace GodotEngine
         /// </summary>
         public int open_encrypted(string path, int mode_flags, byte[] key)
         {
-            return NativeCalls.godot_icall_3_530(method_bind_0, Object.GetPtr(this), path, mode_flags, key);
+            return NativeCalls.godot_icall_3_525(method_bind_0, Object.GetPtr(this), path, mode_flags, key);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "open_encrypted_with_pass");
@@ -78,7 +78,7 @@ namespace GodotEngine
         /// </summary>
         public int open_encrypted_with_pass(string path, int mode_flags, string pass)
         {
-            return NativeCalls.godot_icall_3_531(method_bind_1, Object.GetPtr(this), path, mode_flags, pass);
+            return NativeCalls.godot_icall_3_526(method_bind_1, Object.GetPtr(this), path, mode_flags, pass);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "open_compressed");
@@ -88,7 +88,7 @@ namespace GodotEngine
         /// </summary>
         public int open_compressed(string path, int mode_flags, int compression_mode = 0)
         {
-            return NativeCalls.godot_icall_3_532(method_bind_2, Object.GetPtr(this), path, mode_flags, compression_mode);
+            return NativeCalls.godot_icall_3_527(method_bind_2, Object.GetPtr(this), path, mode_flags, compression_mode);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "open");
@@ -98,7 +98,7 @@ namespace GodotEngine
         /// </summary>
         public int open(string path, int flags)
         {
-            return NativeCalls.godot_icall_2_238(method_bind_3, Object.GetPtr(this), path, flags);
+            return NativeCalls.godot_icall_2_236(method_bind_3, Object.GetPtr(this), path, flags);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "close");
@@ -248,7 +248,7 @@ namespace GodotEngine
         /// </summary>
         public byte[] get_buffer(int len)
         {
-            return NativeCalls.godot_icall_1_533(method_bind_18, Object.GetPtr(this), len);
+            return NativeCalls.godot_icall_1_528(method_bind_18, Object.GetPtr(this), len);
         }
 
         private IntPtr method_bind_19 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_line");
@@ -278,7 +278,7 @@ namespace GodotEngine
         /// </summary>
         public string get_md5(string path)
         {
-            return NativeCalls.godot_icall_1_59(method_bind_21, Object.GetPtr(this), path);
+            return NativeCalls.godot_icall_1_60(method_bind_21, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_22 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_sha256");
@@ -288,7 +288,7 @@ namespace GodotEngine
         /// </summary>
         public string get_sha256(string path)
         {
-            return NativeCalls.godot_icall_1_59(method_bind_22, Object.GetPtr(this), path);
+            return NativeCalls.godot_icall_1_60(method_bind_22, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_endian_swap");
@@ -317,10 +317,9 @@ namespace GodotEngine
         /// <summary>
         /// Get the last error that happened when trying to perform operations. Compare with the [code]ERR_FILE_*[/code] constants from [@Global Scope].
         /// </summary>
-        public Error get_error()
+        public int get_error()
         {
-            int ret = NativeCalls.godot_icall_0_235(method_bind_25, Object.GetPtr(this));
-            return (Error)ret;
+            return NativeCalls.godot_icall_0_1(method_bind_25, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_var");
@@ -328,9 +327,9 @@ namespace GodotEngine
         /// <summary>
         /// Get the next Variant value from the file.
         /// </summary>
-        public void get_var()
+        public object get_var()
         {
-            NativeCalls.godot_icall_0_8(method_bind_26, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_121(method_bind_26, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_27 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_csv_line");
@@ -340,7 +339,7 @@ namespace GodotEngine
         /// </summary>
         public string[] get_csv_line(string delim = ",")
         {
-            return NativeCalls.godot_icall_1_162(method_bind_27, Object.GetPtr(this), delim);
+            return NativeCalls.godot_icall_1_164(method_bind_27, Object.GetPtr(this), delim);
         }
 
         private IntPtr method_bind_28 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "store_8");
@@ -420,7 +419,7 @@ namespace GodotEngine
         /// </summary>
         public void store_buffer(byte[] buffer)
         {
-            NativeCalls.godot_icall_1_99(method_bind_35, Object.GetPtr(this), buffer);
+            NativeCalls.godot_icall_1_100(method_bind_35, Object.GetPtr(this), buffer);
         }
 
         private IntPtr method_bind_36 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "store_line");
@@ -430,7 +429,7 @@ namespace GodotEngine
         /// </summary>
         public void store_line(string line)
         {
-            NativeCalls.godot_icall_1_34(method_bind_36, Object.GetPtr(this), line);
+            NativeCalls.godot_icall_1_35(method_bind_36, Object.GetPtr(this), line);
         }
 
         private IntPtr method_bind_37 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "store_string");
@@ -440,7 +439,7 @@ namespace GodotEngine
         /// </summary>
         public void store_string(string @string)
         {
-            NativeCalls.godot_icall_1_34(method_bind_37, Object.GetPtr(this), @string);
+            NativeCalls.godot_icall_1_35(method_bind_37, Object.GetPtr(this), @string);
         }
 
         private IntPtr method_bind_38 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "store_var");
@@ -450,7 +449,7 @@ namespace GodotEngine
         /// </summary>
         public void store_var(object value)
         {
-            NativeCalls.godot_icall_1_119(method_bind_38, Object.GetPtr(this), value);
+            NativeCalls.godot_icall_1_120(method_bind_38, Object.GetPtr(this), value);
         }
 
         private IntPtr method_bind_39 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "store_pascal_string");
@@ -460,7 +459,7 @@ namespace GodotEngine
         /// </summary>
         public void store_pascal_string(string @string)
         {
-            NativeCalls.godot_icall_1_34(method_bind_39, Object.GetPtr(this), @string);
+            NativeCalls.godot_icall_1_35(method_bind_39, Object.GetPtr(this), @string);
         }
 
         private IntPtr method_bind_40 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_pascal_string");
@@ -480,14 +479,14 @@ namespace GodotEngine
         /// </summary>
         public bool file_exists(string path)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_41, Object.GetPtr(this), path);
+            return NativeCalls.godot_icall_1_57(method_bind_41, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_42 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_modified_time");
 
         public int get_modified_time(string file)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_42, Object.GetPtr(this), file);
+            return NativeCalls.godot_icall_1_71(method_bind_42, Object.GetPtr(this), file);
         }
     }
 }

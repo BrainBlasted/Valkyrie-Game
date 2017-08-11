@@ -19,16 +19,16 @@ namespace GodotEngine
 
         private IntPtr method_bind_0 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_room");
 
-        public void set_room(Room room)
+        public void set_room(RoomBounds room)
         {
             NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(room));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_room");
 
-        public Room get_room()
+        public RoomBounds get_room()
         {
-            return NativeCalls.godot_icall_0_419(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_416(method_bind_1, Object.GetPtr(this));
         }
     }
 }

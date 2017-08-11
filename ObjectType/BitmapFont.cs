@@ -18,7 +18,7 @@ namespace GodotEngine
 
         public int create_from_fnt(string path)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_0, Object.GetPtr(this), path);
+            return NativeCalls.godot_icall_1_71(method_bind_0, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_height");
@@ -48,7 +48,7 @@ namespace GodotEngine
         /// </summary>
         public void add_kerning_pair(int char_a, int char_b, int kerning)
         {
-            NativeCalls.godot_icall_3_97(method_bind_3, Object.GetPtr(this), char_a, char_b, kerning);
+            NativeCalls.godot_icall_3_98(method_bind_3, Object.GetPtr(this), char_a, char_b, kerning);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_kerning_pair");
@@ -68,7 +68,7 @@ namespace GodotEngine
         /// </summary>
         public void add_texture(Texture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_5, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_5, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_char");
@@ -80,7 +80,7 @@ namespace GodotEngine
         public void add_char(int character, int texture, Rect2 rect, Nullable<Vector2> align = null, float advance = -1)
         {
             Vector2 align_in = align.HasValue ? align.Value : new Vector2(0, 0);
-            NativeCalls.godot_icall_5_107(method_bind_6, Object.GetPtr(this), character, texture, ref rect, ref align_in, advance);
+            NativeCalls.godot_icall_5_108(method_bind_6, Object.GetPtr(this), character, texture, ref rect, ref align_in, advance);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_texture_count");
@@ -94,7 +94,7 @@ namespace GodotEngine
 
         public Texture get_texture(int idx)
         {
-            return NativeCalls.godot_icall_1_108(method_bind_8, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_109(method_bind_8, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_char_size");
@@ -104,7 +104,7 @@ namespace GodotEngine
         /// </summary>
         public Vector2 get_char_size(int @char, int next = 0)
         {
-            object ret = NativeCalls.godot_icall_2_109(method_bind_9, Object.GetPtr(this), @char, next);
+            object ret = NativeCalls.godot_icall_2_110(method_bind_9, Object.GetPtr(this), @char, next);
             return (Vector2)ret;
         }
 
@@ -129,14 +129,14 @@ namespace GodotEngine
 
         public void set_fallback(BitmapFont fallback)
         {
-            NativeCalls.godot_icall_1_35(method_bind_12, Object.GetPtr(this), Object.GetPtr(fallback));
+            NativeCalls.godot_icall_1_19(method_bind_12, Object.GetPtr(this), Object.GetPtr(fallback));
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_fallback");
 
         public BitmapFont get_fallback()
         {
-            return NativeCalls.godot_icall_0_110(method_bind_13, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_111(method_bind_13, Object.GetPtr(this));
         }
     }
 }

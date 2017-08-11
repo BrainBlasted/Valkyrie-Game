@@ -25,21 +25,21 @@ namespace GodotEngine
 
         public string get_node_type(int idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_1, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_87(method_bind_1, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_node_name");
 
         public string get_node_name(int idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_2, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_87(method_bind_2, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_node_path");
 
         public NodePath get_node_path(int idx, bool for_parent = false)
         {
-            IntPtr ret = NativeCalls.godot_icall_2_420(method_bind_3, Object.GetPtr(this), idx, for_parent);
+            IntPtr ret = NativeCalls.godot_icall_2_417(method_bind_3, Object.GetPtr(this), idx, for_parent);
             return new NodePath(ret);
         }
 
@@ -62,21 +62,21 @@ namespace GodotEngine
 
         public string get_node_instance_placeholder(int idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_6, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_87(method_bind_6, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_node_instance");
 
         public PackedScene get_node_instance(int idx)
         {
-            return NativeCalls.godot_icall_1_421(method_bind_7, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_418(method_bind_7, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_node_groups");
 
         public string[] get_node_groups(int idx)
         {
-            return NativeCalls.godot_icall_1_422(method_bind_8, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_419(method_bind_8, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_node_property_count");
@@ -90,14 +90,14 @@ namespace GodotEngine
 
         public string get_node_property_name(int idx, int prop_idx)
         {
-            return NativeCalls.godot_icall_2_52(method_bind_10, Object.GetPtr(this), idx, prop_idx);
+            return NativeCalls.godot_icall_2_53(method_bind_10, Object.GetPtr(this), idx, prop_idx);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_node_property_value");
 
         public object get_node_property_value(int idx, int prop_idx)
         {
-            return NativeCalls.godot_icall_2_423(method_bind_11, Object.GetPtr(this), idx, prop_idx);
+            return NativeCalls.godot_icall_2_49(method_bind_11, Object.GetPtr(this), idx, prop_idx);
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_connection_count");
@@ -119,7 +119,7 @@ namespace GodotEngine
 
         public string get_connection_signal(int idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_14, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_87(method_bind_14, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_connection_target");
@@ -134,7 +134,7 @@ namespace GodotEngine
 
         public string get_connection_method(int idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_16, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_87(method_bind_16, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_connection_flags");
@@ -148,7 +148,7 @@ namespace GodotEngine
 
         public object[] get_connection_binds(int idx)
         {
-            return NativeCalls.godot_icall_1_424(method_bind_18, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_420(method_bind_18, Object.GetPtr(this), idx);
         }
     }
 }

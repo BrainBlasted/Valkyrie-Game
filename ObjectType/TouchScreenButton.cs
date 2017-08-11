@@ -18,56 +18,56 @@ namespace GodotEngine
 
         public void set_texture(Texture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_texture");
 
         public Texture get_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_texture_pressed");
 
         public void set_texture_pressed(Texture texture_pressed)
         {
-            NativeCalls.godot_icall_1_35(method_bind_2, Object.GetPtr(this), Object.GetPtr(texture_pressed));
+            NativeCalls.godot_icall_1_19(method_bind_2, Object.GetPtr(this), Object.GetPtr(texture_pressed));
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_texture_pressed");
 
         public Texture get_texture_pressed()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_3, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_bitmask");
 
         public void set_bitmask(BitMap bitmask)
         {
-            NativeCalls.godot_icall_1_35(method_bind_4, Object.GetPtr(this), Object.GetPtr(bitmask));
+            NativeCalls.godot_icall_1_19(method_bind_4, Object.GetPtr(this), Object.GetPtr(bitmask));
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bitmask");
 
         public BitMap get_bitmask()
         {
-            return NativeCalls.godot_icall_0_466(method_bind_5, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_462(method_bind_5, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_shape");
 
         public void set_shape(Shape2D shape)
         {
-            NativeCalls.godot_icall_1_35(method_bind_6, Object.GetPtr(this), Object.GetPtr(shape));
+            NativeCalls.godot_icall_1_19(method_bind_6, Object.GetPtr(this), Object.GetPtr(shape));
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_shape");
 
         public Shape2D get_shape()
         {
-            return NativeCalls.godot_icall_0_155(method_bind_7, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_157(method_bind_7, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_shape_centered");
@@ -102,7 +102,7 @@ namespace GodotEngine
 
         public void set_action(string action)
         {
-            NativeCalls.godot_icall_1_34(method_bind_12, Object.GetPtr(this), action);
+            NativeCalls.godot_icall_1_35(method_bind_12, Object.GetPtr(this), action);
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_action");

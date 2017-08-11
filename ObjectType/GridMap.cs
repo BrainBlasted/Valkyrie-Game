@@ -20,14 +20,14 @@ namespace GodotEngine
 
         public void set_theme(MeshLibrary theme)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(theme));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(theme));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_theme");
 
         public MeshLibrary get_theme()
         {
-            return NativeCalls.godot_icall_0_223(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_222(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_cell_size");
@@ -62,26 +62,26 @@ namespace GodotEngine
 
         public void set_cell_item(int x, int y, int z, int item, int orientation = 0)
         {
-            NativeCalls.godot_icall_5_224(method_bind_6, Object.GetPtr(this), x, y, z, item, orientation);
+            NativeCalls.godot_icall_5_223(method_bind_6, Object.GetPtr(this), x, y, z, item, orientation);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_cell_item");
 
         public int get_cell_item(int x, int y, int z)
         {
-            return NativeCalls.godot_icall_3_225(method_bind_7, Object.GetPtr(this), x, y, z);
+            return NativeCalls.godot_icall_3_224(method_bind_7, Object.GetPtr(this), x, y, z);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_cell_item_orientation");
 
         public int get_cell_item_orientation(int x, int y, int z)
         {
-            return NativeCalls.godot_icall_3_225(method_bind_8, Object.GetPtr(this), x, y, z);
+            return NativeCalls.godot_icall_3_224(method_bind_8, Object.GetPtr(this), x, y, z);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "resource_changed");
 
-        public void resource_changed(Object resource)
+        public void resource_changed(Resource resource)
         {
             NativeCalls.godot_icall_1_19(method_bind_9, Object.GetPtr(this), Object.GetPtr(resource));
         }
@@ -132,21 +132,21 @@ namespace GodotEngine
 
         public void set_clip(bool enabled, bool clipabove = true, int floor = 0, int axis = 0)
         {
-            NativeCalls.godot_icall_4_226(method_bind_16, Object.GetPtr(this), enabled, clipabove, floor, axis);
+            NativeCalls.godot_icall_4_225(method_bind_16, Object.GetPtr(this), enabled, clipabove, floor, axis);
         }
 
         private IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "create_area");
 
         public int create_area(int id, Rect3 area)
         {
-            return NativeCalls.godot_icall_2_227(method_bind_17, Object.GetPtr(this), id, ref area);
+            return NativeCalls.godot_icall_2_226(method_bind_17, Object.GetPtr(this), id, ref area);
         }
 
         private IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_get_bounds");
 
         public Rect3 area_get_bounds(int area)
         {
-            object ret = NativeCalls.godot_icall_1_228(method_bind_18, Object.GetPtr(this), area);
+            object ret = NativeCalls.godot_icall_1_227(method_bind_18, Object.GetPtr(this), area);
             return (Rect3)ret;
         }
 
@@ -161,14 +161,14 @@ namespace GodotEngine
 
         public void area_set_name(int area, string name)
         {
-            NativeCalls.godot_icall_2_68(method_bind_20, Object.GetPtr(this), area, name);
+            NativeCalls.godot_icall_2_69(method_bind_20, Object.GetPtr(this), area, name);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_get_name");
 
         public string area_get_name(int area)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_21, Object.GetPtr(this), area);
+            return NativeCalls.godot_icall_1_87(method_bind_21, Object.GetPtr(this), area);
         }
 
         private IntPtr method_bind_22 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_is_exterior_portal");
@@ -196,14 +196,14 @@ namespace GodotEngine
 
         public void area_set_portal_disable_color(int area, Color color)
         {
-            NativeCalls.godot_icall_2_212(method_bind_25, Object.GetPtr(this), area, ref color);
+            NativeCalls.godot_icall_2_211(method_bind_25, Object.GetPtr(this), area, ref color);
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "area_get_portal_disable_color");
 
         public Color area_get_portal_disable_color(int area)
         {
-            object ret = NativeCalls.godot_icall_1_213(method_bind_26, Object.GetPtr(this), area);
+            object ret = NativeCalls.godot_icall_1_212(method_bind_26, Object.GetPtr(this), area);
             return (Color)ret;
         }
 
@@ -232,7 +232,7 @@ namespace GodotEngine
 
         public object[] get_meshes()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_30, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_85(method_bind_30, Object.GetPtr(this));
         }
     }
 }

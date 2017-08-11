@@ -162,28 +162,28 @@ namespace GodotEngine
 
         public void set_shortcut(ShortCut shortcut)
         {
-            NativeCalls.godot_icall_1_35(method_bind_12, Object.GetPtr(this), Object.GetPtr(shortcut));
+            NativeCalls.godot_icall_1_19(method_bind_12, Object.GetPtr(this), Object.GetPtr(shortcut));
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_shortcut");
 
         public ShortCut get_shortcut()
         {
-            return NativeCalls.godot_icall_0_102(method_bind_13, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_103(method_bind_13, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_button_group");
 
         public void set_button_group(ButtonGroup button_group)
         {
-            NativeCalls.godot_icall_1_35(method_bind_14, Object.GetPtr(this), Object.GetPtr(button_group));
+            NativeCalls.godot_icall_1_19(method_bind_14, Object.GetPtr(this), Object.GetPtr(button_group));
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_button_group");
 
         public ButtonGroup get_button_group()
         {
-            return NativeCalls.godot_icall_0_103(method_bind_15, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_104(method_bind_15, Object.GetPtr(this));
         }
     }
 }

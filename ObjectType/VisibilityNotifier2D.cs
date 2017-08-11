@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_rect(Rect2 rect)
         {
-            NativeCalls.godot_icall_1_93(method_bind_0, Object.GetPtr(this), ref rect);
+            NativeCalls.godot_icall_1_94(method_bind_0, Object.GetPtr(this), ref rect);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_rect");
@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public Rect2 get_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_1, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_1, Object.GetPtr(this));
             return (Rect2)ret;
         }
 

@@ -23,10 +23,7 @@ namespace GodotEngine
 
         private IntPtr method_bind_0 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_material_override");
 
-        /// <summary>
-        /// Set the material override for the whole geometry.
-        /// </summary>
-        public void set_material_override(Object material)
+        public void set_material_override(Material material)
         {
             NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(material));
         }
@@ -36,9 +33,9 @@ namespace GodotEngine
         /// <summary>
         /// Return the material override for the whole geometry.
         /// </summary>
-        public Object get_material_override()
+        public Material get_material_override()
         {
-            return NativeCalls.godot_icall_0_30(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_143(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_flag");

@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_shape(Vector2[] points)
         {
-            NativeCalls.godot_icall_1_152(method_bind_0, Object.GetPtr(this), points);
+            NativeCalls.godot_icall_1_154(method_bind_0, Object.GetPtr(this), points);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_shape");
@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public Vector2[] get_shape()
         {
-            return NativeCalls.godot_icall_0_153(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_155(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_enabled");
@@ -84,7 +84,7 @@ namespace GodotEngine
         /// </summary>
         public void set_disabled_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_6, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_6, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_disabled_color");
@@ -94,7 +94,7 @@ namespace GodotEngine
         /// </summary>
         public Color get_disabled_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_7, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_7, Object.GetPtr(this));
             return (Color)ret;
         }
 

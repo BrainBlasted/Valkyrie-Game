@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public BaseButton get_pressed_button()
         {
-            return NativeCalls.godot_icall_0_111(method_bind_0, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_112(method_bind_0, Object.GetPtr(this));
         }
     }
 }

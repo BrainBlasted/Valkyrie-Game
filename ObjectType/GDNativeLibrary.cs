@@ -18,14 +18,14 @@ namespace GodotEngine
 
         public void set_library_path(string platform, string path)
         {
-            NativeCalls.godot_icall_2_55(method_bind_0, Object.GetPtr(this), platform, path);
+            NativeCalls.godot_icall_2_56(method_bind_0, Object.GetPtr(this), platform, path);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_library_path");
 
         public string get_library_path(string platform)
         {
-            return NativeCalls.godot_icall_1_59(method_bind_1, Object.GetPtr(this), platform);
+            return NativeCalls.godot_icall_1_60(method_bind_1, Object.GetPtr(this), platform);
         }
     }
 }

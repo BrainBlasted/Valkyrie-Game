@@ -33,7 +33,7 @@ namespace GodotEngine
         /// </summary>
         public int add_animation(string name, Animation animation)
         {
-            return NativeCalls.godot_icall_2_54(method_bind_0, Object.GetPtr(this), name, Object.GetPtr(animation));
+            return NativeCalls.godot_icall_2_55(method_bind_0, Object.GetPtr(this), name, Object.GetPtr(animation));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_animation");
@@ -43,7 +43,7 @@ namespace GodotEngine
         /// </summary>
         public void remove_animation(string name)
         {
-            NativeCalls.godot_icall_1_34(method_bind_1, Object.GetPtr(this), name);
+            NativeCalls.godot_icall_1_35(method_bind_1, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "rename_animation");
@@ -53,7 +53,7 @@ namespace GodotEngine
         /// </summary>
         public void rename_animation(string name, string newname)
         {
-            NativeCalls.godot_icall_2_55(method_bind_2, Object.GetPtr(this), name, newname);
+            NativeCalls.godot_icall_2_56(method_bind_2, Object.GetPtr(this), name, newname);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_animation");
@@ -63,7 +63,7 @@ namespace GodotEngine
         /// </summary>
         public bool has_animation(string name)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_3, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_57(method_bind_3, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_animation");
@@ -73,7 +73,7 @@ namespace GodotEngine
         /// </summary>
         public Animation get_animation(string name)
         {
-            return NativeCalls.godot_icall_1_57(method_bind_4, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_58(method_bind_4, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_animation_list");
@@ -83,21 +83,21 @@ namespace GodotEngine
         /// </summary>
         public string[] get_animation_list()
         {
-            return NativeCalls.godot_icall_0_58(method_bind_5, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_59(method_bind_5, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "animation_set_next");
 
         public void animation_set_next(string anim_from, string anim_to)
         {
-            NativeCalls.godot_icall_2_55(method_bind_6, Object.GetPtr(this), anim_from, anim_to);
+            NativeCalls.godot_icall_2_56(method_bind_6, Object.GetPtr(this), anim_from, anim_to);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "animation_get_next");
 
         public string animation_get_next(string anim_from)
         {
-            return NativeCalls.godot_icall_1_59(method_bind_7, Object.GetPtr(this), anim_from);
+            return NativeCalls.godot_icall_1_60(method_bind_7, Object.GetPtr(this), anim_from);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_blend_time");
@@ -107,7 +107,7 @@ namespace GodotEngine
         /// </summary>
         public void set_blend_time(string anim_from, string anim_to, float sec)
         {
-            NativeCalls.godot_icall_3_60(method_bind_8, Object.GetPtr(this), anim_from, anim_to, sec);
+            NativeCalls.godot_icall_3_61(method_bind_8, Object.GetPtr(this), anim_from, anim_to, sec);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_blend_time");
@@ -117,7 +117,7 @@ namespace GodotEngine
         /// </summary>
         public float get_blend_time(string anim_from, string anim_to)
         {
-            return NativeCalls.godot_icall_2_61(method_bind_9, Object.GetPtr(this), anim_from, anim_to);
+            return NativeCalls.godot_icall_2_62(method_bind_9, Object.GetPtr(this), anim_from, anim_to);
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_default_blend_time");
@@ -147,7 +147,7 @@ namespace GodotEngine
         /// </summary>
         public void play(string name = "", float custom_blend = -1, float custom_speed = 1f, bool from_end = false)
         {
-            NativeCalls.godot_icall_4_62(method_bind_12, Object.GetPtr(this), name, custom_blend, custom_speed, from_end);
+            NativeCalls.godot_icall_4_63(method_bind_12, Object.GetPtr(this), name, custom_blend, custom_speed, from_end);
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "play_backwards");
@@ -157,7 +157,7 @@ namespace GodotEngine
         /// </summary>
         public void play_backwards(string name = "", float custom_blend = -1)
         {
-            NativeCalls.godot_icall_2_63(method_bind_13, Object.GetPtr(this), name, custom_blend);
+            NativeCalls.godot_icall_2_64(method_bind_13, Object.GetPtr(this), name, custom_blend);
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "stop");
@@ -197,7 +197,7 @@ namespace GodotEngine
         /// </summary>
         public void set_current_animation(string anim)
         {
-            NativeCalls.godot_icall_1_34(method_bind_17, Object.GetPtr(this), anim);
+            NativeCalls.godot_icall_1_35(method_bind_17, Object.GetPtr(this), anim);
         }
 
         private IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_current_animation");
@@ -217,7 +217,7 @@ namespace GodotEngine
         /// </summary>
         public void queue(string name)
         {
-            NativeCalls.godot_icall_1_34(method_bind_19, Object.GetPtr(this), name);
+            NativeCalls.godot_icall_1_35(method_bind_19, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_queue");
@@ -277,7 +277,7 @@ namespace GodotEngine
         /// </summary>
         public void set_autoplay(string name)
         {
-            NativeCalls.godot_icall_1_34(method_bind_25, Object.GetPtr(this), name);
+            NativeCalls.godot_icall_1_35(method_bind_25, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_autoplay");
@@ -297,7 +297,7 @@ namespace GodotEngine
         /// </summary>
         public void set_root(NodePath path)
         {
-            NativeCalls.godot_icall_1_64(method_bind_27, Object.GetPtr(this), NodePath.GetPtr(path));
+            NativeCalls.godot_icall_1_65(method_bind_27, Object.GetPtr(this), NodePath.GetPtr(path));
         }
 
         private IntPtr method_bind_28 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_root");
@@ -307,7 +307,7 @@ namespace GodotEngine
         /// </summary>
         public NodePath get_root()
         {
-            IntPtr ret = NativeCalls.godot_icall_0_65(method_bind_28, Object.GetPtr(this));
+            IntPtr ret = NativeCalls.godot_icall_0_66(method_bind_28, Object.GetPtr(this));
             return new NodePath(ret);
         }
 
@@ -318,7 +318,7 @@ namespace GodotEngine
         /// </summary>
         public void seek(float pos_sec, bool update = false)
         {
-            NativeCalls.godot_icall_2_66(method_bind_29, Object.GetPtr(this), pos_sec, update);
+            NativeCalls.godot_icall_2_67(method_bind_29, Object.GetPtr(this), pos_sec, update);
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_pos");
@@ -338,7 +338,7 @@ namespace GodotEngine
         /// </summary>
         public string find_animation(Animation animation)
         {
-            return NativeCalls.godot_icall_1_67(method_bind_31, Object.GetPtr(this), Object.GetPtr(animation));
+            return NativeCalls.godot_icall_1_68(method_bind_31, Object.GetPtr(this), Object.GetPtr(animation));
         }
 
         private IntPtr method_bind_32 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_caches");

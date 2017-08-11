@@ -32,7 +32,7 @@ namespace GodotEngine
         /// </summary>
         public void set_transform(Transform local)
         {
-            NativeCalls.godot_icall_1_208(method_bind_0, Object.GetPtr(this), ref local);
+            NativeCalls.godot_icall_1_207(method_bind_0, Object.GetPtr(this), ref local);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_transform");
@@ -50,7 +50,7 @@ namespace GodotEngine
 
         public void set_translation(Vector3 translation)
         {
-            NativeCalls.godot_icall_1_83(method_bind_2, Object.GetPtr(this), ref translation);
+            NativeCalls.godot_icall_1_84(method_bind_2, Object.GetPtr(this), ref translation);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_translation");
@@ -68,7 +68,7 @@ namespace GodotEngine
         /// </summary>
         public void set_rotation(Vector3 rotation_rad)
         {
-            NativeCalls.godot_icall_1_83(method_bind_4, Object.GetPtr(this), ref rotation_rad);
+            NativeCalls.godot_icall_1_84(method_bind_4, Object.GetPtr(this), ref rotation_rad);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_rotation");
@@ -89,7 +89,7 @@ namespace GodotEngine
         /// </summary>
         public void set_rotation_deg(Vector3 rotation_deg)
         {
-            NativeCalls.godot_icall_1_83(method_bind_6, Object.GetPtr(this), ref rotation_deg);
+            NativeCalls.godot_icall_1_84(method_bind_6, Object.GetPtr(this), ref rotation_deg);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_rotation_deg");
@@ -107,7 +107,7 @@ namespace GodotEngine
 
         public void set_scale(Vector3 scale)
         {
-            NativeCalls.godot_icall_1_83(method_bind_8, Object.GetPtr(this), ref scale);
+            NativeCalls.godot_icall_1_84(method_bind_8, Object.GetPtr(this), ref scale);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_scale");
@@ -125,7 +125,7 @@ namespace GodotEngine
         /// </summary>
         public void set_global_transform(Transform global)
         {
-            NativeCalls.godot_icall_1_208(method_bind_10, Object.GetPtr(this), ref global);
+            NativeCalls.godot_icall_1_207(method_bind_10, Object.GetPtr(this), ref global);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_global_transform");
@@ -146,7 +146,7 @@ namespace GodotEngine
         /// </summary>
         public Spatial get_parent_spatial()
         {
-            return NativeCalls.godot_icall_0_438(method_bind_12, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_435(method_bind_12, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_ignore_transform_notification");
@@ -174,7 +174,7 @@ namespace GodotEngine
 
         public World get_world()
         {
-            return NativeCalls.godot_icall_0_439(method_bind_16, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_436(method_bind_16, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "update_gizmo");
@@ -188,14 +188,14 @@ namespace GodotEngine
 
         public void set_gizmo(SpatialGizmo gizmo)
         {
-            NativeCalls.godot_icall_1_35(method_bind_18, Object.GetPtr(this), Object.GetPtr(gizmo));
+            NativeCalls.godot_icall_1_19(method_bind_18, Object.GetPtr(this), Object.GetPtr(gizmo));
         }
 
         private IntPtr method_bind_19 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_gizmo");
 
         public SpatialGizmo get_gizmo()
         {
-            return NativeCalls.godot_icall_0_440(method_bind_19, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_437(method_bind_19, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_visible");
@@ -265,14 +265,14 @@ namespace GodotEngine
 
         public void rotate(Vector3 normal, float radians)
         {
-            NativeCalls.godot_icall_2_441(method_bind_29, Object.GetPtr(this), ref normal, radians);
+            NativeCalls.godot_icall_2_438(method_bind_29, Object.GetPtr(this), ref normal, radians);
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "global_rotate");
 
         public void global_rotate(Vector3 normal, float radians)
         {
-            NativeCalls.godot_icall_2_441(method_bind_30, Object.GetPtr(this), ref normal, radians);
+            NativeCalls.godot_icall_2_438(method_bind_30, Object.GetPtr(this), ref normal, radians);
         }
 
         private IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "rotate_x");
@@ -300,14 +300,14 @@ namespace GodotEngine
 
         public void translate(Vector3 offset)
         {
-            NativeCalls.godot_icall_1_83(method_bind_34, Object.GetPtr(this), ref offset);
+            NativeCalls.godot_icall_1_84(method_bind_34, Object.GetPtr(this), ref offset);
         }
 
         private IntPtr method_bind_35 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "global_translate");
 
         public void global_translate(Vector3 offset)
         {
-            NativeCalls.godot_icall_1_83(method_bind_35, Object.GetPtr(this), ref offset);
+            NativeCalls.godot_icall_1_84(method_bind_35, Object.GetPtr(this), ref offset);
         }
 
         private IntPtr method_bind_36 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "orthonormalize");
@@ -328,14 +328,14 @@ namespace GodotEngine
 
         public void look_at(Vector3 target, Vector3 up)
         {
-            NativeCalls.godot_icall_2_378(method_bind_38, Object.GetPtr(this), ref target, ref up);
+            NativeCalls.godot_icall_2_375(method_bind_38, Object.GetPtr(this), ref target, ref up);
         }
 
         private IntPtr method_bind_39 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "look_at_from_pos");
 
         public void look_at_from_pos(Vector3 pos, Vector3 target, Vector3 up)
         {
-            NativeCalls.godot_icall_3_442(method_bind_39, Object.GetPtr(this), ref pos, ref target, ref up);
+            NativeCalls.godot_icall_3_439(method_bind_39, Object.GetPtr(this), ref pos, ref target, ref up);
         }
 
         private IntPtr method_bind_40 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "to_local");

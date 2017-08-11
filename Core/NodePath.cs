@@ -69,7 +69,7 @@ namespace GodotEngine
 
         public string get_name(int idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_0, NodePath.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_87(method_bind_0, NodePath.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_name_count");
@@ -90,7 +90,7 @@ namespace GodotEngine
 
         public string get_subname(int idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_3, NodePath.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_87(method_bind_3, NodePath.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_subname_count");

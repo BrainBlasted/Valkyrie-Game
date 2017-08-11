@@ -46,14 +46,14 @@ namespace GodotEngine
 
         public void set_data_array(byte[] data)
         {
-            NativeCalls.godot_icall_1_99(method_bind_4, Object.GetPtr(this), data);
+            NativeCalls.godot_icall_1_100(method_bind_4, Object.GetPtr(this), data);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_data_array");
 
         public byte[] get_data_array()
         {
-            return NativeCalls.godot_icall_0_100(method_bind_5, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_101(method_bind_5, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear");
@@ -67,7 +67,7 @@ namespace GodotEngine
 
         public StreamPeerBuffer duplicate()
         {
-            return NativeCalls.godot_icall_0_448(method_bind_7, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_445(method_bind_7, Object.GetPtr(this));
         }
     }
 }

@@ -23,10 +23,9 @@ namespace GodotEngine
         /// <summary>
         /// Create a connection between 'from_port' slot of 'from' GraphNode and 'to_port' slot of 'to' GraphNode. If the connection already exists, no connection is created.
         /// </summary>
-        public Error connect_node(string from, int from_port, string to, int to_port)
+        public int connect_node(string from, int from_port, string to, int to_port)
         {
-            int ret = NativeCalls.godot_icall_4_219(method_bind_0, Object.GetPtr(this), from, from_port, to, to_port);
-            return (Error)ret;
+            return NativeCalls.godot_icall_4_218(method_bind_0, Object.GetPtr(this), from, from_port, to, to_port);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_node_connected");
@@ -36,7 +35,7 @@ namespace GodotEngine
         /// </summary>
         public bool is_node_connected(string from, int from_port, string to, int to_port)
         {
-            return NativeCalls.godot_icall_4_220(method_bind_1, Object.GetPtr(this), from, from_port, to, to_port);
+            return NativeCalls.godot_icall_4_219(method_bind_1, Object.GetPtr(this), from, from_port, to, to_port);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "disconnect_node");
@@ -46,7 +45,7 @@ namespace GodotEngine
         /// </summary>
         public void disconnect_node(string from, int from_port, string to, int to_port)
         {
-            NativeCalls.godot_icall_4_221(method_bind_2, Object.GetPtr(this), from, from_port, to, to_port);
+            NativeCalls.godot_icall_4_220(method_bind_2, Object.GetPtr(this), from, from_port, to, to_port);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_connection_list");
@@ -56,7 +55,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_connection_list()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_85(method_bind_3, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_scroll_ofs");
@@ -149,7 +148,7 @@ namespace GodotEngine
 
         public void set_selected(Node node)
         {
-            NativeCalls.godot_icall_1_19(method_bind_14, Object.GetPtr(this), Object.GetPtr(node));
+            NativeCalls.godot_icall_1_34(method_bind_14, Object.GetPtr(this), Object.GetPtr(node));
         }
     }
 }

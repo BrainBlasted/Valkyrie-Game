@@ -70,7 +70,7 @@ namespace GodotEngine
         /// </summary>
         public void set_text(string text)
         {
-            NativeCalls.godot_icall_1_34(method_bind_4, Object.GetPtr(this), text);
+            NativeCalls.godot_icall_1_35(method_bind_4, Object.GetPtr(this), text);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_text");
@@ -87,7 +87,7 @@ namespace GodotEngine
 
         public void set_placeholder(string text)
         {
-            NativeCalls.godot_icall_1_34(method_bind_6, Object.GetPtr(this), text);
+            NativeCalls.godot_icall_1_35(method_bind_6, Object.GetPtr(this), text);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_placeholder");
@@ -212,7 +212,7 @@ namespace GodotEngine
         /// </summary>
         public void append_at_cursor(string text)
         {
-            NativeCalls.godot_icall_1_34(method_bind_20, Object.GetPtr(this), text);
+            NativeCalls.godot_icall_1_35(method_bind_20, Object.GetPtr(this), text);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_editable");
@@ -273,7 +273,7 @@ namespace GodotEngine
 
         public PopupMenu get_menu()
         {
-            return NativeCalls.godot_icall_0_275(method_bind_27, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_273(method_bind_27, Object.GetPtr(this));
         }
     }
 }

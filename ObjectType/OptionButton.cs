@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void add_item(string label, int id = -1)
         {
-            NativeCalls.godot_icall_2_78(method_bind_0, Object.GetPtr(this), label, id);
+            NativeCalls.godot_icall_2_79(method_bind_0, Object.GetPtr(this), label, id);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_icon_item");
@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public void add_icon_item(Texture texture, string label, int id)
         {
-            NativeCalls.godot_icall_3_329(method_bind_1, Object.GetPtr(this), Object.GetPtr(texture), label, id);
+            NativeCalls.godot_icall_3_326(method_bind_1, Object.GetPtr(this), Object.GetPtr(texture), label, id);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_item_text");
@@ -44,7 +44,7 @@ namespace GodotEngine
         /// </summary>
         public void set_item_text(int idx, string text)
         {
-            NativeCalls.godot_icall_2_68(method_bind_2, Object.GetPtr(this), idx, text);
+            NativeCalls.godot_icall_2_69(method_bind_2, Object.GetPtr(this), idx, text);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_item_icon");
@@ -54,7 +54,7 @@ namespace GodotEngine
         /// </summary>
         public void set_item_icon(int idx, Texture texture)
         {
-            NativeCalls.godot_icall_2_88(method_bind_3, Object.GetPtr(this), idx, Object.GetPtr(texture));
+            NativeCalls.godot_icall_2_89(method_bind_3, Object.GetPtr(this), idx, Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_item_disabled");
@@ -78,7 +78,7 @@ namespace GodotEngine
 
         public void set_item_metadata(int idx, object metadata)
         {
-            NativeCalls.godot_icall_2_263(method_bind_6, Object.GetPtr(this), idx, metadata);
+            NativeCalls.godot_icall_2_261(method_bind_6, Object.GetPtr(this), idx, metadata);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_text");
@@ -88,7 +88,7 @@ namespace GodotEngine
         /// </summary>
         public string get_item_text(int idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_7, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_87(method_bind_7, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_icon");
@@ -98,7 +98,7 @@ namespace GodotEngine
         /// </summary>
         public Texture get_item_icon(int idx)
         {
-            return NativeCalls.godot_icall_1_108(method_bind_8, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_109(method_bind_8, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_id");
@@ -115,7 +115,7 @@ namespace GodotEngine
 
         public object get_item_metadata(int idx)
         {
-            return NativeCalls.godot_icall_1_264(method_bind_10, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_262(method_bind_10, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_item_disabled");
@@ -186,7 +186,7 @@ namespace GodotEngine
 
         public object get_selected_metadata()
         {
-            return NativeCalls.godot_icall_0_120(method_bind_18, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_121(method_bind_18, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_19 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_item");

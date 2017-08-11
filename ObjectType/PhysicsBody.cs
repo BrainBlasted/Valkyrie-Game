@@ -71,16 +71,16 @@ namespace GodotEngine
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_collision_exception_with");
 
-        public void add_collision_exception_with(PhysicsBody body)
+        public void add_collision_exception_with(Node body)
         {
-            NativeCalls.godot_icall_1_19(method_bind_8, Object.GetPtr(this), Object.GetPtr(body));
+            NativeCalls.godot_icall_1_34(method_bind_8, Object.GetPtr(this), Object.GetPtr(body));
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_collision_exception_with");
 
-        public void remove_collision_exception_with(PhysicsBody body)
+        public void remove_collision_exception_with(Node body)
         {
-            NativeCalls.godot_icall_1_19(method_bind_9, Object.GetPtr(this), Object.GetPtr(body));
+            NativeCalls.godot_icall_1_34(method_bind_9, Object.GetPtr(this), Object.GetPtr(body));
         }
     }
 }

@@ -32,7 +32,7 @@ namespace GodotEngine
 
         public void update_position(Vector3 position)
         {
-            NativeCalls.godot_icall_1_83(method_bind_2, Object.GetPtr(this), ref position);
+            NativeCalls.godot_icall_1_84(method_bind_2, Object.GetPtr(this), ref position);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_tracked_linear_velocity");
@@ -47,7 +47,7 @@ namespace GodotEngine
 
         public void reset(Vector3 position)
         {
-            NativeCalls.godot_icall_1_83(method_bind_4, Object.GetPtr(this), ref position);
+            NativeCalls.godot_icall_1_84(method_bind_4, Object.GetPtr(this), ref position);
         }
     }
 }

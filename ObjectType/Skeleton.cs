@@ -26,7 +26,7 @@ namespace GodotEngine
         /// </summary>
         public void add_bone(string name)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, Object.GetPtr(this), name);
+            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "find_bone");
@@ -36,7 +36,7 @@ namespace GodotEngine
         /// </summary>
         public int find_bone(string name)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_1, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_71(method_bind_1, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bone_name");
@@ -46,7 +46,7 @@ namespace GodotEngine
         /// </summary>
         public string get_bone_name(int bone_idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_2, Object.GetPtr(this), bone_idx);
+            return NativeCalls.godot_icall_1_87(method_bind_2, Object.GetPtr(this), bone_idx);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bone_parent");
@@ -93,7 +93,7 @@ namespace GodotEngine
         /// </summary>
         public Transform get_bone_rest(int bone_idx)
         {
-            object ret = NativeCalls.godot_icall_1_147(method_bind_7, Object.GetPtr(this), bone_idx);
+            object ret = NativeCalls.godot_icall_1_148(method_bind_7, Object.GetPtr(this), bone_idx);
             return (Transform)ret;
         }
 
@@ -104,7 +104,7 @@ namespace GodotEngine
         /// </summary>
         public void set_bone_rest(int bone_idx, Transform rest)
         {
-            NativeCalls.godot_icall_2_146(method_bind_8, Object.GetPtr(this), bone_idx, ref rest);
+            NativeCalls.godot_icall_2_147(method_bind_8, Object.GetPtr(this), bone_idx, ref rest);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_bone_disable_rest");
@@ -128,7 +128,7 @@ namespace GodotEngine
         /// </summary>
         public void bind_child_node_to_bone(int bone_idx, Node node)
         {
-            NativeCalls.godot_icall_2_336(method_bind_11, Object.GetPtr(this), bone_idx, Object.GetPtr(node));
+            NativeCalls.godot_icall_2_434(method_bind_11, Object.GetPtr(this), bone_idx, Object.GetPtr(node));
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "unbind_child_node_from_bone");
@@ -138,7 +138,7 @@ namespace GodotEngine
         /// </summary>
         public void unbind_child_node_from_bone(int bone_idx, Node node)
         {
-            NativeCalls.godot_icall_2_336(method_bind_12, Object.GetPtr(this), bone_idx, Object.GetPtr(node));
+            NativeCalls.godot_icall_2_434(method_bind_12, Object.GetPtr(this), bone_idx, Object.GetPtr(node));
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bound_child_nodes_to_bone");
@@ -148,7 +148,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_bound_child_nodes_to_bone(int bone_idx)
         {
-            return NativeCalls.godot_icall_1_424(method_bind_13, Object.GetPtr(this), bone_idx);
+            return NativeCalls.godot_icall_1_420(method_bind_13, Object.GetPtr(this), bone_idx);
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_bones");
@@ -168,7 +168,7 @@ namespace GodotEngine
         /// </summary>
         public Transform get_bone_pose(int bone_idx)
         {
-            object ret = NativeCalls.godot_icall_1_147(method_bind_15, Object.GetPtr(this), bone_idx);
+            object ret = NativeCalls.godot_icall_1_148(method_bind_15, Object.GetPtr(this), bone_idx);
             return (Transform)ret;
         }
 
@@ -179,21 +179,21 @@ namespace GodotEngine
         /// </summary>
         public void set_bone_pose(int bone_idx, Transform pose)
         {
-            NativeCalls.godot_icall_2_146(method_bind_16, Object.GetPtr(this), bone_idx, ref pose);
+            NativeCalls.godot_icall_2_147(method_bind_16, Object.GetPtr(this), bone_idx, ref pose);
         }
 
         private IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_bone_global_pose");
 
         public void set_bone_global_pose(int bone_idx, Transform pose)
         {
-            NativeCalls.godot_icall_2_146(method_bind_17, Object.GetPtr(this), bone_idx, ref pose);
+            NativeCalls.godot_icall_2_147(method_bind_17, Object.GetPtr(this), bone_idx, ref pose);
         }
 
         private IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bone_global_pose");
 
         public Transform get_bone_global_pose(int bone_idx)
         {
-            object ret = NativeCalls.godot_icall_1_147(method_bind_18, Object.GetPtr(this), bone_idx);
+            object ret = NativeCalls.godot_icall_1_148(method_bind_18, Object.GetPtr(this), bone_idx);
             return (Transform)ret;
         }
 
@@ -201,7 +201,7 @@ namespace GodotEngine
 
         public Transform get_bone_custom_pose(int bone_idx)
         {
-            object ret = NativeCalls.godot_icall_1_147(method_bind_19, Object.GetPtr(this), bone_idx);
+            object ret = NativeCalls.godot_icall_1_148(method_bind_19, Object.GetPtr(this), bone_idx);
             return (Transform)ret;
         }
 
@@ -209,14 +209,14 @@ namespace GodotEngine
 
         public void set_bone_custom_pose(int bone_idx, Transform custom_pose)
         {
-            NativeCalls.godot_icall_2_146(method_bind_20, Object.GetPtr(this), bone_idx, ref custom_pose);
+            NativeCalls.godot_icall_2_147(method_bind_20, Object.GetPtr(this), bone_idx, ref custom_pose);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bone_transform");
 
         public Transform get_bone_transform(int bone_idx)
         {
-            object ret = NativeCalls.godot_icall_1_147(method_bind_21, Object.GetPtr(this), bone_idx);
+            object ret = NativeCalls.godot_icall_1_148(method_bind_21, Object.GetPtr(this), bone_idx);
             return (Transform)ret;
         }
     }

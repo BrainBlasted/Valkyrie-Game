@@ -191,7 +191,7 @@ namespace GodotEngine
         /// </summary>
         public bool reset(Object @object, string key = "")
         {
-            return NativeCalls.godot_icall_2_493(method_bind_9, Object.GetPtr(this), Object.GetPtr(@object), key);
+            return NativeCalls.godot_icall_2_489(method_bind_9, Object.GetPtr(this), Object.GetPtr(@object), key);
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "reset_all");
@@ -211,7 +211,7 @@ namespace GodotEngine
         /// </summary>
         public bool stop(Object @object, string key = "")
         {
-            return NativeCalls.godot_icall_2_493(method_bind_11, Object.GetPtr(this), Object.GetPtr(@object), key);
+            return NativeCalls.godot_icall_2_489(method_bind_11, Object.GetPtr(this), Object.GetPtr(@object), key);
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "stop_all");
@@ -231,7 +231,7 @@ namespace GodotEngine
         /// </summary>
         public bool resume(Object @object, string key = "")
         {
-            return NativeCalls.godot_icall_2_493(method_bind_13, Object.GetPtr(this), Object.GetPtr(@object), key);
+            return NativeCalls.godot_icall_2_489(method_bind_13, Object.GetPtr(this), Object.GetPtr(@object), key);
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "resume_all");
@@ -251,7 +251,7 @@ namespace GodotEngine
         /// </summary>
         public bool remove(Object @object, string key = "")
         {
-            return NativeCalls.godot_icall_2_493(method_bind_15, Object.GetPtr(this), Object.GetPtr(@object), key);
+            return NativeCalls.godot_icall_2_489(method_bind_15, Object.GetPtr(this), Object.GetPtr(@object), key);
         }
 
         private IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_all");
@@ -271,7 +271,7 @@ namespace GodotEngine
         /// </summary>
         public bool seek(float time)
         {
-            return NativeCalls.godot_icall_1_276(method_bind_17, Object.GetPtr(this), time);
+            return NativeCalls.godot_icall_1_274(method_bind_17, Object.GetPtr(this), time);
         }
 
         private IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "tell");
@@ -302,7 +302,7 @@ namespace GodotEngine
         /// </summary>
         public bool interpolate_property(Object @object, string property, object initial_val, object final_val, float duration, int trans_type, int ease_type, float delay = 0)
         {
-            return NativeCalls.godot_icall_8_494(method_bind_20, Object.GetPtr(this), Object.GetPtr(@object), property, initial_val, final_val, duration, trans_type, ease_type, delay);
+            return NativeCalls.godot_icall_8_490(method_bind_20, Object.GetPtr(this), Object.GetPtr(@object), property, initial_val, final_val, duration, trans_type, ease_type, delay);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "interpolate_method");
@@ -313,7 +313,7 @@ namespace GodotEngine
         /// </summary>
         public bool interpolate_method(Object @object, string method, object initial_val, object final_val, float duration, int trans_type, int ease_type, float delay = 0)
         {
-            return NativeCalls.godot_icall_8_494(method_bind_21, Object.GetPtr(this), Object.GetPtr(@object), method, initial_val, final_val, duration, trans_type, ease_type, delay);
+            return NativeCalls.godot_icall_8_490(method_bind_21, Object.GetPtr(this), Object.GetPtr(@object), method, initial_val, final_val, duration, trans_type, ease_type, delay);
         }
 
         private IntPtr method_bind_22 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "interpolate_callback");
@@ -323,7 +323,7 @@ namespace GodotEngine
         /// </summary>
         public bool interpolate_callback(Object @object, float duration, string callback, object arg1 = null, object arg2 = null, object arg3 = null, object arg4 = null, object arg5 = null)
         {
-            return NativeCalls.godot_icall_8_495(method_bind_22, Object.GetPtr(this), Object.GetPtr(@object), duration, callback, arg1, arg2, arg3, arg4, arg5);
+            return NativeCalls.godot_icall_8_491(method_bind_22, Object.GetPtr(this), Object.GetPtr(@object), duration, callback, arg1, arg2, arg3, arg4, arg5);
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "interpolate_deferred_callback");
@@ -333,7 +333,7 @@ namespace GodotEngine
         /// </summary>
         public bool interpolate_deferred_callback(Object @object, float duration, string callback, object arg1 = null, object arg2 = null, object arg3 = null, object arg4 = null, object arg5 = null)
         {
-            return NativeCalls.godot_icall_8_495(method_bind_23, Object.GetPtr(this), Object.GetPtr(@object), duration, callback, arg1, arg2, arg3, arg4, arg5);
+            return NativeCalls.godot_icall_8_491(method_bind_23, Object.GetPtr(this), Object.GetPtr(@object), duration, callback, arg1, arg2, arg3, arg4, arg5);
         }
 
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "follow_property");
@@ -344,7 +344,7 @@ namespace GodotEngine
         /// </summary>
         public bool follow_property(Object @object, string property, object initial_val, Object target, string target_property, float duration, int trans_type, int ease_type, float delay = 0)
         {
-            return NativeCalls.godot_icall_9_496(method_bind_24, Object.GetPtr(this), Object.GetPtr(@object), property, initial_val, Object.GetPtr(target), target_property, duration, trans_type, ease_type, delay);
+            return NativeCalls.godot_icall_9_492(method_bind_24, Object.GetPtr(this), Object.GetPtr(@object), property, initial_val, Object.GetPtr(target), target_property, duration, trans_type, ease_type, delay);
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "follow_method");
@@ -355,7 +355,7 @@ namespace GodotEngine
         /// </summary>
         public bool follow_method(Object @object, string method, object initial_val, Object target, string target_method, float duration, int trans_type, int ease_type, float delay = 0)
         {
-            return NativeCalls.godot_icall_9_496(method_bind_25, Object.GetPtr(this), Object.GetPtr(@object), method, initial_val, Object.GetPtr(target), target_method, duration, trans_type, ease_type, delay);
+            return NativeCalls.godot_icall_9_492(method_bind_25, Object.GetPtr(this), Object.GetPtr(@object), method, initial_val, Object.GetPtr(target), target_method, duration, trans_type, ease_type, delay);
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "targeting_property");
@@ -366,7 +366,7 @@ namespace GodotEngine
         /// </summary>
         public bool targeting_property(Object @object, string property, Object initial, string initial_val, object final_val, float duration, int trans_type, int ease_type, float delay = 0)
         {
-            return NativeCalls.godot_icall_9_497(method_bind_26, Object.GetPtr(this), Object.GetPtr(@object), property, Object.GetPtr(initial), initial_val, final_val, duration, trans_type, ease_type, delay);
+            return NativeCalls.godot_icall_9_493(method_bind_26, Object.GetPtr(this), Object.GetPtr(@object), property, Object.GetPtr(initial), initial_val, final_val, duration, trans_type, ease_type, delay);
         }
 
         private IntPtr method_bind_27 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "targeting_method");
@@ -377,7 +377,7 @@ namespace GodotEngine
         /// </summary>
         public bool targeting_method(Object @object, string method, Object initial, string initial_method, object final_val, float duration, int trans_type, int ease_type, float delay = 0)
         {
-            return NativeCalls.godot_icall_9_497(method_bind_27, Object.GetPtr(this), Object.GetPtr(@object), method, Object.GetPtr(initial), initial_method, final_val, duration, trans_type, ease_type, delay);
+            return NativeCalls.godot_icall_9_493(method_bind_27, Object.GetPtr(this), Object.GetPtr(@object), method, Object.GetPtr(initial), initial_method, final_val, duration, trans_type, ease_type, delay);
         }
     }
 }

@@ -35,14 +35,14 @@ namespace GodotEngine
 
         public void set_interior_ambient(Color ambient)
         {
-            NativeCalls.godot_icall_1_122(method_bind_2, Object.GetPtr(this), ref ambient);
+            NativeCalls.godot_icall_1_123(method_bind_2, Object.GetPtr(this), ref ambient);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_interior_ambient");
 
         public Color get_interior_ambient()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_3, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_3, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -92,7 +92,7 @@ namespace GodotEngine
 
         public void set_extents(Vector3 extents)
         {
-            NativeCalls.godot_icall_1_83(method_bind_10, Object.GetPtr(this), ref extents);
+            NativeCalls.godot_icall_1_84(method_bind_10, Object.GetPtr(this), ref extents);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_extents");
@@ -107,7 +107,7 @@ namespace GodotEngine
 
         public void set_origin_offset(Vector3 origin_offset)
         {
-            NativeCalls.godot_icall_1_83(method_bind_12, Object.GetPtr(this), ref origin_offset);
+            NativeCalls.godot_icall_1_84(method_bind_12, Object.GetPtr(this), ref origin_offset);
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_origin_offset");

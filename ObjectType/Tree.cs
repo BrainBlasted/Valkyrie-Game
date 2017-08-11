@@ -47,12 +47,9 @@ namespace GodotEngine
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "create_item");
 
-        /// <summary>
-        /// Create an item in the tree and add it as the last child of [code]parent[/code]. If parent is not given, it will be added as the last child of the root, or it'll the be the root itself if the tree is empty.
-        /// </summary>
-        public TreeItem create_item(TreeItem parent = null)
+        public Object create_item(Object parent = null)
         {
-            return NativeCalls.godot_icall_1_483(method_bind_1, Object.GetPtr(this), Object.GetPtr(parent));
+            return NativeCalls.godot_icall_1_478(method_bind_1, Object.GetPtr(this), Object.GetPtr(parent));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_root");
@@ -62,7 +59,7 @@ namespace GodotEngine
         /// </summary>
         public TreeItem get_root()
         {
-            return NativeCalls.godot_icall_0_484(method_bind_2, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_479(method_bind_2, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_column_min_width");
@@ -107,12 +104,9 @@ namespace GodotEngine
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_next_selected");
 
-        /// <summary>
-        /// Get the next selected item after the given one.
-        /// </summary>
-        public TreeItem get_next_selected(TreeItem from)
+        public TreeItem get_next_selected(Object from)
         {
-            return NativeCalls.godot_icall_1_483(method_bind_7, Object.GetPtr(this), Object.GetPtr(from));
+            return NativeCalls.godot_icall_1_480(method_bind_7, Object.GetPtr(this), Object.GetPtr(from));
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_selected");
@@ -122,7 +116,7 @@ namespace GodotEngine
         /// </summary>
         public TreeItem get_selected()
         {
-            return NativeCalls.godot_icall_0_484(method_bind_8, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_479(method_bind_8, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_selected_column");
@@ -182,7 +176,7 @@ namespace GodotEngine
         /// </summary>
         public TreeItem get_edited()
         {
-            return NativeCalls.godot_icall_0_484(method_bind_14, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_479(method_bind_14, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_edited_column");
@@ -202,18 +196,15 @@ namespace GodotEngine
         /// </summary>
         public Rect2 get_custom_popup_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_16, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_16, Object.GetPtr(this));
             return (Rect2)ret;
         }
 
         private IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_item_area_rect");
 
-        /// <summary>
-        /// Get the rectangle area of the the specified item. If column is specified, only get the position and size of that column, otherwise get the rectangle containing all columns.
-        /// </summary>
-        public Rect2 get_item_area_rect(TreeItem item, int column = -1)
+        public Rect2 get_item_area_rect(Object item, int column = -1)
         {
-            object ret = NativeCalls.godot_icall_2_485(method_bind_17, Object.GetPtr(this), Object.GetPtr(item), column);
+            object ret = NativeCalls.godot_icall_2_481(method_bind_17, Object.GetPtr(this), Object.GetPtr(item), column);
             return (Rect2)ret;
         }
 
@@ -224,7 +215,7 @@ namespace GodotEngine
         /// </summary>
         public TreeItem get_item_at_pos(Vector2 pos)
         {
-            return NativeCalls.godot_icall_1_486(method_bind_18, Object.GetPtr(this), ref pos);
+            return NativeCalls.godot_icall_1_482(method_bind_18, Object.GetPtr(this), ref pos);
         }
 
         private IntPtr method_bind_19 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_column_at_pos");
@@ -274,7 +265,7 @@ namespace GodotEngine
         /// </summary>
         public void set_column_title(int column, string title)
         {
-            NativeCalls.godot_icall_2_68(method_bind_23, Object.GetPtr(this), column, title);
+            NativeCalls.godot_icall_2_69(method_bind_23, Object.GetPtr(this), column, title);
         }
 
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_column_title");
@@ -284,7 +275,7 @@ namespace GodotEngine
         /// </summary>
         public string get_column_title(int column)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_24, Object.GetPtr(this), column);
+            return NativeCalls.godot_icall_1_87(method_bind_24, Object.GetPtr(this), column);
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_scroll");

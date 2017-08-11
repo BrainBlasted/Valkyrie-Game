@@ -18,14 +18,14 @@ namespace GodotEngine
 
         public void set_texture(Texture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_texture");
 
         public Texture get_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_region");
@@ -46,14 +46,14 @@ namespace GodotEngine
 
         public void set_region_rect(Rect2 rect)
         {
-            NativeCalls.godot_icall_1_93(method_bind_4, Object.GetPtr(this), ref rect);
+            NativeCalls.godot_icall_1_94(method_bind_4, Object.GetPtr(this), ref rect);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_region_rect");
 
         public Rect2 get_region_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_5, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_5, Object.GetPtr(this));
             return (Rect2)ret;
         }
 

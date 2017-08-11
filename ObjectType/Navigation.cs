@@ -18,14 +18,14 @@ namespace GodotEngine
 
         public int navmesh_create(NavigationMesh mesh, Transform xform, Object owner = null)
         {
-            return NativeCalls.godot_icall_3_292(method_bind_0, Object.GetPtr(this), Object.GetPtr(mesh), ref xform, Object.GetPtr(owner));
+            return NativeCalls.godot_icall_3_290(method_bind_0, Object.GetPtr(this), Object.GetPtr(mesh), ref xform, Object.GetPtr(owner));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "navmesh_set_transform");
 
         public void navmesh_set_transform(int id, Transform xform)
         {
-            NativeCalls.godot_icall_2_146(method_bind_1, Object.GetPtr(this), id, ref xform);
+            NativeCalls.godot_icall_2_147(method_bind_1, Object.GetPtr(this), id, ref xform);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "navmesh_remove");
@@ -39,14 +39,14 @@ namespace GodotEngine
 
         public Vector3[] get_simple_path(Vector3 start, Vector3 end, bool optimize = true)
         {
-            return NativeCalls.godot_icall_3_293(method_bind_3, Object.GetPtr(this), ref start, ref end, optimize);
+            return NativeCalls.godot_icall_3_291(method_bind_3, Object.GetPtr(this), ref start, ref end, optimize);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_closest_point_to_segment");
 
         public Vector3 get_closest_point_to_segment(Vector3 start, Vector3 end, bool use_collision = false)
         {
-            object ret = NativeCalls.godot_icall_3_294(method_bind_4, Object.GetPtr(this), ref start, ref end, use_collision);
+            object ret = NativeCalls.godot_icall_3_292(method_bind_4, Object.GetPtr(this), ref start, ref end, use_collision);
             return (Vector3)ret;
         }
 
@@ -70,14 +70,14 @@ namespace GodotEngine
 
         public Object get_closest_point_owner(Vector3 to_point)
         {
-            return NativeCalls.godot_icall_1_295(method_bind_7, Object.GetPtr(this), ref to_point);
+            return NativeCalls.godot_icall_1_293(method_bind_7, Object.GetPtr(this), ref to_point);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_up_vector");
 
         public void set_up_vector(Vector3 up)
         {
-            NativeCalls.godot_icall_1_83(method_bind_8, Object.GetPtr(this), ref up);
+            NativeCalls.godot_icall_1_84(method_bind_8, Object.GetPtr(this), ref up);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_up_vector");

@@ -21,7 +21,7 @@ namespace GodotEngine
 
         public void generate(Translation from)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(from));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(from));
         }
     }
 }

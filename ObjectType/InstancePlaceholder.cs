@@ -19,7 +19,7 @@ namespace GodotEngine
 
         public Dictionary<object, object> get_stored_values(bool with_order = false)
         {
-            return NativeCalls.godot_icall_1_258(method_bind_0, Object.GetPtr(this), with_order);
+            return NativeCalls.godot_icall_1_256(method_bind_0, Object.GetPtr(this), with_order);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "replace_by_instance");
@@ -29,7 +29,7 @@ namespace GodotEngine
         /// </summary>
         public void replace_by_instance(PackedScene custom_scene = null)
         {
-            NativeCalls.godot_icall_1_35(method_bind_1, Object.GetPtr(this), Object.GetPtr(custom_scene));
+            NativeCalls.godot_icall_1_19(method_bind_1, Object.GetPtr(this), Object.GetPtr(custom_scene));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_instance_path");

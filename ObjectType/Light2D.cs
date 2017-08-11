@@ -72,7 +72,7 @@ namespace GodotEngine
 
         public void set_texture(Texture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_4, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_4, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_texture");
@@ -82,7 +82,7 @@ namespace GodotEngine
         /// </summary>
         public Texture get_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_5, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_5, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_texture_offset");
@@ -113,7 +113,7 @@ namespace GodotEngine
         /// </summary>
         public void set_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_8, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_8, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_color");
@@ -123,7 +123,7 @@ namespace GodotEngine
         /// </summary>
         public Color get_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_9, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_9, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -410,7 +410,7 @@ namespace GodotEngine
         /// </summary>
         public void set_shadow_color(Color shadow_color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_40, Object.GetPtr(this), ref shadow_color);
+            NativeCalls.godot_icall_1_123(method_bind_40, Object.GetPtr(this), ref shadow_color);
         }
 
         private IntPtr method_bind_41 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_shadow_color");
@@ -420,7 +420,7 @@ namespace GodotEngine
         /// </summary>
         public Color get_shadow_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_41, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_41, Object.GetPtr(this));
             return (Color)ret;
         }
     }

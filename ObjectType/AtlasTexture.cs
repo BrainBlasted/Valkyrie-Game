@@ -18,28 +18,28 @@ namespace GodotEngine
 
         public void set_atlas(Texture atlas)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(atlas));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(atlas));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_atlas");
 
         public Texture get_atlas()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_region");
 
         public void set_region(Rect2 region)
         {
-            NativeCalls.godot_icall_1_93(method_bind_2, Object.GetPtr(this), ref region);
+            NativeCalls.godot_icall_1_94(method_bind_2, Object.GetPtr(this), ref region);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_region");
 
         public Rect2 get_region()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_3, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_3, Object.GetPtr(this));
             return (Rect2)ret;
         }
 
@@ -47,14 +47,14 @@ namespace GodotEngine
 
         public void set_margin(Rect2 margin)
         {
-            NativeCalls.godot_icall_1_93(method_bind_4, Object.GetPtr(this), ref margin);
+            NativeCalls.godot_icall_1_94(method_bind_4, Object.GetPtr(this), ref margin);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_margin");
 
         public Rect2 get_margin()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_5, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_5, Object.GetPtr(this));
             return (Rect2)ret;
         }
     }

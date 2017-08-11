@@ -20,7 +20,7 @@ namespace GodotEngine
         /// </summary>
         public int put_data(byte[] data)
         {
-            return NativeCalls.godot_icall_1_233(method_bind_0, Object.GetPtr(this), data);
+            return NativeCalls.godot_icall_1_232(method_bind_0, Object.GetPtr(this), data);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "put_partial_data");
@@ -30,7 +30,7 @@ namespace GodotEngine
         /// </summary>
         public object[] put_partial_data(byte[] data)
         {
-            return NativeCalls.godot_icall_1_447(method_bind_1, Object.GetPtr(this), data);
+            return NativeCalls.godot_icall_1_444(method_bind_1, Object.GetPtr(this), data);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_data");
@@ -40,7 +40,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_data(int bytes)
         {
-            return NativeCalls.godot_icall_1_424(method_bind_2, Object.GetPtr(this), bytes);
+            return NativeCalls.godot_icall_1_420(method_bind_2, Object.GetPtr(this), bytes);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_partial_data");
@@ -50,7 +50,7 @@ namespace GodotEngine
         /// </summary>
         public object[] get_partial_data(int bytes)
         {
-            return NativeCalls.godot_icall_1_424(method_bind_3, Object.GetPtr(this), bytes);
+            return NativeCalls.godot_icall_1_420(method_bind_3, Object.GetPtr(this), bytes);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_available_bytes");
@@ -190,7 +190,7 @@ namespace GodotEngine
         /// </summary>
         public void put_utf8_string(string val)
         {
-            NativeCalls.godot_icall_1_34(method_bind_17, Object.GetPtr(this), val);
+            NativeCalls.godot_icall_1_35(method_bind_17, Object.GetPtr(this), val);
         }
 
         private IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "put_var");
@@ -200,7 +200,7 @@ namespace GodotEngine
         /// </summary>
         public void put_var(object val)
         {
-            NativeCalls.godot_icall_1_119(method_bind_18, Object.GetPtr(this), val);
+            NativeCalls.godot_icall_1_120(method_bind_18, Object.GetPtr(this), val);
         }
 
         private IntPtr method_bind_19 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_8");
@@ -310,7 +310,7 @@ namespace GodotEngine
         /// </summary>
         public string get_string(int bytes)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_29, Object.GetPtr(this), bytes);
+            return NativeCalls.godot_icall_1_87(method_bind_29, Object.GetPtr(this), bytes);
         }
 
         private IntPtr method_bind_30 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_utf8_string");
@@ -320,7 +320,7 @@ namespace GodotEngine
         /// </summary>
         public string get_utf8_string(int bytes)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_30, Object.GetPtr(this), bytes);
+            return NativeCalls.godot_icall_1_87(method_bind_30, Object.GetPtr(this), bytes);
         }
 
         private IntPtr method_bind_31 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_var");
@@ -330,7 +330,7 @@ namespace GodotEngine
         /// </summary>
         public object get_var()
         {
-            return NativeCalls.godot_icall_0_120(method_bind_31, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_121(method_bind_31, Object.GetPtr(this));
         }
     }
 }

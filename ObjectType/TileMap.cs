@@ -63,7 +63,7 @@ namespace GodotEngine
         /// </summary>
         public void set_tileset(TileSet tileset)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(tileset));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(tileset));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_tileset");
@@ -73,7 +73,7 @@ namespace GodotEngine
         /// </summary>
         public TileSet get_tileset()
         {
-            return NativeCalls.godot_icall_0_470(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_466(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_mode");
@@ -124,7 +124,7 @@ namespace GodotEngine
         /// </summary>
         public void set_custom_transform(Transform2D custom_transform)
         {
-            NativeCalls.godot_icall_1_139(method_bind_6, Object.GetPtr(this), ref custom_transform);
+            NativeCalls.godot_icall_1_140(method_bind_6, Object.GetPtr(this), ref custom_transform);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_custom_transform");
@@ -134,7 +134,7 @@ namespace GodotEngine
         /// </summary>
         public Transform2D get_custom_transform()
         {
-            object ret = NativeCalls.godot_icall_0_140(method_bind_7, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_141(method_bind_7, Object.GetPtr(this));
             return (Transform2D)ret;
         }
 
@@ -414,7 +414,7 @@ namespace GodotEngine
         /// </summary>
         public void set_cell(int x, int y, int tile, bool flip_x = false, bool flip_y = false, bool transpose = false)
         {
-            NativeCalls.godot_icall_6_471(method_bind_36, Object.GetPtr(this), x, y, tile, flip_x, flip_y, transpose);
+            NativeCalls.godot_icall_6_467(method_bind_36, Object.GetPtr(this), x, y, tile, flip_x, flip_y, transpose);
         }
 
         private IntPtr method_bind_37 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_cellv");
@@ -426,7 +426,7 @@ namespace GodotEngine
         /// </summary>
         public void set_cellv(Vector2 pos, int tile, bool flip_x = false, bool flip_y = false, bool transpose = false)
         {
-            NativeCalls.godot_icall_5_472(method_bind_37, Object.GetPtr(this), ref pos, tile, flip_x, flip_y, transpose);
+            NativeCalls.godot_icall_5_468(method_bind_37, Object.GetPtr(this), ref pos, tile, flip_x, flip_y, transpose);
         }
 
         private IntPtr method_bind_38 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_cell");
@@ -496,21 +496,21 @@ namespace GodotEngine
         /// </summary>
         public object[] get_used_cells()
         {
-            return NativeCalls.godot_icall_0_84(method_bind_44, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_85(method_bind_44, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_45 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_used_cells_by_id");
 
         public object[] get_used_cells_by_id(int id)
         {
-            return NativeCalls.godot_icall_1_424(method_bind_45, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_420(method_bind_45, Object.GetPtr(this), id);
         }
 
         private IntPtr method_bind_46 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_used_rect");
 
         public Rect2 get_used_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_46, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_46, Object.GetPtr(this));
             return (Rect2)ret;
         }
 
@@ -522,7 +522,7 @@ namespace GodotEngine
         /// </summary>
         public Vector2 map_to_world(Vector2 mappos, bool ignore_half_ofs = false)
         {
-            object ret = NativeCalls.godot_icall_2_473(method_bind_47, Object.GetPtr(this), ref mappos, ignore_half_ofs);
+            object ret = NativeCalls.godot_icall_2_469(method_bind_47, Object.GetPtr(this), ref mappos, ignore_half_ofs);
             return (Vector2)ret;
         }
 
@@ -533,7 +533,7 @@ namespace GodotEngine
         /// </summary>
         public Vector2 world_to_map(Vector2 worldpos)
         {
-            object ret = NativeCalls.godot_icall_1_143(method_bind_48, Object.GetPtr(this), ref worldpos);
+            object ret = NativeCalls.godot_icall_1_144(method_bind_48, Object.GetPtr(this), ref worldpos);
             return (Vector2)ret;
         }
     }

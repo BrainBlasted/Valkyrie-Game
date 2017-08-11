@@ -32,7 +32,7 @@ namespace GodotEngine
 
         public void set_code(string code)
         {
-            NativeCalls.godot_icall_1_34(method_bind_1, Object.GetPtr(this), code);
+            NativeCalls.godot_icall_1_35(method_bind_1, Object.GetPtr(this), code);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_code");
@@ -46,21 +46,21 @@ namespace GodotEngine
 
         public void set_default_texture_param(string param, Texture texture)
         {
-            NativeCalls.godot_icall_2_72(method_bind_3, Object.GetPtr(this), param, Object.GetPtr(texture));
+            NativeCalls.godot_icall_2_73(method_bind_3, Object.GetPtr(this), param, Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_default_texture_param");
 
         public Texture get_default_texture_param(string param)
         {
-            return NativeCalls.godot_icall_1_431(method_bind_4, Object.GetPtr(this), param);
+            return NativeCalls.godot_icall_1_427(method_bind_4, Object.GetPtr(this), param);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_param");
 
         public bool has_param(string name)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_5, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_57(method_bind_5, Object.GetPtr(this), name);
         }
     }
 }

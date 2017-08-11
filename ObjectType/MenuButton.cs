@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public PopupMenu get_popup()
         {
-            return NativeCalls.godot_icall_0_275(method_bind_0, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_273(method_bind_0, Object.GetPtr(this));
         }
     }
 }

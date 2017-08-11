@@ -27,14 +27,14 @@ namespace GodotEngine
 
         public void set_stream(AudioStream stream)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(stream));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(stream));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_stream");
 
-        public Object get_stream()
+        public AudioStream get_stream()
         {
-            return NativeCalls.godot_icall_0_30(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_102(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_unit_db");
@@ -118,7 +118,7 @@ namespace GodotEngine
 
         public void set_bus(string bus)
         {
-            NativeCalls.godot_icall_1_34(method_bind_13, Object.GetPtr(this), bus);
+            NativeCalls.godot_icall_1_35(method_bind_13, Object.GetPtr(this), bus);
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bus");

@@ -95,10 +95,9 @@ namespace GodotEngine
         /// The host should not have http:// prepended but will strip the protocol identifier if provided.
         /// verify_host will check the SSL identity of the host if set to true.
         /// </summary>
-        public Error connect_to_host(string host, int port, bool use_ssl = false, bool verify_host = true)
+        public int connect_to_host(string host, int port, bool use_ssl = false, bool verify_host = true)
         {
-            int ret = NativeCalls.godot_icall_4_229(method_bind_0, Object.GetPtr(this), host, port, use_ssl, verify_host);
-            return (Error)ret;
+            return NativeCalls.godot_icall_4_228(method_bind_0, Object.GetPtr(this), host, port, use_ssl, verify_host);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_connection");
@@ -108,7 +107,7 @@ namespace GodotEngine
         /// </summary>
         public void set_connection(StreamPeer connection)
         {
-            NativeCalls.godot_icall_1_35(method_bind_1, Object.GetPtr(this), Object.GetPtr(connection));
+            NativeCalls.godot_icall_1_19(method_bind_1, Object.GetPtr(this), Object.GetPtr(connection));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_connection");
@@ -118,7 +117,7 @@ namespace GodotEngine
         /// </summary>
         public StreamPeer get_connection()
         {
-            return NativeCalls.godot_icall_0_230(method_bind_2, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_229(method_bind_2, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "request_raw");
@@ -130,7 +129,7 @@ namespace GodotEngine
         /// </summary>
         public int request_raw(int method, string url, string[] headers, byte[] body)
         {
-            return NativeCalls.godot_icall_4_231(method_bind_3, Object.GetPtr(this), method, url, headers, body);
+            return NativeCalls.godot_icall_4_230(method_bind_3, Object.GetPtr(this), method, url, headers, body);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "request");
@@ -148,7 +147,7 @@ namespace GodotEngine
         /// </summary>
         public int request(int method, string url, string[] headers, string body = "")
         {
-            return NativeCalls.godot_icall_4_232(method_bind_4, Object.GetPtr(this), method, url, headers, body);
+            return NativeCalls.godot_icall_4_231(method_bind_4, Object.GetPtr(this), method, url, headers, body);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "send_body_text");
@@ -158,7 +157,7 @@ namespace GodotEngine
         /// </summary>
         public int send_body_text(string body)
         {
-            return NativeCalls.godot_icall_1_70(method_bind_5, Object.GetPtr(this), body);
+            return NativeCalls.godot_icall_1_71(method_bind_5, Object.GetPtr(this), body);
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "send_body_data");
@@ -168,7 +167,7 @@ namespace GodotEngine
         /// </summary>
         public int send_body_data(byte[] body)
         {
-            return NativeCalls.godot_icall_1_233(method_bind_6, Object.GetPtr(this), body);
+            return NativeCalls.godot_icall_1_232(method_bind_6, Object.GetPtr(this), body);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "close");
@@ -218,7 +217,7 @@ namespace GodotEngine
         /// </summary>
         public string[] get_response_headers()
         {
-            return NativeCalls.godot_icall_0_58(method_bind_11, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_59(method_bind_11, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_response_headers_as_dictionary");
@@ -230,7 +229,7 @@ namespace GodotEngine
         /// </summary>
         public Dictionary<object, object> get_response_headers_as_dictionary()
         {
-            return NativeCalls.godot_icall_0_234(method_bind_12, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_233(method_bind_12, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_response_body_length");
@@ -250,7 +249,7 @@ namespace GodotEngine
         /// </summary>
         public byte[] read_response_body_chunk()
         {
-            return NativeCalls.godot_icall_0_100(method_bind_14, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_101(method_bind_14, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_read_chunk_size");
@@ -298,10 +297,9 @@ namespace GodotEngine
         /// <summary>
         /// This needs to be called in order to have any request processed. Check results with [method get_status]
         /// </summary>
-        public Error poll()
+        public int poll()
         {
-            int ret = NativeCalls.godot_icall_0_235(method_bind_19, Object.GetPtr(this));
-            return (Error)ret;
+            return NativeCalls.godot_icall_0_1(method_bind_19, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "query_string_from_dict");
@@ -316,7 +314,7 @@ namespace GodotEngine
         /// </summary>
         public string query_string_from_dict(Dictionary<object, object> fields)
         {
-            return NativeCalls.godot_icall_1_236(method_bind_20, Object.GetPtr(this), fields);
+            return NativeCalls.godot_icall_1_234(method_bind_20, Object.GetPtr(this), fields);
         }
     }
 }

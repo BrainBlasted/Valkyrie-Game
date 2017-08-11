@@ -99,7 +99,7 @@ namespace GodotEngine
 
         public void add_blend_shape(string name)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, Object.GetPtr(this), name);
+            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_blend_shape_count");
@@ -113,7 +113,7 @@ namespace GodotEngine
 
         public string get_blend_shape_name(int index)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_2, Object.GetPtr(this), index);
+            return NativeCalls.godot_icall_1_87(method_bind_2, Object.GetPtr(this), index);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_blend_shapes");
@@ -147,7 +147,7 @@ namespace GodotEngine
         public void add_surface_from_arrays(int primitive, object[] arrays, object[] blend_shapes = null, int compress_flags = 97792)
         {
             object[] blend_shapes_in = blend_shapes != null ? blend_shapes : new object[] {};
-            NativeCalls.godot_icall_4_87(method_bind_6, Object.GetPtr(this), primitive, arrays, blend_shapes_in, compress_flags);
+            NativeCalls.godot_icall_4_88(method_bind_6, Object.GetPtr(this), primitive, arrays, blend_shapes_in, compress_flags);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_surface_count");
@@ -214,7 +214,7 @@ namespace GodotEngine
 
         public void surface_set_material(int surf_idx, Material material)
         {
-            NativeCalls.godot_icall_2_88(method_bind_13, Object.GetPtr(this), surf_idx, Object.GetPtr(material));
+            NativeCalls.godot_icall_2_89(method_bind_13, Object.GetPtr(this), surf_idx, Object.GetPtr(material));
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "surface_get_material");
@@ -224,7 +224,7 @@ namespace GodotEngine
         /// </summary>
         public Material surface_get_material(int surf_idx)
         {
-            return NativeCalls.godot_icall_1_89(method_bind_14, Object.GetPtr(this), surf_idx);
+            return NativeCalls.godot_icall_1_90(method_bind_14, Object.GetPtr(this), surf_idx);
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "surface_set_name");
@@ -234,14 +234,14 @@ namespace GodotEngine
         /// </summary>
         public void surface_set_name(int surf_idx, string name)
         {
-            NativeCalls.godot_icall_2_68(method_bind_15, Object.GetPtr(this), surf_idx, name);
+            NativeCalls.godot_icall_2_69(method_bind_15, Object.GetPtr(this), surf_idx, name);
         }
 
         private IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "surface_get_name");
 
         public string surface_get_name(int surf_idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_16, Object.GetPtr(this), surf_idx);
+            return NativeCalls.godot_icall_1_87(method_bind_16, Object.GetPtr(this), surf_idx);
         }
 
         private IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "center_geometry");
@@ -262,14 +262,14 @@ namespace GodotEngine
 
         public void set_custom_aabb(Rect3 aabb)
         {
-            NativeCalls.godot_icall_1_90(method_bind_19, Object.GetPtr(this), ref aabb);
+            NativeCalls.godot_icall_1_91(method_bind_19, Object.GetPtr(this), ref aabb);
         }
 
         private IntPtr method_bind_20 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_custom_aabb");
 
         public Rect3 get_custom_aabb()
         {
-            object ret = NativeCalls.godot_icall_0_91(method_bind_20, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_92(method_bind_20, Object.GetPtr(this));
             return (Rect3)ret;
         }
     }

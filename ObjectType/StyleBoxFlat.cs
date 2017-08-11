@@ -21,14 +21,14 @@ namespace GodotEngine
 
         public void set_bg_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_0, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_0, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_bg_color");
 
         public Color get_bg_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_1, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_1, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -36,14 +36,14 @@ namespace GodotEngine
 
         public void set_light_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_2, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_2, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_light_color");
 
         public Color get_light_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_3, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_3, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -51,14 +51,14 @@ namespace GodotEngine
 
         public void set_dark_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_4, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_4, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_dark_color");
 
         public Color get_dark_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_5, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_5, Object.GetPtr(this));
             return (Color)ret;
         }
 

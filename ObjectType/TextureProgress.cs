@@ -28,42 +28,42 @@ namespace GodotEngine
 
         public void set_under_texture(Texture tex)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(tex));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(tex));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_under_texture");
 
         public Texture get_under_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_progress_texture");
 
         public void set_progress_texture(Texture tex)
         {
-            NativeCalls.godot_icall_1_35(method_bind_2, Object.GetPtr(this), Object.GetPtr(tex));
+            NativeCalls.godot_icall_1_19(method_bind_2, Object.GetPtr(this), Object.GetPtr(tex));
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_progress_texture");
 
         public Texture get_progress_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_3, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_over_texture");
 
         public void set_over_texture(Texture tex)
         {
-            NativeCalls.godot_icall_1_35(method_bind_4, Object.GetPtr(this), Object.GetPtr(tex));
+            NativeCalls.godot_icall_1_19(method_bind_4, Object.GetPtr(this), Object.GetPtr(tex));
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_over_texture");
 
         public Texture get_over_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_5, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_5, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_fill_mode");

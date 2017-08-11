@@ -33,7 +33,7 @@ namespace GodotEngine
         /// </summary>
         public void set_mesh(Mesh mesh)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(mesh));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(mesh));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_mesh");
@@ -43,7 +43,7 @@ namespace GodotEngine
         /// </summary>
         public Mesh get_mesh()
         {
-            return NativeCalls.godot_icall_0_287(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_285(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_color_format");
@@ -101,7 +101,7 @@ namespace GodotEngine
         /// </summary>
         public void set_instance_transform(int instance, Transform transform)
         {
-            NativeCalls.godot_icall_2_146(method_bind_8, Object.GetPtr(this), instance, ref transform);
+            NativeCalls.godot_icall_2_147(method_bind_8, Object.GetPtr(this), instance, ref transform);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_instance_transform");
@@ -111,7 +111,7 @@ namespace GodotEngine
         /// </summary>
         public Transform get_instance_transform(int instance)
         {
-            object ret = NativeCalls.godot_icall_1_147(method_bind_9, Object.GetPtr(this), instance);
+            object ret = NativeCalls.godot_icall_1_148(method_bind_9, Object.GetPtr(this), instance);
             return (Transform)ret;
         }
 
@@ -122,7 +122,7 @@ namespace GodotEngine
         /// </summary>
         public void set_instance_color(int instance, Color color)
         {
-            NativeCalls.godot_icall_2_212(method_bind_10, Object.GetPtr(this), instance, ref color);
+            NativeCalls.godot_icall_2_211(method_bind_10, Object.GetPtr(this), instance, ref color);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_instance_color");
@@ -132,7 +132,7 @@ namespace GodotEngine
         /// </summary>
         public Color get_instance_color(int instance)
         {
-            object ret = NativeCalls.godot_icall_1_213(method_bind_11, Object.GetPtr(this), instance);
+            object ret = NativeCalls.godot_icall_1_212(method_bind_11, Object.GetPtr(this), instance);
             return (Color)ret;
         }
 
@@ -143,7 +143,7 @@ namespace GodotEngine
         /// </summary>
         public Rect3 get_aabb()
         {
-            object ret = NativeCalls.godot_icall_0_91(method_bind_12, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_92(method_bind_12, Object.GetPtr(this));
             return (Rect3)ret;
         }
     }

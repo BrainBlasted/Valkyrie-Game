@@ -18,14 +18,14 @@ namespace GodotEngine
 
         public void set_shortcut(InputEvent @event)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(@event));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(@event));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_shortcut");
 
         public InputEvent get_shortcut()
         {
-            return NativeCalls.godot_icall_0_437(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_433(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_valid");
@@ -39,7 +39,7 @@ namespace GodotEngine
 
         public bool is_shortcut(InputEvent @event)
         {
-            return NativeCalls.godot_icall_1_253(method_bind_3, Object.GetPtr(this), Object.GetPtr(@event));
+            return NativeCalls.godot_icall_1_251(method_bind_3, Object.GetPtr(this), Object.GetPtr(@event));
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_as_text");

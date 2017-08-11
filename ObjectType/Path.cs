@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_curve(Curve3D curve)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(curve));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(curve));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_curve");
@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public Curve3D get_curve()
         {
-            return NativeCalls.godot_icall_0_339(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_333(method_bind_1, Object.GetPtr(this));
         }
     }
 }

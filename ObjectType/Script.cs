@@ -30,7 +30,7 @@ namespace GodotEngine
         /// </summary>
         public bool instance_has(Object base_object)
         {
-            return NativeCalls.godot_icall_1_85(method_bind_1, Object.GetPtr(this), Object.GetPtr(base_object));
+            return NativeCalls.godot_icall_1_86(method_bind_1, Object.GetPtr(this), Object.GetPtr(base_object));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_source_code");
@@ -60,14 +60,14 @@ namespace GodotEngine
         /// </summary>
         public void set_source_code(string source)
         {
-            NativeCalls.godot_icall_1_34(method_bind_4, Object.GetPtr(this), source);
+            NativeCalls.godot_icall_1_35(method_bind_4, Object.GetPtr(this), source);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "reload");
 
         public int reload(bool keep_state = false)
         {
-            return NativeCalls.godot_icall_1_330(method_bind_5, Object.GetPtr(this), keep_state);
+            return NativeCalls.godot_icall_1_327(method_bind_5, Object.GetPtr(this), keep_state);
         }
     }
 }

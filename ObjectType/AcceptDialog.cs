@@ -22,7 +22,7 @@ namespace GodotEngine
         /// <summary>
         /// Return the OK Button.
         /// </summary>
-        public Object get_ok()
+        public Button get_ok()
         {
             return NativeCalls.godot_icall_0_30(method_bind_0, Object.GetPtr(this));
         }
@@ -32,9 +32,9 @@ namespace GodotEngine
         /// <summary>
         /// Return the label used for built-in text.
         /// </summary>
-        public Object get_label()
+        public Label get_label()
         {
-            return NativeCalls.godot_icall_0_30(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_31(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_hide_on_ok");
@@ -65,7 +65,7 @@ namespace GodotEngine
         /// </summary>
         public Button add_button(string text, bool right = false, string action = "")
         {
-            return NativeCalls.godot_icall_3_31(method_bind_4, Object.GetPtr(this), text, right, action);
+            return NativeCalls.godot_icall_3_32(method_bind_4, Object.GetPtr(this), text, right, action);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_cancel");
@@ -75,17 +75,14 @@ namespace GodotEngine
         /// </summary>
         public Button add_cancel(string name)
         {
-            return NativeCalls.godot_icall_1_32(method_bind_5, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_33(method_bind_5, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "register_text_enter");
 
-        /// <summary>
-        /// Register a [LineEdit] in the dialog. When the enter key is pressed, the dialog will be accepted.
-        /// </summary>
-        public LineEdit register_text_enter(Object line_edit)
+        public void register_text_enter(Node line_edit)
         {
-            return NativeCalls.godot_icall_1_33(method_bind_6, Object.GetPtr(this), Object.GetPtr(line_edit));
+            NativeCalls.godot_icall_1_34(method_bind_6, Object.GetPtr(this), Object.GetPtr(line_edit));
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_text");
@@ -95,7 +92,7 @@ namespace GodotEngine
         /// </summary>
         public void set_text(string text)
         {
-            NativeCalls.godot_icall_1_34(method_bind_7, Object.GetPtr(this), text);
+            NativeCalls.godot_icall_1_35(method_bind_7, Object.GetPtr(this), text);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_text");

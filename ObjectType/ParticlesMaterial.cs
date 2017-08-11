@@ -94,30 +94,30 @@ namespace GodotEngine
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_param_texture");
 
-        public void set_param_texture(int param, Object texture)
+        public void set_param_texture(int param, Texture texture)
         {
-            NativeCalls.godot_icall_2_336(method_bind_8, Object.GetPtr(this), param, Object.GetPtr(texture));
+            NativeCalls.godot_icall_2_89(method_bind_8, Object.GetPtr(this), param, Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_param_texture");
 
-        public Object get_param_texture(int param)
+        public Texture get_param_texture(int param)
         {
-            return NativeCalls.godot_icall_1_148(method_bind_9, Object.GetPtr(this), param);
+            return NativeCalls.godot_icall_1_109(method_bind_9, Object.GetPtr(this), param);
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_color");
 
         public void set_color(Color color)
         {
-            NativeCalls.godot_icall_1_122(method_bind_10, Object.GetPtr(this), ref color);
+            NativeCalls.godot_icall_1_123(method_bind_10, Object.GetPtr(this), ref color);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_color");
 
         public Color get_color()
         {
-            object ret = NativeCalls.godot_icall_0_123(method_bind_11, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_124(method_bind_11, Object.GetPtr(this));
             return (Color)ret;
         }
 
@@ -125,14 +125,14 @@ namespace GodotEngine
 
         public void set_color_ramp(Texture ramp)
         {
-            NativeCalls.godot_icall_1_35(method_bind_12, Object.GetPtr(this), Object.GetPtr(ramp));
+            NativeCalls.godot_icall_1_19(method_bind_12, Object.GetPtr(this), Object.GetPtr(ramp));
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_color_ramp");
 
         public Texture get_color_ramp()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_13, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_13, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_flag");
@@ -181,7 +181,7 @@ namespace GodotEngine
 
         public void set_emission_box_extents(Vector3 extents)
         {
-            NativeCalls.godot_icall_1_83(method_bind_20, Object.GetPtr(this), ref extents);
+            NativeCalls.godot_icall_1_84(method_bind_20, Object.GetPtr(this), ref extents);
         }
 
         private IntPtr method_bind_21 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_emission_box_extents");
@@ -196,42 +196,42 @@ namespace GodotEngine
 
         public void set_emission_point_texture(Texture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_22, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_22, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_emission_point_texture");
 
         public Texture get_emission_point_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_23, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_23, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_emission_normal_texture");
 
         public void set_emission_normal_texture(Texture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_24, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_24, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_emission_normal_texture");
 
         public Texture get_emission_normal_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_25, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_25, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_emission_color_texture");
 
         public void set_emission_color_texture(Texture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_26, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_26, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_27 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_emission_color_texture");
 
         public Texture get_emission_color_texture()
         {
-            return NativeCalls.godot_icall_0_92(method_bind_27, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_93(method_bind_27, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_28 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_emission_point_count");
@@ -266,28 +266,28 @@ namespace GodotEngine
 
         public void set_trail_size_modifier(CurveTexture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_32, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_32, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_33 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_trail_size_modifier");
 
         public CurveTexture get_trail_size_modifier()
         {
-            return NativeCalls.godot_icall_0_337(method_bind_33, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_331(method_bind_33, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_34 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_trail_color_modifier");
 
         public void set_trail_color_modifier(GradientTexture texture)
         {
-            NativeCalls.godot_icall_1_35(method_bind_34, Object.GetPtr(this), Object.GetPtr(texture));
+            NativeCalls.godot_icall_1_19(method_bind_34, Object.GetPtr(this), Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_35 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_trail_color_modifier");
 
         public GradientTexture get_trail_color_modifier()
         {
-            return NativeCalls.godot_icall_0_338(method_bind_35, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_332(method_bind_35, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_36 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_gravity");
@@ -302,7 +302,7 @@ namespace GodotEngine
 
         public void set_gravity(Vector3 accel_vec)
         {
-            NativeCalls.godot_icall_1_83(method_bind_37, Object.GetPtr(this), ref accel_vec);
+            NativeCalls.godot_icall_1_84(method_bind_37, Object.GetPtr(this), ref accel_vec);
         }
     }
 }

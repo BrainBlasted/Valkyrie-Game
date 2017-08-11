@@ -27,7 +27,7 @@ namespace GodotEngine
         /// </summary>
         public int listen(int port, string bind_address = "*")
         {
-            return NativeCalls.godot_icall_2_456(method_bind_0, Object.GetPtr(this), port, bind_address);
+            return NativeCalls.godot_icall_2_452(method_bind_0, Object.GetPtr(this), port, bind_address);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "is_connection_available");
@@ -47,7 +47,7 @@ namespace GodotEngine
         /// </summary>
         public StreamPeerTCP take_connection()
         {
-            return NativeCalls.godot_icall_0_457(method_bind_2, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_453(method_bind_2, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "stop");

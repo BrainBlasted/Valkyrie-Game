@@ -67,7 +67,7 @@ namespace GodotEngine
 
         public void set_linear_velocity(Vector3 velocity)
         {
-            NativeCalls.godot_icall_1_83(method_bind_7, Object.GetPtr(this), ref velocity);
+            NativeCalls.godot_icall_1_84(method_bind_7, Object.GetPtr(this), ref velocity);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_linear_velocity");
@@ -82,7 +82,7 @@ namespace GodotEngine
 
         public void set_angular_velocity(Vector3 velocity)
         {
-            NativeCalls.godot_icall_1_83(method_bind_9, Object.GetPtr(this), ref velocity);
+            NativeCalls.godot_icall_1_84(method_bind_9, Object.GetPtr(this), ref velocity);
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_angular_velocity");
@@ -97,7 +97,7 @@ namespace GodotEngine
 
         public void set_transform(Transform transform)
         {
-            NativeCalls.godot_icall_1_208(method_bind_11, Object.GetPtr(this), ref transform);
+            NativeCalls.godot_icall_1_207(method_bind_11, Object.GetPtr(this), ref transform);
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_transform");
@@ -112,21 +112,21 @@ namespace GodotEngine
 
         public void add_force(Vector3 force, Vector3 pos)
         {
-            NativeCalls.godot_icall_2_378(method_bind_13, Object.GetPtr(this), ref force, ref pos);
+            NativeCalls.godot_icall_2_375(method_bind_13, Object.GetPtr(this), ref force, ref pos);
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "apply_impulse");
 
         public void apply_impulse(Vector3 pos, Vector3 j)
         {
-            NativeCalls.godot_icall_2_378(method_bind_14, Object.GetPtr(this), ref pos, ref j);
+            NativeCalls.godot_icall_2_375(method_bind_14, Object.GetPtr(this), ref pos, ref j);
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "apply_torqe_impulse");
 
         public void apply_torqe_impulse(Vector3 j)
         {
-            NativeCalls.godot_icall_1_83(method_bind_15, Object.GetPtr(this), ref j);
+            NativeCalls.godot_icall_1_84(method_bind_15, Object.GetPtr(this), ref j);
         }
 
         private IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_sleep_state");
@@ -177,7 +177,7 @@ namespace GodotEngine
 
         public RID get_contact_collider(int contact_idx)
         {
-            IntPtr ret = NativeCalls.godot_icall_1_341(method_bind_22, Object.GetPtr(this), contact_idx);
+            IntPtr ret = NativeCalls.godot_icall_1_335(method_bind_22, Object.GetPtr(this), contact_idx);
             return new RID(ret);
         }
 
@@ -200,7 +200,7 @@ namespace GodotEngine
 
         public Object get_contact_collider_object(int contact_idx)
         {
-            return NativeCalls.godot_icall_1_148(method_bind_25, Object.GetPtr(this), contact_idx);
+            return NativeCalls.godot_icall_1_149(method_bind_25, Object.GetPtr(this), contact_idx);
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_contact_collider_shape");
@@ -236,7 +236,7 @@ namespace GodotEngine
 
         public PhysicsDirectSpaceState get_space_state()
         {
-            return NativeCalls.godot_icall_0_379(method_bind_30, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_376(method_bind_30, Object.GetPtr(this));
         }
     }
 }

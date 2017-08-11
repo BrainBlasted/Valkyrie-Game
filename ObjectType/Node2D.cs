@@ -116,7 +116,7 @@ namespace GodotEngine
         /// </summary>
         public void move_local_x(float delta, bool scaled = false)
         {
-            NativeCalls.godot_icall_2_66(method_bind_9, Object.GetPtr(this), delta, scaled);
+            NativeCalls.godot_icall_2_67(method_bind_9, Object.GetPtr(this), delta, scaled);
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "move_local_y");
@@ -126,7 +126,7 @@ namespace GodotEngine
         /// </summary>
         public void move_local_y(float delta, bool scaled = false)
         {
-            NativeCalls.godot_icall_2_66(method_bind_10, Object.GetPtr(this), delta, scaled);
+            NativeCalls.godot_icall_2_67(method_bind_10, Object.GetPtr(this), delta, scaled);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "translate");
@@ -245,7 +245,7 @@ namespace GodotEngine
         /// </summary>
         public void set_transform(Transform2D xform)
         {
-            NativeCalls.godot_icall_1_139(method_bind_22, Object.GetPtr(this), ref xform);
+            NativeCalls.godot_icall_1_140(method_bind_22, Object.GetPtr(this), ref xform);
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_global_transform");
@@ -255,7 +255,7 @@ namespace GodotEngine
         /// </summary>
         public void set_global_transform(Transform2D xform)
         {
-            NativeCalls.godot_icall_1_139(method_bind_23, Object.GetPtr(this), ref xform);
+            NativeCalls.godot_icall_1_140(method_bind_23, Object.GetPtr(this), ref xform);
         }
 
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "look_at");
@@ -275,14 +275,14 @@ namespace GodotEngine
         /// </summary>
         public float get_angle_to(Vector2 point)
         {
-            return NativeCalls.godot_icall_1_319(method_bind_25, Object.GetPtr(this), ref point);
+            return NativeCalls.godot_icall_1_317(method_bind_25, Object.GetPtr(this), ref point);
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "to_local");
 
         public Vector2 to_local(Vector2 global_point)
         {
-            object ret = NativeCalls.godot_icall_1_143(method_bind_26, Object.GetPtr(this), ref global_point);
+            object ret = NativeCalls.godot_icall_1_144(method_bind_26, Object.GetPtr(this), ref global_point);
             return (Vector2)ret;
         }
 
@@ -290,7 +290,7 @@ namespace GodotEngine
 
         public Vector2 to_global(Vector2 local_point)
         {
-            object ret = NativeCalls.godot_icall_1_143(method_bind_27, Object.GetPtr(this), ref local_point);
+            object ret = NativeCalls.godot_icall_1_144(method_bind_27, Object.GetPtr(this), ref local_point);
             return (Vector2)ret;
         }
 
@@ -348,7 +348,7 @@ namespace GodotEngine
 
         public Transform2D get_relative_transform_to_parent(Node parent)
         {
-            object ret = NativeCalls.godot_icall_1_320(method_bind_33, Object.GetPtr(this), Object.GetPtr(parent));
+            object ret = NativeCalls.godot_icall_1_318(method_bind_33, Object.GetPtr(this), Object.GetPtr(parent));
             return (Transform2D)ret;
         }
     }

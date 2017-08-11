@@ -50,42 +50,42 @@ namespace GodotEngine
 
         public void set_text(int column, string text)
         {
-            NativeCalls.godot_icall_2_68(method_bind_4, Object.GetPtr(this), column, text);
+            NativeCalls.godot_icall_2_69(method_bind_4, Object.GetPtr(this), column, text);
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_text");
 
         public string get_text(int column)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_5, Object.GetPtr(this), column);
+            return NativeCalls.godot_icall_1_87(method_bind_5, Object.GetPtr(this), column);
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_icon");
 
         public void set_icon(int column, Texture texture)
         {
-            NativeCalls.godot_icall_2_88(method_bind_6, Object.GetPtr(this), column, Object.GetPtr(texture));
+            NativeCalls.godot_icall_2_89(method_bind_6, Object.GetPtr(this), column, Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_icon");
 
         public Texture get_icon(int column)
         {
-            return NativeCalls.godot_icall_1_108(method_bind_7, Object.GetPtr(this), column);
+            return NativeCalls.godot_icall_1_109(method_bind_7, Object.GetPtr(this), column);
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_icon_region");
 
         public void set_icon_region(int column, Rect2 region)
         {
-            NativeCalls.godot_icall_2_261(method_bind_8, Object.GetPtr(this), column, ref region);
+            NativeCalls.godot_icall_2_259(method_bind_8, Object.GetPtr(this), column, ref region);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_icon_region");
 
         public Rect2 get_icon_region(int column)
         {
-            object ret = NativeCalls.godot_icall_1_262(method_bind_9, Object.GetPtr(this), column);
+            object ret = NativeCalls.godot_icall_1_260(method_bind_9, Object.GetPtr(this), column);
             return (Rect2)ret;
         }
 
@@ -121,35 +121,35 @@ namespace GodotEngine
 
         public void set_range_config(int column, float min, float max, float step, bool expr = false)
         {
-            NativeCalls.godot_icall_5_487(method_bind_14, Object.GetPtr(this), column, min, max, step, expr);
+            NativeCalls.godot_icall_5_483(method_bind_14, Object.GetPtr(this), column, min, max, step, expr);
         }
 
         private IntPtr method_bind_15 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_range_config");
 
         public Dictionary<object, object> get_range_config(int column)
         {
-            return NativeCalls.godot_icall_1_488(method_bind_15, Object.GetPtr(this), column);
+            return NativeCalls.godot_icall_1_484(method_bind_15, Object.GetPtr(this), column);
         }
 
         private IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_metadata");
 
         public void set_metadata(int column, object meta)
         {
-            NativeCalls.godot_icall_2_263(method_bind_16, Object.GetPtr(this), column, meta);
+            NativeCalls.godot_icall_2_261(method_bind_16, Object.GetPtr(this), column, meta);
         }
 
         private IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_metadata");
 
-        public void get_metadata(int column)
+        public object get_metadata(int column)
         {
-            NativeCalls.godot_icall_1_0(method_bind_17, Object.GetPtr(this), column);
+            return NativeCalls.godot_icall_1_262(method_bind_17, Object.GetPtr(this), column);
         }
 
         private IntPtr method_bind_18 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_custom_draw");
 
         public void set_custom_draw(int column, Object @object, string callback)
         {
-            NativeCalls.godot_icall_3_489(method_bind_18, Object.GetPtr(this), column, Object.GetPtr(@object), callback);
+            NativeCalls.godot_icall_3_485(method_bind_18, Object.GetPtr(this), column, Object.GetPtr(@object), callback);
         }
 
         private IntPtr method_bind_19 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_collapsed");
@@ -170,49 +170,49 @@ namespace GodotEngine
 
         public TreeItem get_next()
         {
-            return NativeCalls.godot_icall_0_484(method_bind_21, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_479(method_bind_21, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_22 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_prev");
 
         public TreeItem get_prev()
         {
-            return NativeCalls.godot_icall_0_484(method_bind_22, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_479(method_bind_22, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_23 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_parent");
 
         public TreeItem get_parent()
         {
-            return NativeCalls.godot_icall_0_484(method_bind_23, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_479(method_bind_23, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_24 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_children");
 
         public TreeItem get_children()
         {
-            return NativeCalls.godot_icall_0_484(method_bind_24, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_479(method_bind_24, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_25 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_next_visible");
 
         public TreeItem get_next_visible()
         {
-            return NativeCalls.godot_icall_0_484(method_bind_25, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_479(method_bind_25, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_26 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_prev_visible");
 
         public TreeItem get_prev_visible()
         {
-            return NativeCalls.godot_icall_0_484(method_bind_26, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_479(method_bind_26, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_27 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove_child");
 
         public void remove_child(Object child)
         {
-            NativeCalls.godot_icall_1_19(method_bind_27, Object.GetPtr(this), Object.GetPtr(child));
+            NativeCalls.godot_icall_1_34(method_bind_27, Object.GetPtr(this), Object.GetPtr(child));
         }
 
         private IntPtr method_bind_28 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_selectable");
@@ -268,7 +268,7 @@ namespace GodotEngine
 
         public void set_custom_color(int column, Color color)
         {
-            NativeCalls.godot_icall_2_212(method_bind_35, Object.GetPtr(this), column, ref color);
+            NativeCalls.godot_icall_2_211(method_bind_35, Object.GetPtr(this), column, ref color);
         }
 
         private IntPtr method_bind_36 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_custom_color");
@@ -282,7 +282,7 @@ namespace GodotEngine
 
         public void set_custom_bg_color(int column, Color color, bool just_outline = false)
         {
-            NativeCalls.godot_icall_3_490(method_bind_37, Object.GetPtr(this), column, ref color, just_outline);
+            NativeCalls.godot_icall_3_486(method_bind_37, Object.GetPtr(this), column, ref color, just_outline);
         }
 
         private IntPtr method_bind_38 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "clear_custom_bg_color");
@@ -296,7 +296,7 @@ namespace GodotEngine
 
         public Color get_custom_bg_color(int column)
         {
-            object ret = NativeCalls.godot_icall_1_213(method_bind_39, Object.GetPtr(this), column);
+            object ret = NativeCalls.godot_icall_1_212(method_bind_39, Object.GetPtr(this), column);
             return (Color)ret;
         }
 
@@ -318,7 +318,7 @@ namespace GodotEngine
 
         public void add_button(int column, Texture button, int button_idx = -1, bool disabled = false, string tooltip = "")
         {
-            NativeCalls.godot_icall_5_491(method_bind_42, Object.GetPtr(this), column, Object.GetPtr(button), button_idx, disabled, tooltip);
+            NativeCalls.godot_icall_5_487(method_bind_42, Object.GetPtr(this), column, Object.GetPtr(button), button_idx, disabled, tooltip);
         }
 
         private IntPtr method_bind_43 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_button_count");
@@ -332,14 +332,14 @@ namespace GodotEngine
 
         public Texture get_button(int column, int button_idx)
         {
-            return NativeCalls.godot_icall_2_492(method_bind_44, Object.GetPtr(this), column, button_idx);
+            return NativeCalls.godot_icall_2_488(method_bind_44, Object.GetPtr(this), column, button_idx);
         }
 
         private IntPtr method_bind_45 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_button");
 
         public void set_button(int column, int button_idx, Texture button)
         {
-            NativeCalls.godot_icall_3_475(method_bind_45, Object.GetPtr(this), column, button_idx, Object.GetPtr(button));
+            NativeCalls.godot_icall_3_471(method_bind_45, Object.GetPtr(this), column, button_idx, Object.GetPtr(button));
         }
 
         private IntPtr method_bind_46 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "erase_button");
@@ -374,14 +374,14 @@ namespace GodotEngine
 
         public void set_tooltip(int column, string tooltip)
         {
-            NativeCalls.godot_icall_2_68(method_bind_50, Object.GetPtr(this), column, tooltip);
+            NativeCalls.godot_icall_2_69(method_bind_50, Object.GetPtr(this), column, tooltip);
         }
 
         private IntPtr method_bind_51 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_tooltip");
 
         public string get_tooltip(int column)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_51, Object.GetPtr(this), column);
+            return NativeCalls.godot_icall_1_87(method_bind_51, Object.GetPtr(this), column);
         }
 
         private IntPtr method_bind_52 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_text_align");

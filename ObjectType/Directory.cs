@@ -39,10 +39,9 @@ namespace GodotEngine
         /// Open an existing directory of the filesystem. The [i]path[/i] argument can be within the project tree ([code]res://folder[/code]), the user directory ([code]user://folder[/code]) or an absolute path of the user filesystem (e.g. [code]/tmp/folder[/code] or [code]C:\tmp\folder[/code]).
         /// The method returns one of the error code constants defined in [@Global Scope] (OK or ERR_*).
         /// </summary>
-        public Error open(string path)
+        public int open(string path)
         {
-            int ret = NativeCalls.godot_icall_1_163(method_bind_0, Object.GetPtr(this), path);
-            return (Error)ret;
+            return NativeCalls.godot_icall_1_71(method_bind_0, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "list_dir_begin");
@@ -54,7 +53,7 @@ namespace GodotEngine
         /// </summary>
         public int list_dir_begin(bool skip_navigational = false, bool skip_hidden = false)
         {
-            return NativeCalls.godot_icall_2_527(method_bind_1, Object.GetPtr(this), skip_navigational, skip_hidden);
+            return NativeCalls.godot_icall_2_523(method_bind_1, Object.GetPtr(this), skip_navigational, skip_hidden);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_next");
@@ -105,7 +104,7 @@ namespace GodotEngine
         /// </summary>
         public string get_drive(int idx)
         {
-            return NativeCalls.godot_icall_1_86(method_bind_6, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_87(method_bind_6, Object.GetPtr(this), idx);
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_current_drive");
@@ -121,10 +120,9 @@ namespace GodotEngine
         /// Change the currently opened directory to the one passed as an argument. The argument can be relative to the current directory (e.g. [code]newdir[/code] or [code]../newdir[/code]), or an absolute path (e.g. [code]/tmp/newdir[/code] or [code]res://somedir/newdir[/code]).
         /// The method returns one of the error code constants defined in [@Global Scope] (OK or ERR_*).
         /// </summary>
-        public Error change_dir(string todir)
+        public int change_dir(string todir)
         {
-            int ret = NativeCalls.godot_icall_1_163(method_bind_8, Object.GetPtr(this), todir);
-            return (Error)ret;
+            return NativeCalls.godot_icall_1_71(method_bind_8, Object.GetPtr(this), todir);
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_current_dir");
@@ -143,10 +141,9 @@ namespace GodotEngine
         /// Create a directory. The argument can be relative to the current directory, or an absolute path. The target directory should be placed in an already existing directory (to create the full path recursively, see [method make_dir_recursive]).
         /// The method returns one of the error code constants defined in [@Global Scope] (OK, FAILED or ERR_*).
         /// </summary>
-        public Error make_dir(string path)
+        public int make_dir(string path)
         {
-            int ret = NativeCalls.godot_icall_1_163(method_bind_10, Object.GetPtr(this), path);
-            return (Error)ret;
+            return NativeCalls.godot_icall_1_71(method_bind_10, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "make_dir_recursive");
@@ -155,10 +152,9 @@ namespace GodotEngine
         /// Create a target directory and all necessary intermediate directories in its path, by calling [method make_dir] recursively. The argument can be relative to the current directory, or an absolute path.
         /// Return one of the error code constants defined in [@Global Scope] (OK, FAILED or ERR_*).
         /// </summary>
-        public Error make_dir_recursive(string path)
+        public int make_dir_recursive(string path)
         {
-            int ret = NativeCalls.godot_icall_1_163(method_bind_11, Object.GetPtr(this), path);
-            return (Error)ret;
+            return NativeCalls.godot_icall_1_71(method_bind_11, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_12 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "file_exists");
@@ -168,7 +164,7 @@ namespace GodotEngine
         /// </summary>
         public bool file_exists(string path)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_12, Object.GetPtr(this), path);
+            return NativeCalls.godot_icall_1_57(method_bind_12, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "dir_exists");
@@ -178,7 +174,7 @@ namespace GodotEngine
         /// </summary>
         public bool dir_exists(string path)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_13, Object.GetPtr(this), path);
+            return NativeCalls.godot_icall_1_57(method_bind_13, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_14 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_space_left");
@@ -197,10 +193,9 @@ namespace GodotEngine
         /// Copy the [i]from[/i] file to the [i]to[/i] destination. Both arguments should be paths to files, either relative or absolute. If the destination file exists and is not access-protected, it will be overwritten.
         /// Returns one of the error code constants defined in [@Global Scope] (OK, FAILED or ERR_*).
         /// </summary>
-        public Error copy(string from, string to)
+        public int copy(string from, string to)
         {
-            int ret = NativeCalls.godot_icall_2_528(method_bind_15, Object.GetPtr(this), from, to);
-            return (Error)ret;
+            return NativeCalls.godot_icall_2_70(method_bind_15, Object.GetPtr(this), from, to);
         }
 
         private IntPtr method_bind_16 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "rename");
@@ -209,10 +204,9 @@ namespace GodotEngine
         /// Rename (move) the [i]from[/i] file to the [i]to[/i] destination. Both arguments should be paths to files, either relative or absolute. If the destination file exists and is not access-protected, it will be overwritten.
         /// Return one of the error code constants defined in [@Global Scope] (OK or FAILED).
         /// </summary>
-        public Error rename(string from, string to)
+        public int rename(string from, string to)
         {
-            int ret = NativeCalls.godot_icall_2_528(method_bind_16, Object.GetPtr(this), from, to);
-            return (Error)ret;
+            return NativeCalls.godot_icall_2_70(method_bind_16, Object.GetPtr(this), from, to);
         }
 
         private IntPtr method_bind_17 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "remove");
@@ -221,10 +215,9 @@ namespace GodotEngine
         /// Delete the target file or an empty directory. The argument can be relative to the current directory, or an absolute path. If the target directory is not empty, the operation will fail.
         /// Return one of the error code constants defined in [@Global Scope] (OK or FAILED).
         /// </summary>
-        public Error remove(string path)
+        public int remove(string path)
         {
-            int ret = NativeCalls.godot_icall_1_163(method_bind_17, Object.GetPtr(this), path);
-            return (Error)ret;
+            return NativeCalls.godot_icall_1_71(method_bind_17, Object.GetPtr(this), path);
         }
     }
 }

@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_extents(Vector3 extents)
         {
-            NativeCalls.godot_icall_1_83(method_bind_0, Object.GetPtr(this), ref extents);
+            NativeCalls.godot_icall_1_84(method_bind_0, Object.GetPtr(this), ref extents);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_extents");

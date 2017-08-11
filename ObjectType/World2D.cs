@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public RID get_canvas()
         {
-            IntPtr ret = NativeCalls.godot_icall_0_121(method_bind_0, Object.GetPtr(this));
+            IntPtr ret = NativeCalls.godot_icall_0_122(method_bind_0, Object.GetPtr(this));
             return new RID(ret);
         }
 
@@ -35,7 +35,7 @@ namespace GodotEngine
         /// </summary>
         public RID get_space()
         {
-            IntPtr ret = NativeCalls.godot_icall_0_121(method_bind_1, Object.GetPtr(this));
+            IntPtr ret = NativeCalls.godot_icall_0_122(method_bind_1, Object.GetPtr(this));
             return new RID(ret);
         }
 
@@ -46,7 +46,7 @@ namespace GodotEngine
         /// </summary>
         public Physics2DDirectSpaceState get_direct_space_state()
         {
-            return NativeCalls.godot_icall_0_342(method_bind_2, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_336(method_bind_2, Object.GetPtr(this));
         }
     }
 }

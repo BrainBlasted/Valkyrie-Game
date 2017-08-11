@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodotSharp", "GodotSharp.csproj", "{1C23B201-64C7-4088-9983-772CD366F61C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodotSharp", "GodotSharp.csproj", "{19CBFCC3-65E6-401C-A6B5-5FB75D061F4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1C23B201-64C7-4088-9983-772CD366F61C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1C23B201-64C7-4088-9983-772CD366F61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1C23B201-64C7-4088-9983-772CD366F61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1C23B201-64C7-4088-9983-772CD366F61C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19CBFCC3-65E6-401C-A6B5-5FB75D061F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19CBFCC3-65E6-401C-A6B5-5FB75D061F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19CBFCC3-65E6-401C-A6B5-5FB75D061F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19CBFCC3-65E6-401C-A6B5-5FB75D061F4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -24,14 +24,14 @@ namespace GodotEngine
         /// </summary>
         public static int save(string path, Resource resource, int flags = 0)
         {
-            return NativeCalls.godot_icall_3_557(method_bind_0, ptr, path, Object.GetPtr(resource), flags);
+            return NativeCalls.godot_icall_3_552(method_bind_0, ptr, path, Object.GetPtr(resource), flags);
         }
 
         private static IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_recognized_extensions");
 
         public static string[] get_recognized_extensions(Resource type)
         {
-            return NativeCalls.godot_icall_1_558(method_bind_1, ptr, Object.GetPtr(type));
+            return NativeCalls.godot_icall_1_553(method_bind_1, ptr, Object.GetPtr(type));
         }
     }
 }

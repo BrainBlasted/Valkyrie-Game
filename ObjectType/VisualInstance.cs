@@ -14,7 +14,7 @@ namespace GodotEngine
 
         public void set_base(RID @base)
         {
-            NativeCalls.godot_icall_1_350(method_bind_0, Object.GetPtr(this), RID.GetPtr(@base));
+            NativeCalls.godot_icall_1_359(method_bind_0, Object.GetPtr(this), RID.GetPtr(@base));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_layer_mask");
@@ -35,7 +35,7 @@ namespace GodotEngine
 
         public Rect3 get_transformed_aabb()
         {
-            object ret = NativeCalls.godot_icall_0_91(method_bind_3, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_92(method_bind_3, Object.GetPtr(this));
             return (Rect3)ret;
         }
 
@@ -43,7 +43,7 @@ namespace GodotEngine
 
         public Rect3 get_aabb()
         {
-            object ret = NativeCalls.godot_icall_0_91(method_bind_4, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_92(method_bind_4, Object.GetPtr(this));
             return (Rect3)ret;
         }
     }

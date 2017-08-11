@@ -17,14 +17,14 @@ namespace GodotEngine
         /// </summary>
         public static ResourceInteractiveLoader load_interactive(string path, string type_hint = "")
         {
-            return NativeCalls.godot_icall_2_555(method_bind_0, ptr, path, type_hint);
+            return NativeCalls.godot_icall_2_550(method_bind_0, ptr, path, type_hint);
         }
 
         private static IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "load");
 
         public static Resource load(string path, string type_hint = "", bool p_no_cache = false)
         {
-            return NativeCalls.godot_icall_3_556(method_bind_1, ptr, path, type_hint, p_no_cache);
+            return NativeCalls.godot_icall_3_551(method_bind_1, ptr, path, type_hint, p_no_cache);
         }
 
         private static IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_recognized_extensions_for_type");
@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public static string[] get_recognized_extensions_for_type(string type)
         {
-            return NativeCalls.godot_icall_1_162(method_bind_2, ptr, type);
+            return NativeCalls.godot_icall_1_164(method_bind_2, ptr, type);
         }
 
         private static IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_abort_on_missing_resources");
@@ -51,14 +51,14 @@ namespace GodotEngine
 
         public static string[] get_dependencies(string path)
         {
-            return NativeCalls.godot_icall_1_162(method_bind_4, ptr, path);
+            return NativeCalls.godot_icall_1_164(method_bind_4, ptr, path);
         }
 
         private static IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has");
 
         public static bool has(string path)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_5, ptr, path);
+            return NativeCalls.godot_icall_1_57(method_bind_5, ptr, path);
         }
     }
 }

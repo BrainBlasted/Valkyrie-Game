@@ -382,7 +382,7 @@ namespace GodotEngine
         /// </summary>
         public Rect2 get_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_29, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_29, Object.GetPtr(this));
             return (Rect2)ret;
         }
 
@@ -393,7 +393,7 @@ namespace GodotEngine
         /// </summary>
         public Rect2 get_global_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_30, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_30, Object.GetPtr(this));
             return (Rect2)ret;
         }
 
@@ -544,7 +544,7 @@ namespace GodotEngine
         /// </summary>
         public void set_theme(Theme theme)
         {
-            NativeCalls.godot_icall_1_35(method_bind_45, Object.GetPtr(this), Object.GetPtr(theme));
+            NativeCalls.godot_icall_1_19(method_bind_45, Object.GetPtr(this), Object.GetPtr(theme));
         }
 
         private IntPtr method_bind_46 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_theme");
@@ -564,14 +564,14 @@ namespace GodotEngine
         /// </summary>
         public void add_icon_override(string name, Texture texture)
         {
-            NativeCalls.godot_icall_2_72(method_bind_47, Object.GetPtr(this), name, Object.GetPtr(texture));
+            NativeCalls.godot_icall_2_73(method_bind_47, Object.GetPtr(this), name, Object.GetPtr(texture));
         }
 
         private IntPtr method_bind_48 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_shader_override");
 
         public void add_shader_override(string name, Shader shader)
         {
-            NativeCalls.godot_icall_2_72(method_bind_48, Object.GetPtr(this), name, Object.GetPtr(shader));
+            NativeCalls.godot_icall_2_73(method_bind_48, Object.GetPtr(this), name, Object.GetPtr(shader));
         }
 
         private IntPtr method_bind_49 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_style_override");
@@ -581,7 +581,7 @@ namespace GodotEngine
         /// </summary>
         public void add_style_override(string name, StyleBox stylebox)
         {
-            NativeCalls.godot_icall_2_72(method_bind_49, Object.GetPtr(this), name, Object.GetPtr(stylebox));
+            NativeCalls.godot_icall_2_73(method_bind_49, Object.GetPtr(this), name, Object.GetPtr(stylebox));
         }
 
         private IntPtr method_bind_50 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_font_override");
@@ -591,7 +591,7 @@ namespace GodotEngine
         /// </summary>
         public void add_font_override(string name, Font font)
         {
-            NativeCalls.godot_icall_2_72(method_bind_50, Object.GetPtr(this), name, Object.GetPtr(font));
+            NativeCalls.godot_icall_2_73(method_bind_50, Object.GetPtr(this), name, Object.GetPtr(font));
         }
 
         private IntPtr method_bind_51 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "add_color_override");
@@ -608,7 +608,7 @@ namespace GodotEngine
         /// </summary>
         public void add_constant_override(string name, int constant)
         {
-            NativeCalls.godot_icall_2_78(method_bind_52, Object.GetPtr(this), name, constant);
+            NativeCalls.godot_icall_2_79(method_bind_52, Object.GetPtr(this), name, constant);
         }
 
         private IntPtr method_bind_53 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_icon");
@@ -644,77 +644,77 @@ namespace GodotEngine
 
         public int get_constant(string name, string type = "")
         {
-            return NativeCalls.godot_icall_2_69(method_bind_57, Object.GetPtr(this), name, type);
+            return NativeCalls.godot_icall_2_70(method_bind_57, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_58 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_icon_override");
 
         public bool has_icon_override(string name)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_58, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_57(method_bind_58, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_59 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_stylebox_override");
 
         public bool has_stylebox_override(string name)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_59, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_57(method_bind_59, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_60 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_font_override");
 
         public bool has_font_override(string name)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_60, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_57(method_bind_60, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_61 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_color_override");
 
         public bool has_color_override(string name)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_61, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_57(method_bind_61, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_62 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_constant_override");
 
         public bool has_constant_override(string name)
         {
-            return NativeCalls.godot_icall_1_56(method_bind_62, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_57(method_bind_62, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_63 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_icon");
 
         public bool has_icon(string name, string type = "")
         {
-            return NativeCalls.godot_icall_2_161(method_bind_63, Object.GetPtr(this), name, type);
+            return NativeCalls.godot_icall_2_163(method_bind_63, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_64 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_stylebox");
 
         public bool has_stylebox(string name, string type = "")
         {
-            return NativeCalls.godot_icall_2_161(method_bind_64, Object.GetPtr(this), name, type);
+            return NativeCalls.godot_icall_2_163(method_bind_64, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_65 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_font");
 
         public bool has_font(string name, string type = "")
         {
-            return NativeCalls.godot_icall_2_161(method_bind_65, Object.GetPtr(this), name, type);
+            return NativeCalls.godot_icall_2_163(method_bind_65, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_66 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_color");
 
         public bool has_color(string name, string type = "")
         {
-            return NativeCalls.godot_icall_2_161(method_bind_66, Object.GetPtr(this), name, type);
+            return NativeCalls.godot_icall_2_163(method_bind_66, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_67 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "has_constant");
 
         public bool has_constant(string name, string type = "")
         {
-            return NativeCalls.godot_icall_2_161(method_bind_67, Object.GetPtr(this), name, type);
+            return NativeCalls.godot_icall_2_163(method_bind_67, Object.GetPtr(this), name, type);
         }
 
         private IntPtr method_bind_68 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_parent_control");
@@ -759,7 +759,7 @@ namespace GodotEngine
         /// </summary>
         public void set_tooltip(string tooltip)
         {
-            NativeCalls.godot_icall_1_34(method_bind_73, Object.GetPtr(this), tooltip);
+            NativeCalls.godot_icall_1_35(method_bind_73, Object.GetPtr(this), tooltip);
         }
 
         private IntPtr method_bind_74 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_tooltip");
@@ -879,14 +879,14 @@ namespace GodotEngine
 
         public void set_drag_forwarding(Control target)
         {
-            NativeCalls.godot_icall_1_19(method_bind_86, Object.GetPtr(this), Object.GetPtr(target));
+            NativeCalls.godot_icall_1_34(method_bind_86, Object.GetPtr(this), Object.GetPtr(target));
         }
 
         private IntPtr method_bind_87 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_drag_preview");
 
         public void set_drag_preview(Control control)
         {
-            NativeCalls.godot_icall_1_19(method_bind_87, Object.GetPtr(this), Object.GetPtr(control));
+            NativeCalls.godot_icall_1_34(method_bind_87, Object.GetPtr(this), Object.GetPtr(control));
         }
 
         private IntPtr method_bind_88 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "warp_mouse");

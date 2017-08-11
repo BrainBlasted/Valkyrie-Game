@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_path(string path)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, Object.GetPtr(this), path);
+            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "take_over_path");
@@ -34,7 +34,7 @@ namespace GodotEngine
         /// </summary>
         public void take_over_path(string path)
         {
-            NativeCalls.godot_icall_1_34(method_bind_1, Object.GetPtr(this), path);
+            NativeCalls.godot_icall_1_35(method_bind_1, Object.GetPtr(this), path);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_path");
@@ -54,7 +54,7 @@ namespace GodotEngine
         /// </summary>
         public void set_name(string name)
         {
-            NativeCalls.godot_icall_1_34(method_bind_3, Object.GetPtr(this), name);
+            NativeCalls.godot_icall_1_35(method_bind_3, Object.GetPtr(this), name);
         }
 
         private IntPtr method_bind_4 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_name");
@@ -74,7 +74,7 @@ namespace GodotEngine
         /// </summary>
         public RID get_rid()
         {
-            IntPtr ret = NativeCalls.godot_icall_0_121(method_bind_5, Object.GetPtr(this));
+            IntPtr ret = NativeCalls.godot_icall_0_122(method_bind_5, Object.GetPtr(this));
             return new RID(ret);
         }
 
@@ -96,7 +96,7 @@ namespace GodotEngine
 
         public Node get_local_scene()
         {
-            return NativeCalls.godot_icall_0_309(method_bind_8, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_119(method_bind_8, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "setup_local_to_scene");
@@ -110,7 +110,7 @@ namespace GodotEngine
 
         public Resource duplicate(bool subresources = false)
         {
-            return NativeCalls.godot_icall_1_413(method_bind_10, Object.GetPtr(this), subresources);
+            return NativeCalls.godot_icall_1_410(method_bind_10, Object.GetPtr(this), subresources);
         }
     }
 }

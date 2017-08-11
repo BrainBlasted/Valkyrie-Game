@@ -32,14 +32,14 @@ namespace GodotEngine
 
         public void set_constant_value(object value)
         {
-            NativeCalls.godot_icall_1_119(method_bind_2, Object.GetPtr(this), value);
+            NativeCalls.godot_icall_1_120(method_bind_2, Object.GetPtr(this), value);
         }
 
         private IntPtr method_bind_3 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_constant_value");
 
         public object get_constant_value()
         {
-            return NativeCalls.godot_icall_0_120(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_121(method_bind_3, Object.GetPtr(this));
         }
     }
 }

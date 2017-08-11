@@ -60,7 +60,7 @@ namespace GodotEngine
 
         public void set_side(int side, Image image)
         {
-            NativeCalls.godot_icall_2_88(method_bind_4, Object.GetPtr(this), side, Object.GetPtr(image));
+            NativeCalls.godot_icall_2_89(method_bind_4, Object.GetPtr(this), side, Object.GetPtr(image));
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_side");

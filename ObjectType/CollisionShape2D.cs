@@ -21,7 +21,7 @@ namespace GodotEngine
 
         public void set_shape(Shape2D shape)
         {
-            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), Object.GetPtr(shape));
+            NativeCalls.godot_icall_1_19(method_bind_0, Object.GetPtr(this), Object.GetPtr(shape));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_shape");
@@ -31,7 +31,7 @@ namespace GodotEngine
         /// </summary>
         public Shape2D get_shape()
         {
-            return NativeCalls.godot_icall_0_155(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_157(method_bind_1, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_disabled");

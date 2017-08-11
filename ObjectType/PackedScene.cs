@@ -28,14 +28,14 @@ namespace GodotEngine
         /// </summary>
         public int pack(Node path)
         {
-            return NativeCalls.godot_icall_1_145(method_bind_0, Object.GetPtr(this), Object.GetPtr(path));
+            return NativeCalls.godot_icall_1_146(method_bind_0, Object.GetPtr(this), Object.GetPtr(path));
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "instance");
 
         public Node instance(int edit_state = 0)
         {
-            return NativeCalls.godot_icall_1_306(method_bind_1, Object.GetPtr(this), edit_state);
+            return NativeCalls.godot_icall_1_304(method_bind_1, Object.GetPtr(this), edit_state);
         }
 
         private IntPtr method_bind_2 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "can_instance");
@@ -49,7 +49,7 @@ namespace GodotEngine
 
         public SceneState get_state()
         {
-            return NativeCalls.godot_icall_0_332(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_329(method_bind_3, Object.GetPtr(this));
         }
     }
 }

@@ -99,7 +99,7 @@ namespace GodotEngine
 
         public void set_world_2d(World2D world_2d)
         {
-            NativeCalls.godot_icall_1_35(method_bind_4, Object.GetPtr(this), Object.GetPtr(world_2d));
+            NativeCalls.godot_icall_1_19(method_bind_4, Object.GetPtr(this), Object.GetPtr(world_2d));
         }
 
         private IntPtr method_bind_5 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_world_2d");
@@ -109,7 +109,7 @@ namespace GodotEngine
         /// </summary>
         public World2D get_world_2d()
         {
-            return NativeCalls.godot_icall_0_141(method_bind_5, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_142(method_bind_5, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_6 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "find_world_2d");
@@ -119,7 +119,7 @@ namespace GodotEngine
         /// </summary>
         public World2D find_world_2d()
         {
-            return NativeCalls.godot_icall_0_141(method_bind_6, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_142(method_bind_6, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_7 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_world");
@@ -129,7 +129,7 @@ namespace GodotEngine
         /// </summary>
         public void set_world(World world)
         {
-            NativeCalls.godot_icall_1_35(method_bind_7, Object.GetPtr(this), Object.GetPtr(world));
+            NativeCalls.godot_icall_1_19(method_bind_7, Object.GetPtr(this), Object.GetPtr(world));
         }
 
         private IntPtr method_bind_8 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_world");
@@ -139,7 +139,7 @@ namespace GodotEngine
         /// </summary>
         public World get_world()
         {
-            return NativeCalls.godot_icall_0_439(method_bind_8, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_436(method_bind_8, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_9 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "find_world");
@@ -149,7 +149,7 @@ namespace GodotEngine
         /// </summary>
         public World find_world()
         {
-            return NativeCalls.godot_icall_0_439(method_bind_9, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_436(method_bind_9, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_10 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_canvas_transform");
@@ -159,7 +159,7 @@ namespace GodotEngine
         /// </summary>
         public void set_canvas_transform(Transform2D xform)
         {
-            NativeCalls.godot_icall_1_139(method_bind_10, Object.GetPtr(this), ref xform);
+            NativeCalls.godot_icall_1_140(method_bind_10, Object.GetPtr(this), ref xform);
         }
 
         private IntPtr method_bind_11 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_canvas_transform");
@@ -169,7 +169,7 @@ namespace GodotEngine
         /// </summary>
         public Transform2D get_canvas_transform()
         {
-            object ret = NativeCalls.godot_icall_0_140(method_bind_11, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_141(method_bind_11, Object.GetPtr(this));
             return (Transform2D)ret;
         }
 
@@ -180,7 +180,7 @@ namespace GodotEngine
         /// </summary>
         public void set_global_canvas_transform(Transform2D xform)
         {
-            NativeCalls.godot_icall_1_139(method_bind_12, Object.GetPtr(this), ref xform);
+            NativeCalls.godot_icall_1_140(method_bind_12, Object.GetPtr(this), ref xform);
         }
 
         private IntPtr method_bind_13 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_global_canvas_transform");
@@ -190,7 +190,7 @@ namespace GodotEngine
         /// </summary>
         public Transform2D get_global_canvas_transform()
         {
-            object ret = NativeCalls.godot_icall_0_140(method_bind_13, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_141(method_bind_13, Object.GetPtr(this));
             return (Transform2D)ret;
         }
 
@@ -201,7 +201,7 @@ namespace GodotEngine
         /// </summary>
         public Transform2D get_final_transform()
         {
-            object ret = NativeCalls.godot_icall_0_140(method_bind_14, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_141(method_bind_14, Object.GetPtr(this));
             return (Transform2D)ret;
         }
 
@@ -212,7 +212,7 @@ namespace GodotEngine
         /// </summary>
         public Rect2 get_visible_rect()
         {
-            object ret = NativeCalls.godot_icall_0_94(method_bind_15, Object.GetPtr(this));
+            object ret = NativeCalls.godot_icall_0_95(method_bind_15, Object.GetPtr(this));
             return (Rect2)ret;
         }
 
@@ -247,7 +247,7 @@ namespace GodotEngine
         {
             Vector2 size_in = size.HasValue ? size.Value : new Vector2(-1, -1);
             Vector2 margin_in = margin.HasValue ? margin.Value : new Vector2(0, 0);
-            NativeCalls.godot_icall_3_501(method_bind_18, Object.GetPtr(this), enable, ref size_in, ref margin_in);
+            NativeCalls.godot_icall_3_497(method_bind_18, Object.GetPtr(this), enable, ref size_in, ref margin_in);
         }
 
         private IntPtr method_bind_19 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_size_override");
@@ -431,7 +431,7 @@ namespace GodotEngine
         /// </summary>
         public ViewportTexture get_texture()
         {
-            return NativeCalls.godot_icall_0_502(method_bind_39, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_498(method_bind_39, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_40 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_physics_object_picking");
@@ -461,7 +461,7 @@ namespace GodotEngine
         /// </summary>
         public RID get_viewport_rid()
         {
-            IntPtr ret = NativeCalls.godot_icall_0_121(method_bind_42, Object.GetPtr(this));
+            IntPtr ret = NativeCalls.godot_icall_0_122(method_bind_42, Object.GetPtr(this));
             return new RID(ret);
         }
 
@@ -469,14 +469,14 @@ namespace GodotEngine
 
         public void input(InputEvent local_event)
         {
-            NativeCalls.godot_icall_1_35(method_bind_43, Object.GetPtr(this), Object.GetPtr(local_event));
+            NativeCalls.godot_icall_1_19(method_bind_43, Object.GetPtr(this), Object.GetPtr(local_event));
         }
 
         private IntPtr method_bind_44 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "unhandled_input");
 
         public void unhandled_input(InputEvent local_event)
         {
-            NativeCalls.godot_icall_1_35(method_bind_44, Object.GetPtr(this), Object.GetPtr(local_event));
+            NativeCalls.godot_icall_1_19(method_bind_44, Object.GetPtr(this), Object.GetPtr(local_event));
         }
 
         private IntPtr method_bind_45 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "update_worlds");
@@ -516,7 +516,7 @@ namespace GodotEngine
         /// </summary>
         public Camera get_camera()
         {
-            return NativeCalls.godot_icall_0_503(method_bind_48, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_499(method_bind_48, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_49 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_as_audio_listener");
@@ -563,7 +563,7 @@ namespace GodotEngine
 
         public void set_attach_to_screen_rect(Rect2 rect)
         {
-            NativeCalls.godot_icall_1_93(method_bind_53, Object.GetPtr(this), ref rect);
+            NativeCalls.godot_icall_1_94(method_bind_53, Object.GetPtr(this), ref rect);
         }
 
         private IntPtr method_bind_54 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_mouse_position");
@@ -604,7 +604,7 @@ namespace GodotEngine
         /// </summary>
         public object gui_get_drag_data()
         {
-            return NativeCalls.godot_icall_0_120(method_bind_57, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_121(method_bind_57, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_58 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_disable_input");

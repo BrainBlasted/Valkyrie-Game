@@ -247,16 +247,16 @@ namespace GodotEngine
 
         private IntPtr method_bind_27 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_custom_viewport");
 
-        public void set_custom_viewport(Viewport viewport)
+        public void set_custom_viewport(Node viewport)
         {
-            NativeCalls.godot_icall_1_19(method_bind_27, Object.GetPtr(this), Object.GetPtr(viewport));
+            NativeCalls.godot_icall_1_34(method_bind_27, Object.GetPtr(this), Object.GetPtr(viewport));
         }
 
         private IntPtr method_bind_28 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_custom_viewport");
 
-        public Viewport get_custom_viewport()
+        public Node get_custom_viewport()
         {
-            return NativeCalls.godot_icall_0_118(method_bind_28, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_119(method_bind_28, Object.GetPtr(this));
         }
 
         private IntPtr method_bind_29 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "set_follow_smoothing");

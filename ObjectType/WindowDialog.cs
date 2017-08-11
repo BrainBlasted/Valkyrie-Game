@@ -24,7 +24,7 @@ namespace GodotEngine
         /// </summary>
         public void set_title(string title)
         {
-            NativeCalls.godot_icall_1_34(method_bind_0, Object.GetPtr(this), title);
+            NativeCalls.godot_icall_1_35(method_bind_0, Object.GetPtr(this), title);
         }
 
         private IntPtr method_bind_1 = NativeCalls.godot_icall_TypeDB_get_method(nativeName, "get_title");
@@ -58,7 +58,7 @@ namespace GodotEngine
         /// </summary>
         public TextureButton get_close_button()
         {
-            return NativeCalls.godot_icall_0_520(method_bind_4, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_516(method_bind_4, Object.GetPtr(this));
         }
     }
 }
